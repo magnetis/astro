@@ -1,9 +1,22 @@
 {
-  "name": "astro",
+  "name": "@magnetis/astro",
   "version": "0.0.1",
+  "author": "The authors of Magnetis (https://github.com/magnetis/astro/graphs/contributors)",
+  "homepage": "",
   "description": "Magnetis design system",
-  "author": "",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magnetis/astro/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "dist/astro.css",
+  "keywords": [
+    "design-system",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magnetis/astro"
+  },
   "scripts": {
     "docz:dev": "docz dev",
     "build": "postcss src/index.css -o dist/astro.css",
