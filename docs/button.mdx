@@ -1,16 +1,50 @@
 ---
-name: Hello world
+name: Buttons
 ---
-
-# Hello world
 
 import '../src/index.css'
 import { Playground } from 'docz'
 
-Hello, I'm a mdx file!
+# Buttons
+
+## Primary
+
+Used for main action in a section or screen. Shouldn't be used with other primary together.
 
 <Playground>
-  <button className="btn">
-    Hello Astro
+  <button className="btn btn--primary">
+    Primary
+  </button>
+  
+  <button className="btn btn--primary" disabled>
+    Primary disabled
+  </button>
+</Playground>
+
+## Secondary
+
+Secondary buttons are used when presenting secondary actions when with a primary action.
+
+<Playground>
+  <button className="btn btn--secondary">
+    Secondary
+  </button>
+ 
+  <button className="btn btn--secondary" disabled>
+    Secondary disabled
+  </button>
+</Playground>
+
+## Outline
+
+Placeholder text
+
+<Playground>
+  <button className="btn btn--outline">
+    Outline
+  </button>
+ 
+  <button className="btn btn--outline" disabled>
+    Outline disabled
   </button>
 </Playground>

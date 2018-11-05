@@ -1,43 +1,81 @@
+/* Base button styles */
 .btn {
   border-radius: 28px;
-  background-color: var(--color-earth-800);
   border: none;
-  color: var(--color-space-100);
   cursor: pointer;
-  display: block;
+  display: inline-block;
   position: relative;
-  padding: 14px 48px;
+  padding: 10px 44px;
   white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.7;
   transition: background-color 0.2s ease;
   overflow: hidden;
 }
 
-.btn:hover::before,
-.btn:active::before,
-.btn:disabled::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.btn:hover::before {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.btn:active::before {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn:disabled::before {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 .btn:disabled {
   cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Primary button */
+.btn--primary {
+  background-color: var(--color-earth-800);
+  border: 2px solid var(--color-earth-800);
+  color: var(--color-space-100);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background-color: var(--color-earth-900);
+  border-color: var(--color-earth-900);
+}
+
+.btn--primary:active:not(:disabled) {
+  background-color: var(--color-earth-1000);
+  border-color: var(--color-earth-1000);
+}
+
+/* Secondary button */
+.btn--secondary {
+  background-color: var(--color-space-400);
+  color: var(--color-moon-900);  
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: var(--color-space-500);
+  border-color: var(--color-space-500);
+}
+
+.btn--secondary:active:not(:disabled) {
+  background-color: var(--color-space-600);
+  border-color: var(--color-space-600);  
+}
+
+/* Outline button */
+.btn--outline {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-earth-800);
+  color: var(--color-earth-800);   
+}
+
+.btn--outline:hover:not(:disabled) {
+  border: 2px solid var(--color-earth-900);
+  color: var(--color-earth-900);
+}
+
+.btn--outline:active:not(:disabled) {
+  border: 2px solid var(--color-earth-1000);
+  color: var(--color-earth-1000);
+}
+
+/* Button size modifiers */
+.btn--large {
+  padding: 10px 44px;  
+  font-size: 16px;
+}
+
+.btn--small {
+  padding: 10px 44px;
+  font-size: 16px;
 }
