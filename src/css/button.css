@@ -1,11 +1,11 @@
 /* Base button styles */
 .btn {
-  border-radius: 28px;
+  border-radius: 24px;
   border: none;
   cursor: pointer;
   display: inline-block;
   position: relative;
-  padding: 10px 44px;
+  padding: 9px 46px;
   white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
@@ -21,19 +21,19 @@
 
 /* Primary button */
 .btn--primary {
-  background-color: var(--color-earth-800);
-  border: 2px solid var(--color-earth-800);
+  background-color: var(--color-uranus-500);
+  border: 2px solid var(--color-uranus-500);
   color: var(--color-space-100);
 }
 
 .btn--primary:hover:not(:disabled) {
-  background-color: var(--color-earth-900);
-  border-color: var(--color-earth-900);
+  background-color: var(--color-uranus-600);
+  border-color: var(--color-uranus-600);
 }
 
 .btn--primary:active:not(:disabled) {
-  background-color: var(--color-earth-1000);
-  border-color: var(--color-earth-1000);
+  background-color: var(--color-uranus-700);
+  border-color: var(--color-uranus-700);
 }
 
 /* Secondary button */
@@ -55,27 +55,29 @@
 /* Outline button */
 .btn--outline {
   background-color: var(--color-space-100);
-  border: 2px solid var(--color-earth-800);
-  color: var(--color-earth-800);   
+  border: 2px solid var(--color-uranus-500);
+  color: var(--color-uranus-500);   
 }
 
 .btn--outline:hover:not(:disabled) {
-  border: 2px solid var(--color-earth-900);
-  color: var(--color-earth-900);
+  border: 2px solid var(--color-uranus-600);
+  color: var(--color-uranus-600);
 }
 
 .btn--outline:active:not(:disabled) {
-  border: 2px solid var(--color-earth-1000);
-  color: var(--color-earth-1000);
+  border: 2px solid var(--color-uranus-700);
+  color: var(--color-uranus-700);
 }
 
 /* Button size modifiers */
-.btn--large {
-  padding: 10px 44px;  
-  font-size: 16px;
+.btn--small {
+  padding: 4px 29px;
+  border-radius: 25px;
+  font-size: 12px;
 }
 
-.btn--small {
-  padding: 10px 44px;
-  font-size: 16px;
+.btn--large {
+  padding: 10px 54px;
+  border-radius: 32px;  
+  font-size: 24px;
 }

@@ -5,5 +5,6 @@ export default {
     css({
       preprocessor: 'postcss'
     })
-  ]
+  ],
+  indexHtml: 'public/docz.html'
 }

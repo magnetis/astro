@@ -5,46 +5,64 @@ name: Buttons
 import '../src/index.css'
 import { Playground } from 'docz'
 
-# Buttons
+# buttons
 
-## Primary
+## primary
 
-Used for main action in a section or screen. Shouldn't be used with other primary together.
+Used for main action in a section or screen. Shouldn’t be used with other primary together.
 
 <Playground>
   <button className="btn btn--primary">
-    Primary
+    primary
   </button>
   
   <button className="btn btn--primary" disabled>
-    Primary disabled
+    primary disabled
   </button>
 </Playground>
 
-## Secondary
+## secondary
 
-Secondary buttons are used when presenting secondary actions when with a primary action.
+Secondary buttons are used when presenting secondary actions with a primary action.
 
 <Playground>
   <button className="btn btn--secondary">
-    Secondary
+    secondary
   </button>
  
   <button className="btn btn--secondary" disabled>
-    Secondary disabled
+    secondary disabled
   </button>
 </Playground>
 
-## Outline
+## outline
 
 Placeholder text
 
 <Playground>
   <button className="btn btn--outline">
-    Outline
+    outline
   </button>
  
   <button className="btn btn--outline" disabled>
-    Outline disabled
+    outline disabled
+  </button>
+</Playground>
+
+## sizes
+
+Buttons can be used in different sizes.
+
+<Playground>
+  <button className="btn btn--primary btn--small">
+    small
+  </button>
+ 
+  <button className="btn btn--primary">
+    default
+  </button>
+
+  <button className="btn btn--primary btn--large">
+    large
   </button>
 </Playground>
