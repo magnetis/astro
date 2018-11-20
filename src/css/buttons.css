@@ -60,12 +60,12 @@
 }
 
 .btn--outline:hover:not(:disabled) {
-  border: 2px solid var(--color-uranus-600);
+  border-color: var(--color-uranus-600);
   color: var(--color-uranus-600);
 }
 
 .btn--outline:active:not(:disabled) {
-  border: 2px solid var(--color-uranus-700);
+  border-color: var(--color-uranus-700);
   color: var(--color-uranus-700);
 }
 
@@ -80,4 +80,36 @@
   padding: 10px 54px;
   border-radius: 32px;  
   font-size: 24px;
+}
+
+/* Button color modifiers */
+.btn--venus {
+  background-color: var(--color-venus-400);
+  border: 2px solid var(--color-venus-400);
+}
+
+.btn--venus:hover:not(:disabled) {
+  background-color: var(--color-venus-500); 
+  border-color: var(--color-venus-500);
+}
+
+.btn--venus:active:not(:disabled) {
+  background-color: var(--color-venus-600);  
+  border-color: var(--color-venus-600);
+}
+
+.btn--earth {
+  background-color: var(--color-earth-400);
+  border: 2px solid var(--color-earth-400);
+  color: var(--color-moon-900);
+}
+
+.btn--earth:hover:not(:disabled) {
+  background-color: var(--color-earth-500); 
+  border-color: var(--color-earth-500);
+}
+
+.btn--earth:active:not(:disabled) {
+  background-color: var(--color-earth-600);  
+  border-color: var(--color-earth-600);
 }
