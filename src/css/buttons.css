@@ -36,22 +36,6 @@
   border-color: var(--color-uranus-700);
 }
 
-/* Secondary button */
-.btn--secondary {
-  background-color: var(--color-space-400);
-  color: var(--color-moon-900);  
-}
-
-.btn--secondary:hover:not(:disabled) {
-  background-color: var(--color-space-500);
-  border-color: var(--color-space-500);
-}
-
-.btn--secondary:active:not(:disabled) {
-  background-color: var(--color-space-600);
-  border-color: var(--color-space-600);  
-}
-
 /* Outline button */
 .btn--outline {
   background-color: var(--color-space-100);
