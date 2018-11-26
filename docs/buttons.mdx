@@ -9,64 +9,97 @@ import { Playground } from 'docz'
 
 ## primary
 
-Used for main action in a section or screen. Shouldn’t be used with other primary together.
+Primary buttons are medium sized and have a colored background. They aren't always blue, though, so there isn't a "primary" CSS class - primary here is more of a concept.
+Please note that the color and size are explicitly applied to the `<button>` element.
+Use these for the main action in a section or screen. You should display only one primary button at a time.
 
 <Playground>
-  <button className="btn btn--primary">
+  <button className="btn btn--uranus btn--medium">
     primary
   </button>
   
-  <button className="btn btn--primary" disabled>
+  <button className="btn btn--uranus btn--medium" disabled>
     primary disabled
-  </button>
-</Playground>
-
-## outline
-
-Secondary buttons are used when presenting secondary actions with a primary action.
-
-<Playground>
-  <button className="btn btn--outline">
-    outline
-  </button>
- 
-  <button className="btn btn--outline" disabled>
-    outline disabled
-  </button>
-</Playground>
-
-## sizes
-
-Buttons can be used in different sizes.
-
-<Playground>
-  <button className="btn btn--primary btn--small">
-    small
-  </button>
- 
-  <button className="btn btn--primary">
-    default
-  </button>
-
-  <button className="btn btn--primary btn--large">
-    large
   </button>
 </Playground>
 
 ## colors
 
-Buttons can be used in different colors.
+Buttons can be used in different colors just by changing their CSS color class.
 
 <Playground>
-  <button className="btn btn--primary">
-    default
+  <button className="btn btn--uranus btn--medium">
+    uranus
   </button>
  
-  <button className="btn btn--primary btn--venus">
+  <button className="btn btn--venus btn--medium">
     venus
   </button>
 
-  <button className="btn btn--primary btn--earth">
+  <button className="btn btn--earth btn--medium">
     earth
   </button>
 </Playground>
+
+## sizes
+
+Buttons can be used in different sizes, also by changing their CSS size class.
+
+<Playground>
+  <button className="btn btn--uranus btn--small">
+    small
+  </button>
+ 
+  <button className="btn btn--uranus btn--medium">
+    medium
+  </button>
+
+  <button className="btn btn--uranus btn--large">
+    large
+  </button>
+</Playground>
+
+## outline
+
+Outline buttons can be used as secondary. Secondary buttons present secondary actions when there's already a primary action in the same section or screen.
+Please note that there are color variations to the outline CSS classes. You also need to specify their size with one of the size CSS classes.
+
+<Playground>
+  <button className="btn btn--outline-uranus btn--small">
+    outline uranus
+  </button>
+  <button className="btn btn--outline-uranus btn--medium">
+    outline uranus
+  </button>
+  <button className="btn btn--outline-uranus btn--large">
+    outline uranus
+  </button>
+ 
+  <button className="btn btn--outline-uranus btn--medium" disabled>
+    outline uranus disabled
+  </button>
+</Playground>
+
+<Playground>
+  <button className="btn btn--outline-venus btn--medium">
+    outline venus
+  </button>
+ 
+  <button className="btn btn--outline-venus btn--medium" disabled>
+    outline venus disabled
+  </button>
+</Playground>
+
+<Playground>
+  <button className="btn btn--outline-earth btn--medium">
+    outline earth
+  </button>
+ 
+  <button className="btn btn--outline-earth btn--medium" disabled>
+    outline earth disabled
+  </button>
+</Playground>
+
+
+
+
