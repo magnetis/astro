@@ -5,7 +5,7 @@
   display: inline-block;
   position: relative;
   white-space: nowrap;
-  font-weight: 600;
+  font-weight: 500;
   transition: background-color 0.2s ease;
   overflow: hidden;
 }
