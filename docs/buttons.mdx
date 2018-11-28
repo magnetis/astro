@@ -9,9 +9,10 @@ import { Playground } from 'docz'
 
 ## primary
 
-Primary buttons are medium sized and have a colored background. They aren't always blue, though, so there isn't a "primary" CSS class - primary here is more of a concept.
+Primary buttons are medium sized and have a colored background. They aren't always blue, though, so there isn't a default "primary" look or CSS class - primary here is more of a concept.
 
-Please note that the color and size are explicitly applied to the `<button>` element.
+Please note that the color and size are built through CSS classes applied to the `<button>` element. You'll always need to specify color and size to get a complete button.
+
 Use these for the main action in a section or screen. You should display only one primary button at a time.
 
 <Playground>
@@ -26,7 +27,7 @@ Use these for the main action in a section or screen. You should display only on
 
 ## colors
 
-Buttons can be used in different colors just by changing their CSS color class.
+Buttons can have different colors simply by changing their CSS color class.
 
 <Playground>
   <button className="btn btn--uranus btn--medium">
@@ -44,7 +45,7 @@ Buttons can be used in different colors just by changing their CSS color class.
 
 ## sizes
 
-Buttons can be used in different sizes, also by changing their CSS size class.
+Buttons can have different sizes, also by changing their CSS size class.
 
 <Playground>
   <button className="btn btn--uranus btn--small">
@@ -62,7 +63,8 @@ Buttons can be used in different sizes, also by changing their CSS size class.
 
 ## outline
 
-Outline buttons can be used as secondary. Secondary buttons present secondary actions when there's already a primary action in the same section or screen.
+Outline buttons can be used as secondary roles. Secondary buttons present secondary actions when there's already a primary action in the same section or screen.
+
 Please note that there are color variations to the outline CSS classes. You also need to specify their size with one of the size CSS classes.
 
 <Playground>
