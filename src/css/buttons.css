@@ -14,6 +14,11 @@
   opacity: 0.5;
 }
 
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;  
+}
+
 /* Outline button */
 
 .btn--outline-uranus {

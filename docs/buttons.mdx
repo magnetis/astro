@@ -10,6 +10,7 @@ import { Playground } from 'docz'
 ## primary
 
 Primary buttons are medium sized and have a colored background. They aren't always blue, though, so there isn't a "primary" CSS class - primary here is more of a concept.
+
 Please note that the color and size are explicitly applied to the `<button>` element.
 Use these for the main action in a section or screen. You should display only one primary button at a time.
 
@@ -96,6 +97,19 @@ Please note that there are color variations to the outline CSS classes. You also
   </button>
 </Playground>
 
+## `<a>` elements
 
+Although the button classes are designed for `<button>` elements, you may also use them with `<a>` elements when it's semantically recomended. Note that some browsers may render them slightly differently. 
 
+`<a>` elements don't have a `:disabled` attribute/pseudo selector, so if you need that state, you need to add a `disabled` class like the example below.
 
+If your `<a>` button triggers in-page functionalities instead of linking (to other pages or within the current page), make them semantically accessible by adding a `role="button"`.
+
+<Playground>
+  <a className="btn btn--uranus btn--medium">
+    link
+  </a>
+  <a className="btn btn--uranus btn--medium disabled">
+    link disabled
+  </a>
+</Playground>
