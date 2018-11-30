@@ -1,47 +1,65 @@
-.display {
+/* Display */
+
+.text--display {
   font-size: 64px;
   font-weight: 700;
-  line-height: 80px;
 }
 
-.subhead {
+/* Bold headings */
+
+.heading-bold--small {
   font-size: 32px;
-  font-weight: 500;
-  line-height: 28px;
+  font-weight: 700;
 }
 
-.subhead--small {
+.heading-bold--medium {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.heading-bold--large {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Light headings */
+
+.heading-light--small {
   font-size: 24px;
   font-weight: 500;
-  line-height: 18px;
 }
 
-.subhead--large {
+.heading-light--medium {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.heading-light--large {
   font-size: 40px;
   font-weight: 500;
-  line-height: 36px;
 }
+
+/* Paragraph */
 
 p.text--small {
   font-size: 12px;
-  line-height: 18px;
 }
 
 p.text--large {
   font-size: 24px;
-  line-height: 36px;
 }
 
-p.font--secondary {
-  font-size: 24px;
-  line-height: 28px;
+/* Secondary font */
+
+p.text--secondary {
   font-family: 'Lato', sans-serif;
+  font-size: 24px;
 }
 
-p.font--secondary.text--small {
+p.text--secondary.text--small {
   font-size: 16px;
 }
 
-p.font--secondary.text--large {
+p.text--secondary.text--large {
   font-size: 32px;
 }

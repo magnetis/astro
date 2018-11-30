@@ -1,0 +1,71 @@
+---
+name: Typography
+---
+
+import '../src/index.css'
+import { Playground } from 'docz'
+
+# typography
+
+Astro has a purposeful set of typographic styles that provide content organization, hierarchy patterns and consistent information architecture which is essential for good understanding and a solid user experience.
+
+## typefaces
+
+### Poppins - [download](https://fonts.google.com/specimen/Poppins?selection.family=Poppins:300,400,500,700)
+
+Used in the whole product’s interfaces for interactive components, contextual titles and texts.
+Poppins provides good legibility in small and large sizes.
+
+<Playground>
+  <p className="text--large">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+  <p className="text--large">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+  <p className="text--large">0 1 2 3 4 5 6 7 8 9</p>
+</Playground>
+
+#### display
+
+<Playground>
+  <p className="text--display">disp. astro typography</p>
+</Playground>
+
+#### bold headings
+
+<Playground>
+  <p className="heading-bold--small">astro typography</p>
+  <p className="heading-bold--medium">astro typography</p>
+  <p className="heading-bold--large">astro typography</p>
+</Playground>
+
+#### light headings
+
+<Playground>
+  <p className="heading-light--small">astro typography</p>
+  <p className="heading-light--medium">astro typography</p>
+  <p className="heading-light--large">astro typography</p>
+</Playground>
+
+#### paragraphs
+
+<Playground>
+  <p className="text--small">p. astro typography</p>
+  <p className="text--medium">p. astro typography</p>
+  <p className="text--large">p. astro typography</p>
+</Playground>
+
+### Lato - [download](https://fonts.google.com/specimen/Lato?selection.family=Lato)
+
+Used only in editorial content titles and displays. Lato’s large sizes provide good legibility and stoutness. /* TODO: inconsistente! */
+
+<Playground>
+  <p className="text--secondary text--medium">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+  <p className="text--secondary text--medium">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+  <p className="text--secondary text--medium">0 1 2 3 4 5 6 7 8 9</p>
+</Playground>
+
+#### paragraphs
+
+<Playground>
+  <p className="text--secondary text--small">p. astro typography</p>
+  <p className="text--secondary text--medium">p. astro typography</p>
+  <p className="text--secondary text--large">p. astro typography</p>
+</Playground>
