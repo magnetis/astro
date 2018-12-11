@@ -1,3 +1,5 @@
+/* Looking for headings? They aren't here; headings are in h1-h4 element selectors in base.css file */
+
 /* Display */
 
 .text--display {
@@ -5,41 +7,7 @@
   font-weight: 700;
 }
 
-/* Bold headings */
-
-.heading-bold--small {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.heading-bold--medium {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.heading-bold--large {
-  font-size: 48px;
-  font-weight: 700;
-}
-
-/* Light headings */
-
-.heading-light--small {
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.heading-light--medium {
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.heading-light--large {
-  font-size: 40px;
-  font-weight: 500;
-}
-
-/* Paragraph */
+/* Paragraph - medium size is in default p element */
 
 p.text--small {
   font-size: 12px;

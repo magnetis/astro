@@ -13,8 +13,7 @@ Astro has a purposeful set of typographic styles that provide content organizati
 
 ### Poppins - [download](https://fonts.google.com/specimen/Poppins?selection.family=Poppins:300,400,500,700)
 
-Used in the whole product’s interfaces for interactive components, contextual titles and texts.
-Poppins provides good legibility in small and large sizes.
+Poppins is our primary font, used in the whole product’s interfaces for interactive components, contextual titles and texts.
 
 <Playground>
   <p className="text--large">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -28,44 +27,43 @@ Poppins provides good legibility in small and large sizes.
   <p className="text--display">disp. astro typography</p>
 </Playground>
 
-#### bold headings
+#### headings
+
+Heading styles are set with `<h1>` to `<h4>` HTML elements, but you may also use `.h1` to `.h4` classes if you need to apply these styles to a different markup.
 
 <Playground>
-  <p className="heading-bold--small">astro typography</p>
-  <p className="heading-bold--medium">astro typography</p>
-  <p className="heading-bold--large">astro typography</p>
-</Playground>
-
-#### light headings
-
-<Playground>
-  <p className="heading-light--small">astro typography</p>
-  <p className="heading-light--medium">astro typography</p>
-  <p className="heading-light--large">astro typography</p>
+  <h1>h1. astro typography</h1>
+  <h2>h2. astro typography</h2>
+  <h3>h3. astro typography</h3>
+  <h4>h4. astro typography</h4>
 </Playground>
 
 #### paragraphs
 
+Paragraphs are set with `<p>` HTML elements. Default size is medium, so you'll only need CSS size classes for small and large sizes.
+
 <Playground>
-  <p className="text--small">p. astro typography</p>
-  <p className="text--medium">p. astro typography</p>
   <p className="text--large">p. astro typography</p>
+  <p>p. astro typography</p>
+  <p className="text--small">p. astro typography</p>
 </Playground>
 
 ### Lato - [download](https://fonts.google.com/specimen/Lato?selection.family=Lato)
 
-Used only in editorial content titles and displays. Lato’s large sizes provide good legibility and stoutness. /* TODO: inconsistente! */
+Lato is our secondary font, used only in paragraphs when maximum legibility is needed - especially in small texts. 
+
+Default size is medium, so you'll only need CSS size classes for small and large sizes.
 
 <Playground>
-  <p className="text--secondary text--medium">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-  <p className="text--secondary text--medium">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-  <p className="text--secondary text--medium">0 1 2 3 4 5 6 7 8 9</p>
+  <p className="text--secondary">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+  <p className="text--secondary">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+  <p className="text--secondary">0 1 2 3 4 5 6 7 8 9</p>
 </Playground>
 
 #### paragraphs
 
 <Playground>
-  <p className="text--secondary text--small">p. astro typography</p>
-  <p className="text--secondary text--medium">p. astro typography</p>
   <p className="text--secondary text--large">p. astro typography</p>
+  <p className="text--secondary">p. astro typography</p>
+  <p className="text--secondary text--small">p. astro typography</p>
 </Playground>
