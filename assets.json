@@ -1,9 +1,9 @@
 {
-  "vendors.css": "/astro/static/css/vendors.11e2aa80ff2e326265bc.css",
-  "vendors.js": "/astro/static/js/vendors.ff6845c2.js",
-  "app.js": "/astro/static/js/app.ade567df.js",
+  "vendors.css": "/astro/static/css/vendors.f958346ac467c3159e87.css",
+  "vendors.js": "/astro/static/js/vendors.2beec478.js",
+  "app.js": "/astro/static/js/app.490c04bd.js",
   "docs-buttons.js": "/astro/static/js/docs-buttons.14306a8e.js",
   "docs-typography.js": "/astro/static/js/docs-typography.76e9bbcf.js",
-  "runtime~app.js": "/astro/static/js/runtime~app.11e2aa80ff2e326265bc.js",
+  "runtime~app.js": "/astro/static/js/runtime~app.f958346ac467c3159e87.js",
   "index.html": "/astro/index.html"
 }
