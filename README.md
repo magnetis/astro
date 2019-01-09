@@ -16,13 +16,15 @@ Magnetis believes that good design and experiences can **impact the product mark
 Design is meant to be **for all**. Astro style and components follow basic recommendations from the **WCAG 2.0 guidelines** for accessibility, with tested contrast ratios and good practices in legibility.
 [See WCAG 2.0 >>](https://www.w3.org/TR/WCAG21/)
 
+## Supported libraries
+
+For now, Astro only supports React as its official library.
+
 ## 1. Contributing
 
 Our design system and components are documented with [Docz](https://www.docz.site/) and hosted by [GitHub Pages](https://pages.github.com/). Its documentation can be viewed at [magnetis.github.io/astro](https://magnetis.github.io/astro/).
 
-Astro supports React as its official library.
-
-### 1.1. Running and working on Astro
+### 1.1. Documentation
 
 Every time you create or edit a component, edit CSS base files or contribute to anything Astro-wise, you'll most likely have to publish updates to our docs to reflect these changes. That's also how you preview your changes: by running Docz locally in your machine.
 
@@ -48,6 +50,8 @@ import { Button } from './Button'
 
 The `<Playground>` component is how you can render your component *and* see its code in a single view. Super easy! :)
 
+### 1.2. Setup and running
+
 Please follow these steps to run the project and start coding:
 
 1.1.1. Clone Astro if you haven't, or `git pull` to get the latest update.
@@ -60,7 +64,7 @@ Please follow these steps to run the project and start coding:
 
 After you're done, just open a pull request and grab some coffee while we review your code.
 
-### 1.2. Publishing your changes to Astro online docs
+### 1.3. Publishing your changes to Astro online docs
 
 Once your pull request has been approved and merged, you must deploy Astro again to GitHub Pages to make sure everyone views the most recent version of the project.
 
@@ -108,8 +112,6 @@ We've chosen a few dependencies to help optimize our project. If you're curious 
 Ready to start coding with Astro? Just follow the instructions in the docs ([magnetis.github.io/astro](https://magnetis.github.io/astro/)) to use our components. You'll also learn how to apply attribute modifiers (such as classes) to your HTML elements.
 
 When building layout structures, don't forget to use [Flexbox Grid](https://github.com/kristoferjoseph/flexboxgrid), which is already built in your project as an Astro dependency.
-
-Please refrain from editing Astro files as your code might break when Astro is updated.
 
 ## 4. Troubleshooting
 
