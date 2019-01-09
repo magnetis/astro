@@ -51,8 +51,9 @@ The `<Playground>` component is how you can render your component *and* see its 
 Please follow these steps to run the project and start coding:
 
 1.1.1. Clone Astro if you haven't, or `git pull` to get the latest update.
-1.1.2. Run `yarn run docz:dev` in your terminal and visit `localhost:3000`.
-1.1.3. Find the file(s) you wish to edit in the folders below:
+1.1.2. Install Astro with `yarn install` or `npm install`.
+1.1.3. Run `yarn docz:dev` or `npm run docz:dev` in your terminal and visit `localhost:3000`.
+1.1.4. Find the file(s) you wish to edit in the folders below:
 - Design system base CSS files: `src/css` - if you create a new file here, please add the import to `src/index.css`. *Proceed carefully as editing base files might break Astro and destroy the very fabric of the universe*.
 - Import fonts to Docz: `public/docz.html`.
 - Docz documentation pages including components: `docs`.
@@ -63,7 +64,7 @@ After you're done, just open a pull request and grab some coffee while we review
 
 Once your pull request has been approved and merged, you must deploy Astro again to GitHub Pages to make sure everyone views the most recent version of the project.
 
-In your terminal, after merging: checkout to master, do `git pull` and run `npm run docs:publish` to deploy.
+In your terminal, after merging: checkout to master, do `git pull` and run `yarn docs:publish` or `npm run docs:publish` to deploy.
 
 Visit [magnetis.github.io/astro](https://magnetis.github.io/astro/) and make sure your changes go live! :tada: While you're there, please check if everything still looks okay.
 
@@ -82,7 +83,8 @@ Add this line to your `package.json`:
 
 *or*
 
-Install Astro via terminal using the GitHub SSH url: `git@github.com:magnetis/astro.git`.
+Install Astro via terminal using the GitHub SSH url:
+Run `yarn add git@github.com:magnetis/astro.git` or `npm install git@github.com:magnetis/astro.git`.
 
 ### 2.2. Adding Astro fonts (important!)
 
