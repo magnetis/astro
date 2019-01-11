@@ -2,6 +2,13 @@
 
 Our design system and components are documented with [Docz](https://www.docz.site/) and hosted by [GitHub Pages](https://pages.github.com/). Its documentation can be viewed at [magnetis.github.io/astro](https://magnetis.github.io/astro/).
 
+## Table of contents
+
+- [Setup and running](#setup-and-running)
+- [Updating the documentation](#updating-the-documentation)
+- [Publishing your changes to Astro online docs](#publishing-your-changes-to-astro-online-docs)
+- [Troubleshooting](#troubleshooting)
+
 ### Setup and running
 
 Please follow these steps to run the project and start coding:
@@ -18,7 +25,7 @@ Please follow these steps to run the project and start coding:
 
 6. Find the file(s) you wish to edit in the folders below:
 
-    - Design system base CSS files: `src/css` folder - if you create a new file here, please add the import to `src/index.css`. *Proceed carefully as changing base styles might break Astro and destroy the very fabric of the universe*.
+    - Design system base CSS files: `src/css` folder - if you create a new file here, please add the import to `src/index.css`.
 
     - Import fonts to Docz: `public/docz.html`. If you make any changes to this file, you'll only be able to view them if you stop your local server (hit "control + C" on your terminal) and run it again (step 4).
 
@@ -56,7 +63,7 @@ The top of the file displays the page name and, below that, the imports. That's 
 
 The `<Playground>` component is how you can render your component *and* show its code in a single view. See how the above example looks like when it's rendered:
 
-![Rendered example of a Docz page](example.png)
+<img src="example.png" alt="Rendered example of a Docz page" width="600">
 
 Inside `<Playground>`, you can add new components, edit their attributes or their inner content.
 
@@ -72,10 +79,14 @@ In your terminal, after merging: checkout to master, do `git pull` and run `yarn
 
 Visit [magnetis.github.io/astro](https://magnetis.github.io/astro/) and make sure your changes go live! 🎉 While you're there, please check if everything still looks okay.
 
-Thank you for contributing!
-
 ## Troubleshooting
 
 - `error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 60` when deploying to GitHub Pages
 
   Might be a slow connection issue - try resetting your wifi. Yeah, really.
+
+Found a bug? Please see if it was already reported on our [issues page](https://github.com/magnetis/astro/issues/new). If you can't find a matching report, you can [open a new issue](https://github.com/magnetis/astro/issues/new) including as much information as you can gather. We appreciate it!
+
+Any lingering questions? You can contact us at [dev@magnetis.com.br](mailto:dev@magnetis.com.br).
+
+Thank you for contributing! 🎉

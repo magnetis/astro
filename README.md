@@ -1,5 +1,16 @@
 # Astro
-## A design system by Magnetis 👩‍🚀
+### A design system by Magnetis 👩‍🚀
+
+## Table of contents
+
+- [Introduction](#introduction)
+- [Supported libraries](#supported-libraries)
+- [Adding Astro to your project](#adding-astro-to-your-project)
+- [Using Astro](#using-astro)
+- [Contributing](#contributing)
+- [Contact us](#contact-us)
+
+## Introduction
 
 Made for **Magnetis**' designers, developers, product managers, data analysts, data scientists, stakeholders and enthusiasts, **Astro** helps us protect the brand concepts, elevate consistency of user experience and increase the speed and efficiency of how we design and build products for our customers.
 
@@ -65,7 +76,7 @@ Here's a quick example. If you'd like to create a Display text styled in Astro t
 
 3. Go to Astro's [Typography page](https://magnetis.github.io/astro/#/docs-typography);
 
-4. See that the "Display" section orients you to create a `<p>` element with the `text--display` class;
+4. See that the "Display" section guides you to create a `<p>` element with the `text--display` class;
 
 5. Replicate the instructions in your page file and make sure the correct styles have been applied;
 
@@ -75,6 +86,12 @@ When building layout structures, don't forget to use [Flexbox Grid](https://gith
 
 ## Contributing
 
-It's awesome that you want to contribute to Astro! Please see [contributing.md](contributing.md) to learn how it works.
+It's awesome that you want to contribute to Astro! Please see [CONTRIBUTING.md](CONTRIBUTING.md) to learn how it works.
+
+## Contact us
+
+Found a bug? Please see if it was already reported on our [issues page](https://github.com/magnetis/astro/issues/new). If you can't find a matching report, you can [open a new issue](https://github.com/magnetis/astro/issues/new) including as much information as you can gather. We appreciate it!
+
+Any lingering questions? You can contact us at [dev@magnetis.com.br](mailto:dev@magnetis.com.br).
 
 Thank you for using Astro! 🎉
