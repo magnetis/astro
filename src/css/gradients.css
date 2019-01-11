@@ -7,6 +7,6 @@
   --gradient-whirlpool: linear-gradient(225deg, #9cf184 0%, #56b53f 100%);
   --gradient-cartwheel: linear-gradient(45deg, #147ec1 0%, #3db5eb 100%);
   --gradient-black-hole: linear-gradient(225deg, #3f4c55 0%, #1c2124 100%);
-  --gradient-mayall: linear-gradient(225deg, #EA9297 0%, #DD676B 100%);
-  --gradient-hoag: linear-gradient(223.9deg, #FBEE88 0%, #F1C500 100%);
+  --gradient-mayall: linear-gradient(225deg, #ea9297 0%, #dd676b 100%);
+  --gradient-hoag: linear-gradient(223.9deg, #fbee88 0%, #f1c500 100%);
 }

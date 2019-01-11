@@ -20,7 +20,7 @@
 .btn--outline-uranus {
   background-color: var(--color-space-100);
   border: 2px solid var(--color-uranus-500);
-  color: var(--color-uranus-500);   
+  color: var(--color-uranus-500);
 }
 
 .btn--outline-uranus:hover:not(:disabled) {
@@ -36,7 +36,7 @@
 .btn--outline-venus {
   background-color: var(--color-space-100);
   border: 2px solid var(--color-venus-500);
-  color: var(--color-venus-500);   
+  color: var(--color-venus-500);
 }
 
 .btn--outline-venus:hover:not(:disabled) {
@@ -52,7 +52,7 @@
 .btn--outline-earth {
   background-color: var(--color-space-100);
   border: 2px solid var(--color-earth-500);
-  color: var(--color-earth-500);   
+  color: var(--color-earth-500);
 }
 
 .btn--outline-earth:hover:not(:disabled) {
@@ -83,7 +83,7 @@
 
 .btn--large {
   padding: 12px 71px;
-  border-radius: 31px;  
+  border-radius: 31px;
   font-size: 24px;
   line-height: 35px;
 }
@@ -113,12 +113,12 @@
 }
 
 .btn--venus:hover:not(:disabled) {
-  background-color: var(--color-venus-500); 
+  background-color: var(--color-venus-500);
   border-color: var(--color-venus-500);
 }
 
 .btn--venus:active:not(:disabled) {
-  background-color: var(--color-venus-600);  
+  background-color: var(--color-venus-600);
   border-color: var(--color-venus-600);
 }
 
@@ -129,11 +129,11 @@
 }
 
 .btn--earth:hover:not(:disabled) {
-  background-color: var(--color-earth-500); 
+  background-color: var(--color-earth-500);
   border-color: var(--color-earth-500);
 }
 
 .btn--earth:active:not(:disabled) {
-  background-color: var(--color-earth-600);  
+  background-color: var(--color-earth-600);
   border-color: var(--color-earth-600);
 }
