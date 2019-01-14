@@ -1,6 +1,8 @@
+/* Bootstrap */
 @import '../node_modules/normalize.css/normalize.css';
 @import '../node_modules/flexboxgrid/dist/flexboxgrid.min.css';
 
+/* Base */
 @import './css/colors.css';
 @import './css/base.css';
 @import './css/typography.css';

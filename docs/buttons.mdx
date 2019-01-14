@@ -19,9 +19,23 @@ Use these for the main action in a section or screen. You should display only on
   <button className="btn btn--uranus btn--medium">
     primary
   </button>
-  
+</Playground>
+
+## states
+
+Buttons can have different states by adding CSS modifiers or simply hovering / pressing it.
+
+<Playground>  
   <button className="btn btn--uranus btn--medium" disabled>
-    primary disabled
+    disabled
+  </button>
+
+  <button className="btn btn--uranus btn--uranus-hover btn--medium">
+    hover
+  </button>
+
+  <button className="btn btn--uranus btn--uranus-active btn--medium">
+    active
   </button>
 </Playground>
 
@@ -71,9 +85,11 @@ Please note that there are color variations to the outline CSS classes. You also
   <button className="btn btn--outline-uranus btn--small">
     outline uranus
   </button>
+
   <button className="btn btn--outline-uranus btn--medium">
     outline uranus
   </button>
+
   <button className="btn btn--outline-uranus btn--large">
     outline uranus
   </button>
@@ -111,6 +127,7 @@ If your `<a>` button triggers in-page functionalities instead of linking (to oth
   <a className="btn btn--uranus btn--medium">
     link
   </a>
+
   <a className="btn btn--uranus btn--medium disabled">
     link disabled
   </a>

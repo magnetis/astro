@@ -15,6 +15,10 @@
   opacity: 0.5;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 /* Outline button */
 
 .btn--outline-uranus {
@@ -23,12 +27,14 @@
   color: var(--color-uranus-500);
 }
 
-.btn--outline-uranus:hover:not(:disabled) {
+.btn--outline-uranus:hover:not(:disabled),
+.btn--outline-uranus-hover:not(:disabled) {
   border-color: var(--color-uranus-600);
   color: var(--color-uranus-600);
 }
 
-.btn--outline-uranus:active:not(:disabled) {
+.btn--outline-uranus:active:not(:disabled),
+.btn--outline-uranus-active:not(:disabled) {
   border-color: var(--color-uranus-700);
   color: var(--color-uranus-700);
 }
@@ -39,12 +45,14 @@
   color: var(--color-venus-500);
 }
 
-.btn--outline-venus:hover:not(:disabled) {
+.btn--outline-venus:hover:not(:disabled),
+.btn--outline-venus-hover:not(:disabled) {
   border-color: var(--color-venus-600);
   color: var(--color-venus-600);
 }
 
-.btn--outline-venus:active:not(:disabled) {
+.btn--outline-venus:active:not(:disabled),
+.btn--outline-venus-active:not(:disabled) {
   border-color: var(--color-venus-700);
   color: var(--color-venus-700);
 }
@@ -55,12 +63,14 @@
   color: var(--color-earth-500);
 }
 
-.btn--outline-earth:hover:not(:disabled) {
+.btn--outline-earth:hover:not(:disabled),
+.btn--outline-earth-hover:not(:disabled) {
   border-color: var(--color-earth-600);
   color: var(--color-earth-600);
 }
 
-.btn--outline-earth:active:not(:disabled) {
+.btn--outline-earth:active:not(:disabled),
+.btn--outline-earth-active:not(:disabled) {
   border-color: var(--color-earth-700);
   color: var(--color-earth-700);
 }
@@ -96,12 +106,14 @@
   color: var(--color-space-100);
 }
 
-.btn--uranus:hover:not(:disabled) {
+.btn--uranus:hover:not(:disabled),
+.btn--uranus-hover:not(:disabled) {
   background-color: var(--color-uranus-600);
   border-color: var(--color-uranus-600);
 }
 
-.btn--uranus:active:not(:disabled) {
+.btn--uranus:active:not(:disabled),
+.btn--uranus-active:not(:disabled) {
   background-color: var(--color-uranus-700);
   border-color: var(--color-uranus-700);
 }
@@ -112,12 +124,14 @@
   color: var(--color-space-100);
 }
 
-.btn--venus:hover:not(:disabled) {
+.btn--venus:hover:not(:disabled),
+.btn--venus-hover:not(:disabled) {
   background-color: var(--color-venus-500);
   border-color: var(--color-venus-500);
 }
 
-.btn--venus:active:not(:disabled) {
+.btn--venus:active:not(:disabled),
+.btn--venus-active:not(:disabled) {
   background-color: var(--color-venus-600);
   border-color: var(--color-venus-600);
 }
@@ -128,12 +142,14 @@
   color: var(--color-moon-900);
 }
 
-.btn--earth:hover:not(:disabled) {
+.btn--earth:hover:not(:disabled),
+.btn--earth-hover:not(:disabled) {
   background-color: var(--color-earth-500);
   border-color: var(--color-earth-500);
 }
 
-.btn--earth:active:not(:disabled) {
+.btn--earth:active:not(:disabled),
+.btn--earth-active:not(:disabled) {
   background-color: var(--color-earth-600);
   border-color: var(--color-earth-600);
 }
