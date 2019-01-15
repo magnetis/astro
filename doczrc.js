@@ -1,11 +1,6 @@
 import { css } from 'docz-plugin-css';
+import { COLORS } from './src/theme/theme'
 
-const astro = {
-  colors: {
-    uranus600: '#147ec1',
-    uranus700: '#1663a0'
-  }
-};
 
 export default {
   hashRouter: true,
@@ -30,12 +25,12 @@ export default {
         // Simulating hover and active state without showing code on the playground
         '&.button-states': {
           'button:nth-child(2)': {
-            backgroundColor: astro.colors.uranus600,
-            borderColor: astro.colors.uranus600
+            backgroundColor: COLORS.uranus600,
+            borderColor: COLORS.uranus600
           },
           'button:nth-child(3)': {
-            backgroundColor: astro.colors.uranus700,
-            borderColor: astro.colors.uranus700
+            backgroundColor: COLORS.uranus700,
+            borderColor: COLORS.uranus700
           }
         }
       }
