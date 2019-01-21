@@ -1,0 +1,1 @@
+.intro-box{display:flex}.intro-box>div:not(:last-child){padding-right:30px}
