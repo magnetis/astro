@@ -1,5 +1,7 @@
 ## Contributing to Astro
 
+It's awesome that you want to contribute to Astro! Before proceeding, please read our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 Our design system and components are documented with [Docz](https://www.docz.site/) and hosted by [GitHub Pages](https://pages.github.com/). Its documentation can be viewed at [magnetis.github.io/astro](https://magnetis.github.io/astro/).
 
 ## Table of contents
