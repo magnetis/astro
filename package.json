@@ -1,8 +1,8 @@
 {
   "name": "@magnetis/astro",
-  "version": "0.0.1",
-  "author": "The authors of Magnetis (https://github.com/magnetis/astro/graphs/contributors)",
-  "homepage": "",
+  "version": "0.1.0",
+  "author": "Magnetis (https://github.com/magnetis)",
+  "homepage": "https://magnetis.github.io/astro/#/",
   "description": "Magnetis design system",
   "bugs": {
     "url": "https://github.com/magnetis/astro/issues"
