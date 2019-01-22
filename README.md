@@ -1,6 +1,8 @@
 # Astro
 ### A design system by Magnetis 👩‍🚀
 
+[![Build Status](https://travis-ci.org/magnetis/astro.svg?branch=master)](https://travis-ci.org/magnetis/astro)
+
 ## Table of contents
 
 - [Introduction](#introduction)
@@ -24,8 +26,8 @@ Astro is built based on **Atomic Design**, so our designers and developers can u
 Magnetis believes that good design and experiences can **impact the product market and society itself**. Our **design and code assets are open** so we can contribute to the community and help new product teams.
 
 ### Accessible
-Design is meant to be **for all**. Astro style and components follow basic recommendations from the **WCAG 2.0 guidelines** for accessibility, with tested contrast ratios and good practices in legibility.
-[See WCAG 2.0 >>](https://www.w3.org/TR/WCAG21/)
+Design is meant to be **for all**. Astro style and components follow basic recommendations from the **WCAG guidelines** for accessibility, with tested contrast ratios and good practices in legibility and screen reading solutions.
+[See WCAG >>](https://www.w3.org/TR/WCAG21/)
 
 ## Supported libraries
 
@@ -35,19 +37,8 @@ For now, Astro only supports React as its official library.
 
 ### Installing the dependency
 
-There are two easy ways to add Astro as a dependency in your project:
-
-Add this line to your `package.json`:
-```json
-"dependencies": {
-  "@magnetis/astro": "git+ssh://github.com/magnetis/astro.git"
-  }
-```
-
-*or*
-
-Install Astro via terminal using the GitHub SSH url:
-Run `yarn add git@github.com:magnetis/astro.git` or `npm install git@github.com:magnetis/astro.git`.
+Install Astro via terminal:
+Run `yarn add @magnetis/astro` or `npm install @magnetis/astro`.
 
 ### Adding Astro fonts (important!)
 
