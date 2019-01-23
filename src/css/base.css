@@ -48,24 +48,22 @@ h4,
 }
 
 a {
-  color: var(--color-uranus-600);
-  font-weight: 500;
-  text-decoration: none;
+  color: var(--color-uranus-700);
+  text-decoration: underline;
   cursor: pointer;
   word-wrap: break-word;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--color-uranus-500);
 }
 
 a:active {
-  color: var(--color-uranus-700);
+  color: var(--color-uranus-800);
 }
 
-a.disabled { /* TODO: remover o text-decoration no hover; remover tudo isso quando é .btn */
-  color: var(--color-moon-300);
-  cursor: not-allowed;
+a.btn {
+  text-decoration: none;
 }
 
 li,

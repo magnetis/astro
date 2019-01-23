@@ -7,8 +7,6 @@ import { Playground } from 'docz'
 
 # buttons
 
-
-
 ## primary
 
 Primary buttons are medium sized and have a colored background. They aren't always blue, though, so there isn't a default "primary" look or CSS class - primary here is more of a concept.
@@ -105,13 +103,12 @@ Please note that there are color variations to the outline CSS classes. You also
 
 ## links
 
-For inline links and such. If you're looking for buttons in `<a>` tags, see "buttons in `<a>` elements" below.
+For inline links in paragraphs and informative texts. If you're looking for buttons in `<a>` tags, see "buttons in `<a>` elements" below.
 
-`<a>` elements don't have a `:disabled` attribute/pseudo selector, so if you need such state, you'll have to add a `disabled` class like the example below.
+Mouseover and click the link to view `:hover` and `:active` states.
 
 <Playground>
-  <a>link</a>
-  <a className="disabled">link disabled</a>
+  <a>inline link</a>
 </Playground>
 
 ## buttons in `<a>` elements
@@ -124,9 +121,9 @@ If your `<a>` button triggers in-page functionalities instead of linking (to oth
 
 <Playground>
   <a className="btn btn--uranus btn--medium">
-    link
+    link button
   </a>
   <a className="btn btn--uranus btn--medium disabled">
-    link disabled
+    link button disabled
   </a>
 </Playground>
