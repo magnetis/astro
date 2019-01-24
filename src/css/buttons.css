@@ -5,64 +5,82 @@
   display: inline-block;
   white-space: nowrap;
   font-weight: 500;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 
 .btn:disabled,
 .btn.disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  background-color: var(--color-moon-200);
+  border-color: var(--color-moon-200);
+  color: var(--color-space-100);
 }
 
-/* Outline button */
+/* Button color modifiers */
 
-.btn--outline-uranus {
-  background-color: var(--color-space-100);
+.btn--uranus {
+  background-color: var(--color-uranus-500);
   border: 2px solid var(--color-uranus-500);
-  color: var(--color-uranus-500);
+  color: var(--color-space-100);
 }
 
-.btn--outline-uranus:hover:not(:disabled) {
+.btn--uranus:hover:not(:disabled) {
+  background-color: var(--color-uranus-400);
+  border-color: var(--color-uranus-400);
+}
+
+.btn--uranus:active:not(:disabled) {
+  background-color: var(--color-uranus-600);
   border-color: var(--color-uranus-600);
-  color: var(--color-uranus-600);
 }
 
-.btn--outline-uranus:active:not(:disabled) {
-  border-color: var(--color-uranus-700);
-  color: var(--color-uranus-700);
+.btn--venus {
+  background-color: var(--color-venus-400);
+  border: 2px solid var(--color-venus-400);
+  color: var(--color-space-100);
 }
 
-.btn--outline-venus {
-  background-color: var(--color-space-100);
-  border: 2px solid var(--color-venus-500);
-  color: var(--color-venus-500);
+.btn--venus:hover:not(:disabled) {
+  background-color: var(--color-venus-300);
+  border-color: var(--color-venus-300);
 }
 
-.btn--outline-venus:hover:not(:disabled) {
-  border-color: var(--color-venus-600);
-  color: var(--color-venus-600);
+.btn--venus:active:not(:disabled) {
+  background-color: var(--color-venus-500);
+  border-color: var(--color-venus-500);
 }
 
-.btn--outline-venus:active:not(:disabled) {
-  border-color: var(--color-venus-700);
-  color: var(--color-venus-700);
+.btn--mars {
+  background-color: var(--color-mars-500);
+  border: 2px solid var(--color-mars-500);
+  color: var(--color-space-100);
 }
 
-.btn--outline-earth {
-  background-color: var(--color-space-100);
-  border: 2px solid var(--color-earth-500);
-  color: var(--color-earth-500);
+.btn--mars:hover:not(:disabled) {
+  background-color: var(--color-mars-400);
+  border-color: var(--color-mars-400);
 }
 
-.btn--outline-earth:hover:not(:disabled) {
-  border-color: var(--color-earth-600);
-  color: var(--color-earth-600);
+.btn--mars:active:not(:disabled) {
+  background-color: var(--color-mars-600);
+  border-color: var(--color-mars-600);
 }
 
-.btn--outline-earth:active:not(:disabled) {
-  border-color: var(--color-earth-700);
-  color: var(--color-earth-700);
+.btn--earth {
+  background-color: var(--color-earth-400);
+  border: 2px solid var(--color-earth-400);
+  color: var(--color-moon-900);
+}
+
+.btn--earth:hover:not(:disabled) {
+  background-color: var(--color-earth-300);
+  border-color: var(--color-earth-300);
+}
+
+.btn--earth:active:not(:disabled) {
+  background-color: var(--color-earth-500);
+  border-color: var(--color-earth-500);
 }
 
 /* Button size modifiers */
@@ -88,52 +106,76 @@
   line-height: 35px;
 }
 
-/* Button color modifiers */
+/* Outline button */
 
-.btn--uranus {
-  background-color: var(--color-uranus-500);
+.btn--outline-uranus {
+  background-color: var(--color-space-100);
   border: 2px solid var(--color-uranus-500);
+  color: var(--color-uranus-500);
+}
+
+.btn--outline-uranus:hover:not(:disabled) {
+  background-color: var(--color-uranus-400);
+  border-color: var(--color-uranus-400);
   color: var(--color-space-100);
 }
 
-.btn--uranus:hover:not(:disabled) {
+.btn--outline-uranus:active:not(:disabled) {
   background-color: var(--color-uranus-600);
   border-color: var(--color-uranus-600);
-}
-
-.btn--uranus:active:not(:disabled) {
-  background-color: var(--color-uranus-700);
-  border-color: var(--color-uranus-700);
-}
-
-.btn--venus {
-  background-color: var(--color-venus-400);
-  border: 2px solid var(--color-venus-400);
   color: var(--color-space-100);
 }
 
-.btn--venus:hover:not(:disabled) {
+.btn--outline-venus {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-venus-400);
+  color: var(--color-venus-400);
+}
+
+.btn--outline-venus:hover:not(:disabled) {
+  background-color: var(--color-venus-300);
+  border-color: var(--color-venus-300);
+  color: var(--color-space-100);
+}
+
+.btn--outline-venus:active:not(:disabled) {
   background-color: var(--color-venus-500);
   border-color: var(--color-venus-500);
+  color: var(--color-space-100);
 }
 
-.btn--venus:active:not(:disabled) {
-  background-color: var(--color-venus-600);
-  border-color: var(--color-venus-600);
+.btn--outline-earth {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-earth-600);
+  color: var(--color-earth-600);
 }
 
-.btn--earth {
-  background-color: var(--color-earth-400);
-  border: 2px solid var(--color-earth-400);
+.btn--outline-earth:hover:not(:disabled) {
+  background-color: var(--color-earth-300);
+  border-color: var(--color-earth-300);
   color: var(--color-moon-900);
 }
 
-.btn--earth:hover:not(:disabled) {
+.btn--outline-earth:active:not(:disabled) {
   background-color: var(--color-earth-500);
   border-color: var(--color-earth-500);
+  color: var(--color-moon-900);
 }
 
-.btn--earth:active:not(:disabled) {
-  background-color: var(--color-earth-600);
-  border-color: var(--color-earth-600);
+.btn--outline-mars {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-mars-500);
+  color: var(--color-mars-500);
+}
+
+.btn--outline-mars:hover:not(:disabled) {
+  background-color: var(--color-mars-400);
+  border-color: var(--color-mars-400);
+  color: var(--color-space-100);
+}
+
+.btn--outline-mars:active:not(:disabled) {
+  background-color: var(--color-mars-600);
+  border-color: var(--color-mars-600);
+  color: var(--color-space-100);
 }

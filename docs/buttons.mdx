@@ -9,7 +9,7 @@ import { Playground } from 'docz'
 
 ## primary
 
-Primary buttons are medium sized and have a colored background. They aren't always blue, though, so there isn't a default "primary" look or CSS class - primary here is more of a concept.
+Primary buttons are medium sized and have a colored background. They aren't always the same color, though, so there isn't a default "primary" look or CSS class - primary here is more of a concept.
 
 Please note that color and size are built through CSS classes applied to the `<button>` element. You'll always need to specify color and size to get a complete button.
 
@@ -19,29 +19,53 @@ Mouseover and click to view `:hover` and `:active` states.
 
 <Playground>
   <button className="btn btn--uranus btn--medium">
-    primary
-  </button>
-  
-  <button className="btn btn--uranus btn--medium" disabled>
-    primary disabled
-  </button>
-</Playground>
-
-## colors
-
-Buttons can have different colors simply by changing their CSS color class.
-
-<Playground>
-  <button className="btn btn--uranus btn--medium">
     uranus
-  </button>
- 
-  <button className="btn btn--venus btn--medium">
-    venus
   </button>
 
   <button className="btn btn--earth btn--medium">
     earth
+  </button>
+
+  <button className="btn btn--venus btn--medium">
+    venus
+  </button>
+
+  <button className="btn btn--mars btn--medium">
+    mars
+  </button>
+  
+  <button className="btn btn--uranus btn--medium" disabled>
+    disabled
+  </button>
+</Playground>
+
+## outline
+
+Outline buttons can be used as secondary roles. Secondary buttons present secondary actions when there's already a primary action in the same section or screen.
+
+Please note that there are color variations to the outline CSS classes. You also need to specify their size with one of the size CSS classes.
+
+Mouseover and click to view `:hover` and `:active` states.
+
+<Playground>
+  <button className="btn btn--outline-uranus btn--medium">
+    outline uranus
+  </button>
+
+  <button className="btn btn--outline-earth btn--medium">
+    outline earth
+  </button>
+
+  <button className="btn btn--outline-venus btn--medium">
+    outline venus
+  </button>
+
+  <button className="btn btn--outline-mars btn--medium">
+    outline mars
+  </button>
+ 
+  <button className="btn btn--outline-venus btn--medium" disabled>
+    outline disabled
   </button>
 </Playground>
 
@@ -63,12 +87,6 @@ Buttons can have different sizes, also by changing their CSS size class.
   </button>
 </Playground>
 
-## outline
-
-Outline buttons can be used as secondary roles. Secondary buttons present secondary actions when there's already a primary action in the same section or screen.
-
-Please note that there are color variations to the outline CSS classes. You also need to specify their size with one of the size CSS classes.
-
 <Playground>
   <button className="btn btn--outline-uranus btn--small">
     outline uranus
@@ -81,31 +99,11 @@ Please note that there are color variations to the outline CSS classes. You also
   </button>
 </Playground>
 
-<Playground>
-  <button className="btn btn--outline-venus btn--medium">
-    outline venus
-  </button>
- 
-  <button className="btn btn--outline-venus btn--medium" disabled>
-    outline venus disabled
-  </button>
-</Playground>
-
-<Playground>
-  <button className="btn btn--outline-earth btn--medium">
-    outline earth
-  </button>
- 
-  <button className="btn btn--outline-earth btn--medium" disabled>
-    outline earth disabled
-  </button>
-</Playground>
-
 ## links
 
 For inline links in paragraphs and informative texts. If you're looking for buttons in `<a>` tags, see "buttons in `<a>` elements" below.
 
-Mouseover and click the link to view `:hover` and `:active` states.
+Mouseover and click to view `:hover` and `:active` states.
 
 <Playground>
   <a>inline link</a>
