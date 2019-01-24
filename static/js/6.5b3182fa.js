@@ -1,2 +1,2 @@
 (window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"./.docz/app/imports.js":function(n,o,t){"use strict";t.r(o),t.d(o,"imports",function(){return d});var d={"docs/buttons.mdx":function(){return Promise.all([t.e(0),t.e(2)]).then(t.bind(null,"./docs/buttons.mdx"))},"docs/index.mdx":function(){return t.e(3).then(t.bind(null,"./docs/index.mdx"))},"docs/typography.mdx":function(){return Promise.all([t.e(0),t.e(4)]).then(t.bind(null,"./docs/typography.mdx"))}}}},0,[0,2,4,3]]);
-//# sourceMappingURL=6.5ef09120f1f4206a5d93.js.map
+//# sourceMappingURL=6.11f89aea48cca353b68e.js.map
