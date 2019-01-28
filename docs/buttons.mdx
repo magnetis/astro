@@ -69,6 +69,36 @@ Mouseover and click to view `:hover` and `:active` states.
   </button>
 </Playground>
 
+## ghost buttons
+
+Ghost buttons are visually similar to inline links, but with the size and behavior of regular buttons.
+
+Aside from using the ghost button CSS class, you also need to specify size and color.
+
+Mouseover and click to view `:hover` and `:active` states.
+
+<Playground>
+  <button className="btn btn--ghost-uranus btn--medium">
+    ghost uranus
+  </button>
+
+  <button className="btn btn--ghost-earth btn--medium">
+    ghost earth
+  </button>
+
+  <button className="btn btn--ghost-venus btn--medium">
+    ghost venus
+  </button>
+
+  <button className="btn btn--ghost-mars btn--medium">
+    ghost mars
+  </button>
+ 
+  <button className="btn btn--ghost-venus btn--medium" disabled>
+    ghost disabled
+  </button>
+</Playground>
+
 ## sizes
 
 Buttons can have different sizes, also by changing their CSS size class.
@@ -89,13 +119,25 @@ Buttons can have different sizes, also by changing their CSS size class.
 
 <Playground>
   <button className="btn btn--outline-uranus btn--small">
-    outline uranus
+    outline small
   </button>
   <button className="btn btn--outline-uranus btn--medium">
-    outline uranus
+    outline medium
   </button>
   <button className="btn btn--outline-uranus btn--large">
-    outline uranus
+    outline large
+  </button>
+</Playground>
+
+<Playground>
+  <button className="btn btn--ghost-uranus btn--small">
+    ghost small
+  </button>
+  <button className="btn btn--ghost-uranus btn--medium">
+    ghost medium
+  </button>
+  <button className="btn btn--ghost-uranus btn--large">
+    ghost large
   </button>
 </Playground>
 

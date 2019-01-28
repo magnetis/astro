@@ -179,3 +179,105 @@
   border-color: var(--color-mars-600);
   color: var(--color-space-100);
 }
+
+.btn--outline-uranus:disabled,
+.btn--outline-venus:disabled,
+.btn--outline-earth:disabled,
+.btn--outline-mars:disabled,
+.btn--outline-uranus.disabled,
+.btn--outline-venus.disabled,
+.btn--outline-earth.disabled,
+.btn--outline-mars.disabled {
+  cursor: not-allowed;
+  background-color: var(--color-space-100);
+  border-color: var(--color-moon-200);
+  color: var(--color-moon-200);
+}
+
+/* Ghost button */
+
+.btn--ghost-uranus {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-space-100);
+  color: var(--color-uranus-500);
+}
+
+.btn--ghost-uranus:hover:not(:disabled) {
+  background-color: var(--color-moon-100);
+  border-color: var(--color-moon-100);
+  color: var(--color-uranus-400);
+}
+
+.btn--ghost-uranus:active:not(:disabled) {
+  background-color: var(--color-moon-200);
+  border-color: var(--color-moon-200);
+  color: var(--color-uranus-600);
+}
+
+.btn--ghost-venus {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-space-100);
+  color: var(--color-venus-400);
+}
+
+.btn--ghost-venus:hover:not(:disabled) {
+  background-color: var(--color-moon-100);
+  border-color: var(--color-moon-100);
+  color: var(--color-venus-300);
+}
+
+.btn--ghost-venus:active:not(:disabled) {
+  background-color: var(--color-moon-200);
+  border-color: var(--color-moon-200);
+  color: var(--color-venus-500);
+}
+
+.btn--ghost-earth {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-space-100);
+  color: var(--color-earth-600);
+}
+
+.btn--ghost-earth:hover:not(:disabled) {
+  background-color: var(--color-moon-100);
+  border-color: var(--color-moon-100);
+  color: var(--color-earth-300);
+}
+
+.btn--ghost-earth:active:not(:disabled) {
+  background-color: var(--color-moon-200);
+  border-color: var(--color-moon-200);
+  color: var(--color-earth-800);
+}
+
+.btn--ghost-mars {
+  background-color: var(--color-space-100);
+  border: 2px solid var(--color-space-100);
+  color: var(--color-mars-500);
+}
+
+.btn--ghost-mars:hover:not(:disabled) {
+  background-color: var(--color-moon-100);
+  border-color: var(--color-moon-100);
+  color: var(--color-mars-400);
+}
+
+.btn--ghost-mars:active:not(:disabled) {
+  background-color: var(--color-moon-200);
+  border-color: var(--color-moon-200);
+  color: var(--color-mars-600);
+}
+
+.btn--ghost-uranus:disabled,
+.btn--ghost-venus:disabled,
+.btn--ghost-earth:disabled,
+.btn--ghost-mars:disabled,
+.btn--ghost-uranus.disabled,
+.btn--ghost-venus.disabled,
+.btn--ghost-earth.disabled,
+.btn--ghost-mars.disabled {
+  cursor: not-allowed;
+  background-color: var(--color-space-100);
+  border-color: var(--color-space-100);
+  color: var(--color-moon-200);
+}
