@@ -1,0 +1,34 @@
+---
+name: Checkboxes
+---
+
+import "../src/index.css";
+import { Playground } from "docz";
+
+# controls & toggles
+
+## checkbox
+
+A simple example of checkbox
+
+<Playground>
+  <div className="checkbox">
+    <input type="checkbox" id="checkbox1" />
+    <label htmlFor="checkbox1">Checkbox</label>
+  </div>
+
+<div className="checkbox">
+  <input type="checkbox" id="checkbox2" checked />
+  <label htmlFor="checkbox2"> Checked </label>
+</div>
+
+<div className="checkbox checkbox--indeterminated">
+  <input type="checkbox" id="checkbox3" />
+  <label htmlFor="checkbox3"> Indeterminated </label>
+</div>
+
+  <div className="checkbox">
+    <input type="checkbox" id="checkbox4" disabled/>
+    <label htmlFor="checkbox4"> Disabled </label>
+  </div>
+</Playground>
