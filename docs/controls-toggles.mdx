@@ -1,5 +1,5 @@
 ---
-name: Checkboxes
+name: Controls & Toggles
 ---
 
 import "../src/index.css";
@@ -7,9 +7,11 @@ import { Playground } from "docz";
 
 # controls & toggles
 
-## checkbox
+## checkboxes
 
-A simple example of checkbox
+Checkboxes are used when the user can select multiple options from a list or when a single and specific action is required like, for example, reading a contract.
+
+Mouseover to view `:hover` state.
 
 <Playground>
   <div className="checkbox">
@@ -17,18 +19,18 @@ A simple example of checkbox
     <label htmlFor="checkbox1">Checkbox</label>
   </div>
 
-<div className="checkbox">
-  <input type="checkbox" id="checkbox2" checked />
-  <label htmlFor="checkbox2"> Checked </label>
-</div>
-
-<div className="checkbox checkbox--indeterminated">
-  <input type="checkbox" id="checkbox3" />
-  <label htmlFor="checkbox3"> Indeterminated </label>
-</div>
-
   <div className="checkbox">
-    <input type="checkbox" id="checkbox4" disabled/>
-    <label htmlFor="checkbox4"> Disabled </label>
+    <input type="checkbox" id="checkbox2" checked />
+    <label htmlFor="checkbox2">Checked</label>
+  </div>
+
+  <div className="checkbox checkbox--indeterminated">
+    <input type="checkbox" id="checkbox3" checked />
+    <label htmlFor="checkbox3">Indeterminated</label>
+  </div>
+
+  <div className="checkbox checkbox--disabled">
+    <input type="checkbox" id="checkbox4" disabled />
+    <label htmlFor="checkbox4">Disabled</label>
   </div>
 </Playground>
