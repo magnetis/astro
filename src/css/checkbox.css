@@ -2,7 +2,7 @@
   opacity: 0;
 }
 
-.astro__checkbox--disabled {
+.astro__checkbox--disabled > label {
   cursor: not-allowed;
   opacity: 0.2;
 }
