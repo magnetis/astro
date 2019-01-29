@@ -180,6 +180,8 @@
   color: var(--color-space-100);
 }
 
+/* stylelint-disable no-descending-specificity */
+
 .btn--outline-uranus:disabled,
 .btn--outline-venus:disabled,
 .btn--outline-earth:disabled,
@@ -193,6 +195,8 @@
   border-color: var(--color-moon-200);
   color: var(--color-moon-200);
 }
+
+/* stylelint-enable */
 
 /* Ghost button */
 
@@ -268,6 +272,8 @@
   color: var(--color-mars-600);
 }
 
+/* stylelint-disable no-descending-specificity */
+
 .btn--ghost-uranus:disabled,
 .btn--ghost-venus:disabled,
 .btn--ghost-earth:disabled,
@@ -281,3 +287,5 @@
   border-color: var(--color-space-100);
   color: var(--color-moon-200);
 }
+
+/* stylelint-enable */
