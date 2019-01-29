@@ -37,12 +37,12 @@
   width: 11px;
   height: 6px;
   transform: rotate(-45deg);
-  color: white;
+  color: var(--color-space-100);
   border-bottom: 2px solid;
   border-left: 2px solid;
 }
 
-.checkbox--indeterminated input[type='checkbox'] + label::after {
+.checkbox--indeterminate input[type='checkbox'] + label::after {
   top: 11px;
   left: 4px;
   width: 8px;
