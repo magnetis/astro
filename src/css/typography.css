@@ -1,33 +1,66 @@
-/* Looking for headings? They aren't here; headings are in h1-h4 element selectors in base.css file */
-
 /* Display */
 
-.text--display {
+.astro__text--display {
+  font: var(--font-primary);
   font-size: 64px;
   font-weight: 700;
+  color: var(--font-color);
 }
 
-/* Paragraph - medium size is in default p element */
+/* Title */
 
-p.text--small {
-  font-size: 12px;
+.astro__title--large {
+  font: var(--font-primary);
+  font-size: 48px;
+  color: var(--font-color);
 }
 
-p.text--large {
+.astro__title--medium {
+  font: var(--font-primary);
+  font-size: 40px;
+  color: var(--font-color);
+}
+
+.astro__title--small {
+  font: var(--font-primary);
+  font-size: 32px;
+  color: var(--font-color);
+}
+
+/* Paragraph */
+
+.astro__text--large {
+  font: var(--font-primary);
   font-size: 24px;
+  color: var(--font-color);
+}
+
+.astro__text--medium {
+  font: var(--font-primary);
+  color: var(--font-color);
+}
+
+.astro__text--small {
+  font: var(--font-primary);
+  font-size: 12px;
+  color: var(--font-color);
 }
 
 /* Secondary font */
 
-p.text--secondary {
-  font-family: 'Lato', sans-serif;
+.astro__text--secondary--large {
+  font: var(--font-secondary);
   font-size: 24px;
+  color: var(--font-color);
 }
 
-p.text--secondary.text--small {
-  font-size: 16px;
+.astro__text--secondary--medium {
+  font: var(--font-secondary);
+  color: var(--font-color);
 }
 
-p.text--secondary.text--large {
-  font-size: 32px;
+.astro__text--secondary--small {
+  font: var(--font-secondary);
+  font-size: 12px;
+  color: var(--font-color);
 }

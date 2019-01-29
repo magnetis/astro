@@ -1,13 +1,13 @@
-.checkbox > input[type='checkbox'] {
+.astro__checkbox > input[type='checkbox'] {
   opacity: 0;
 }
 
-.checkbox--disabled {
+.astro__checkbox--disabled {
   cursor: not-allowed;
   opacity: 0.2;
 }
 
-.checkbox > label {
+.astro__checkbox > label {
   position: relative;
   display: inline-block;
   padding-left: 24px;
@@ -15,14 +15,14 @@
   font-size: 16px;
 }
 
-.checkbox > label::before,
-.checkbox > label::after {
+.astro__checkbox > label::before,
+.astro__checkbox > label::after {
   position: absolute;
   display: inline-block;
   content: '';
 }
 
-.checkbox > label::before {
+.astro__checkbox > label::before {
   top: 4px;
   left: 0;
   width: 16px;
@@ -31,7 +31,7 @@
   border-radius: 2px;
 }
 
-.checkbox > label::after {
+.astro__checkbox > label::after {
   top: 8px;
   left: 3px;
   width: 11px;
@@ -42,7 +42,7 @@
   border-left: 2px solid;
 }
 
-.checkbox--indeterminate > input[type='checkbox'] + label::after {
+.astro__checkbox--indeterminate > input[type='checkbox'] + label::after {
   top: 11px;
   left: 4px;
   width: 8px;
@@ -50,23 +50,23 @@
   border-left: 0;
 }
 
-.checkbox > input[type='checkbox'] + label::after {
+.astro__checkbox > input[type='checkbox'] + label::after {
   content: none;
 }
 
-.checkbox > input[type='checkbox']:checked + label::after {
+.astro__checkbox > input[type='checkbox']:checked + label::after {
   content: '';
 }
 
-.checkbox > input[type='checkbox']:checked + label::before {
+.astro__checkbox > input[type='checkbox']:checked + label::before {
   border-color: var(--color-uranus-500);
   background-color: var(--color-uranus-500);
 }
 
-.checkbox > input[type='checkbox']:disabled + label::before {
+.astro__checkbox > input[type='checkbox']:disabled + label::before {
   opacity: 0.5;
 }
 
-.checkbox > input[type='checkbox']:hover:not(:disabled) + label::before {
+.astro__checkbox > input[type='checkbox']:hover:not(:disabled) + label::before {
   border-color: var(--color-uranus-500);
 }

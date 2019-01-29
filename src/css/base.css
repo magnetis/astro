@@ -1,9 +1,6 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-moon-900);
+.astro__body { /* styles replicated in typography to allow isolation */
+  font: var(--font-primary);
+  color: var(--font-color);
   text-rendering: optimizeLegibility;
 }
 
@@ -23,51 +20,27 @@ img {
   height: auto;
 }
 
-h1,
-.h1 {
-  font-size: 48px;
-  font-weight: 700;
+li,
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-h2,
-.h2 {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-h3,
-.h3 {
-  font-size: 32px;
-  font-weight: 600;
-}
-
-h4,
-.h4 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-a {
+.astro__link {
   color: var(--color-uranus-700);
   text-decoration: underline;
   cursor: pointer;
   word-wrap: break-word;
 }
 
-a:hover {
+.astro__link:hover {
   color: var(--color-uranus-500);
 }
 
-a:active {
+.astro__link:active {
   color: var(--color-uranus-800);
 }
 
-a.btn {
+.astro__link.astro__btn {
   text-decoration: none;
-}
-
-li,
-ul {
-  list-style: none;
-  padding: 0;
 }

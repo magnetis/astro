@@ -1,0 +1,5 @@
+:root {
+  --font-primary: 600 16px/1.5 Poppins, sans-serif;
+  --font-secondary: 500 16px/1.5 Lato, sans-serif;
+  --font-color: var(--color-moon-900);
+}
