@@ -7,6 +7,29 @@ import { Playground } from 'docz'
 
 # controls & toggles
 
+## radio buttons
+
+Radio buttons appear when the user must select only one option from more than two.
+
+Mouseover to view `:hover` state.
+
+<Playground>
+  <div className="radiobutton">
+    <input type="radio" id="radiobutton1" name="radiobutton" />
+    <label htmlFor="radiobutton1">Radio</label>
+  </div>
+
+  <div className="radiobutton">
+    <input type="radio" id="radiobutton2" name="radiobutton" checked />
+    <label htmlFor="radiobutton2">Selected</label>
+  </div>
+
+  <div className="radiobutton radiobutton--disabled">
+    <input type="radio" id="radiobutton3" name="radiobutton" disabled />
+    <label htmlFor="radiobutton3">Disabled</label>
+  </div>
+</Playground>
+
 ## checkboxes
 
 Checkboxes are used when a user might select multiple options from a list, or when a single specific action is required - like reading a contract.
