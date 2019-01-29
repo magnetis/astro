@@ -67,7 +67,7 @@ Here's a quick example. If you'd like to create a Display text styled in Astro t
 
 3. Go to Astro's [Typography page](https://magnetis.github.io/astro/#/docs-typography);
 
-4. See that the "Display" section guides you to create a `<p>` element with the `text--display` class;
+4. See that the "Display" section guides you to create a `<p>` element with a specific text display class;
 
 5. Replicate the instructions in your page file and make sure the correct styles have been applied;
 
