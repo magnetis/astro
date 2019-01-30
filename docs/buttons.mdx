@@ -157,7 +157,7 @@ Mouseover and click to view `:hover` and `:active` states.
 
 Although button classes are designed for `<button>` elements, you may also use them with `<a>` elements when semantically recommended. Note that some browsers may render them slightly differently. 
 
-`<a>` elements don't have a `:disabled` attribute/pseudo selector, so if you need such state, you'll have to add a `disabled` class like the example below.
+`<a>` elements don't have a `:disabled` attribute/pseudo selector, so if you need such state, you'll have to add the `a-btn--disabled` class like the example below.
 
 If your `<a>` button triggers in-page functionalities instead of linking (to other pages or within the current page), make them semantically accessible by adding a `role="button"`.
 
@@ -165,7 +165,7 @@ If your `<a>` button triggers in-page functionalities instead of linking (to oth
   <a className="a-btn a-btn--uranus a-btn--medium">
     link button
   </a>
-  <a className="a-btn a-btn--uranus a-btn--medium disabled">
+  <a className="a-btn a-btn--uranus a-btn--medium a-btn--disabled">
     link button disabled
   </a>
 </Playground>
