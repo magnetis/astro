@@ -1,66 +1,60 @@
+/* Default styles */
+
+.a-text--display,
+.a-title--large,
+.a-title--medium,
+.a-title--small,
+.a-text--large,
+.a-text--medium,
+.a-text--small {
+  font: var(--font-primary);
+  color: var(--font-color);
+}
+
+.a-text--secondary-large,
+.a-text--secondary-medium,
+.a-text--secondary-small {
+  font: var(--font-secondary);
+  color: var(--font-color);
+}
+
 /* Display */
 
 .a-text--display {
-  font: var(--font-primary);
   font-size: 64px;
   font-weight: 700;
-  color: var(--font-color);
 }
 
 /* Title */
 
 .a-title--large {
-  font: var(--font-primary);
   font-size: 48px;
-  color: var(--font-color);
 }
 
 .a-title--medium {
-  font: var(--font-primary);
   font-size: 40px;
-  color: var(--font-color);
 }
 
 .a-title--small {
-  font: var(--font-primary);
   font-size: 32px;
-  color: var(--font-color);
 }
 
 /* Paragraph */
 
 .a-text--large {
-  font: var(--font-primary);
   font-size: 24px;
-  color: var(--font-color);
-}
-
-.a-text--medium {
-  font: var(--font-primary);
-  color: var(--font-color);
 }
 
 .a-text--small {
-  font: var(--font-primary);
   font-size: 12px;
-  color: var(--font-color);
 }
 
 /* Secondary font */
 
-.a-text--secondary--large {
-  font: var(--font-secondary);
+.a-text--secondary-large {
   font-size: 24px;
-  color: var(--font-color);
 }
 
-.a-text--secondary--medium {
-  font: var(--font-secondary);
-  color: var(--font-color);
-}
-
-.a-text--secondary--small {
-  font: var(--font-secondary);
+.a-text--secondary-small {
   font-size: 12px;
-  color: var(--font-color);
 }
