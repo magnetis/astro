@@ -1,6 +1,6 @@
 /* Display */
 
-.astro__text--display {
+.a-text--display {
   font: var(--font-primary);
   font-size: 64px;
   font-weight: 700;
@@ -9,19 +9,19 @@
 
 /* Title */
 
-.astro__title--large {
+.a-title--large {
   font: var(--font-primary);
   font-size: 48px;
   color: var(--font-color);
 }
 
-.astro__title--medium {
+.a-title--medium {
   font: var(--font-primary);
   font-size: 40px;
   color: var(--font-color);
 }
 
-.astro__title--small {
+.a-title--small {
   font: var(--font-primary);
   font-size: 32px;
   color: var(--font-color);
@@ -29,18 +29,18 @@
 
 /* Paragraph */
 
-.astro__text--large {
+.a-text--large {
   font: var(--font-primary);
   font-size: 24px;
   color: var(--font-color);
 }
 
-.astro__text--medium {
+.a-text--medium {
   font: var(--font-primary);
   color: var(--font-color);
 }
 
-.astro__text--small {
+.a-text--small {
   font: var(--font-primary);
   font-size: 12px;
   color: var(--font-color);
@@ -48,18 +48,18 @@
 
 /* Secondary font */
 
-.astro__text--secondary--large {
+.a-text--secondary--large {
   font: var(--font-secondary);
   font-size: 24px;
   color: var(--font-color);
 }
 
-.astro__text--secondary--medium {
+.a-text--secondary--medium {
   font: var(--font-secondary);
   color: var(--font-color);
 }
 
-.astro__text--secondary--small {
+.a-text--secondary--small {
   font: var(--font-secondary);
   font-size: 12px;
   color: var(--font-color);
