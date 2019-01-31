@@ -50,14 +50,6 @@
   border-left: 0;
 }
 
-.a-checkbox > input[type='checkbox'] + label::after {
-  content: none;
-}
-
-.a-checkbox > input[type='checkbox']:checked + label::after {
-  content: '';
-}
-
 .a-checkbox > input[type='checkbox']:checked + label::before {
   border-color: var(--color-uranus-500);
   background-color: var(--color-uranus-500);
