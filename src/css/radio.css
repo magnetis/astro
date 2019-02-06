@@ -41,7 +41,6 @@
 
 .a-radio > input[type='radio']:checked + label::before {
   border: solid 5px var(--color-uranus-500);
-  background-color: var(--color-space-100);
 }
 
 /* Disabled state */
