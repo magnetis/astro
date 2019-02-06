@@ -1,0 +1,62 @@
+/* Hiding standard input */
+
+.a-radio > input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Label design */
+
+.a-radio > label {
+  display: flex;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  align-items: top;
+}
+
+/* Middle alignment */
+
+.a-radio--align-middle > label {
+  align-items: center;
+}
+
+.a-radio--align-middle > label::before {
+  margin-top: 0;
+}
+
+/* Radio button design */
+
+.a-radio > label::before {
+  min-width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  margin-right: 6px;
+  content: '';
+  border: 2px solid var(--color-moon-500);
+  border-radius: 100%;
+  background-color: var(--color-space-100);
+}
+
+/* Checked state */
+
+.a-radio > input[type='radio']:checked + label::before {
+  border: solid 5px var(--color-uranus-500);
+  background-color: var(--color-space-100);
+}
+
+/* Disabled state */
+
+.a-radio--disabled > label {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+.a-radio > input[type='radio']:disabled + label::before {
+  opacity: 0.5;
+}
+
+/* Hover state */
+
+.a-radio > input[type='radio']:hover:not(:disabled) + label::before {
+  border-color: var(--color-uranus-500);
+}
