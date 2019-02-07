@@ -8,6 +8,7 @@ Our design system and components are documented with [Docz](https://www.docz.sit
 
 - [Setup and running](#setup-and-running)
 - [Updating the documentation](#updating-the-documentation)
+- [Staging the documentation](#staging-the-documentation)
 - [Publishing your changes to Astro online docs](#publishing-your-changes-to-astro-online-docs)
 - [Troubleshooting](#troubleshooting)
 
@@ -72,6 +73,10 @@ Inside `<Playground>`, you can add new components, edit their attributes or thei
 Everything else in that example is Markdown. That's where titles and descriptions go, which can also be edited.
 
 Wanna dive deeper into Docz? You can [read their tutorial](https://www.docz.site/introduction/getting-started).
+
+### Staging the documentation
+
+There isn't a staging environment because GitHub Pages only works on one branch per repository. We recommend using [Localtunnel](https://localtunnel.github.io/www/) to generate a public URL that makes your locally running server accessible by anyone. It's a super simple, two-step process to which you'll find instructions on their website.
 
 ### Publishing your changes to Astro online docs
 
