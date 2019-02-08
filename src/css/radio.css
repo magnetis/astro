@@ -9,7 +9,7 @@
 
 .a-radio > label {
   display: flex;
-  font-family: var(--font-secondary);
+  font: var(--font-secondary);
   font-size: 16px;
   align-items: top;
 }
