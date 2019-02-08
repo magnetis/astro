@@ -2,6 +2,9 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.3.0] - 2019-02-08
+- Add toggle and radio button components to Controls & Toggles.
+
 ### [0.2.1] - 2019-01-31
 - Rebuild to update `astro.css`, which was outdated.
 
