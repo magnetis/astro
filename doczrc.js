@@ -20,10 +20,11 @@ export default {
         fontFamily: "'Poppins', sans-serif",
       },
       playground: {
+        padding: 16,
         '& > *': {
           boxSizing: 'border-box',
-          margin: '5px'
-        }
+          margin: 12,
+        },
       }
     }
   }

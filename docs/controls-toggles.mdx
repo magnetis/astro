@@ -76,3 +76,31 @@ Mouseover to view `:hover` state.
     <label htmlFor="checkbox4">Disabled</label>
   </div>
 </Playground>
+
+## toggles
+
+A simple control that is used to quickly switch between two possible states.
+
+Mouseover to view `:hover` state.
+
+<Playground>
+  <div className="a-toggle">
+    <label htmlFor="toggle1">off</label>
+    <input type="checkbox" id="toggle1" />
+  </div>
+
+  <div className="a-toggle">
+    <label htmlFor="toggle2">on</label>
+    <input type="checkbox" id="toggle2" checked />
+  </div>
+
+  <div className="a-toggle a-toggle--disabled">
+    <label htmlFor="toggle3">off disabled</label>
+    <input type="checkbox" id="toggle3" disabled />
+  </div>
+
+  <div className="a-toggle a-toggle--disabled">
+    <label htmlFor="toggle4">on disabled</label>
+    <input type="checkbox" id="toggle4" checked disabled />
+  </div>
+</Playground>

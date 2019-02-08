@@ -1,0 +1,87 @@
+/* Variables */
+
+.a-toggle {
+  --toggle-base-width: 50px;
+  --toggle-base-height: 30px;
+  --toggle-circle-size: 28px;
+
+  display: inline-block;
+}
+
+/* Hide standard input */
+
+.a-toggle > input[type='checkbox'] {
+  position: relative;
+  visibility: hidden;
+  width: var(--toggle-base-width);
+  height: var(--toggle-base-height);
+  vertical-align: middle;
+}
+
+/* Label */
+
+.a-toggle > label {
+  margin-right: 8px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+}
+
+/* Base */
+
+.a-toggle > input[type='checkbox']::before {
+  display: block;
+  visibility: visible;
+  width: var(--toggle-base-width);
+  height: var(--toggle-base-height);
+  content: '';
+  transition: background-color 100ms linear;
+  border-radius: var(--toggle-circle-size);
+  background-color: var(--color-moon-400);
+}
+
+/* Circle */
+
+.a-toggle > input[type='checkbox']::after {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: block;
+  visibility: visible;
+  width: var(--toggle-circle-size);
+  height: var(--toggle-circle-size);
+  content: '';
+  transition: left 100ms ease-in-out;
+  border-radius: var(--toggle-circle-size);
+  background-color: var(--color-space-100);
+}
+
+/* On state */
+
+.a-toggle > input[type='checkbox']:checked::before {
+  background-color: var(--color-uranus-500);
+}
+
+.a-toggle > input[type='checkbox']:checked::after {
+  top: 1px;
+  left: 21px;
+}
+
+/* Hover state on */
+
+.a-toggle > input[type='checkbox']:not(:disabled):hover::before {
+  background-color: var(--color-uranus-400);
+}
+
+/* Hover state off */
+
+.a-toggle > input[type='checkbox']:not(:checked):not(:disabled):hover::before {
+  background-color: var(--color-moon-300);
+}
+
+/* Disabled state */
+
+.a-toggle--disabled > label,
+.a-toggle > input[type='checkbox']:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}

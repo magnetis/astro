@@ -1,10 +1,11 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import '../node_modules/flexboxgrid/dist/flexboxgrid.min.css';
 @import './css/colors.css';
+@import './css/gradients.css';
 @import './css/fonts.css';
 @import './css/base.css';
 @import './css/typography.css';
 @import './css/radio.css';
 @import './css/checkbox.css';
 @import './css/buttons.css';
-@import './css/gradients.css';
+@import './css/toggle.css';
