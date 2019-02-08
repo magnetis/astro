@@ -10,7 +10,6 @@
 .a-radio > label {
   display: flex;
   font: var(--font-secondary);
-  font-size: 16px;
   align-items: top;
 }
 
@@ -58,4 +57,11 @@
 
 .a-radio > input[type='radio']:hover:not(:disabled) + label::before {
   border-color: var(--color-uranus-500);
+}
+
+/* Cursor */
+
+.a-radio > input[type='radio']:hover:not(:disabled),
+.a-radio > input[type='radio']:hover:not(:disabled) + label {
+  cursor: pointer;
 }

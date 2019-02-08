@@ -11,8 +11,7 @@
   position: relative;
   display: inline-block;
   padding-left: 24px;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font: var(--font-secondary);
 }
 
 .a-checkbox > label::before,
@@ -61,4 +60,8 @@
 
 .a-checkbox > input[type='checkbox']:hover:not(:disabled) + label::before {
   border-color: var(--color-uranus-500);
+}
+
+.a-checkbox > input[type='checkbox']:hover:not(:disabled) + label {
+  cursor: pointer;
 }
