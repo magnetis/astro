@@ -20,10 +20,10 @@
   "scripts": {
     "docz:dev": "docz dev",
     "docs:build": "docz build",
-    "docs:publish": "npm run-script docs:build && gh-pages --dist .docz/dist --message 'Update site [ci skip]'",
+    "docs:publish": "yarn run-script docs:build && gh-pages --dist .docz/dist --message 'Update site [ci skip]'",
     "build": "postcss src/index.css -o dist/astro.css",
     "lint:css": "stylelint src/css/**/*.css",
-    "ci:build": "npm run build && npm run lint:css"
+    "ci:build": "yarn run build && yarn run lint:css"
   },
   "dependencies": {
     "flexboxgrid": "^6.3.1",
