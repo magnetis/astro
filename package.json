@@ -32,8 +32,9 @@
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "cssnano": "^4.1.0",
-    "docz": "0.12.17",
+    "docz": "^0.13.7",
     "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^0.13.7",
     "gh-pages": "^2.0.1",
     "postcss-cli": "^6.0.0",
     "postcss-css-variables": "^0.11.0",
