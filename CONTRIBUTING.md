@@ -20,19 +20,19 @@ Please follow these steps to run the project and start coding:
 
 2. If you previously cloned Astro, run `git pull` to get the latest update from the remote repository. Always do this when you come back to the project.
 
-3. For the next step, you need to install the dependencies on your machine. Still on your terminal, run `yarn install` or `npm install` (depending on which package manager you're using).
+3. For the next step, you need to install the dependencies on your machine. Still on your terminal, run `yarn install`.
 
 4. Create a new branch to work on, with the command `git checkout -b yourbranch` (replace "yourbranch" with your branch name).
 
-5. You're now ready to run Docz with the Astro documentation on your local server. Run `yarn docz:dev` or `npm run docz:dev` and visit [localhost:3000](http://localhost:3000/).
+5. You're now ready to run Docz with the Astro documentation on your local server. Run `yarn docz:dev` and visit [localhost:3000](http://localhost:3000/).
 
 6. Find the file(s) you wish to edit in the folders below:
 
-    - Design system base CSS files: `src/css` folder - if you create a new file here, please add the import to `src/index.css`.
+   - Design system base CSS files: `src/css` folder - if you create a new file here, please add the import to `src/index.css`.
 
-    - Import fonts to Docz: `public/docz.html`. If you make any changes to this file, you'll only be able to view them if you stop your local server (hit "control + C" on your terminal) and run it again (step 4).
+   - Import fonts to Docz: `public/docz.html`. If you make any changes to this file, you'll only be able to view them if you stop your local server (hit "control + C" on your terminal) and run it again (step 4).
 
-    - Docz documentation pages including components: `docs` folder.
+   - Docz documentation pages including components: `docs` folder.
 
 7. You can view your changes by refreshing the page at [localhost:3000](http://localhost:3000/) (it refreshes automatically as you save files on your editor, though).
 
@@ -64,7 +64,7 @@ import { Button } from './Button'
 
 The top of the file displays the page name and, below that, the imports. That's where React components can be imported into documentation pages, like the `Button` component in the example above.
 
-The `<Playground>` component is how you can render your component *and* show its code in a single view. See how the above example looks like when it's rendered:
+The `<Playground>` component is how you can render your component _and_ show its code in a single view. See how the above example looks like when it's rendered:
 
 <img src="example.png" alt="Rendered example of a Docz page" width="600">
 
@@ -84,7 +84,7 @@ We **don't** update the online docs everytime there's a new merge to master. You
 
 Here's how to deploy to GitHub Pages:
 
-In your terminal, after merging: checkout to master, do `git pull` and run `yarn docs:publish` or `npm run docs:publish` to deploy.
+In your terminal, after merging: checkout to master, do `git pull` and run `yarn docs:publish` to deploy.
 
 Visit [magnetis.github.io/astro](https://magnetis.github.io/astro/) and make sure your changes go live! 🎉 While you're there, please check if everything still looks okay.
 
