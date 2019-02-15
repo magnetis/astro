@@ -14,5 +14,8 @@ node_modules/
 *.tgz
 .docz
 
-#VSCode local config
+# VSCode local config
 .vscode
+
+# NPM lock file
+package-lock.json
