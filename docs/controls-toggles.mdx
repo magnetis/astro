@@ -111,14 +111,35 @@ Sliders give users a visual indication of adjustable content, mostly numerical (
 
 Adjust `min` and `max` attributes to set the value range. If you need to manipulate the slider handle position, use the `value` attribute. You must also set an unique `id` for each slider in your page.
 
+Mouseover and click to view `:hover` and `:active` state.
+
 width
 
 <Playground>
   <div className="a-slider">
     <label htmlFor="slider1">
-      Active
+      Slider
       <span className="a-slider--value">10 coins</span>
     </label>
     <input type="range" min="1" max="100" id="slider1" />
   </div>
+
+    <div className="a-slider">
+    <label htmlFor="slider1">
+      Slider
+      <span className="a-slider--value">10 coins</span>
+    </label>
+    <input type="range" min="1" max="100" id="slider1" disabled />
+  </div>
 </Playground>
+
+
+let slider = document.querySelector("#slider");
+
+slider.addEventListener("input", function (){
+   
+  let sliderValue = slider.value;
+  slider.style.setProperty("--slider-percentage", sliderValue + "%");
+})
+
+TODO: checar cor das labels dos outros elementos e erro do console
