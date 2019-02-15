@@ -3,6 +3,6 @@ node_js:
   - "node"
   - "lts/*"
 install:
-  - npm install -g postcss-cli
-  - npm install
-script: npm run ci:build
+  - yarn global add postcss-cli
+  - yarn
+script: yarn ci:build
