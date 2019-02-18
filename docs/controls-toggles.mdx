@@ -4,6 +4,7 @@ name: Controls & Toggles
 
 import '../src/index.css'
 import { Playground } from 'docz'
+import './js/controls-toggles'
 
 # controls & toggles
 
@@ -111,35 +112,29 @@ Sliders give users a visual indication of adjustable content, mostly numerical (
 
 Adjust `min` and `max` attributes to set the value range. If you need to manipulate the slider handle position, use the `value` attribute. You must also set an unique `id` for each slider in your page.
 
-Mouseover and click to view `:hover` and `:active` state.
+We recommend you set the slider width in the `a-slider` class.
 
-width
+Mouseover and click to view `:hover` and `:active` state.
 
 <Playground>
   <div className="a-slider">
+    <input type="range" min="1" max="100" id="slider1" />
     <label htmlFor="slider1">
       Slider
-      <span className="a-slider--value">10 coins</span>
+      <span className="a-slider--value">50 coins</span>
     </label>
-    <input type="range" min="1" max="100" id="slider1" />
   </div>
 
-    <div className="a-slider">
-    <label htmlFor="slider1">
-      Slider
-      <span className="a-slider--value">10 coins</span>
-    </label>
+  <div className="a-slider">
     <input type="range" min="1" max="100" id="slider1" disabled />
+    <label htmlFor="slider1">
+      Disabled
+      <span className="a-slider--value">0 coins</span>
+    </label>
   </div>
 </Playground>
 
 
-let slider = document.querySelector("#slider");
 
-slider.addEventListener("input", function (){
-   
-  let sliderValue = slider.value;
-  slider.style.setProperty("--slider-percentage", sliderValue + "%");
-})
 
 TODO: checar cor das labels dos outros elementos e erro do console

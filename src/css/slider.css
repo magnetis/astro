@@ -4,10 +4,9 @@
   --slider-percentage: 50%;
 }
 
-/* Adjust this to change slider width */
-
 .a-slider {
-  width: 315px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /* Reset standard input styles */
@@ -22,7 +21,7 @@
 
 .a-slider > label {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font: var(--font-secondary);
   color: var(--font-color);
 }
@@ -30,6 +29,10 @@
 .a-slider--value {
   margin-left: auto;
   font-weight: 600;
+}
+
+.a-slider > input[type='range']:disabled ~ label {
+  color: var(--color-moon-200);
 }
 
 /* Chrome - always replicate styles for each browser, it's the only way :( */
@@ -120,6 +123,16 @@
   background-color: var(--color-uranus-400);
 }
 
+.a-slider > input[type='range']:disabled::-moz-range-track {
+  background-image: none;
+  background-color: var(--color-moon-200);
+  cursor: not-allowed;
+}
+
+.a-slider > input[type='range']:disabled::-moz-range-thumb {
+  display: none;
+}
+
 /* IE - always replicate styles for each browser, it's the only way :( */
 
 .a-slider > input[type='range']::-ms-track {
@@ -157,4 +170,14 @@
   height: 20px;
   box-shadow: 0 0 0 4px var(--color-uranus-300);
   background-color: var(--color-uranus-400);
+}
+
+.a-slider > input[type='range']:disabled::-ms-track {
+  background-image: none;
+  background-color: var(--color-moon-200);
+  cursor: not-allowed;
+}
+
+.a-slider > input[type='range']:disabled::-ms-thumb {
+  display: none;
 }
