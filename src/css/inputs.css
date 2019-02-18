@@ -1,0 +1,43 @@
+.a-input {
+  position: relative;
+  margin-bottom: 46px;
+}
+
+.a-input > input {
+  width: 342px;
+  height: 56px;
+  padding: 8px 16px 0;
+  border: 1px solid var(--color-moon-500);
+  border-radius: 8px;
+  background-color: var(--color-space-100);
+}
+
+.a-input > label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+  color: var(--color-moon-300);
+  font: var(--font-secondary);
+}
+
+.a-input > input:focus {
+  border: 1px solid var(--color-uranus-500);
+  outline: none;
+}
+
+.a-input > input:focus + label {
+  top: 5px;
+  color: #159ce4;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+}
+
+.a-input > input:valid + label {
+  top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+}
