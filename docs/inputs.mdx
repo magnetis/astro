@@ -4,14 +4,40 @@ name: Inputs
 
 import '../src/index.css';
 import { Playground } from 'docz';
+import './js/inputs';
 
 # Inputs
 
 ## standard text inputs
 
+The regular input. Labels appear on the default state and slightly move upwards when the user starts interacting and typing on the component.
+
+The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
+
 <Playground>
-  <div class="a-input">      
-    <input type="text" required/>
-    <label>Name</label>
+  <div className="a-input">      
+    <input type="text"/>
+    <label>Standard</label>
   </div>
-</Playground> 
+
+  <div className="a-input a-input--validated">      
+    <input type="text" defaultValue="Astro Team" />
+    <label>Validated</label>
+  </div>
+
+  <div className="a-input a-input--invalid">      
+    <input type="text" defaultValue="Astro Team"/>
+    <label>Invalid</label>
+    <span className="a-input__error">Esse dado é inválido</span>
+  </div>
+    
+  <div className="a-input">      
+    <input type="text" defaultValue="Astro Team"/>
+    <label>Filled</label>
+  </div>
+  
+  <div className="a-input a-input--disabled">      
+    <input type="text" disabled/>
+    <label>Disabled</label>
+  </div>
+</Playground>
