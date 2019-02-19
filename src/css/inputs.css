@@ -1,6 +1,6 @@
 .a-input {
   position: relative;
-  margin-bottom: 46px;
+  display: inline-block;
 }
 
 .a-input > input {
@@ -22,6 +22,22 @@
   font: var(--font-secondary);
 }
 
+.a-input--validated > input {
+  border: 1px solid var(--color-earth-400);
+}
+
+.a-input--validated > label {
+  color: var(--color-moon-300);
+}
+
+.a-input--invalid > input {
+  border: 1px solid var(--color-mars-500);
+}
+
+.a-input--invalid > label {
+  color: var(--color-mars-500);
+}
+
 .a-input > input:focus {
   border: 1px solid var(--color-uranus-500);
   outline: none;
@@ -29,15 +45,75 @@
 
 .a-input > input:focus + label {
   top: 5px;
-  color: #159ce4;
+  color: var(--color-uranus-500);
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
 }
 
-.a-input > input:valid + label {
+.a-input > .a-input--floating-label {
   top: 5px;
   font-size: 12px;
   font-weight: bold;
   line-height: 15px;
+}
+
+.a-input--validated > input:focus + label {
+  color: var(--color-earth-400);
+}
+
+.a-input--validated > input:focus {
+  border: 1px solid var(--color-earth-400);
+  outline: none;
+}
+
+.a-input--validated::after {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  content: '';
+  background: url('../../assests/icons/validated-input.svg') center no-repeat;
+}
+
+.a-input--invalid > input:focus + label {
+  color: var(--color-mars-500);
+}
+
+.a-input--invalid > input:focus {
+  border: 1px solid var(--color-mars-500);
+  outline: none;
+}
+
+.a-input--invalid::after {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  content: '';
+  background: url('../../assests/icons/invalid-input.svg') center no-repeat;
+}
+
+.a-input > .a-input__error {
+  position: absolute;
+  display: block;
+  margin: 4px 16px;
+  color: var(--color-mars-500);
+  font: var(--font-secondary);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.a-input--disabled > input:disabled {
+  cursor: not-allowed;
+  border: 1px solid var(--color-moon-200);
+  background-color: var(--color-moon-100);
+}
+
+.a-input--disabled > input:disabled + label {
+  cursor: not-allowed;
+  color: var(--color-moon-300);
+  font: var(--font-secondary);
 }
