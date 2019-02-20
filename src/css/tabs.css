@@ -1,24 +1,37 @@
 /* Base */
 
 .a-tabs {
+  position: relative;
   display: flex;
   width: 100%;
-  padding: 4px;
+  flex-wrap: wrap;
+}
+
+/* Optional border */
+
+.a-tabs__border {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 48px;
   border: solid 1px var(--color-moon-300);
   border-radius: 24px;
 }
 
-/* Default input */
+/* Default component */
 
-.a-tabs > input[type='radio'] {
+.a-tabs > .a-tabs__item {
   position: absolute;
   opacity: 0;
 }
 
-/* Label design */
+/* Tab */
 
-.a-tabs > label {
+.a-tabs > .a-tabs__label {
+  z-index: 2;
+  margin: 4px 0;
   padding: 11px 32px;
+  transition: background-color 0.3s ease, color 0.3s ease;
   text-align: center;
   text-transform: lowercase;
   color: var(--color-moon-500);
@@ -28,22 +41,39 @@
   flex: 1;
 }
 
-/* Content panel */
+.a-tabs > .a-tabs__label:first-of-type {
+  margin-left: 4px;
+}
+
+.a-tabs > .a-tabs__label:last-of-type {
+  margin-right: 4px;
+}
+
+/* Contents */
 
 .a-tabs > .a-tabs__content {
   display: none;
+  width: 100%;
+  padding: 16px;
+  order: 99;
+}
+
+/* Current content */
+
+.a-tabs > .a-tabs__item:checked + .a-tabs__label + .a-tabs__content {
+  display: block;
 }
 
 /* Active state */
 
-.a-tabs > input[type='radio']:checked + label {
+.a-tabs > .a-tabs__item:checked + .a-tabs__label {
   color: var(--color-space-100);
   background-color: var(--color-uranus-500);
 }
 
 /* Hover state */
 
-.a-tabs > input[type='radio']:not(:checked):hover + label {
+.a-tabs > .a-tabs__item:not(:checked):hover + .a-tabs__label {
   cursor: pointer;
   background-color: var(--color-moon-100);
 }
