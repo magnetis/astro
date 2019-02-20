@@ -46,11 +46,11 @@
 
 .a-radio--disabled > label {
   cursor: not-allowed;
-  opacity: 0.2;
+  color: var(--color-moon-200);
 }
 
 .a-radio > input[type='radio']:disabled + label::before {
-  opacity: 0.5;
+  border-color: var(--color-moon-200);
 }
 
 /* Hover state */
