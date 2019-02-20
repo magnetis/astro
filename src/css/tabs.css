@@ -1,0 +1,49 @@
+/* Base */
+
+.a-tabs {
+  display: flex;
+  width: 100%;
+  padding: 4px;
+  border: solid 1px var(--color-moon-300);
+  border-radius: 24px;
+}
+
+/* Default input */
+
+.a-tabs > input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Label design */
+
+.a-tabs > label {
+  padding: 11px 32px;
+  text-align: center;
+  text-transform: lowercase;
+  color: var(--color-moon-500);
+  border-radius: 24px;
+  font: var(--font-primary);
+  font-size: 12px;
+  flex: 1;
+}
+
+/* Content panel */
+
+.a-tabs > .a-tabs__content {
+  display: none;
+}
+
+/* Active state */
+
+.a-tabs > input[type='radio']:checked + label {
+  color: var(--color-space-100);
+  background-color: var(--color-uranus-500);
+}
+
+/* Hover state */
+
+.a-tabs > input[type='radio']:not(:checked):hover + label {
+  cursor: pointer;
+  background-color: var(--color-moon-100);
+}
