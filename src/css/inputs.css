@@ -4,9 +4,8 @@
 }
 
 .a-input > input {
-  width: 342px;
-  height: 56px;
-  padding: 8px 16px 0;
+  width: 100%;
+  padding: 22px 16px 12px;
   border: 1px solid var(--color-moon-500);
   border-radius: 8px;
   background-color: var(--color-space-100);
@@ -40,7 +39,6 @@
 
 .a-input > input:focus {
   border: 1px solid var(--color-uranus-500);
-  outline: none;
 }
 
 .a-input > input:focus + label {
@@ -48,14 +46,12 @@
   color: var(--color-uranus-500);
   font-size: 12px;
   font-weight: bold;
-  line-height: 15px;
 }
 
 .a-input > .a-input--floating-label {
   top: 5px;
   font-size: 12px;
   font-weight: bold;
-  line-height: 15px;
 }
 
 .a-input--validated > input:focus + label {
@@ -64,7 +60,6 @@
 
 .a-input--validated > input:focus {
   border: 1px solid var(--color-earth-400);
-  outline: none;
 }
 
 .a-input--validated::after {
@@ -74,7 +69,8 @@
   width: 32px;
   height: 32px;
   content: '';
-  background: url('../../assests/icons/validated-input.svg') center no-repeat;
+  mask-image: url('../../assets/icons/check.svg');
+  background-color: var(--color-earth-500);
 }
 
 .a-input--invalid > input:focus + label {
@@ -83,7 +79,6 @@
 
 .a-input--invalid > input:focus {
   border: 1px solid var(--color-mars-500);
-  outline: none;
 }
 
 .a-input--invalid::after {
@@ -93,7 +88,8 @@
   width: 32px;
   height: 32px;
   content: '';
-  background: url('../../assests/icons/invalid-input.svg') center no-repeat;
+  background-color: var(--color-mars-500);
+  mask-image: url('../../assets/icons/alert.svg');
 }
 
 .a-input > .a-input__error {
@@ -103,7 +99,6 @@
   color: var(--color-mars-500);
   font: var(--font-secondary);
   font-size: 12px;
-  line-height: 18px;
 }
 
 .a-input--disabled > input:disabled {
