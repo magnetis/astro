@@ -12,6 +12,8 @@ import './js/inputs';
 
 The regular input. Labels appear on the default state and slightly move upwards when the user starts interacting and typing on the component.
 
+You need to use `input` before `label` otherwise it may cause some unwanted styling.
+
 The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
 
 <Playground>
@@ -28,7 +30,7 @@ The floating label will need JS to work on your project. You may find the code f
   <div className="a-input a-input--invalid">      
     <input type="text" defaultValue="Astro Team"/>
     <label>Invalid</label>
-    <span className="a-input__error">Esse dado é inválido</span>
+    <span className="a-input__error">Invalid data</span>
   </div>
     
   <div className="a-input">      
