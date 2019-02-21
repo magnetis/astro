@@ -70,7 +70,7 @@
   height: 32px;
   content: '';
   mask-image: url('../../assets/icons/check.svg');
-  background-color: var(--color-earth-500);
+  background-color: var(--color-earth-400);
 }
 
 .a-input--invalid > input:focus + label {
