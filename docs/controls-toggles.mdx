@@ -4,6 +4,7 @@ name: Controls & Toggles
 
 import '../src/index.css'
 import { Playground } from 'docz'
+import './js/slider'
 
 # controls & toggles
 
@@ -102,5 +103,35 @@ Mouseover to view `:hover` state.
   <div className="a-toggle a-toggle--disabled">
     <label htmlFor="toggle4">on disabled</label>
     <input type="checkbox" id="toggle4" checked disabled />
+  </div>
+</Playground>
+
+## sliders
+
+Sliders give users a visual indication of adjustable content, mostly numerical (for time, money, etc). They can be used with or without text labels.
+
+Adjust `min` and `max` attributes to set the value range. If you need to manipulate the slider handle position, use the `value` attribute. You must also set an unique `id` for each slider in your page.
+
+We recommend you set the slider width in the `a-slider` class.
+
+The colored percentage fill and counter label will need JS to work on your project. You may find the code for this working example in our GitHub repository. You can also wrap the slider with a React component or apply other frameworks.
+
+Mouseover and click to view `:hover` and `:active` state.
+
+<Playground>
+  <div className="a-slider">
+    <input type="range" min="1" max="100" id="slider1" />
+    <label htmlFor="slider1">
+      Slider
+      <span className="a-slider--value">50 coins</span>
+    </label>
+  </div>
+
+  <div className="a-slider">
+    <input type="range" min="1" max="100" id="slider1" disabled />
+    <label htmlFor="slider1">
+      Disabled
+      <span className="a-slider--value">0 coins</span>
+    </label>
   </div>
 </Playground>

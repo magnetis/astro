@@ -24,7 +24,9 @@ export default {
         '& > *': {
           boxSizing: 'border-box',
           margin: 12,
-        },
+        },'& > .a-slider': {
+          marginBottom: 22,
+        }
       }
     }
   }
