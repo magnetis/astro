@@ -2,9 +2,10 @@
 name: Inputs
 ---
 
+import {Fragment} from 'react'
 import '../src/index.css';
 import { Playground } from 'docz';
-import './js/inputs';
+import HandleFloatingLabel from './js/inputs';
 
 # Inputs
 
@@ -15,6 +16,7 @@ The regular input. Labels appear on the default state and slightly move upwards 
 Please follow the markup structure below in the same order to get all correct CSS styles.
 
 The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
+
 
 <Playground>
   <div className="a-input">      
@@ -43,3 +45,6 @@ The floating label will need JS to work on your project. You may find the code f
     <label>Disabled</label>
   </div>
 </Playground>
+
+<HandleFloatingLabel />
+
