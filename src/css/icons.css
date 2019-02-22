@@ -1,0 +1,53 @@
+/* Base */
+
+.a-icon {
+  --icon-size-small: 16px;
+  --icon-size-default: 24px;
+  --icon-size-big: 32px;
+
+  display: inline-block;
+  width: var(--icon-size-default);
+  height: var(--icon-size-default);
+  margin-top: -2.5%;
+  vertical-align: middle;
+  background-color: var(--color-moon-500);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: 100%;
+}
+
+/* Icons */
+
+.a-icon__calendar {
+  mask-image: url(../../assets/icons/calendar.svg);
+}
+
+.a-icon__mail {
+  mask-image: url(../../assets/icons/mail.svg);
+}
+
+.a-icon__profile {
+  mask-image: url(../../assets/icons/profile.svg);
+}
+
+/* Sizes */
+
+.a-icon--size-small {
+  width: var(--icon-size-small);
+  height: var(--icon-size-default);
+}
+
+.a-icon--size-big {
+  width: var(--icon-size-big);
+  height: var(--icon-size-big);
+}
+
+/* Spaces */
+
+.a-icon--space-left {
+  margin-left: 8px;
+}
+
+.a-icon--space-right {
+  margin-right: 8px;
+}
