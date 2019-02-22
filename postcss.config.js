@@ -12,6 +12,10 @@ module.exports = {
           }
         }
       ]
+    }),
+    require("postcss-url")({
+      url: "rebase",
+      assetsPath: "../"
     })
   ]
 };

@@ -21,7 +21,7 @@
     "docz:dev": "docz dev",
     "docs:build": "docz build",
     "docs:publish": "yarn run-script docs:build && gh-pages --dist .docz/dist --message 'Update site [ci skip]'",
-    "build": "postcss src/index.css -o dist/astro.css",
+    "build": "postcss src/index.css -o dist/astro.css && svgo assets/icons/*.svg -o dist/assets/icons",
     "lint:css": "stylelint src/css/**/*.css",
     "ci:build": "yarn run build && yarn run lint:css"
   },
@@ -39,7 +39,9 @@
     "postcss-cli": "^6.0.0",
     "postcss-css-variables": "^0.11.0",
     "postcss-import": "^12.0.0",
+    "postcss-url": "^8.0.0",
     "stylelint": "^9.6.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-standard": "^18.2.0",
+    "svgo": "^1.1.1"
   }
 }
