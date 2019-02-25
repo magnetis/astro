@@ -1,3 +1,26 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
-  <path d="M26 23.5v-12c-0.328 0.375-0.688 0.719-1.078 1.031-2.234 1.719-4.484 3.469-6.656 5.281-1.172 0.984-2.625 2.188-4.25 2.188h-0.031c-1.625 0-3.078-1.203-4.25-2.188-2.172-1.813-4.422-3.563-6.656-5.281-0.391-0.313-0.75-0.656-1.078-1.031v12c0 0.266 0.234 0.5 0.5 0.5h23c0.266 0 0.5-0.234 0.5-0.5zM26 7.078c0-0.391 0.094-1.078-0.5-1.078h-23c-0.266 0-0.5 0.234-0.5 0.5 0 1.781 0.891 3.328 2.297 4.438 2.094 1.641 4.188 3.297 6.266 4.953 0.828 0.672 2.328 2.109 3.422 2.109h0.031c1.094 0 2.594-1.437 3.422-2.109 2.078-1.656 4.172-3.313 6.266-4.953 1.016-0.797 2.297-2.531 2.297-3.859zM28 6.5v17c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-17c0-1.375 1.125-2.5 2.5-2.5h23c1.375 0 2.5 1.125 2.5 2.5z"></path>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+    <title>24F39CF2-C7EF-43C2-809C-9B9C865FE973@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M4,9.38130086 L4,24 L28,24 L28,8.97868264 L16.6951996,18.4645364 C16.5519856,18.5847073 16.3849738,18.657876 16.2129163,18.6856831 C15.8525311,18.9281718 15.3615132,18.9147424 15.0121294,18.6215745 L4,9.38130086 Z M5.87288742,8 L15.7821972,16.3148982 L25.6915069,8 L5.87288742,8 Z M4,6 L28,6 C29.1045695,6 30,6.8954305 30,8 L30,24 C30,25.1045695 29.1045695,26 28,26 L4,26 C2.8954305,26 2,25.1045695 2,24 L2,8 C2,6.8954305 2.8954305,6 4,6 Z" id="path-1"></path>
+    </defs>
+    <g id="astro/basis/iconography" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-812.000000, -1071.000000)">
+            <g id="Support-Icons" transform="translate(453.000000, 815.000000)">
+                <g id="12" transform="translate(332.000000, 223.000000)">
+                    <g id="icon/secondary/mail" transform="translate(25.000000, 27.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#C5C5C5" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="color/moon-900" mask="url(#mask-2)" fill="#32383C" fill-rule="evenodd">
+                            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

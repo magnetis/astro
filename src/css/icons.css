@@ -6,14 +6,14 @@
   --icon-size-big: 32px;
 
   display: inline-block;
-  width: var(--icon-size-default);
-  height: var(--icon-size-default);
-  margin-top: -2.5%;
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
   background-color: var(--color-moon-500);
+  font-size: var(--icon-size-default);
   mask-repeat: no-repeat;
   mask-position: center center;
-  mask-size: 100%;
+  mask-size: contain;
 }
 
 /* Icons */
@@ -33,21 +33,21 @@
 /* Sizes */
 
 .a-icon--size-small {
-  width: var(--icon-size-small);
-  height: var(--icon-size-default);
+  font-size: var(--icon-size-small);
 }
 
 .a-icon--size-big {
-  width: var(--icon-size-big);
-  height: var(--icon-size-big);
+  font-size: var(--icon-size-big);
 }
 
 /* Spaces */
 
 .a-icon--space-left {
   margin-left: 8px;
+  mask-position: top left;
 }
 
 .a-icon--space-right {
   margin-right: 8px;
+  mask-position: top right;
 }
