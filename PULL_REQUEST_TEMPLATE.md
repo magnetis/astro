@@ -12,4 +12,4 @@ _You can tell us how you did it._
 
 # Sample
 
-_You can atach some image to show us the result, if applicable._
+_You can attach some image to show us the result, if applicable._
