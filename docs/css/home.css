@@ -1,7 +1,18 @@
-.intro-box {
+.cards-box {
   display: flex;
+  justify-content: space-between;
 }
 
-.intro-box > div:not(:last-child) {
-  padding-right: 30px;
+.cards-box > div {
+  width: 30%;
+}
+
+pre,
+code {
+  background-color: var(--color-moon-100);
+}
+
+.code-snippet {
+  overflow-x: scroll;
+  background-color: var(--color-moon-100);
 }

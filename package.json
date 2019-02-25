@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
+    "babel-plugin-inline-import": "^3.0.0",
     "cssnano": "^4.1.0",
     "docz": "^0.13.7",
     "docz-plugin-css": "^0.11.0",

@@ -5,102 +5,23 @@ order: 1
 ---
 
 import './css/home.css'
-import { Fragment } from 'react'
 import GithubButtons from './components/GithubButtons'
+import IntroCards from './components/IntroCards'
+import StartedCards from './components/StartedCards'
 
-<Fragment>
-  <h1>
-    astro
-  </h1>
+# astro
 
-  <GithubButtons />
+<GithubButtons />
 
-  <p>
-    Made for <b>Magnetis'</b> designers, developers, product managers, data analysts, data scientists, stakeholders and enthusiasts, <b>Astro</b> helps us protect the brand concepts, elevate consistency of user experience and increase the speed and efficiency of how we design and build products for our customers.
-  </p>
+Made for **Magnetis**' designers, developers, product managers, data analysts, data scientists, stakeholders and enthusiasts, **Astro** helps us protect the brand concepts, elevate consistency of user experience and increase the speed and efficiency of how we design and build products for our customers.
 
-  <h2>
-    manifesto
-  </h2>
+## manifesto
 
-  <p>
-    We believe that a good user experience is built with <b>consistent design</b> well defined <b>visual and interaction patterns</b> carefully built <b>emotions</b> and <b>made for all</b>.
-    Therefore, Astro is essentially:
-  </p>
+We believe that a good user experience is built with **consistent design**, well defined **visual and interaction patterns**, carefully built **emotions** and **made for all**.
+Therefore, Astro is essentially:
 
-  <div className="intro-box">
-    <div>
-      <h3>
-      atomic
-      </h3>
+<IntroCards />
 
-      <p>
-        Astro is built based on <b>Atomic Design</b>, so our designers and developers can use its style set and components to enhance our product interface, as a <b>modular system</b> that can be easily <b>managed and updated</b>.
-      </p>
+## get started
 
-    </div>
-
-    <div>
-      <h3>
-      open
-      </h3>
-
-      <p>
-        Magnetis believes that good design and experiences can <b>impact the product market and society itself</b>. Our <b>design and code assets are open</b> so we can contribute to the community and help new product teams.
-      </p>
-
-    </div>
-
-    <div>
-      <h3>
-      accessible
-      </h3>
-      
-      <p>
-        Design is meant to be <b>for all</b>. Astro style and components follow basic recommendations from the <b>WCAG guidelines</b> for accessibility, with tested contrast ratios and good practices in legibility and screen reading solutions.
-      </p>
-      <a href="https://www.w3.org/TR/WCAG21/">
-      See WCAG >>
-      </a>
-    </div>
-  </div>
-
-</Fragment>
-
-
-### install
-
-* Install via terminal: `yarn add @magnetis/astro`
-
-* Get our font links in the [Typography page](https://magnetis.github.io/astro/#/docs-typography) and load them in your project.
-
-[Read install docs >>](https://github.com/magnetis/astro/blob/master/README.md#adding-astro-to-your-project)
-
-### usage
-
-* Astro components are atomic and can be used in isolation.
-
-```jsx
-  import '../src/index.css';
-
-  <button className="a-btn a-btn--uranus a-btn--medium">
-    primary
-  </button>
-```
-
-[Read usage docs >>](https://github.com/magnetis/astro/blob/master/README.md#using-astro)
-
-### contribute
-* Fork Astro and `yarn install`
-
-<iframe
-  src="https://ghbtns.com/github-btn.html?user=magnetis&repo=astro&type=fork&count=true&size=large"
-  frameBorder="0"
-  scrolling="0"
-  width="160px"
-  height="30px"
-/>
-
-* Run `yarn docz:dev` and visit [localhost:3000](http://localhost:3000/)
-
-[Read contributing guide >>](https://github.com/magnetis/astro/blob/master/CONTRIBUTING.md)
+<StartedCards />

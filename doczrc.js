@@ -8,6 +8,7 @@ export default {
       preprocessor: 'postcss'
     })
   ],
+  modifyBabelRc: (babelrc) => ({ ...babelrc, plugins: [...babelrc.plugins, "babel-plugin-inline-import"] }),
   indexHtml: 'public/docz.html',
   themeConfig: {
     styles: {

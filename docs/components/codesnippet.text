@@ -1,0 +1,5 @@
+import '../src/index.css'
+
+<button className="a-btn a-btn--uranus a-btn--medium">
+  primary
+</button>
