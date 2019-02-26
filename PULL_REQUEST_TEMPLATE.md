@@ -4,12 +4,12 @@ _Description of what you did._
 
 # Why
 
-_Description of why you open this pull request._
+_Description of why you're opening this pull request._
 
 # How
 
-_You can tell us how you did it._
+_Describe your approach to apply these changes._
 
 # Sample
 
-_You can attach some image to show us the result, if applicable._
+_You can attach images to show us the result, if applicable._
