@@ -16,7 +16,7 @@ export default () => (
       <h3>open</h3>
 
       <p>
-        Magnetis believes that good design and experiences can   <b>impact the product market and society itself</b>. Our <b>design and code assets are open</b> so we can contribute to the
+        Magnetis believes that good design and experiences can <b>impact the product market and society itself</b>. Our <b>design and code assets are open</b> so we can contribute to the
         community and help new product teams.
       </p>
     </div>
