@@ -2,6 +2,14 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.4.0] - 2019-02-26
+- Set Yarn as the only dependency manager.
+- Add slider components to Controls & Toggles.
+- Fix disabled state color inconsistencies in Controls & Toggles.
+- Create Inputs page and add standard input components.
+- Add SVG's to dist/assets folder in the Astro build.
+- Minor improvements in the docs homepage.
+
 ### [0.3.0] - 2019-02-08
 - Add toggle and radio button components to Controls & Toggles.
 
