@@ -8,7 +8,7 @@ export default () => (
       <p>
         Astro is built based on <b>Atomic Design</b>, so our designers and
         developers can use its style set and components to enhance our product
-        interface, as a <b>modular system</b> that can be easily   <b>managed and updated</b>.
+        interface, as a <b>modular system</b> that can be easily <b>managed and updated</b>.
       </p>
     </div>
 
