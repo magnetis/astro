@@ -4,12 +4,12 @@ _Description of the problem._
 
 # Expected behavior
 
-_Description of what the expected behavior for this._
+_Description of the expected behavior for this._
 
 # Steps to reproduce
 
-_You can describes here step by step how can we reproduce the problem._
+_Describe step by step how we can reproduce the problem._
 
 # Other information
 
-_You can describe here some useful information to help us to resolve this_
+_You can add useful information here to help us solve this._
