@@ -2,7 +2,7 @@
 name: Inputs
 ---
 
-import { Fragment } from 'react'
+import { Fragment } from 'react';
 import '../src/index.css';
 import { Playground } from 'docz';
 import HandleFloatingLabel from './js/inputs';
@@ -17,34 +17,32 @@ Please follow the markup structure below in the same order to get all correct CS
 
 The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
 
-
 <Playground>
   <div className="a-input">      
     <input type="text"/>
     <label>Standard</label>
   </div>
 
-  <div className="a-input a-input--validated">      
-    <input type="text" defaultValue="Astro Team" />
+  <div className='a-input a-input--validated'>
+    <input type='text' defaultValue='Astro Team'/>
     <label>Validated</label>
   </div>
 
-  <div className="a-input a-input--invalid">      
-    <input type="text" defaultValue="Astro Team"/>
+  <div className='a-input a-input--invalid'>      
+    <input type='text' defaultValue='Astro Team'/>
     <label>Invalid</label>
-    <span className="a-input__error">Invalid data</span>
+    <span className='a-input__error'>Invalid data</span>
   </div>
     
-  <div className="a-input">      
-    <input type="text" defaultValue="Astro Team"/>
+  <div className='a-input'>      
+    <input type='text' defaultValue='Astro Team'/>
     <label>Filled</label>
   </div>
   
-  <div className="a-input a-input--disabled">      
-    <input type="text" disabled/>
+  <div className='a-input a-input--disabled'>      
+    <input type='text' disabled/>
     <label>Disabled</label>
   </div>
 </Playground>
 
 <HandleFloatingLabel />
-

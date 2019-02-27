@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export default () => (
-  <div className="cards-box">
+  <div className='cards-box'>
     <div>
       <h3>atomic</h3>
 
@@ -30,7 +30,7 @@ export default () => (
         with tested contrast ratios and good practices in legibility and screen
         reading solutions.
       </p>
-      <a href="https://www.w3.org/TR/WCAG21/">See WCAG >></a>
+      <a href='https://www.w3.org/TR/WCAG21/'>See WCAG >></a>
     </div>
   </div>
 );

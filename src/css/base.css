@@ -1,4 +1,5 @@
-.a-body { /* styles replicated in typography to allow isolation */
+.a-body {
+  /* styles replicated in typography to allow isolation */
   font: var(--font-primary);
   color: var(--font-color);
   text-rendering: optimizeLegibility;

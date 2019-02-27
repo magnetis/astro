@@ -1,11 +1,11 @@
 module.exports = {
   plugins: [
-    require("postcss-import"),
-    require("postcss-css-variables"),
-    require("autoprefixer"),
-    require("cssnano")({
+    require('postcss-import'),
+    require('postcss-css-variables'),
+    require('autoprefixer'),
+    require('cssnano')({
       preset: [
-        "default",
+        'default',
         {
           discardComments: {
             removeAll: true
@@ -13,9 +13,9 @@ module.exports = {
         }
       ]
     }),
-    require("postcss-url")({
-      url: "rebase",
-      assetsPath: "../"
+    require('postcss-url')({
+      url: 'rebase',
+      assetsPath: '../'
     })
   ]
 };
