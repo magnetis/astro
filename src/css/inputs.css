@@ -5,10 +5,12 @@
 
 .a-input > input {
   width: 100%;
-  padding: 22px 44px 12px 16px;
+  padding: 25px 44px 5px 16px;
   border: 1px solid var(--color-moon-500);
   border-radius: 8px;
   background-color: var(--color-space-100);
+  font: var(--font-secondary);
+  color: var(--font-color);
 }
 
 .a-input > label {
@@ -42,16 +44,16 @@
 }
 
 .a-input > input:focus + label {
-  top: 5px;
+  top: 8px;
   color: var(--color-uranus-500);
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .a-input > .a-input--floating-label {
-  top: 5px;
+  top: 8px;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .a-input--validated > input:focus + label {
