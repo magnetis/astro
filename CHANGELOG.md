@@ -2,6 +2,11 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.4.1] - 2019-02-27
+- Fix input style inconsistencies.
+- Update Usage section in the docs.
+- Fix build command on package.json file.
+
 ### [0.4.0] - 2019-02-26
 - Set Yarn as the only dependency manager.
 - Add slider components to Controls & Toggles.
