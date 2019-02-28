@@ -4,6 +4,8 @@ It's awesome that you want to contribute to Astro! Before proceeding, please rea
 
 Our design system and components are documented with [Docz](https://www.docz.site/) and hosted by [GitHub Pages](https://pages.github.com/). Its documentation can be viewed at [magnetis.github.io/astro](https://magnetis.github.io/astro/).
 
+We recommend [Prettier](https://github.com/prettier/prettier) as your code formatter to keep a consistent style.
+
 ## Table of contents
 
 - [Setup and running](#setup-and-running)
