@@ -1,7 +1,9 @@
 /* stylelint-disable no-descending-specificity */
 
-.a-checkbox > input[type='checkbox'] {
-  opacity: 0;
+.a-checkbox {
+  --checkbox-square-size: 16px;
+
+  display: flex;
 }
 
 .a-checkbox--disabled > label {
@@ -10,65 +12,71 @@
 }
 
 .a-checkbox > label {
-  position: relative;
-  display: inline-block;
-  padding-left: 24px;
   font: var(--font-secondary);
+  order: 2;
 }
 
-.a-checkbox > label::before,
-.a-checkbox > label::after {
-  position: absolute;
+.a-checkbox > input[type='checkbox'] {
+  position: relative;
+  visibility: hidden;
+  width: var(--checkbox-square-size);
+  height: var(--checkbox-square-size);
+  margin: 4px 8px 0 0;
+  order: 1;
+}
+
+.a-checkbox > input[type='checkbox']::before {
   display: inline-block;
+  visibility: visible;
+  width: var(--checkbox-square-size);
+  height: var(--checkbox-square-size);
   content: '';
-}
-
-.a-checkbox > label::before {
-  top: 4px;
-  left: 0;
-  width: 16px;
-  height: 16px;
   border: 2px solid var(--color-moon-500);
   border-radius: 2px;
 }
 
-.a-checkbox > label::after {
-  top: 8px;
+.a-checkbox > input[type='checkbox']::after {
+  position: absolute;
+  top: 3px;
   left: 3px;
-  width: 11px;
+  display: inline-block;
+  visibility: visible;
+  width: 10px;
   height: 6px;
+  content: '';
   transform: rotate(-45deg);
   color: var(--color-space-100);
   border-bottom: 2px solid;
   border-left: 2px solid;
 }
 
-.a-checkbox--indeterminate > input[type='checkbox'] + label::after {
-  top: 11px;
+.a-checkbox--indeterminate > input[type='checkbox']::after {
+  top: 8px;
   left: 4px;
   width: 8px;
   transform: rotate(-180deg);
   border-left: 0;
 }
 
-.a-checkbox--indeterminate > input[type='checkbox']:disabled + label::after {
+.a-checkbox--indeterminate > input[type='checkbox']:disabled::before {
   background-color: var(--color-moon-200);
 }
 
-.a-checkbox > input[type='checkbox']:checked + label::before {
+.a-checkbox > input[type='checkbox']:checked::before {
   border-color: var(--color-uranus-500);
   background-color: var(--color-uranus-500);
 }
 
-.a-checkbox > input[type='checkbox']:checked:disabled + label::before {
+.a-checkbox > input[type='checkbox']:checked:disabled::before {
   background-color: var(--color-moon-200);
 }
 
-.a-checkbox > input[type='checkbox']:disabled + label::before {
+.a-checkbox > input[type='checkbox']:disabled::before {
+  cursor: not-allowed;
   border-color: var(--color-moon-200);
 }
 
-.a-checkbox > input[type='checkbox']:hover:not(:disabled) + label::before {
+.a-checkbox > input[type='checkbox']:hover:not(:disabled)::before {
   border-color: var(--color-uranus-500);
 }
 
