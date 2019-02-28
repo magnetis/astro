@@ -1,67 +1,82 @@
-/* Hiding standard input */
+/* Base component */
+
+.a-radio {
+  --radio-circle-size: 18px;
+
+  display: flex;
+}
+
+/* Standard input */
 
 .a-radio > input[type='radio'] {
-  position: absolute;
-  opacity: 0;
+  visibility: hidden;
+  width: var(--radio-circle-size);
+  height: var(--radio-circle-size);
+  margin-top: 4px;
+  margin-right: 6px;
+  order: 1;
 }
 
 /* Label design */
 
 .a-radio > label {
-  display: flex;
   font: var(--font-secondary);
-  align-items: top;
-}
-
-/* Middle alignment */
-
-.a-radio--align-middle > label {
-  align-items: center;
-}
-
-.a-radio--align-middle > label::before {
-  margin-top: 0;
+  order: 2;
 }
 
 /* Radio button design */
 
-.a-radio > label::before {
-  min-width: 18px;
-  height: 18px;
-  margin-top: 2px;
-  margin-right: 6px;
+.a-radio > input[type='radio']::before {
+  display: inline-block;
+  visibility: visible;
+  width: var(--radio-circle-size);
+  height: var(--radio-circle-size);
   content: '';
   border: 2px solid var(--color-moon-500);
   border-radius: 100%;
   background-color: var(--color-space-100);
 }
 
+/* Middle alignment modifier */
+
+.a-radio--align-middle {
+  align-items: center;
+}
+
+.a-radio--align-middle > input[type='radio'] {
+  margin-top: 0;
+}
+
 /* Checked state */
 
-.a-radio > input[type='radio']:checked + label::before {
+.a-radio > input[type='radio']:checked::before {
   border: solid 5px var(--color-uranus-500);
 }
 
 /* Disabled state */
 
-.a-radio--disabled > label {
+.a-radio--disabled > label,
+.a-radio--disabled > input[type='radio']:disabled::before {
   cursor: not-allowed;
+}
+
+.a-radio--disabled > label {
   color: var(--color-moon-200);
 }
 
-.a-radio > input[type='radio']:disabled + label::before {
+.a-radio--disabled > input[type='radio']:disabled::before {
   border-color: var(--color-moon-200);
-}
-
-/* Hover state */
-
-.a-radio > input[type='radio']:hover:not(:disabled) + label::before {
-  border-color: var(--color-uranus-500);
 }
 
 /* Cursor */
 
-.a-radio > input[type='radio']:hover:not(:disabled),
-.a-radio > input[type='radio']:hover:not(:disabled) + label {
+.a-radio:not(.a-radio--disabled) > label,
+.a-radio:not(.a-radio--disabled) > input[type='radio']::before {
   cursor: pointer;
+}
+
+/* Hover state */
+
+.a-radio:not(.a-radio--disabled) > input[type='radio']:hover::before {
+  border-color: var(--color-uranus-500);
 }
