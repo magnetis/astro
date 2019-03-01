@@ -16,20 +16,6 @@
   mask-size: contain;
 }
 
-/* Icons */
-
-.a-icon__calendar {
-  mask-image: url(../../assets/icons/calendar.svg);
-}
-
-.a-icon__mail {
-  mask-image: url(../../assets/icons/mail.svg);
-}
-
-.a-icon__profile {
-  mask-image: url(../../assets/icons/profile.svg);
-}
-
 /* Sizes */
 
 .a-icon--size-small {
@@ -44,10 +30,22 @@
 
 .a-icon--space-left {
   margin-left: 8px;
-  mask-position: top left;
 }
 
 .a-icon--space-right {
   margin-right: 8px;
-  mask-position: top right;
+}
+
+/* Icons */
+
+.a-icon__calendar {
+  mask-image: url(../../assets/icons/calendar.svg);
+}
+
+.a-icon__mail {
+  mask-image: url(../../assets/icons/mail.svg);
+}
+
+.a-icon__profile {
+  mask-image: url(../../assets/icons/profile.svg);
 }
