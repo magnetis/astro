@@ -11,7 +11,7 @@ export const initFloatingLabel = () => {
     };
 
     inputs.forEach(input => {
-      const currentInput = input.querySelector("input");
+      const currentInput = input.firstChild;
       const currentLabel = input.querySelector("label");
 
       verifyValue(currentInput, currentLabel);
