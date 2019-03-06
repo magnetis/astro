@@ -1,16 +1,12 @@
 /* Base */
 
 .a-icon {
-  --icon-size-small: 16px;
-  --icon-size-default: 24px;
-  --icon-size-big: 32px;
-
   display: inline-block;
   width: 1em;
   height: 1em;
   vertical-align: middle;
   background-color: var(--color-moon-500);
-  font-size: var(--icon-size-default);
+  font-size: 24px;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
@@ -19,11 +15,11 @@
 /* Sizes */
 
 .a-icon--size-small {
-  font-size: var(--icon-size-small);
+  font-size: 16px;
 }
 
 .a-icon--size-big {
-  font-size: var(--icon-size-big);
+  font-size: 32px;
 }
 
 /* Spaces */
