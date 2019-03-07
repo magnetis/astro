@@ -22,6 +22,7 @@
 /* Labels */
 
 .a-slider > label {
+  order: 1;
   display: flex;
   margin-bottom: 20px;
   font: var(--font-secondary);
@@ -182,4 +183,9 @@
 
 .a-slider > input[type='range']:disabled::-ms-thumb {
   display: none;
+}
+
+.a-slider--disabled > label {
+  color: var(--color-moon-200);
+  cursor: not-allowed;
 }

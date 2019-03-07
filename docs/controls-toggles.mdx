@@ -121,19 +121,19 @@ Mouseover and click to view `:hover` and `:active` state.
 
 <Playground>
   <div className="a-slider">
-    <input type="range" min="1" max="100" id="slider1" />
     <label htmlFor="slider1">
       Slider
       <span className="a-slider--value">50 coins</span>
     </label>
+    <input type="range" min="1" max="100" id="slider1" />
   </div>
 
-  <div className="a-slider">
-    <input type="range" min="1" max="100" id="slider1" disabled />
+  <div className="a-slider a-slider--disabled">
     <label htmlFor="slider1">
       Disabled
       <span className="a-slider--value">0 coins</span>
     </label>
+    <input type="range" min="1" max="100" id="slider1" disabled />
   </div>
 </Playground>
 
