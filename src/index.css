@@ -2,6 +2,7 @@
 @import '../node_modules/flexboxgrid/dist/flexboxgrid.min.css';
 @import './css/colors.css';
 @import './css/gradients.css';
+@import './css/z-index.css';
 @import './css/fonts.css';
 @import './css/icons.css';
 @import './css/base.css';
