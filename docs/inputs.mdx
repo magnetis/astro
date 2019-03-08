@@ -19,29 +19,29 @@ The floating label will need JS to work on your project. You may find the code f
 
 <Playground>
   <div className="a-input">      
-    <input type="text"/>
-    <label>Standard</label>
+    <input id="input1" type="text" aria-labelledby="label1" />
+    <label id="label1" htmlFor="input1">Standard</label>
   </div>
 
-  <div className='a-input a-input--validated'>
-    <input type='text' defaultValue='Astro Team'/>
-    <label>Validated</label>
+  <div className="a-input a-input--validated">      
+    <input id="input2" type="text" defaultValue="Astro Team" aria-labelledby="label2" />
+    <label id="label2" htmlFor="label2">Validated</label>
   </div>
 
-  <div className='a-input a-input--invalid'>      
-    <input type='text' defaultValue='XYZK2'/>
-    <label>Invalid</label>
-    <span className='a-input__error'>Invalid data</span>
+  <div className="a-input a-input--invalid">      
+    <input id="input3" type="text" defaultValue="XYZK2" aria-labelledby="label3"/>
+    <label id="label3" htmlFor="label3">Invalid</label>
+    <span className="a-input__error">Invalid data</span>
   </div>
     
-  <div className='a-input'>      
-    <input type='text' defaultValue='Astro Team'/>
-    <label>Filled</label>
+  <div className="a-input">      
+    <input id="input4" type="text" defaultValue="Astro Team" aria-labelledby="label4"/>
+    <label id="label4" htmlFor="label4">Filled</label>
   </div>
   
-  <div className='a-input a-input--disabled'>      
-    <input type='text' disabled/>
-    <label>Disabled</label>
+  <div className="a-input a-input--disabled">      
+    <input id="input5" type="text" disabled aria-labelledby="label5" />
+    <label id="label5" htmlFor="label5">Disabled</label>
   </div>
 </Playground>
 
