@@ -2,7 +2,7 @@
 
 It's awesome that you want to contribute to Astro! Before proceeding, please read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-Our design system and components are documented with [Docz](https://www.docz.site/) and hosted by [GitHub Pages](https://pages.github.com/). Its documentation can be viewed at [magnetis.github.io/astro](https://magnetis.github.io/astro/).
+Our design system and components are documented with [Docz](https://www.docz.site/) and hosted by [GitHub Pages](https://pages.github.com/). Its documentation can be viewed at [astro.magnetis.com.br](https://astro.magnetis.com.br/).
 
 We recommend [Prettier](https://github.com/prettier/prettier) as your code formatter to keep a consistent style.
 
@@ -88,7 +88,7 @@ Here's how to deploy to GitHub Pages:
 
 In your terminal, after merging: checkout to master, do `git pull` and run `yarn docs:publish` to deploy.
 
-Visit [magnetis.github.io/astro](https://magnetis.github.io/astro/) and make sure your changes go live! 🎉 While you're there, please check if everything still looks okay.
+Visit [astro.magnetis.com.br](https://astro.magnetis.com.br/) and make sure your changes go live! 🎉 While you're there, please check if everything still looks okay.
 
 ## Troubleshooting
 

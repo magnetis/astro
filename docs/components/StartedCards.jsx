@@ -17,7 +17,7 @@ export default () => (
 
         <li>
           <p>
-            Get our font links in the <a href='https://magnetis.github.io/astro/#/docs-typography'>
+            Get our font links in the <a href='https://astro.magnetis.com.br/#/docs-typography'>
               Typography page
             </a> and load them in your project.
           </p>

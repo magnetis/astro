@@ -43,11 +43,11 @@ Run `yarn add @magnetis/astro` or `npm install @magnetis/astro`.
 ### Adding Astro fonts (important!)
 
 After you've imported Astro, you still need to add our fonts to your project manually.
-You can get the updated font links either in the Typography page at [magnetis.github.io/astro](https://magnetis.github.io/astro/) or inside the project folder in `public/docz.html`.
+You can get the updated font links either in the Typography page at [astro.magnetis.com.br](https://astro.magnetis.com.br/) or inside the project folder in `public/docz.html`.
 
 ## Using Astro
 
-Ready to start coding with Astro? Follow the instructions in the docs ([magnetis.github.io/astro](https://magnetis.github.io/astro/)) to learn how to use our components. You'll also see how to apply attribute modifiers (such as classes) to your HTML elements and React components.
+Ready to start coding with Astro? Follow the instructions in the docs ([astro.magnetis.com.br](https://astro.magnetis.com.br/)) to learn how to use our components. You'll also see how to apply attribute modifiers (such as classes) to your HTML elements and React components.
 
 Here's a quick example. If you'd like to create a Display text styled in Astro typography:
 
@@ -65,7 +65,7 @@ Here's a quick example. If you'd like to create a Display text styled in Astro t
 
     - With commonjs: `require("@magnetis/astro");`
 
-3. Go to Astro's [Typography page](https://magnetis.github.io/astro/#/docs-typography);
+3. Go to Astro's [Typography page](https://astro.magnetis.com.br/#/docs-typography);
 
 4. See that the "Display" section guides you to create a `<p>` element with a specific text display class;
 
