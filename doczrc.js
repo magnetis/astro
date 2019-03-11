@@ -13,6 +13,9 @@ export default {
     plugins: [...babelrc.plugins, 'babel-plugin-inline-import']
   }),
   indexHtml: 'public/docz.html',
+  htmlContext: {
+    favicon: 'public/favicon.png',
+  },
   themeConfig: {
     styles: {
       body: {
