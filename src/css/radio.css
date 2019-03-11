@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 /* Base component */
 
 .a-radio {
@@ -20,6 +22,7 @@
 /* Label design */
 
 .a-radio > label {
+  cursor: pointer;
   font: var(--font-secondary);
   order: 2;
 }
@@ -55,28 +58,23 @@
 
 /* Disabled state */
 
-.a-radio--disabled > label,
-.a-radio--disabled > input[type='radio']:disabled::before {
+.a-radio > input[type='radio']:disabled::before {
   cursor: not-allowed;
+  border-color: var(--color-moon-200);
 }
 
-.a-radio--disabled > label {
+.a-radio--disabled > label,
+.a-radio--disabled > input[type='radio']:disabled::before {
   color: var(--color-moon-200);
+  cursor: not-allowed;
 }
 
 .a-radio--disabled > input[type='radio']:disabled::before {
   border-color: var(--color-moon-200);
 }
 
-/* Cursor */
-
-.a-radio:not(.a-radio--disabled) > label,
-.a-radio:not(.a-radio--disabled) > input[type='radio']::before {
-  cursor: pointer;
-}
-
 /* Hover state */
 
-.a-radio:not(.a-radio--disabled) > input[type='radio']:hover::before {
+.a-checkbox > input[type='radio']:hover:not(:disabled)::before {
   border-color: var(--color-uranus-500);
 }

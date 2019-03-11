@@ -6,14 +6,15 @@
   display: flex;
 }
 
+.a-checkbox > label {
+  cursor: pointer;
+  font: var(--font-secondary);
+  order: 2;
+}
+
 .a-checkbox--disabled > label {
   cursor: not-allowed;
   color: var(--color-moon-200);
-}
-
-.a-checkbox > label {
-  font: var(--font-secondary);
-  order: 2;
 }
 
 .a-checkbox > input[type='checkbox'] {
@@ -77,9 +78,6 @@
 }
 
 .a-checkbox > input[type='checkbox']:hover:not(:disabled)::before {
-  border-color: var(--color-uranus-500);
-}
-
-.a-checkbox > input[type='checkbox']:hover:not(:disabled) + label {
   cursor: pointer;
+  border-color: var(--color-uranus-500);
 }
