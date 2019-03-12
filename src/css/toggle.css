@@ -23,7 +23,7 @@
 /* Label */
 
 .a-toggle > label {
-  margin-right: 8px;
+  padding-right: 8px;
   font: var(--font-secondary);
 }
 
