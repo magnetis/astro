@@ -78,7 +78,9 @@ Wanna dive deeper into Docz? You can [read their tutorial](https://www.docz.site
 
 ### Staging the documentation
 
-There isn't a staging environment because GitHub Pages only works on one branch per repository. We recommend using [Localtunnel](https://localtunnel.github.io/www/) to generate a public URL that makes your locally running server accessible by anyone. It's a super simple, two-step process to which you'll find instructions on their website.
+Our staging environment is currently set up on Netlify with automatic deploys. This means that every time there's a new commit on any branch, the changes are published to a temporary URL, which you can find under "Checks" in the Pull Request page. 
+
+After the Netlify item has a green checkmark, just click "Details" and you will be redirected to your staging environment with the latest version of your branch! Pretty sweet, right?
 
 ### Publishing your changes to Astro online docs
 
