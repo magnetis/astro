@@ -24,6 +24,7 @@
 .a-radio > label {
   cursor: pointer;
   font: var(--font-secondary);
+  flex: 1;
   order: 2;
 }
 
@@ -65,8 +66,8 @@
 
 .a-radio--disabled > label,
 .a-radio--disabled > input[type='radio']:disabled::before {
-  color: var(--color-moon-200);
   cursor: not-allowed;
+  color: var(--color-moon-200);
 }
 
 .a-radio--disabled > input[type='radio']:disabled::before {
