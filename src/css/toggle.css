@@ -1,5 +1,3 @@
-/* stylelint-disable no-descending-specificity */
-
 /* Variables */
 
 .a-toggle {
@@ -67,18 +65,6 @@
   left: 21px;
 }
 
-/* Hover state on */
-
-.a-toggle > input[type='checkbox']:not(:disabled):hover::before {
-  background-color: var(--color-uranus-400);
-}
-
-/* Hover state off */
-
-.a-toggle > input[type='checkbox']:not(:checked):not(:disabled):hover::before {
-  background-color: var(--color-moon-300);
-}
-
 /* Disabled state */
 
 .a-toggle > input[type='checkbox']:disabled::before {
@@ -89,6 +75,18 @@
 .a-toggle > input[type='checkbox']:disabled {
   cursor: not-allowed;
   color: var(--color-moon-200);
+}
+
+/* Hover state on */
+
+.a-toggle > input[type='checkbox']:not(:disabled):hover::before {
+  background-color: var(--color-uranus-400);
+}
+
+/* Hover state off */
+
+.a-toggle > input[type='checkbox']:not(:checked):not(:disabled):hover::before {
+  background-color: var(--color-moon-300);
 }
 
 /* Cursor */
