@@ -84,7 +84,7 @@
 
 .a-tabs > .a-tabs__item:not(:checked):hover + .a-tabs__label {
   cursor: pointer;
-  background-color: var(--color-moon-100);
+  background-color: var(--color-moon-200);
 }
 
 @media only screen and (min-width: 48em) {
