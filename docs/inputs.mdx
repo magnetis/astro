@@ -20,30 +20,51 @@ The floating label will need JS to work on your project. You may find the code f
 To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
 <Playground>
-  <div className="a-input">
-    <input id="input1" type="text" aria-labelledby="label1" />
-    <label id="label1" htmlFor="input1">Standard</label>
+  <div className='a-input'>
+    <input id='input1' type='text' aria-labelledby='label1' />
+    <label id='label1' htmlFor='input1'>
+      Standard
+    </label>
   </div>
-
-  <div className="a-input a-input--validated">
-    <input id="input2" type="text" aria-labelledby="label2" defaultValue="Astro Team" />
-    <label id="label2" htmlFor="input2">Validated</label>
+  <div className='a-input a-input--validated'>
+    <input
+      id='input2'
+      type='text'
+      aria-labelledby='label2'
+      defaultValue='Astro Team'
+    />
+    <label id='label2' htmlFor='input2'>
+      Validated
+    </label>
   </div>
-
-  <div className="a-input a-input--invalid">
-    <input id="input3" type="text" aria-labelledby="label3" defaultValue="XYZK2" />
-    <label id="label3" htmlFor="input3">Invalid</label>
-    <span className="a-input__error">Invalid data</span>
+  <div className='a-input a-input--invalid'>
+    <input
+      id='input3'
+      type='text'
+      aria-labelledby='label3'
+      defaultValue='XYZK2'
+    />
+    <label id='label3' htmlFor='input3'>
+      Invalid
+    </label>
+    <span className='a-input__error'>Invalid data</span>
   </div>
-
-  <div className="a-input">
-    <input id="input4" type="text" aria-labelledby="label4" defaultValue="Astro Team" />
-    <label id="label4" htmlFor="input4">Filled</label>
+  <div className='a-input'>
+    <input
+      id='input4'
+      type='text'
+      aria-labelledby='label4'
+      defaultValue='Astro Team'
+    />
+    <label id='label4' htmlFor='input4'>
+      Filled
+    </label>
   </div>
-
-  <div className="a-input a-input--disabled">
-    <input id="input5" type="text" aria-labelledby="label5" disabled />
-    <label id="label5" htmlFor="input5">Disabled</label>
+  <div className='a-input a-input--disabled'>
+    <input id='input5' type='text' aria-labelledby='label5' disabled />
+    <label id='label5' htmlFor='input5'>
+      Disabled
+    </label>
   </div>
 </Playground>
 

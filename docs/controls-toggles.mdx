@@ -21,40 +21,38 @@ Mouseover to view `:hover` state.
 To create the disabled state, add the `a-radio--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
 <Playground>
-  <div className="a-radio">
-    <label htmlFor="radio1">Radio</label>
-    <input type="radio" id="radio1" name="radiogroup1" />
+  <div className='a-radio'>
+    <label htmlFor='radio1'>Radio</label>
+    <input type='radio' id='radio1' name='radiogroup1' />
   </div>
-
-  <div className="a-radio">
-    <label htmlFor="radio2">Selected</label>
-    <input type="radio" id="radio2" name="radiogroup1" defaultChecked />
+  <div className='a-radio'>
+    <label htmlFor='radio2'>Selected</label>
+    <input type='radio' id='radio2' name='radiogroup1' defaultChecked />
   </div>
-
-  <div className="a-radio a-radio--disabled">
-    <label htmlFor="radio3">Disabled</label>
-    <input type="radio" id="radio3" name="radiogroup1" disabled />
+  <div className='a-radio a-radio--disabled'>
+    <label htmlFor='radio3'>Disabled</label>
+    <input type='radio' id='radio3' name='radiogroup1' disabled />
   </div>
 </Playground>
 
 Default label behavior is top alignment. You can add the `a-radio--align-middle` modifier class to switch to middle alignment.
 
 <Playground>
-  <div className="a-radio">
-    <label htmlFor="radio4">
+  <div className='a-radio'>
+    <label htmlFor='radio4'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam
       vulputate dignissim suspendisse.
     </label>
-    <input type="radio" id="radio4" name="radiogroup2" />
+    <input type='radio' id='radio4' name='radiogroup2' />
   </div>
-  <div className="a-radio a-radio--align-middle">
-    <label htmlFor="radio5">
+  <div className='a-radio a-radio--align-middle'>
+    <label htmlFor='radio5'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam
       vulputate dignissim suspendisse.
     </label>
-    <input type="radio" id="radio5" name="radiogroup2" />
+    <input type='radio' id='radio5' name='radiogroup2' />
   </div>
 </Playground>
 
@@ -67,24 +65,21 @@ Mouseover to view `:hover` state.
 To create the disabled state, add the `a-checkbox--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
 <Playground>
-  <div className="a-checkbox">
-    <label htmlFor="checkbox1">Checkbox</label>
-    <input type="checkbox" id="checkbox1" />
+  <div className='a-checkbox'>
+    <label htmlFor='checkbox1'>Checkbox</label>
+    <input type='checkbox' id='checkbox1' />
   </div>
-
-  <div className="a-checkbox">
-    <label htmlFor="checkbox2">Checked</label>
-    <input type="checkbox" id="checkbox2" defaultChecked />
+  <div className='a-checkbox'>
+    <label htmlFor='checkbox2'>Checked</label>
+    <input type='checkbox' id='checkbox2' defaultChecked />
   </div>
-
-  <div className="a-checkbox a-checkbox--indeterminate">
-    <label htmlFor="checkbox3">Indeterminate</label>
-    <input type="checkbox" id="checkbox3" defaultChecked />
+  <div className='a-checkbox a-checkbox--indeterminate'>
+    <label htmlFor='checkbox3'>Indeterminate</label>
+    <input type='checkbox' id='checkbox3' defaultChecked />
   </div>
-
-  <div className="a-checkbox a-checkbox--disabled">
-    <label htmlFor="checkbox4">Disabled</label>
-    <input type="checkbox" id="checkbox4" disabled />
+  <div className='a-checkbox a-checkbox--disabled'>
+    <label htmlFor='checkbox4'>Disabled</label>
+    <input type='checkbox' id='checkbox4' disabled />
   </div>
 </Playground>
 
@@ -97,19 +92,17 @@ Mouseover to view `:hover` state.
 To create the disabled state, add the `a-toggle--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
 <Playground>
-  <div className="a-toggle">
-    <label htmlFor="toggle1">off</label>
-    <input type="checkbox" id="toggle1" />
+  <div className='a-toggle'>
+    <label htmlFor='toggle1'>off</label>
+    <input type='checkbox' id='toggle1' />
   </div>
-
-<div className='a-toggle'>
-  <label htmlFor='toggle2'>on</label>
-  <input type='checkbox' id='toggle2' defaultChecked />
-</div>
-
-  <div className="a-toggle a-toggle--disabled">
-    <label htmlFor="toggle3">disabled</label>
-    <input type="checkbox" id="toggle3" disabled />
+  <div className='a-toggle'>
+    <label htmlFor='toggle2'>on</label>
+    <input type='checkbox' id='toggle2' defaultChecked />
+  </div>
+  <div className='a-toggle a-toggle--disabled'>
+    <label htmlFor='toggle3'>disabled</label>
+    <input type='checkbox' id='toggle3' disabled />
   </div>
 </Playground>
 
@@ -128,20 +121,19 @@ Mouseover and click to view `:hover` and `:active` state.
 To create the disabled state, add the `a-slider--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
 <Playground>
-  <div className="a-slider">
-    <label htmlFor="slider1">
+  <div className='a-slider'>
+    <label htmlFor='slider1'>
       Slider
-      <span className="a-slider--value">50 coins</span>
+      <span className='a-slider--value'>50 coins</span>
     </label>
-    <input type="range" min="1" max="100" id="slider1" />
+    <input type='range' min='1' max='100' id='slider1' />
   </div>
-
-  <div className="a-slider a-slider--disabled">
-    <label htmlFor="slider1">
+  <div className='a-slider a-slider--disabled'>
+    <label htmlFor='slider1'>
       Disabled
-      <span className="a-slider--value">0 coins</span>
+      <span className='a-slider--value'>0 coins</span>
     </label>
-    <input type="range" min="1" max="100" id="slider1" disabled />
+    <input type='range' min='1' max='100' id='slider1' disabled />
   </div>
 </Playground>
 
@@ -156,64 +148,65 @@ Each tab can be created both with or without Astro icons. To add an icon, follow
 Mouseover to view `:hover` state, and click on a tab to see its content.
 
 <Playground>
-  <div className="a-tabs">
-    <input className="a-tabs__item" type="radio" id="tab1" name="tabs1" defaultChecked />
-    <label className="a-tabs__label" htmlFor="tab1">
-      <i className="a-icon a-icon__calendar a-icon--space-right a-tabs__icon" />
-      <span className="a-tabs__text">Tab 1</span>
+  <div className='a-tabs'>
+    <input
+      className='a-tabs__item'
+      type='radio'
+      id='tab1'
+      name='tabs1'
+      defaultChecked
+    />
+    <label className='a-tabs__label' htmlFor='tab1'>
+      <i className='a-icon a-icon__calendar a-icon--space-right a-tabs__icon' />
+      <span className='a-tabs__text'>Tab 1</span>
     </label>
-    <div className="a-tabs__content">
-      <h2 className="a-title--large">tab 1</h2>
-      <p className="a-text--secondary-medium">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        In euismod nisi in orci mattis, ac iaculis orci lobortis.
+    <div className='a-tabs__content'>
+      <h2 className='a-title--large'>tab 1</h2>
+      <p className='a-text--secondary-medium'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod nisi
+        in orci mattis, ac iaculis orci lobortis.
       </p>
-      <p className="a-text--secondary-medium">
-        Nullam imperdiet dolor a erat commodo laoreet a ut felis.
-        Nam consequat nisl eu efficitur suscipit.
-        Nulla dapibus cursus diam in convallis.
-      </p>
-    </div>
-
-    <input className="a-tabs__item" type="radio" id="tab2" name="tabs1" />
-    <label className="a-tabs__label" htmlFor="tab2">
-      <i className="a-icon a-icon__mail a-icon--space-right a-tabs__icon" />
-      <span className="a-tabs__text">Tab 2</span>
-    </label>
-    <div className="a-tabs__content">
-      <h2 className="a-title--large">tab 2</h2>
-      <p className="a-text--secondary-medium">
-        Integer id pulvinar odio, sit amet accumsan lacus.
-        Pellentesque accumsan sapien eget orci auctor, ac pulvinar orci porttitor.
-        Sed fermentum turpis sed egestas commodo.
-        In euismod nisi in orci mattis, ac iaculis orci lobortis.
+      <p className='a-text--secondary-medium'>
+        Nullam imperdiet dolor a erat commodo laoreet a ut felis. Nam consequat
+        nisl eu efficitur suscipit. Nulla dapibus cursus diam in convallis.
       </p>
     </div>
-
-    <input className="a-tabs__item" type="radio" id="tab3" name="tabs1" />
-    <label className="a-tabs__label" htmlFor="tab3">
-      <i className="a-icon a-icon__profile a-icon--space-right a-tabs__icon" />
-      <span className="a-tabs__text">Tab 3</span>
+    <input className='a-tabs__item' type='radio' id='tab2' name='tabs1' />
+    <label className='a-tabs__label' htmlFor='tab2'>
+      <i className='a-icon a-icon__mail a-icon--space-right a-tabs__icon' />
+      <span className='a-tabs__text'>Tab 2</span>
     </label>
-    <div className="a-tabs__content">
-      <h2 className="a-title--large">tab 3</h2>
-      <p className="a-text--secondary-medium">
-        Quisque dictum erat lectus, ac dapibus orci ultricies vitae.
-        Suspendisse id vestibulum turpis.
+    <div className='a-tabs__content'>
+      <h2 className='a-title--large'>tab 2</h2>
+      <p className='a-text--secondary-medium'>
+        Integer id pulvinar odio, sit amet accumsan lacus. Pellentesque accumsan
+        sapien eget orci auctor, ac pulvinar orci porttitor. Sed fermentum
+        turpis sed egestas commodo. In euismod nisi in orci mattis, ac iaculis
+        orci lobortis.
       </p>
     </div>
-
-    <input className="a-tabs__item" type="radio" id="tab4" name="tabs1" />
-    <label className="a-tabs__label" htmlFor="tab4">
-      <span className="a-tabs__text">Tab 4</span>
+    <input className='a-tabs__item' type='radio' id='tab3' name='tabs1' />
+    <label className='a-tabs__label' htmlFor='tab3'>
+      <i className='a-icon a-icon__profile a-icon--space-right a-tabs__icon' />
+      <span className='a-tabs__text'>Tab 3</span>
     </label>
-    <div className="a-tabs__content">
-      <h2 className="a-title--large">tab 4</h2>
-      <p className="a-text--secondary-medium">
+    <div className='a-tabs__content'>
+      <h2 className='a-title--large'>tab 3</h2>
+      <p className='a-text--secondary-medium'>
+        Quisque dictum erat lectus, ac dapibus orci ultricies vitae. Suspendisse
+        id vestibulum turpis.
+      </p>
+    </div>
+    <input className='a-tabs__item' type='radio' id='tab4' name='tabs1' />
+    <label className='a-tabs__label' htmlFor='tab4'>
+      <span className='a-tabs__text'>Tab 4</span>
+    </label>
+    <div className='a-tabs__content'>
+      <h2 className='a-title--large'>tab 4</h2>
+      <p className='a-text--secondary-medium'>
         Nam consequat nisl eu efficitur suscipit vestibulum turpis.
       </p>
     </div>
-
-    <div className="a-tabs__border"></div>
+    <div className='a-tabs__border' />
   </div>
 </Playground>
