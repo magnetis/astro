@@ -1,6 +1,7 @@
 .a-input {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .a-input > input,
@@ -22,6 +23,16 @@
   pointer-events: none;
   color: var(--color-moon-300);
   font: var(--font-secondary);
+}
+
+.a-input--messaging > input {
+  padding-right: 80px;
+}
+
+.a-input--messaging > button {
+  position: absolute;
+  right: 16px;
+  top: 16px;
 }
 
 .a-input--validated > input {
@@ -98,7 +109,7 @@
 }
 
 .a-input > .a-input__error {
-  position: absolute;
+  position: relative;
   display: block;
   margin: 4px 16px;
   color: var(--color-mars-500);
