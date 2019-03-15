@@ -1,0 +1,116 @@
+---
+name: Iconography
+---
+
+import '../src/index.css';
+import { Playground } from 'docz';
+import IconsCollection from './components/IconsCollection';
+
+# iconography
+
+Icons carry affordance and interaction patterns of Magnetis’ platform. They should be used in meaningful assets like buttons and visual informative support to help users navigate through our product.
+
+## dashboard icons
+
+All icons have a 32x32px bound as default format. They can be resized in our 16px baseline as required.
+
+<IconsCollection
+  icons={[
+    'additional',
+    'wallet',
+    'referral',
+    'trades',
+    'redemption',
+    'document',
+    'chat'
+  ]}
+/>
+
+## support icons
+
+<IconsCollection
+  icons={[
+    'alert',
+    'circle-check',
+    'circle-down',
+    'circle-up',
+    'circle-left',
+    'circle-right',
+    'x-men',
+    'copy',
+    'info',
+    'key',
+    'logout',
+    'mail',
+    'menu',
+    'phone',
+    'profile',
+    'clock',
+    'arrow-down',
+    'arrow-up',
+    'arrow-left',
+    'arrow-right',
+    'download',
+    'play',
+    'locker',
+    'magnifier',
+    'sliders',
+    'eye-open',
+    'eye-closed',
+    'pencil',
+    'drop-down',
+    'drop-up',
+    'drop-left',
+    'drop-right',
+    'calendar',
+    'pizza',
+    'circle-mail',
+    'configuration',
+    'baloon',
+    'warning',
+    'photo',
+    'page',
+    'trash',
+    'cake',
+    'laptop',
+    'coin',
+    'cup',
+    'house',
+    'light'
+  ]}
+/>
+
+## icons usage
+
+### minimum
+
+Pick one icon name above and apply the following class structure:
+
+<div className='code-snippet'>
+  <pre>{'<i class="a-icon a-icon__icon-name" />'}</pre>
+</div>
+
+### sizes
+
+You may apply the following CSS modifiers to smaller or bigger icon sizes.
+
+<Playground>
+  <i className='a-icon a-icon__cake a-icon--size-small' />
+  <i className='a-icon a-icon__cake' />
+  <i className='a-icon a-icon__cake a-icon--size-big' />
+</Playground>
+
+### spacers
+
+You may apply the following CSS modifiers to apply left or right spacers.
+
+<Playground>
+  <div>
+    <i className='a-icon a-icon__calendar a-icon--space-right' />
+    <span>Lorem Ipsum</span>
+  </div>
+  <div>
+    <span>Lorem Ipsum</span>
+    <i className='a-icon a-icon__calendar a-icon--space-left' />
+  </div>
+</Playground>

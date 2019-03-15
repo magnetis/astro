@@ -71,7 +71,7 @@
   width: 32px;
   height: 32px;
   content: '';
-  mask-image: url('../../assets/icons/check.svg');
+  mask-image: url('../../assets/icons/circle-check.svg');
   background-color: var(--color-earth-400);
 }
 

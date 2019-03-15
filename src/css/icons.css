@@ -32,16 +32,222 @@
   margin-right: 8px;
 }
 
-/* Icons */
+/* Dashboard icons */
 
-.a-icon__calendar {
-  mask-image: url(../../assets/icons/calendar.svg);
+.a-icon__additional {
+  mask-image: url(../../assets/icons/additional.svg);
+}
+
+.a-icon__wallet {
+  mask-image: url(../../assets/icons/wallet.svg);
+}
+
+.a-icon__referral {
+  mask-image: url(../../assets/icons/referral.svg);
+}
+
+.a-icon__trades {
+  mask-image: url(../../assets/icons/trades.svg);
+}
+
+.a-icon__redemption {
+  mask-image: url(../../assets/icons/redemption.svg);
+}
+
+.a-icon__document {
+  mask-image: url(../../assets/icons/document.svg);
+}
+
+.a-icon__chat {
+  mask-image: url(../../assets/icons/chat.svg);
+}
+
+/* Support icons */
+
+.a-icon__alert {
+  mask-image: url(../../assets/icons/alert.svg);
+}
+
+.a-icon__circle-check {
+  mask-image: url(../../assets/icons/circle-check.svg);
+}
+
+.a-icon__circle-down {
+  mask-image: url(../../assets/icons/circle-down.svg);
+}
+
+.a-icon__circle-up {
+  mask-image: url(../../assets/icons/circle-up.svg);
+}
+
+.a-icon__circle-left {
+  mask-image: url(../../assets/icons/circle-left.svg);
+}
+
+.a-icon__circle-right {
+  mask-image: url(../../assets/icons/circle-right.svg);
+}
+
+.a-icon__x-men {
+  mask-image: url(../../assets/icons/x-men.svg);
+}
+
+.a-icon__copy {
+  mask-image: url(../../assets/icons/copy.svg);
+}
+
+.a-icon__info {
+  mask-image: url(../../assets/icons/info.svg);
+}
+
+.a-icon__key {
+  mask-image: url(../../assets/icons/key.svg);
+}
+
+.a-icon__logout {
+  mask-image: url(../../assets/icons/logout.svg);
 }
 
 .a-icon__mail {
   mask-image: url(../../assets/icons/mail.svg);
 }
 
+.a-icon__menu {
+  mask-image: url(../../assets/icons/menu.svg);
+}
+
+.a-icon__phone {
+  mask-image: url(../../assets/icons/phone.svg);
+}
+
 .a-icon__profile {
   mask-image: url(../../assets/icons/profile.svg);
+}
+
+.a-icon__clock {
+  mask-image: url(../../assets/icons/clock.svg);
+}
+
+.a-icon__arrow-down {
+  mask-image: url(../../assets/icons/arrow-down.svg);
+}
+
+.a-icon__arrow-up {
+  mask-image: url(../../assets/icons/arrow-up.svg);
+}
+
+.a-icon__arrow-left {
+  mask-image: url(../../assets/icons/arrow-left.svg);
+}
+
+.a-icon__arrow-right {
+  mask-image: url(../../assets/icons/arrow-right.svg);
+}
+
+.a-icon__download {
+  mask-image: url(../../assets/icons/download.svg);
+}
+
+.a-icon__play {
+  mask-image: url(../../assets/icons/play.svg);
+}
+
+.a-icon__locker {
+  mask-image: url(../../assets/icons/locker.svg);
+}
+
+.a-icon__magnifier {
+  mask-image: url(../../assets/icons/magnifier.svg);
+}
+
+.a-icon__sliders {
+  mask-image: url(../../assets/icons/sliders.svg);
+}
+
+.a-icon__eye-open {
+  mask-image: url(../../assets/icons/eye-open.svg);
+}
+
+.a-icon__eye-closed {
+  mask-image: url(../../assets/icons/eye-closed.svg);
+}
+
+.a-icon__pencil {
+  mask-image: url(../../assets/icons/pencil.svg);
+}
+
+.a-icon__drop-down {
+  mask-image: url(../../assets/icons/drop-down.svg);
+}
+
+.a-icon__drop-up {
+  mask-image: url(../../assets/icons/drop-up.svg);
+}
+
+.a-icon__drop-left {
+  mask-image: url(../../assets/icons/drop-left.svg);
+}
+
+.a-icon__drop-right {
+  mask-image: url(../../assets/icons/drop-right.svg);
+}
+
+.a-icon__calendar {
+  mask-image: url(../../assets/icons/calendar.svg);
+}
+
+.a-icon__pizza {
+  mask-image: url(../../assets/icons/pizza.svg);
+}
+
+.a-icon__circle-mail {
+  mask-image: url(../../assets/icons/circle-mail.svg);
+}
+
+.a-icon__configuration {
+  mask-image: url(../../assets/icons/configuration.svg);
+}
+
+.a-icon__baloon {
+  mask-image: url(../../assets/icons/baloon.svg);
+}
+
+.a-icon__warning {
+  mask-image: url(../../assets/icons/warning.svg);
+}
+
+.a-icon__photo {
+  mask-image: url(../../assets/icons/photo.svg);
+}
+
+.a-icon__page {
+  mask-image: url(../../assets/icons/page.svg);
+}
+
+.a-icon__trash {
+  mask-image: url(../../assets/icons/trash.svg);
+}
+
+.a-icon__cake {
+  mask-image: url(../../assets/icons/cake.svg);
+}
+
+.a-icon__laptop {
+  mask-image: url(../../assets/icons/laptop.svg);
+}
+
+.a-icon__coin {
+  mask-image: url(../../assets/icons/coin.svg);
+}
+
+.a-icon__cup {
+  mask-image: url(../../assets/icons/cup.svg);
+}
+
+.a-icon__house {
+  mask-image: url(../../assets/icons/house.svg);
+}
+
+.a-icon__light {
+  mask-image: url(../../assets/icons/light.svg);
 }

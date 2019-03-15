@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/arrow/down</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15,19.6568542 L15,8 C15,7.44771525 15.4477153,7 16,7 C16.5522847,7 17,7.44771525 17,8 L17,19.6568542 L19.9497475,16.7071068 C20.3402718,16.3165825 20.9734367,16.3165825 21.363961,16.7071068 C21.7544853,17.0976311 21.7544853,17.7307961 21.363961,18.1213203 L17.1213203,22.363961 C17.0320895,22.4531919 16.9301909,22.5220344 16.8214136,22.5704886 C16.640778,22.8300876 16.3402316,23 16,23 C15.6597684,23 15.359222,22.8300876 15.1785864,22.5704886 C15.0698091,22.5220344 14.9679105,22.4531919 14.8786797,22.363961 L10.636039,18.1213203 C10.2455147,17.7307961 10.2455147,17.0976311 10.636039,16.7071068 C11.0265633,16.3165825 11.6597282,16.3165825 12.0502525,16.7071068 L15,19.6568542 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/arrow/down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#C5C5C5" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

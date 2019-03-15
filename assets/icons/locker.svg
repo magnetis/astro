@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/locker</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.6391571,24 L17.3636579,16.7300843 C17.2192493,16.2687179 17.4255651,15.7701085 17.8537477,15.5456705 C19.1628734,14.8594733 20,13.5043753 20,12 C20,9.790861 18.209139,8 16,8 C13.790861,8 12,9.790861 12,12 C12,13.5224469 12.8575215,14.8912234 14.1911561,15.5688457 C14.6287623,15.7911942 14.8402928,16.2982818 14.6904198,16.765696 L12.3707914,24 L19.6391571,24 Z M21.9543434,24.7012885 C22.1559235,25.3453097 21.6748317,26 21,26 L11,26 C10.3222582,26 9.84081813,25.3400461 10.0477537,24.694669 L12.5450272,16.9063369 C10.9746644,15.8000486 10,13.9867158 10,12 C10,8.6862915 12.6862915,6 16,6 C19.3137085,6 22,8.6862915 22,12 C22,13.9650952 21.0464749,15.7616121 19.5036439,16.8716309 L21.9543434,24.7012885 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/locker" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#C5C5C5" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="color/moon-900" mask="url(#mask-2)" fill="#32383C">
+            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+        </g>
+    </g>
+</svg>

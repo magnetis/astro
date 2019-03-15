@@ -1,0 +1,33 @@
+/* Container */
+
+.icons-collection {
+  display: flex;
+  margin: -12px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+
+.icons-collection__card {
+  margin: 12px;
+  text-align: center;
+}
+
+.icons-collection__card-description {
+  margin-top: 8px;
+  color: var(--color-space-500);
+  font: var(--font-primary);
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.icons-collection__card-icon {
+  padding: 24px;
+  border: solid 1px var(--color-space-400);
+  border-radius: 8px;
+  background-color: var(--color-space-100);
+}
+
+.icons-collection__card-icon .a-icon {
+  background-color: var(--color-moon-900);
+}
