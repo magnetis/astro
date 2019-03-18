@@ -12,10 +12,7 @@ export const Card = ({ icon }) => (
 
 const IconsCollection = ({ icons }) => (
   <div className='icons-collection'>
-    {icons &&
-      icons.map(icon => {
-        return <Card key={icon} icon={icon} />;
-      })}
+    {icons && icons.map(icon => <Card key={icon} icon={icon} />)}
   </div>
 );
 
