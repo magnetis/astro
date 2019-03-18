@@ -35,6 +35,8 @@ export const initMessagingInputEvent = () => {
       const currentMessagingInput = input.firstChild;
       const currentButton = input.querySelector('button');
 
+      if (currentMessagingInput.value) currentButton.disabled = false;
+
       currentMessagingInput.addEventListener('input', event => {
         if (event.target.value) {
           currentButton.disabled = false;

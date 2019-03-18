@@ -26,7 +26,7 @@
 }
 
 .a-input--messaging > input {
-  padding-right: 80px;
+  padding: 15px 80px 15px 16px;
 }
 
 .a-input--messaging > button {
