@@ -2,6 +2,15 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.5.0] - 2019-03-18
+- Breaking changes: Refactor disabled state of some components to standardize label and input order and their classes and attributes.
+- Change documentation domain to astro.magnetis.com.br.
+- Add tabs components to Controls & Toggles.
+- Add a Magnetis logo favicon.
+- Move release checklist to Astro GitHub repository.
+- Add info about our new staging environment to Contributing Guide.
+- Fix code formatting on most files.
+
 ### [0.4.1] - 2019-02-27
 - Fix input style inconsistencies.
 - Update Usage section in the docs.
