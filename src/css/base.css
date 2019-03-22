@@ -28,6 +28,9 @@ ul {
 }
 
 .a-link {
+  font: var(--font-primary);
+  font-size: 18px;
+  font-weight: 500;
   color: var(--color-uranus-700);
   text-decoration: underline;
   cursor: pointer;
@@ -42,6 +45,6 @@ ul {
   color: var(--color-uranus-800);
 }
 
-.a-link.a-btn {
+a.a-btn {
   text-decoration: none;
 }
