@@ -1,18 +1,44 @@
+/* This file contains styles for the homepage only. All other styles are in doczrc.js */
+
 .cards-box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .cards-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 30%;
+}
+
+.cards-box .a-btn {
+  align-self: flex-start;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+h3 {
+  font: var(--font-primary);
+  font-size: 28px;
+  color: var(--font-color);
+}
+
+ul {
+  margin: 0 0 20px;
 }
 
 pre,
 code {
+  font-size: 16px;
   background-color: var(--color-moon-100);
 }
 
 .code-snippet {
   overflow-x: scroll;
   background-color: var(--color-moon-100);
+  padding: 0 10px;
 }
