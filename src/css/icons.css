@@ -22,6 +22,10 @@
   font-size: 32px;
 }
 
+.a-icon--size-huge {
+  font-size: 42px;
+}
+
 /* Spaces */
 
 .a-icon--space-left {
