@@ -6,7 +6,7 @@
   height: 1em;
   vertical-align: middle;
   background-color: var(--color-moon-900);
-  font-size: 24px;
+  font-size: 32px;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
@@ -15,15 +15,15 @@
 /* Sizes */
 
 .a-icon--size-small {
-  font-size: 16px;
+  font-size: 24px;
 }
 
-.a-icon--size-big {
+.a-icon--size-medium {
   font-size: 32px;
 }
 
-.a-icon--size-huge {
-  font-size: 42px;
+.a-icon--size-large {
+  font-size: 40px;
 }
 
 /* Spaces */
@@ -212,8 +212,8 @@
   mask-image: url(../../assets/icons/configuration.svg);
 }
 
-.a-icon__baloon {
-  mask-image: url(../../assets/icons/baloon.svg);
+.a-icon__balloon {
+  mask-image: url(../../assets/icons/balloon.svg);
 }
 
 .a-icon__warning {
