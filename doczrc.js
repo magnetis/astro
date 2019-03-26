@@ -1,5 +1,26 @@
 import { css } from 'docz-plugin-css';
 
+const selectors = {
+  wrapper: '& .css-pw2o4y',
+  main: '& .css-1i0fr1k',
+  logo: '& .css-c9p757',
+  menuArea: '& .css-wwgiek',
+  innerMenuArea: '& .css-pccrlp',
+  menuItem: '& .css-82rrzo, .css-82rrzo.active, .css-82rrzo:visited',
+  menuSubitemsArea: '& .css-1qc5yjq',
+  menuSubItem: '& .css-1l1jc95, .css-1l1jc95:visited',
+
+  /* Docz default elements (hidden) */
+
+  editPageBtn: '& .css-p4m8gg',
+  githubBtn: 'a[aria-label="View source on Github"]',
+  builtDocz: '& .css-b4nn6f',
+  search: '& .css-1pxi6pq',
+  menuBlueTop: '& .css-y1r3ra:before',
+  menuItemsBorder: '& .css-1ccg7te:after',
+  menuSubitemsBorder: '& .css-1evit71:after'
+};
+
 export default {
   hashRouter: true,
   base: '/',
@@ -14,23 +35,51 @@ export default {
   }),
   indexHtml: 'public/docz.html',
   htmlContext: {
-    favicon: 'public/favicon.png',
+    favicon: 'public/favicon.png'
   },
   themeConfig: {
+    /* In this file, the font shorthand with variable only works if you'll use it whole don't need to alter any other font properties */
     styles: {
       body: {
-        '& .css-pw2o4y': { /* Selects page wrapper div for gradient header */
+        /* Hide Docz default elements */
+
+        [selectors.editPageBtn]: {
+          display: 'none'
+        },
+        [selectors.githubBtn]: {
+          display: 'none'
+        },
+        [selectors.builtDocz]: {
+          display: 'none'
+        },
+        [selectors.search]: {
+          display: 'none'
+        },
+        [selectors.menuBlueTop]: {
+          display: 'none'
+        },
+        [selectors.menuItemsBorder]: {
+          display: 'none'
+        },
+        [selectors.menuSubitemsBorder]: {
+          display: 'none'
+        },
+
+        /* Custom theme styles */
+
+        [selectors.wrapper]: {
+          /* Gradient header */
           backgroundImage: 'var(--gradient-nebulosa)',
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 312px'
         },
-        '@media (min-width: 420px)': { 
-          '& .css-1i0fr1k': { /* Selects main content div */  
+        '@media (min-width: 420px)': {
+          [selectors.main]: {
             padding: '0 40px 40px 100px'
           }
         },
-        '& .css-c9p757': {
+        [selectors.logo]: {
           height: 171,
           width: 151,
           margin: '46px 60px',
@@ -40,37 +89,22 @@ export default {
           backgroundRepeat: 'no-repeat',
           textIndent: -999
         },
-        '& p': { /* Selects stubborn <p> elements */
-          font: 'var(--font-secondary)', /* In this file, the font shorthand with variable only works if you use the whole and don't need to alter any other font properties */
+        '& p': {
+          font: 'var(--font-secondary)',
           color: 'var(--color-moon-900)!important'
         },
         a: {
           color: 'var(--color-uranus-700)'
         },
-        '& .css-p4m8gg': { /* Selects "Edit Page" button */
-          display: 'none'
-        },
-        'a[aria-label="View source on Github"]': { /* Selects GitHub top-right button */
-          display: 'none'
-        },
-        '& .css-b4nn6f': { /* Selects "Built with Docz" link on menu bottom */
-          display: 'none'
-        },
-        '& .css-1pxi6pq': { /* Hides menu search area */
-          display: 'none'
-        },
-        '& .css-y1r3ra:before': { /* Selects top blue border on menu */
-          display: 'none'
-        },
-        '& .css-wwgiek': { /* Selects menu area */
+        [selectors.menuArea]: {
           background: 'var(--color-space-100)',
           borderRight: '1px solid var(--color-space-300)',
           width: 320,
-          '& .css-pccrlp': { /* Selects inner menu area */
+          [selectors.innerMenuArea]: {
             width: 320
           }
         },
-        '& .css-82rrzo, .css-82rrzo.active, .css-82rrzo:visited': { /* Selects each menu item */
+        [selectors.menuItem]: {
           fontFamily: "'Poppins', sans-serif",
           fontSize: 20,
           fontWeight: 500,
@@ -95,13 +129,10 @@ export default {
             backgroundColor: 'var(--color-moon-900)'
           }
         },
-        '& .css-1ccg7te:after': { /* Removes dashed left border on menu items */
-          display: 'none'
-        },
-        '& .css-1qc5yjq': { /* Selects menu sub-item group area */
+        [selectors.menuSubitemsArea]: {
           margin: '5px 0 15px'
         },
-        '& .css-1l1jc95, .css-1l1jc95:visited': { /* Selects each menu sub-item */
+        [selectors.menuSubItem]: {
           fontFamily: "'Poppins', sans-serif",
           fontSize: 16,
           fontWeight: 500,
@@ -117,9 +148,6 @@ export default {
           '&:before': {
             display: 'none'
           }
-        },
-        '& .css-1evit71:after': { /* Removes dashed left border on menu sub-items */
-          display: 'none'
         }
       },
       h1: {
@@ -128,8 +156,9 @@ export default {
         fontWeight: 600,
         color: 'var(--color-space-100)',
         margin: '103px 0 186px',
-        ':before': { /* Removes bottom blue line */
-          display: 'none' 
+        ':before': {
+          /* Removes bottom blue line */
+          display: 'none'
         }
       },
       h2: {
@@ -139,7 +168,8 @@ export default {
         color: 'var(--color-moon-500)',
         borderBottom: 'none',
         margin: '0 0 15px',
-        '& a[href]': { /* Selects download links in Typography page */
+        '& a[href]': {
+          /* Selects download links in Typography page */
           color: 'var(--color-uranus-700)',
           textDecoration: 'underline',
           '&:hover': {
@@ -149,11 +179,12 @@ export default {
             color: 'var(--color-uranus-800)'
           }
         },
-        '&#manifesto, &#get-started': { /* Selects specific Homepage h2 headings */
+        '&#manifesto, &#get-started': {
+          /* Selects specific Homepage h2 headings */
           fontSize: 40,
           color: 'var(--color-moon-900)',
           marginTop: 64
-        },
+        }
       },
       h4: {
         fontFamily: "'Lato', sans-serif",
