@@ -81,7 +81,7 @@ Mouseover and click to view `:hover` and `:active` states.
 
 Buttons with icons help identify the action or context within the interface.
 
-To create an iconlabel button, first create a regular primary button with all size and color modifier classes, plus the `a-btn--iconlabel` class. Then, if you want the icon to the left of the label, add a `<i>` tag inside the button and before its inner text. 
+To create an iconlabel button, first create a regular primary button with all size and color modifier classes, plus the `a-btn--iconlabel` class. Then, if you want the icon to the left of the label, add a `<i>` tag inside the button and before its inner text.
 
 If you want the icon to the right of the label, add the `a-btn--iconlabel--right` in addition to the previous settings and place the `<i>` tag inside the button and after its inner text, instead.
 
@@ -89,16 +89,19 @@ See our [Iconography](https://astro.magnetis.com.br/#/docs-iconography) to learn
 
 <Playground>
   <button className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
     iconlabel
   </button>
   <button className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'>
     iconlabel
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
-  <button className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right' disabled>
+  <button
+    className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'
+    disabled
+  >
     iconlabel
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
 
@@ -108,16 +111,19 @@ Outline iconlabel buttons are commonly used in microinteractions and secondary c
 
 <Playground>
   <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
     iconlabel
   </button>
   <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'>
     iconlabel
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
-  <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right' disabled>
+  <button
+    className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'
+    disabled
+  >
     iconlabel
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
 
@@ -127,16 +133,19 @@ Ghost iconlabel buttons are also used in microinteractions and smaller commands.
 
 <Playground>
   <button className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
     iconlabel
   </button>
   <button className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'>
     iconlabel
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
-  <button className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right' disabled>
+  <button
+    className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'
+    disabled
+  >
     iconlabel
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
 
@@ -144,22 +153,25 @@ Ghost iconlabel buttons are also used in microinteractions and smaller commands.
 
 Icon buttons can be used for simple microinteractions and commands.
 
-To create an icon button, first create a regular primary or outline button with all size and color modifier classes, plus the `a-btn--icon` class. Then add a `<i>` tag inside the button with no inner text. 
+To create an icon button, first create a regular primary or outline button with all size and color modifier classes, plus the `a-btn--icon` class. Then add a `<i>` tag inside the button with no inner text.
 
 See our [Iconography](https://astro.magnetis.com.br/#/docs-iconography) to learn how to use Astro icons.
 
 <Playground>
   <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--icon'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon' disabled>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
-    <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--icon' disabled>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+  <button
+    className='a-btn a-btn--outline-uranus a-btn--medium a-btn--icon'
+    disabled
+  >
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
 
@@ -201,58 +213,58 @@ When creating small or big iconlabel or icon buttons, remember to change the siz
 
 <Playground>
   <button className='a-btn a-btn--uranus a-btn--iconlabel a-btn--small'>
-    <i class="a-icon a-icon__calendar a-icon--size-medium" />
+    <i class='a-icon a-icon__calendar a-icon--size-small' />
     iconlabel small
   </button>
   <button className='a-btn a-btn--uranus a-btn--iconlabel a-btn--medium'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
     iconlabel medium
   </button>
   <button className='a-btn a-btn--uranus a-btn--iconlabel a-btn--large'>
-    <i class="a-icon a-icon__calendar a-icon--size-huge" />
+    <i class='a-icon a-icon__calendar a-icon--size-large' />
     iconlabel large
   </button>
 </Playground>
 
 <Playground>
   <button className='a-btn a-btn--outline-uranus a-btn--iconlabel a-btn--small'>
-    <i class="a-icon a-icon__calendar a-icon--size-medium" />
+    <i class='a-icon a-icon__calendar a-icon--size-small' />
     outline iconlabel small
   </button>
   <button className='a-btn a-btn--outline-uranus a-btn--iconlabel a-btn--medium'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
     outline iconlabel medium
   </button>
   <button className='a-btn a-btn--outline-uranus a-btn--iconlabel a-btn--large'>
-    <i class="a-icon a-icon__calendar a-icon--size-huge" />
+    <i class='a-icon a-icon__calendar a-icon--size-large' />
     outline iconlabel large
   </button>
 </Playground>
 
 <Playground>
   <button className='a-btn a-btn--ghost-uranus a-btn--iconlabel a-btn--small'>
-    <i class="a-icon a-icon__calendar a-icon--size-medium" />
+    <i class='a-icon a-icon__calendar a-icon--size-small' />
     ghost iconlabel small
   </button>
   <button className='a-btn a-btn--ghost-uranus a-btn--iconlabel a-btn--medium'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
     ghost iconlabel medium
   </button>
   <button className='a-btn a-btn--ghost-uranus a-btn--iconlabel a-btn--large'>
-    <i class="a-icon a-icon__calendar a-icon--size-huge" />
+    <i class='a-icon a-icon__calendar a-icon--size-large' />
     ghost iconlabel large
   </button>
 </Playground>
 
 <Playground>
   <button className='a-btn a-btn--uranus a-btn--small a-btn--icon'>
-    <i class="a-icon a-icon__calendar a-icon--size-medium" />
+    <i class='a-icon a-icon__calendar a-icon--size-small' />
   </button>
   <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon'>
-    <i class="a-icon a-icon__calendar a-icon--size-big" />
+    <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button className='a-btn a-btn--uranus a-btn--large a-btn--icon'>
-    <i class="a-icon a-icon__calendar a-icon--size-huge" />
+    <i class='a-icon a-icon__calendar a-icon--size-large' />
   </button>
 </Playground>
 
