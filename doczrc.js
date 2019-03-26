@@ -186,6 +186,12 @@ export default {
           marginTop: 64
         }
       },
+      h3: {
+        fontFamily: "'Poppins', sans-serif",
+        fontSize: 16,
+        fontWeight: 600,
+        color: 'var(--color-moon-500)',
+      },
       h4: {
         fontFamily: "'Lato', sans-serif",
         fontSize: 22,
