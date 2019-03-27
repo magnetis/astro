@@ -84,7 +84,7 @@ export default {
           width: 151,
           margin: '46px 60px',
           backgroundImage: 'url("public/astro-logo.svg")',
-          backgroundSize: 200,
+          backgroundSize: 164,
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           textIndent: -999
