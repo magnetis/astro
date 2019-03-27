@@ -7,7 +7,7 @@ import { Playground } from 'docz';
 
 # buttons
 
-## primary
+## primary buttons
 
 Primary buttons are medium sized and have a colored background. They aren't always the same color, though, so there isn't a default "primary" look or CSS class - primary here is more of a concept.
 
@@ -27,7 +27,7 @@ Mouseover and click to view `:hover` and `:active` states.
   </button>
 </Playground>
 
-## outline
+## outline buttons
 
 Outline buttons can be used as secondary roles. Secondary buttons present secondary actions when there's already a primary action in the same section or screen.
 
@@ -83,7 +83,7 @@ Buttons with icons help identify the action or context within the interface.
 
 To create an iconlabel button, first create a regular primary button with all size and color modifier classes, plus the `a-btn--iconlabel` class. Then, if you want the icon to the left of the label, add a `<i>` tag inside the button and before its inner text.
 
-If you want the icon to the right of the label, add the `a-btn--iconlabel--right` in addition to the previous settings and place the `<i>` tag inside the button and after its inner text, instead.
+If you want the icon to the right of the label, add the `a-btn--iconlabel-right` in addition to the previous settings and place the `<i>` tag inside the button and after its inner text, instead.
 
 See our [Iconography](https://astro.magnetis.com.br/#/docs-iconography) to learn how to use Astro icons.
 
@@ -92,12 +92,12 @@ See our [Iconography](https://astro.magnetis.com.br/#/docs-iconography) to learn
     <i class='a-icon a-icon__calendar a-icon--size-medium' />
     iconlabel
   </button>
-  <button className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'>
+  <button className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'>
     iconlabel
     <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button
-    className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'
+    className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'
     disabled
   >
     iconlabel
@@ -114,12 +114,12 @@ Outline iconlabel buttons are commonly used in microinteractions and secondary c
     <i class='a-icon a-icon__calendar a-icon--size-medium' />
     iconlabel
   </button>
-  <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'>
+  <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'>
     iconlabel
     <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button
-    className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'
+    className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'
     disabled
   >
     iconlabel
@@ -136,12 +136,12 @@ Ghost iconlabel buttons are also used in microinteractions and smaller commands.
     <i class='a-icon a-icon__calendar a-icon--size-medium' />
     iconlabel
   </button>
-  <button className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'>
+  <button className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'>
     iconlabel
     <i class='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button
-    className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel--right'
+    className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'
     disabled
   >
     iconlabel
