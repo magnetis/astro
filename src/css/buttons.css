@@ -1,3 +1,5 @@
+/* Please don't change the order of the style blocks in this file as it may break the cascade */
+
 /* Base button styles */
 
 .a-btn {
@@ -83,29 +85,6 @@
 .a-btn--earth:active:not(:disabled):not(.a-btn--disabled) {
   background-color: var(--color-earth-500);
   border-color: var(--color-earth-500);
-}
-
-/* Button size modifiers */
-
-.a-btn--small {
-  padding: 5px 37px;
-  border-radius: 16px;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.a-btn--medium {
-  padding: 8px 38px;
-  border-radius: 24px;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.a-btn--large {
-  padding: 12px 71px;
-  border-radius: 31px;
-  font-size: 24px;
-  line-height: 35px;
 }
 
 /* Outline button */
@@ -290,4 +269,167 @@
   color: var(--color-moon-200);
 }
 
+/* Iconlabel button */
+
+.a-btn--iconlabel .a-icon {
+  background-color: var(--color-space-100);
+  margin: -4px 9px -3px 0;
+  transition: all 0.3s ease;
+}
+
+.a-btn--iconlabel-right .a-icon {
+  margin: -4px 0 -3px 9px;
+}
+
+.a-btn--iconlabel.a-btn--earth .a-icon {
+  background-color: var(--color-moon-900);
+}
+
+/* Icon button */
+
+.a-btn--icon .a-icon {
+  background-color: var(--color-space-100);
+  margin: -4px 0 -3px;
+  transition: all 0.3s ease;
+}
+
+/* Outline iconlabel button */
+
+.a-btn--outline-uranus .a-icon {
+  background-color: var(--color-uranus-500);
+}
+
+.a-btn--outline-venus .a-icon {
+  background-color: var(--color-venus-400);
+}
+
+.a-btn--outline-earth .a-icon {
+  background-color: var(--color-earth-600);
+}
+
+.a-btn--outline-mars .a-icon {
+  background-color: var(--color-mars-500);
+}
+
+.a-btn--outline-uranus:hover:not(:disabled):not(.a-btn--disabled) .a-icon,
+.a-btn--outline-venus:hover:not(:disabled):not(.a-btn--disabled) .a-icon,
+.a-btn--outline-mars:hover:not(:disabled):not(.a-btn--disabled) .a-icon,
+.a-btn--outline-uranus:active:not(:disabled):not(.a-btn--disabled) .a-icon,
+.a-btn--outline-venus:active:not(:disabled):not(.a-btn--disabled) .a-icon,
+.a-btn--outline-mars:active:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-space-100);
+}
+
+.a-btn--outline-earth:hover:not(:disabled):not(.a-btn--disabled) .a-icon,
+.a-btn--outline-earth:active:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-moon-900);
+}
+
+.a-btn--outline-uranus:disabled .a-icon,
+.a-btn--outline-venus:disabled .a-icon,
+.a-btn--outline-earth:disabled .a-icon,
+.a-btn--outline-mars:disabled .a-icon,
+.a-btn--outline-uranus.a-btn--disabled .a-icon,
+.a-btn--outline-venus.a-btn--disabled .a-icon,
+.a-btn--outline-earth.a-btn--disabled .a-icon,
+.a-btn--outline-mars.a-btn--disabled .a-icon {
+  background-color: var(--color-moon-200);
+}
+
+/* Ghost iconlabel button */
+
+.a-btn--ghost-uranus .a-icon {
+  background-color: var(--color-uranus-500);
+}
+
+.a-btn--ghost-uranus:hover:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-uranus-400);
+}
+
+.a-btn--ghost-uranus:active:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-uranus-600);
+}
+
+.a-btn--ghost-venus .a-icon {
+  background-color: var(--color-venus-400);
+}
+
+.a-btn--ghost-venus:hover:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-venus-300);
+}
+
+.a-btn--ghost-venus:active:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-venus-500);
+}
+
+.a-btn--ghost-earth .a-icon {
+  background-color: var(--color-earth-600);
+}
+
+.a-btn--ghost-earth:hover:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-earth-300);
+}
+
+.a-btn--ghost-earth:active:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-earth-800);
+}
+
+.a-btn--ghost-mars .a-icon {
+  background-color: var(--color-mars-500);
+}
+
+.a-btn--ghost-mars:hover:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-mars-400);
+}
+
+.a-btn--ghost-mars:active:not(:disabled):not(.a-btn--disabled) .a-icon {
+  background-color: var(--color-mars-600);
+}
+
+.a-btn--ghost-uranus:disabled .a-icon,
+.a-btn--ghost-venus:disabled .a-icon,
+.a-btn--ghost-earth:disabled .a-icon,
+.a-btn--ghost-mars:disabled .a-icon,
+.a-btn--ghost-uranus.a-btn--disabled .a-icon,
+.a-btn--ghost-venus.a-btn--disabled .a-icon,
+.a-btn--ghost-earth.a-btn--disabled .a-icon,
+.a-btn--ghost-mars.a-btn--disabled .a-icon {
+  background-color: var(--color-moon-200);
+}
+
 /* stylelint-enable */
+
+/* Button size modifiers */
+
+.a-btn--small {
+  padding: 5px 28px;
+  border-radius: 16px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.a-btn--medium {
+  padding: 8px 38px;
+  border-radius: 24px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.a-btn--large {
+  padding: 12px 46px;
+  border-radius: 31px;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.a-btn--icon.a-btn--small {
+  padding: 5px 2px;
+}
+
+.a-btn--icon.a-btn--medium {
+  padding: 8px 6px;
+}
+
+.a-btn--icon.a-btn--large {
+  padding: 11px 9px;
+}

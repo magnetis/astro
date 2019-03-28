@@ -3,7 +3,8 @@
   display: inline-block;
 }
 
-.a-input > input {
+.a-input > input,
+.a-input > textarea {
   width: 100%;
   padding: 25px 44px 5px 16px;
   border: 1px solid var(--color-moon-500);
@@ -39,11 +40,13 @@
   color: var(--color-mars-500);
 }
 
-.a-input > input:focus {
+.a-input > input:focus,
+.a-input > textarea:focus {
   border: 1px solid var(--color-uranus-500);
 }
 
-.a-input > input:focus + label {
+.a-input > input:focus + label,
+.a-input > textarea:focus + label {
   top: 8px;
   color: var(--color-uranus-500);
   font-size: 12px;
@@ -103,13 +106,15 @@
   font-size: 12px;
 }
 
-.a-input--disabled > input:disabled {
+.a-input--disabled > input:disabled,
+.a-input--disabled > textarea:disabled {
   cursor: not-allowed;
   border: 1px solid var(--color-moon-200);
   background-color: var(--color-moon-100);
 }
 
-.a-input--disabled > input:disabled + label {
+.a-input--disabled > input:disabled + label,
+.a-input--disabled > textarea:disabled + label {
   cursor: not-allowed;
   color: var(--color-moon-300);
   font: var(--font-secondary);

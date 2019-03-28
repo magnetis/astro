@@ -70,4 +70,20 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
   </div>
 </Playground>
 
+## text area inputs
+
+Text areas are used in contexts that demand long and descriptive texts.
+
+<Playground>
+  <div className='a-input'>
+    <textarea name='random' id='textarea1' rows='10' cols='20'></textarea>
+    <label id='label6' htmlFor='textarea1'>Write your book here</label>
+  </div>
+
+  <div className='a-input a-input--disabled'>
+    <textarea name='random' id='textarea2' rows='10' cols='20' disabled></textarea>
+    <label id='label7' htmlFor='textarea2'>Disabled</label>
+  </div>
+</Playground>
+
 <HandleFloatingLabel />
