@@ -5,7 +5,7 @@ name: inputs
 import { Fragment } from 'react';
 import '../src/index.css';
 import { Playground } from 'docz';
-import HandleFloatingLabel from './js/inputs';
+import HandleInputEvents from './js/inputs';
 
 # inputs
 
@@ -86,4 +86,20 @@ Text areas are used in contexts that demand long and descriptive texts.
   </div>
 </Playground>
 
-<HandleFloatingLabel />
+## messaging inputs
+
+Inputs used for messaging and similar contexts. These inputs come with embedded [ghost buttons](/docs-buttons#ghost-buttons) as commands that send away these values and contents.
+
+<Playground>
+  <div className='a-input a-input--messaging'>
+    <input id='input6' type='text' aria-labelledby='label6' />
+    <label id='label6' htmlFor='input6'>
+      Type your message here
+    </label>
+    <button className='a-btn a-btn--ghost-uranus' disabled>
+      send
+    </button>
+  </div>
+</Playground>
+
+<HandleInputEvents />
