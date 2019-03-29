@@ -9,6 +9,10 @@ const selectors = {
   menuItem: '& .css-82rrzo, .css-82rrzo.active, .css-82rrzo:visited',
   menuSubitemsArea: '& .css-1qc5yjq',
   menuSubItem: '& .css-1l1jc95, .css-1l1jc95:visited',
+  menuBtn: '& .css-6pue65, .css-15exo54',
+  menuBtnShape: '& .css-14xo6fr, .css-1v3qlja',
+  mobileLogoArea: '& .css-12xm67f',
+  mobileMenu: '& .css-k33w14',
 
   /* Docz default elements (hidden) */
 
@@ -129,6 +133,11 @@ export default {
             backgroundColor: 'var(--color-moon-900)'
           }
         },
+        '@media (max-width: 1119px)': {
+          [selectors.menuItem]: {
+            padding: '22px 39px',
+          }
+        },
         [selectors.menuSubitemsArea]: {
           margin: '5px 0 15px'
         },
@@ -148,6 +157,27 @@ export default {
           '&:before': {
             display: 'none'
           }
+        },
+        [selectors.menuBtn]: {
+          background: 'transparent',
+          '&:before': {
+            display: 'none'
+          }
+        },
+        [selectors.menuBtnShape]: {
+          height: 0,
+          border: '1px solid var(--color-space-100)',
+          borderRadius: 3,
+          background: 'var(--color-space-100)'
+        },
+        [selectors.mobileLogoArea]: {
+          padding: 0,
+          '&:before': {
+            display: 'none'
+          }
+        },
+        [selectors.mobileMenu]: {
+          background: 'var(--color-space-100)'
         }
       },
       h1: {
@@ -159,6 +189,11 @@ export default {
         ':before': {
           /* Removes bottom blue line */
           display: 'none'
+        }
+      },
+      '@media (max-width: 768px)': {
+        h1: {
+          fontSize: 32 /* TODO: does not work yet */
         }
       },
       h2: {
@@ -201,6 +236,7 @@ export default {
       },
       playground: {
         padding: 16,
+        overflowX: 'scroll',
         '& > *': {
           boxSizing: 'border-box',
           margin: 12
