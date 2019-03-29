@@ -207,6 +207,10 @@ export default {
         },
         '& > .a-slider': {
           marginBottom: 22
+        },
+        '&.two-columns': {
+          display: 'inline-grid',
+          gridTemplateColumns: 'auto auto'
         }
       }
     }

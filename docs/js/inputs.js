@@ -3,6 +3,8 @@ export const initFloatingLabel = () => {
     const inputs = document.querySelectorAll('.a-input');
 
     const verifyValue = (input, label) => {
+      if (!label) return;
+
       if (input.value) {
         label.classList.add('a-input--floating-label');
       } else {

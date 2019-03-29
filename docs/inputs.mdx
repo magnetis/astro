@@ -21,7 +21,7 @@ The floating label will need JS to work on your project. You may find the code f
 
 To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
-<Playground>
+<Playground className='two-columns'>
   <div className='a-input'>
     <input id='input1' type='text' aria-labelledby='label1' />
     <label id='label1' htmlFor='input1'>
@@ -90,19 +90,19 @@ Text areas are used in contexts that demand long and descriptive texts.
 
 Inputs used for messaging and similar contexts. These inputs come with embedded [ghost buttons](/docs-buttons#ghost-buttons) as commands that send away these values and contents.
 
-<Playground>
+<Playground className='two-columns'>
   <div className='a-input a-input--messaging'>
-    <input id='input6' type='text' placeholder='Type your message here'  />
+    <input id='input6' type='text' placeholder='Type your message here' />
     <button className='a-btn a-btn--ghost-uranus' disabled>
       send
     </button>
   </div>
-
-   <div className='a-input a-input--messaging'>
-    <input 
-      id='input6' type='text' 
-      aria-labelledby='label6' 
-      placeholder='Type your message here' 
+  <div className='a-input a-input--messaging'>
+    <input
+      id='input6'
+      type='text'
+      aria-labelledby='label6'
+      placeholder='Type your message here'
       defaultValue='Hi, my name is Agnes…'
     />
     <button className='a-btn a-btn--ghost-uranus' disabled>
