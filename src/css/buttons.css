@@ -5,9 +5,8 @@
 .a-btn {
   cursor: pointer;
   display: inline-block;
-  white-space: nowrap;
   font: var(--font-primary);
-  font-weight: 500;
+  white-space: nowrap;
   text-align: center;
   transition: all 0.3s ease;
   overflow: hidden;
