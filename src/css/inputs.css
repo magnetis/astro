@@ -25,14 +25,39 @@
   font: var(--font-secondary);
 }
 
+.a-input--messaging {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .a-input--messaging > input {
-  padding: 15px 80px 15px 16px;
+  padding: 15px 16px;
+  margin-right: 24px;
+  flex: 1;
 }
 
 .a-input--messaging > button {
-  position: absolute;
-  right: 16px;
-  top: 16px;
+  background-color: var(--color-moon-200);
+  border: 2px solid var(--color-moon-200);
+}
+
+.a-input--disabled > button:disabled {
+  border-color: var(--color-moon-100);
+  background-color: var(--color-moon-100);
+}
+
+.a-input--messaging > button > .a-icon {
+  background-color: var(--color-moon-900);
+}
+
+.a-input--disabled > button:disabled > .a-icon {
+  background-color: var(--color-moon-300);
+}
+
+.a-input--messaging > input:focus + button {
+  background-color: var(--color-earth-400);
+  border: 2px solid var(--color-earth-400);
 }
 
 .a-input--validated > input {
@@ -122,6 +147,10 @@
   cursor: not-allowed;
   border: 1px solid var(--color-moon-200);
   background-color: var(--color-moon-100);
+}
+
+.a-input--disabled > input:disabled::placeholder {
+  color: var(--color-moon-300);
 }
 
 .a-input--disabled > input:disabled + label,

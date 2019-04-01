@@ -74,7 +74,7 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
 
 Text areas are used in contexts that demand long and descriptive texts.
 
-<Playground>
+<Playground className='two-columns'>
   <div className='a-input'>
     <textarea name='random' id='textarea1' rows='10' cols='20'></textarea>
     <label id='label6' htmlFor='textarea1'>Write your book here</label>
@@ -88,25 +88,27 @@ Text areas are used in contexts that demand long and descriptive texts.
 
 ## messaging inputs
 
-Inputs used for messaging and similar contexts. These inputs come with embedded [ghost buttons](/docs-buttons#ghost-buttons) as commands that send away these values and contents.
+Inputs used for messaging and similar contexts. These inputs come with [icon buttons](/docs-buttons#icon-buttons) as commands that send away these values and contents.
+
+To create the disabled state, add the `a-input--disabled` modifier class on element root and`disabled` attribute on the `<input>` and `<button>` tags.
 
 <Playground className='two-columns'>
   <div className='a-input a-input--messaging'>
-    <input id='input6' type='text' placeholder='Type your message here' />
-    <button className='a-btn a-btn--ghost-uranus' disabled>
-      send
+    <input id='input6' type='text' placeholder='Standard' />
+    <button className='a-btn a-btn--medium a-btn--icon'>
+      <i className='a-icon a-icon__arrow-right a-icon--size-medium' />
     </button>
   </div>
-  <div className='a-input a-input--messaging'>
+  <div className='a-input a-input--messaging a-input--disabled'>
     <input
       id='input6'
       type='text'
       aria-labelledby='label6'
-      placeholder='Type your message here'
-      defaultValue='Hi, my name is Agnes…'
+      placeholder='Disabled'
+      disabled
     />
-    <button className='a-btn a-btn--ghost-uranus' disabled>
-      send
+    <button className='a-btn a-btn--medium a-btn--icon' disabled>
+      <i className='a-icon a-icon__arrow-right a-icon--size-medium' />
     </button>
   </div>
 </Playground>

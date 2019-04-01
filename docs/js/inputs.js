@@ -29,30 +29,8 @@ export const initFloatingLabel = () => {
   });
 };
 
-export const initMessagingInputEvent = () => {
-  window.requestAnimationFrame(() => {
-    const messagingInputs = document.querySelectorAll('.a-input--messaging');
-
-    messagingInputs.forEach(input => {
-      const currentMessagingInput = input.firstChild;
-      const currentButton = input.querySelector('button');
-
-      if (currentMessagingInput.value) currentButton.disabled = false;
-
-      currentMessagingInput.addEventListener('input', event => {
-        if (event.target.value) {
-          currentButton.disabled = false;
-        } else {
-          currentButton.disabled = true;
-        }
-      });
-    });
-  });
-};
-
 const HandleInputEvents = () => {
   initFloatingLabel();
-  initMessagingInputEvent();
   return null;
 };
 
