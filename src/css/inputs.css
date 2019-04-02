@@ -51,10 +51,6 @@
   background-color: var(--color-moon-100);
 }
 
-.a-input--messaging > button > .a-icon {
-  background-color: var(--color-moon-900);
-}
-
 .a-input--disabled > button:disabled > .a-icon {
   background-color: var(--color-moon-300);
 }
