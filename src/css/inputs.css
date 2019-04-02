@@ -25,6 +25,10 @@
   font: var(--font-secondary);
 }
 
+.a-input > input::placeholder {
+  color: var(--color-moon-300);
+}
+
 .a-input--messaging {
   display: flex;
   flex-direction: row;
