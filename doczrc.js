@@ -178,23 +178,24 @@ export default {
         },
         [selectors.mobileMenu]: {
           background: 'var(--color-space-100)'
-        }
+        },
+        '@media (max-width: 560px)': {
+          '& h1.css-bdhje3': { /* Specificity hack for responsive h1 */
+            fontSize: 48,
+          }
+        },
       },
       h1: {
         fontFamily: "'Poppins', sans-serif",
         fontSize: 64,
         fontWeight: 600,
+        letterSpacing: 'normal',
         color: 'var(--color-space-100)',
         margin: '103px 0 186px',
         ':before': {
           /* Removes bottom blue line */
           display: 'none'
-        }
-      },
-      '@media (max-width: 768px)': {
-        h1: {
-          fontSize: 32 /* TODO: does not work yet */
-        }
+        },
       },
       h2: {
         fontFamily: "'Poppins', sans-serif",

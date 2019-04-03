@@ -2,15 +2,32 @@
 
 .cards-box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 .cards-box > div {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  width: 30%;
+  margin-bottom: 20px;
+  padding-right: 5%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .cards-box > div {
+    width: 50%;
+  }
+}
+
+@media (min-width: 865px) {
+
+  .cards-box > div {
+    width: 30%;
+  }
 }
 
 .cards-box .a-btn {
