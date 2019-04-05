@@ -2,6 +2,14 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.6.0] - 2019-04-05
+- New documentation theme.
+- Add icon components and create Iconography page.
+- Adjust tabs component to the new icon size classes (might require a check if you're using icons already)
+- Add textarea input type to Inputs page.
+- Add messaging input type to Inputs page.
+- Add icon buttons to Buttons page.
+
 ### [0.5.0] - 2019-03-18
 - Breaking changes: Refactor disabled state of some components to standardize label and input order and their classes and attributes.
 - Change documentation domain to astro.magnetis.com.br.
