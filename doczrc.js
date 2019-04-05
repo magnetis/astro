@@ -30,7 +30,7 @@ export default {
   base: '/',
   plugins: [
     css({
-      preprocessor: 'postcss'
+      preprocessor: 'postcss' /* stylelint-disable-line */
     })
   ],
   modifyBabelRc: babelrc => ({
@@ -78,7 +78,7 @@ export default {
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 312px'
         },
-        '@media (min-width: 420px)': {
+        '@media (min-width: 768px)': {
           [selectors.main]: {
             padding: '0 40px 40px 100px'
           }
@@ -101,7 +101,7 @@ export default {
           color: 'var(--color-uranus-700)'
         },
         [selectors.menuArea]: {
-          background: 'var(--color-space-100)',
+          backgroundColor: 'var(--color-space-100)',
           borderRight: '1px solid var(--color-space-300)',
           width: 320,
           [selectors.innerMenuArea]: {
@@ -135,7 +135,7 @@ export default {
         },
         '@media (max-width: 1119px)': {
           [selectors.menuItem]: {
-            padding: '22px 39px',
+            padding: '22px 39px'
           }
         },
         [selectors.menuSubitemsArea]: {
@@ -159,7 +159,7 @@ export default {
           }
         },
         [selectors.menuBtn]: {
-          background: 'transparent',
+          backgroundColor: 'transparent',
           '&:before': {
             display: 'none'
           }
@@ -168,7 +168,7 @@ export default {
           height: 0,
           border: '1px solid var(--color-space-100)',
           borderRadius: 3,
-          background: 'var(--color-space-100)'
+          backgroundColor: 'var(--color-space-100)'
         },
         [selectors.mobileLogoArea]: {
           padding: 0,
@@ -177,13 +177,14 @@ export default {
           }
         },
         [selectors.mobileMenu]: {
-          background: 'var(--color-space-100)'
+          backgroundColor: 'var(--color-space-100)'
         },
         '@media (max-width: 560px)': {
-          '& h1.css-bdhje3': { /* Specificity hack for responsive h1 */
-            fontSize: 48,
+          '& h1.css-bdhje3': {
+            /* Specificity hack for responsive h1 */
+            fontSize: 48
           }
-        },
+        }
       },
       h1: {
         fontFamily: "'Poppins', sans-serif",
@@ -195,7 +196,7 @@ export default {
         ':before': {
           /* Removes bottom blue line */
           display: 'none'
-        },
+        }
       },
       h2: {
         fontFamily: "'Poppins', sans-serif",
@@ -226,7 +227,7 @@ export default {
         fontFamily: "'Poppins', sans-serif",
         fontSize: 16,
         fontWeight: 600,
-        color: 'var(--color-moon-500)',
+        color: 'var(--color-moon-500)'
       },
       h4: {
         fontFamily: "'Lato', sans-serif",
