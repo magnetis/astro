@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/laptop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.5,20 L26.5,20 L26.5,8 L5.5,8 L5.5,20 Z M28.5,20 L29.5,20 C30.0522847,20 30.5,20.4477153 30.5,21 L30.5,23 C30.5,24.6568542 29.1568542,26 27.5,26 L4.5,26 C2.84314575,26 1.5,24.6568542 1.5,23 L1.5,21 C1.5,20.4477153 1.94771525,20 2.5,20 L3.5,20 L3.5,7 C3.5,6.44771525 3.94771525,6 4.5,6 L27.5,6 C28.0522847,6 28.5,6.44771525 28.5,7 L28.5,20 Z M27.5,22 L4.5,22 L3.5,22 L3.5,23 C3.5,23.5522847 3.94771525,24 4.5,24 L27.5,24 C28.0522847,24 28.5,23.5522847 28.5,23 L28.5,22 L27.5,22 Z M9.5,11 L9.5,17 L22.5,17 L22.5,11 L9.5,11 Z M8.5,9 L23.5,9 C24.0522847,9 24.5,9.44771525 24.5,10 L24.5,18 C24.5,18.5522847 24.0522847,19 23.5,19 L8.5,19 C7.94771525,19 7.5,18.5522847 7.5,18 L7.5,10 C7.5,9.44771525 7.94771525,9 8.5,9 Z M14,23.5 C13.7238576,23.5 13.5,23.2761424 13.5,23 C13.5,22.7238576 13.7238576,22.5 14,22.5 L17.9243164,22.5 C18.2004588,22.5 18.4243164,22.7238576 18.4243164,23 C18.4243164,23.2761424 18.2004588,23.5 17.9243164,23.5 L14,23.5 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/laptop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#32383C" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

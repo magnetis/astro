@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/key</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M22,16 L22,15 C22,14.4477153 22.4477153,14 23,14 C23.5522847,14 24,14.4477153 24,15 L24,16 L25,16 L25,13 C25,12.4477153 25.4477153,12 26,12 C26.5522847,12 27,12.4477153 27,13 L27,16 L28,16 C28.5522847,16 29,16.4477153 29,17 C29,17.5522847 28.5522847,18 28,18 L14.4093119,18 C13.9390556,20.560118 11.6960696,22.5 9,22.5 C5.96243388,22.5 3.5,20.0375661 3.5,17 C3.5,13.9624339 5.96243388,11.5 9,11.5 C11.6960696,11.5 13.9390556,13.439882 14.4093119,16 L22,16 Z M9,13.5 C7.06700338,13.5 5.5,15.0670034 5.5,17 C5.5,18.9329966 7.06700338,20.5 9,20.5 C10.9329966,20.5 12.5,18.9329966 12.5,17 C12.5,15.0670034 10.9329966,13.5 9,13.5 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/key" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#C5C5C5" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="color/moon-900" mask="url(#mask-2)" fill="#32383C">
+            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+        </g>
+    </g>
+</svg>

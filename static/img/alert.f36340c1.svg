@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/alert</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.5,25.7 C21.5810197,25.7 25.7,21.5810197 25.7,16.5 C25.7,11.4189803 21.5810197,7.3 16.5,7.3 C11.4189803,7.3 7.3,11.4189803 7.3,16.5 C7.3,21.5810197 11.4189803,25.7 16.5,25.7 Z M16.5,28 C10.1487254,28 5,22.8512746 5,16.5 C5,10.1487254 10.1487254,5 16.5,5 C22.8512746,5 28,10.1487254 28,16.5 C28,22.8512746 22.8512746,28 16.5,28 Z M16.5,14.2 C17.1351275,14.2 17.65,14.7148725 17.65,15.35 L17.65,21.1 C17.65,21.7351275 17.1351275,22.25 16.5,22.25 C15.8648725,22.25 15.35,21.7351275 15.35,21.1 L15.35,15.35 C15.35,14.7148725 15.8648725,14.2 16.5,14.2 Z M16.5,13.05 C15.8648725,13.05 15.35,12.5351275 15.35,11.9 C15.35,11.2648725 15.8648725,10.75 16.5,10.75 C17.1351275,10.75 17.65,11.2648725 17.65,11.9 C17.65,12.5351275 17.1351275,13.05 16.5,13.05 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/alert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#C5C5C5" fill-rule="nonzero" transform="translate(16.500000, 16.500000) rotate(-180.000000) translate(-16.500000, -16.500000) " xlink:href="#path-1"></use>
+    </g>
+</svg>

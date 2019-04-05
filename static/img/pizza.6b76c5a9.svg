@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/pizza</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.74474114,12.96 C1.74474114,18.0936297 5.90637029,22.2552589 11.04,22.2552589 C15.8794475,22.2552589 19.8551034,18.5569271 20.2948606,13.8323706 L10.1676294,13.8323706 L10.1676294,3.70513944 C5.44307292,4.14489659 1.74474114,8.12055246 1.74474114,12.96 Z M22.08,12.0876294 L22.08,12.96 C22.08,19.0572236 17.1372236,24 11.04,24 C4.94277636,24 -1.15180227e-13,19.0572236 -1.13686838e-13,12.96 C-1.12193449e-13,6.86277636 4.94277636,1.92 11.04,1.92 L11.9123706,1.92 L11.9123706,12.0876294 L22.08,12.0876294 Z M14.4,9.6 L14.4,4.086264e-14 C19.4682338,4.17936595e-14 23.6218209,4.23004183 24,9.6 L14.4,9.6 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/pizza" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <g id="color/earth-400" transform="translate(4.000000, 4.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#32383C" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="color/moon-900" mask="url(#mask-2)" fill="#32383C">
+                <g transform="translate(-3.840000, -3.840000)" id="Rectangle">
+                    <rect x="0" y="0" width="31" height="31"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

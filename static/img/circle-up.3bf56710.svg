@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/circle/arrow-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16,3.5 C22.9035594,3.5 28.5,9.09644063 28.5,16 C28.5,22.9035594 22.9035594,28.5 16,28.5 C9.09644063,28.5 3.5,22.9035594 3.5,16 C3.5,9.09644063 9.09644063,3.5 16,3.5 Z M16,5.5 C10.2010101,5.5 5.5,10.2010101 5.5,16 C5.5,21.7989899 10.2010101,26.5 16,26.5 C21.7989899,26.5 26.5,21.7989899 26.5,16 C26.5,10.2010101 21.7989899,5.5 16,5.5 Z M10.3431458,18.7071068 C9.95262146,19.0976311 9.31945648,19.0976311 8.92893219,18.7071068 C8.5384079,18.3165825 8.5384079,17.6834175 8.92893219,17.2928932 L15.2928932,10.9289322 C15.6834175,10.5384079 16.3165825,10.5384079 16.7071068,10.9289322 L23.0710678,17.2928932 C23.4615921,17.6834175 23.4615921,18.3165825 23.0710678,18.7071068 C22.6805435,19.0976311 22.0473785,19.0976311 21.6568542,18.7071068 L16,13.0502525 L10.3431458,18.7071068 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/circle/arrow-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#C5C5C5" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="color/moon-900" mask="url(#mask-2)" fill="#32383C">
+            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+        </g>
+    </g>
+</svg>

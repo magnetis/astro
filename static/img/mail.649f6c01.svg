@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/secondary/mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,9.38130086 L4,24 L28,24 L28,8.97868264 L16.6951996,18.4645364 C16.5519856,18.5847073 16.3849738,18.657876 16.2129163,18.6856831 C15.8525311,18.9281718 15.3615132,18.9147424 15.0121294,18.6215745 L4,9.38130086 Z M5.87288742,8 L15.7821972,16.3148982 L25.6915069,8 L5.87288742,8 Z M4,6 L28,6 C29.1045695,6 30,6.8954305 30,8 L30,24 C30,25.1045695 29.1045695,26 28,26 L4,26 C2.8954305,26 2,25.1045695 2,24 L2,8 C2,6.8954305 2.8954305,6 4,6 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/secondary/mail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#C5C5C5" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="color/moon-900" mask="url(#mask-2)" fill="#32383C">
+            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+        </g>
+    </g>
+</svg>
