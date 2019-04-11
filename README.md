@@ -43,7 +43,7 @@ Run `yarn add @magnetis/astro` or `npm install @magnetis/astro`.
 ### Adding Astro fonts (important!)
 
 After you've imported Astro, you still need to add our fonts to your project manually.
-You can get the updated font links either in the [Astro's Typography page](https://astro.magnetis.com.br/#/docs-typography) or inside the project folder in `public/docz.html`.
+You can get the updated font links either in the [Typography page](https://astro.magnetis.com.br/#/docs-typography) or inside the project folder in `public/docz.html`.
 
 ## Using Astro
 
