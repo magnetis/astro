@@ -87,7 +87,8 @@
   display: none;
 }
 
-/* Firefox - always replicate styles for each browser, it's the only way :( */
+/* Firefox - always replicate styles for each browser, it's the only way :(
+  Some styles below are slightly different from Chrome */
 
 .a-slider > input[type='range']::-moz-range-track {
   background-image:
@@ -107,6 +108,7 @@
   appearance: none;
   width: 16px;
   height: 16px;
+  border: none;
   border-radius: 100%;
   background-color: var(--color-uranus-500);
   cursor: pointer;
@@ -126,6 +128,11 @@
   background-color: var(--color-uranus-400);
 }
 
+.a-slider > input[type='range']:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
 .a-slider > input[type='range']:disabled::-moz-range-track {
   background-image: none;
   background-color: var(--color-moon-200);
@@ -133,7 +140,7 @@
 }
 
 .a-slider > input[type='range']:disabled::-moz-range-thumb {
-  display: none;
+  visibility: hidden;
 }
 
 /* IE - always replicate styles for each browser, it's the only way :( */
