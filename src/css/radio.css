@@ -9,11 +9,13 @@
 /* Standard input */
 
 .a-radio > input[type='radio'] {
-  visibility: hidden;
+  position: absolute;
   width: var(--radio-circle-size);
   height: var(--radio-circle-size);
   margin-top: 4px;
+  opacity: 0;
   order: 1;
+  cursor: pointer;
 }
 
 /* Label design */
@@ -22,17 +24,16 @@
   padding-left: 8px;
   cursor: pointer;
   font: var(--font-secondary);
-  flex: 1;
   order: 2;
 }
 
 /* Radio button design */
 
-.a-radio > input[type='radio']::before {
+.a-radio__shape::before {
   display: inline-block;
-  visibility: visible;
   width: var(--radio-circle-size);
   height: var(--radio-circle-size);
+  margin-top: 4px;
   content: '';
   border: 2px solid var(--color-moon-500);
   border-radius: 100%;
@@ -51,31 +52,30 @@
 
 /* Checked state */
 
-.a-radio > input[type='radio']:checked::before {
+.a-radio > input[type='radio']:checked ~ .a-radio__shape::before {
   border: solid 5px var(--color-uranus-500);
 }
 
 /* Disabled state */
 
-.a-radio > input[type='radio']:disabled::before {
+.a-radio > input[type='radio']:disabled ~ .a-radio__shape::before {
   cursor: not-allowed;
   border-color: var(--color-moon-200);
 }
 
 .a-radio--disabled > label,
 .a-radio--disabled > input[type='radio']:disabled,
-.a-radio--disabled > input[type='radio']:disabled::before {
+.a-radio--disabled > input[type='radio']:disabled ~ .a-radio__shape::before {
   cursor: not-allowed;
   color: var(--color-moon-200);
 }
 
-.a-radio--disabled > input[type='radio']:disabled::before {
+.a-radio--disabled > input[type='radio']:disabled ~ .a-radio__shape::before {
   border-color: var(--color-moon-200);
 }
 
-/* Hover state */
+/* Hover state on */
 
-.a-radio > input[type='radio']:not(:disabled):hover::before {
-  cursor: pointer;
+.a-radio > input[type='radio']:not(:disabled):hover ~ .a-radio__shape::before {
   border-color: var(--color-uranus-500);
 }

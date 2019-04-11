@@ -24,14 +24,17 @@ To create the disabled state, add the `a-radio--disabled` modifier class on elem
   <div className='a-radio'>
     <label htmlFor='radio1'>Radio</label>
     <input type='radio' id='radio1' name='radiogroup1' />
+    <span className='a-radio__shape' />
   </div>
   <div className='a-radio'>
     <label htmlFor='radio2'>Selected</label>
     <input type='radio' id='radio2' name='radiogroup1' defaultChecked />
+    <span className='a-radio__shape' />    
   </div>
   <div className='a-radio a-radio--disabled'>
     <label htmlFor='radio3'>Disabled</label>
     <input type='radio' id='radio3' name='radiogroup1' disabled />
+    <span className='a-radio__shape' />
   </div>
 </Playground>
 
@@ -45,6 +48,7 @@ Default label behavior is top alignment. You can add the `a-radio--align-middle`
       vulputate dignissim suspendisse.
     </label>
     <input type='radio' id='radio4' name='radiogroup2' />
+    <span className='a-radio__shape' />
   </div>
   <div className='a-radio a-radio--align-middle'>
     <label htmlFor='radio5'>
@@ -53,6 +57,7 @@ Default label behavior is top alignment. You can add the `a-radio--align-middle`
       vulputate dignissim suspendisse.
     </label>
     <input type='radio' id='radio5' name='radiogroup2' />
+    <span className='a-radio__shape' />
   </div>
 </Playground>
 
