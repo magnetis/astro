@@ -1,0 +1,69 @@
+---
+name: colors
+---
+
+import '../src/index.css';
+import {
+  ColorPalette,
+  GradientSwatch,
+  GradientCollection
+} from './components/ColorsCollection';
+
+# colors
+
+#### Bringing our concepts and the very essence of our design to life, our color palette provides hierarchy, affordance, emotion and feedback to the platform’s experience. Color should be used in meaningful and concrete ways in order to create visual and usability patterns.
+
+### tints
+
+Colors have their variations that may be used depending on the contextual need.
+
+Usage: Instead of declaring a hexadecimal code like `#fff`, you may access all our colors via variables named in this pattern: `var(--color-space-100)` (which is white, if you look in the Space palette below). If you need the darkest shade of green, for example, use `var(--color-earth-1000)` and so forth.
+
+<br />
+
+## earth
+
+<ColorPalette family='earth' lightTextStart={500} />
+
+## venus
+
+<ColorPalette family='venus' lightTextStart={400} />
+
+## uranus
+
+<ColorPalette family='uranus' lightTextStart={400} />
+
+## moon
+
+<ColorPalette family='moon' lightTextStart={400} />
+
+## mars
+
+<ColorPalette family='mars' lightTextStart={400} />
+
+## sun
+
+<ColorPalette family='sun' lightTextStart={600} />
+
+## space
+
+<ColorPalette family='space' lightTextStart={500} />
+
+### gradients
+
+Based on our brand guideline, they are normally used in main actions and macrostructures of the platform. 
+
+Usage: Instead of declaring a gradient code like `linear-gradient(47.32deg, #d991e0 0%, #00c6d4 60.06%, #00ea60 100%)`, you may access all our gradients via variables named in this pattern: `var(--gradient-nebulosa)`. If you need the Andromeda gradient, for example, use `var(--gradient-andromeda)` and so forth.
+
+<GradientCollection>
+  <GradientSwatch gradient='nebulosa' />
+  <GradientSwatch gradient='andromeda' />
+  <GradientSwatch gradient='sombrero' />
+  <GradientSwatch gradient='milky-way' />
+  <GradientSwatch gradient='hoag' darkText />
+  <GradientSwatch gradient='centaurus' />
+  <GradientSwatch gradient='whirlpool' />
+  <GradientSwatch gradient='cartwheel' />
+  <GradientSwatch gradient='black-hole' />
+  <GradientSwatch gradient='mayall' />
+</GradientCollection>
