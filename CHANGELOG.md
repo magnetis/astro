@@ -2,6 +2,10 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.7.0] - 2019-04-15
+- Breaking changes: fixed several Controls & Toggles components which only worked on Chrome by altering the markup and CSS structure, not using pseudoclasses on input elements anymore.
+- Minor update on font install instructions.
+
 ### [0.6.0] - 2019-04-05
 - New documentation theme.
 - Add icon components and create Iconography page.
