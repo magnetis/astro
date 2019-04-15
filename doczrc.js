@@ -78,9 +78,14 @@ export default {
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 312px'
         },
+        '@media (min-width: 920px)': {
+          [selectors.main]: {
+            width: '90%'
+          }
+        },
         '@media (min-width: 768px)': {
           [selectors.main]: {
-            padding: '0 40px 40px 100px'
+            padding: '0 40px 40px 90px'
           }
         },
         [selectors.logo]: {
