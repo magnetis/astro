@@ -432,3 +432,27 @@
 .a-btn--icon.a-btn--large {
   padding: 11px 9px;
 }
+
+/* Inline link */
+
+.a-link {
+  font: var(--font-primary);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-uranus-700);
+  text-decoration: underline;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.a-link:hover {
+  color: var(--color-uranus-500);
+}
+
+.a-link:active {
+  color: var(--color-uranus-800);
+}
+
+a.a-btn {
+  text-decoration: none;
+}
