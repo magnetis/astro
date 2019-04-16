@@ -59,6 +59,7 @@
 
 .a-input > input:focus,
 .a-input > textarea:focus {
+  outline: none;
   border: 1px solid var(--color-uranus-500);
 }
 

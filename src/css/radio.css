@@ -74,6 +74,12 @@
   border-color: var(--color-moon-200);
 }
 
+/* Focus state */
+
+.a-radio > input[type='radio']:focus ~ .a-radio__shape::before {
+  box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+}
+
 /* Hover state on */
 
 .a-radio > input[type='radio']:not(:disabled):hover ~ .a-radio__shape::before {

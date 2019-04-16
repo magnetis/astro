@@ -88,6 +88,12 @@
   color: var(--color-moon-200);
 }
 
+/* Focus state */
+
+.a-toggle > input[type='checkbox']:focus ~ .a-toggle__shape::before {
+  box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+}
+
 /* Hover state on */
 
 .a-toggle > input[type='checkbox']:not(:disabled):hover ~ .a-toggle__shape::before {

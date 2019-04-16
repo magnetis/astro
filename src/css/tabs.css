@@ -69,6 +69,12 @@
   display: block;
 }
 
+/* Focus state */
+
+.a-tabs > .a-tabs__item:focus + .a-tabs__label {
+  box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+}
+
 /* Active state */
 
 .a-tabs > .a-tabs__item:checked + .a-tabs__label {
