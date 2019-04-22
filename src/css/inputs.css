@@ -21,12 +21,12 @@
   left: 16px;
   transition: 0.2s ease all;
   pointer-events: none;
-  color: var(--color-moon-300);
+  color: var(--color-moon-400);
   font: var(--font-secondary);
 }
 
 .a-input > input::placeholder {
-  color: var(--color-moon-300);
+  color: var(--color-moon-400);
 }
 
 .a-input--messaging {
@@ -46,7 +46,7 @@
 }
 
 .a-input--validated > label {
-  color: var(--color-moon-300);
+  color: var(--color-moon-400);
 }
 
 .a-input--invalid > input {
