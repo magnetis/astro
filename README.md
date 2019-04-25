@@ -73,8 +73,6 @@ Here's a quick example. If you'd like to create a Display text styled in Astro t
 
 6. If your styles aren't rendered correctly, make sure Astro has been successfully installed into your project tree and `astro.css` is correctly imported.
 
-When building layout structures, don't forget to use [Flexbox Grid](https://github.com/kristoferjoseph/flexboxgrid), which is already built in your project as an Astro dependency.
-
 ## Contributing
 
 It's awesome that you want to contribute to Astro! Please see [CONTRIBUTING.md](CONTRIBUTING.md) to learn how it works.
