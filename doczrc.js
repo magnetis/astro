@@ -254,6 +254,9 @@ export default {
         '&.two-columns': {
           display: 'inline-grid',
           gridTemplateColumns: 'auto auto'
+        },
+        '&.gradient-bg': {
+          backgroundImage: 'var(--gradient-andromeda)'
         }
       }
     }

@@ -86,6 +86,32 @@ Text areas are used in contexts that demand long and descriptive texts.
   </div>
 </Playground>
 
+## ghost inputs
+
+Ghost inputs are used in the foreground of colorful backgrounds or images, always displayed in white color in order to preserve good usability and legibility. Depending on the context, when the user starts typing, a white icon might appear on the right side of the component, fading in.
+
+This input style does not have a disabled state.
+
+<Playground className='two-columns gradient-bg'>
+  <div className='a-input a-input--ghost'>
+    <input id='ghost1' type='text' aria-labelledby='ghostlabel1' />
+    <label id='ghostlabel1' htmlFor='ghost1'>
+      Standard
+    </label>
+  </div>
+  <div className='a-input a-input--ghost a-input--validated'>
+    <input
+      id='ghost2'
+      type='text'
+      aria-labelledby='ghostlabel2'
+      defaultValue='Astro Team'
+    />
+    <label id='ghostlabel2' htmlFor='ghost2'>
+      Validated
+    </label>
+  </div>
+</Playground>
+
 ## messaging inputs
 
 Inputs used for messaging and similar contexts. They carry embedded [icon buttons](/docs-buttons#icon-buttons) that send the data,
