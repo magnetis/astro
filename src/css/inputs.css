@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 .a-input {
   position: relative;
   display: flex;
