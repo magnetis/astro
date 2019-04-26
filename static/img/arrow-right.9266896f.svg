@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/support/arrow right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.6568542,20.6568542 L13.6568542,9 C13.6568542,8.44771525 14.1045695,8 14.6568542,8 C15.209139,8 15.6568542,8.44771525 15.6568542,9 L15.6568542,20.6568542 L18.6066017,17.7071068 C18.997126,17.3165825 19.630291,17.3165825 20.0208153,17.7071068 C20.4113396,18.0976311 20.4113396,18.7307961 20.0208153,19.1213203 L15.7781746,23.363961 C15.6889437,23.4531919 15.5870452,23.5220344 15.4782678,23.5704886 C15.2976322,23.8300876 14.9970858,24 14.6568542,24 C14.3166227,24 14.0160763,23.8300876 13.8354407,23.5704886 C13.7266633,23.5220344 13.6247648,23.4531919 13.5355339,23.363961 L9.29289322,19.1213203 C8.90236893,18.7307961 8.90236893,18.0976311 9.29289322,17.7071068 C9.68341751,17.3165825 10.3165825,17.3165825 10.7071068,17.7071068 L13.6568542,20.6568542 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/support/arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" transform="translate(14.656854, 16.000000) rotate(-90.000000) translate(-14.656854, -16.000000) " xlink:href="#path-1"></use>
+    </g>
+</svg>
