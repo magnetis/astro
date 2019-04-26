@@ -2,6 +2,13 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.8.0] - 2019-04-26
+- Remove Flexbox Grid system from the project as it caused CSS class conflicts.
+- Fix color inconsistencies in floating labels of several inputs.
+- Update messaging input button details.
+- Adjust focus behavior on all interactive components for accessibility and aesthetics.
+- Create Colors page in the documentation.
+
 ### [0.7.0] - 2019-04-15
 - Breaking changes: fixed several Controls & Toggles components which only worked on Chrome by altering the markup and CSS structure, not using pseudoclasses on input elements anymore.
 - Minor update on font install instructions.
