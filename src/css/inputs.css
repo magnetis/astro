@@ -47,21 +47,61 @@
   flex: 1;
 }
 
-.a-input--validated > input {
-  border: 1px solid var(--color-earth-400);
+/* Ghost inputs */
+
+.a-input--ghost > input,
+.a-input.a-input--ghost > input:focus, /* Specificity hack to override focus style */
+.a-input--ghost.a-input--validated > input,
+.a-input--ghost.a-input--validated > input:focus,
+.a-input--ghost.a-input--invalid > input {
+  border: 1px solid var(--color-space-100);
+  background-color: transparent;
+  color: var(--color-space-100);
 }
 
-.a-input--validated > label {
-  color: var(--color-moon-400);
+.a-input--ghost > label,
+.a-input.a-input--ghost > input:focus + label, /* Specificity hack to override focus style */
+.a-input--ghost.a-input > input::placeholder,
+.a-input--ghost.a-input--validated > label,
+.a-input--ghost.a-input--validated > input:focus + label,
+.a-input--ghost.a-input--invalid > label,
+.a-input--ghost.a-input > .a-input__error {
+  color: var(--color-space-100);
 }
 
-.a-input--invalid > input {
-  border: 1px solid var(--color-mars-500);
+.a-input--ghost.a-input--validated::after,
+.a-input--ghost.a-input--invalid::after {
+  background-color: var(--color-space-100);
 }
 
-.a-input--invalid > label {
-  color: var(--color-mars-500);
+/* Control inputs */
+
+.a-input--control > input {
+  appearance: textfield;
 }
+
+.a-input--control > input::-webkit-inner-spin-button,
+.a-input--control > input::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.a-input--control__decrement {
+  position: absolute;
+  right: 54px;
+  top: 13px;
+}
+
+.a-input--control__increment {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+
+.a-input--control > input:not(:focus) ~ button i {
+  background-color: var(--color-moon-500);
+}
+
+/* Focus state */
 
 .a-input > input:focus,
 .a-input > textarea:focus {
