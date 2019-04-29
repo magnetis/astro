@@ -183,7 +183,7 @@
 .a-btn--outline-earth.a-btn--disabled,
 .a-btn--outline-mars.a-btn--disabled {
   cursor: not-allowed;
-  background-color: var(--color-space-100);
+  background-color: transparent;
   border-color: var(--color-moon-200);
   color: var(--color-moon-200);
 }
@@ -279,8 +279,8 @@
 .a-btn--ghost-earth.a-btn--disabled,
 .a-btn--ghost-mars.a-btn--disabled {
   cursor: not-allowed;
-  background-color: var(--color-space-100);
-  border-color: var(--color-space-100);
+  background-color: transparent;
+  border-color: transparent;
   color: var(--color-moon-200);
 }
 
