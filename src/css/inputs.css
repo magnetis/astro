@@ -1,5 +1,7 @@
 /* stylelint-disable no-descending-specificity */
 
+/* General input styles */
+
 .a-input {
   position: relative;
   display: flex;
@@ -30,6 +32,8 @@
 .a-input > input::placeholder {
   color: var(--color-moon-400);
 }
+
+/* Messaging inputs */
 
 .a-input--messaging {
   display: flex;
@@ -73,18 +77,27 @@
   font-weight: 700;
 }
 
+/* Floating label state */
+
 .a-input > .a-input--floating-label {
   top: 8px;
   font-size: 12px;
   font-weight: 700;
 }
 
-.a-input--validated > input:focus + label {
-  color: var(--color-earth-400);
-}
+/* Validated state */
 
+.a-input--validated > input,
 .a-input--validated > input:focus {
   border: 1px solid var(--color-earth-400);
+}
+
+.a-input--validated > label {
+  color: var(--color-moon-300);
+}
+
+.a-input--validated > input:focus + label {
+  color: var(--color-earth-400);
 }
 
 .a-input--validated::after {
@@ -98,12 +111,16 @@
   background-color: var(--color-earth-400);
 }
 
-.a-input--invalid > input:focus + label {
-  color: var(--color-mars-500);
-}
+/* Invalid state */
 
+.a-input--invalid > input,
 .a-input--invalid > input:focus {
   border: 1px solid var(--color-mars-500);
+}
+
+.a-input--invalid > label,
+.a-input--invalid > input:focus + label {
+  color: var(--color-mars-500);
 }
 
 .a-input--invalid::after {
@@ -117,6 +134,8 @@
   mask-image: url('../../assets/icons/alert.svg');
 }
 
+/* Error state */
+
 .a-input > .a-input__error {
   position: relative;
   display: block;
@@ -125,6 +144,8 @@
   font: var(--font-secondary);
   font-size: 12px;
 }
+
+/* Disabled state */
 
 .a-input--disabled > input:disabled,
 .a-input--disabled > textarea:disabled {
@@ -142,31 +163,4 @@
   cursor: not-allowed;
   color: var(--color-moon-300);
   font: var(--font-secondary);
-}
-
-/* Ghost inputs */
-
-.a-input--ghost > input,
-.a-input--ghost > input:focus,
-.a-input--ghost.a-input--validated > input,
-.a-input--ghost.a-input--validated > input:focus,
-.a-input--ghost.a-input--invalid > input {
-  border: 1px solid var(--color-space-100);
-  background-color: transparent;
-  color: var(--color-space-100);
-}
-
-.a-input--ghost > label,
-.a-input--ghost > input:focus + label,
-.a-input--ghost.a-input > input::placeholder,
-.a-input--ghost.a-input--validated > label,
-.a-input--ghost.a-input--validated > input:focus + label,
-.a-input--ghost.a-input--invalid > label,
-.a-input--ghost.a-input > .a-input__error {
-  color: var(--color-space-100);
-}
-
-.a-input--ghost.a-input--validated::after,
-.a-input--ghost.a-input--invalid::after {
-  background-color: var(--color-space-100);
 }
