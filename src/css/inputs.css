@@ -192,6 +192,12 @@
   cursor: not-allowed;
   border: 1px solid var(--color-moon-200);
   background-color: var(--color-moon-100);
+  color: var(--color-moon-300);
+}
+
+.a-input--disabled.a-input--validated::after,
+.a-input--disabled.a-input--invalid::after {
+  background-color: var(--color-moon-300);
 }
 
 .a-input--disabled > input:disabled::placeholder {
