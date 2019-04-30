@@ -78,6 +78,7 @@
 
 .a-input--control > input {
   appearance: textfield;
+  padding-right: 87px;
 }
 
 .a-input--control > input::-webkit-inner-spin-button,
