@@ -105,29 +105,31 @@ export const initControlInputsEvents = () => {
         '.a-input--control__increment'
       );
 
-      decrementButton.addEventListener('click', () => {
+      const updateControlInputValue = operation => {
         const currentControlInputValue = currentControlInput.value
           ? parseFloat(currentControlInput.value)
           : 0;
+        let step = dataStep;
 
-        if (currentControlInputValue < dataStep) {
-          currentControlInput.value = 0;
-          return;
+        if (operation === 'decrement') {
+          if (currentControlInputValue < dataStep) {
+            currentControlInput.value = 0;
+            return;
+          }
+
+          step = dataStep * -1;
         }
 
-        currentControlInput.value = currentControlInputValue - dataStep;
-
+        currentControlInput.value = currentControlInputValue + step;
         currentControlInput.dispatchEvent(new Event('change'));
+      };
+
+      decrementButton.addEventListener('click', () => {
+        updateControlInputValue('decrement');
       });
 
       incrementButton.addEventListener('click', () => {
-        const currentControlInputValue = currentControlInput.value
-          ? parseFloat(currentControlInput.value)
-          : 0;
-
-        currentControlInput.value = currentControlInputValue + dataStep;
-
-        currentControlInput.dispatchEvent(new Event('change'));
+        updateControlInputValue('increment');
       });
     });
   });
