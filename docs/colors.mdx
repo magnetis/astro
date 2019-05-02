@@ -17,11 +17,9 @@ import {
 
 Colors have their variations that may be used depending on the contextual need.
 
-### Usage 
+### Usage
 
 Instead of declaring a hexadecimal code like `#fff`, you may access all our colors via variables named in this pattern: `var(--color-space-100)` (which is white, if you look in the Space palette below). If you need the darkest shade of green, for example, use `var(--color-earth-1000)` and so forth.
-
-To be able to access the variables, though, you'll have to import the corresponding file directly on your file: `@import "@magnetis/astro/src/css/colors.css";`. This is necessary because our bundle converts all variables to hexadecimal code.
 
 If you do that, you should also convert the variables in your build to hexadecimal code, since CSS variables have [limited browser support](https://caniuse.com/#feat=css-variables). We recommend the plugin [PostCSS CSS Variables](https://github.com/MadLittleMods/postcss-css-variables).
 
@@ -57,13 +55,11 @@ If you do that, you should also convert the variables in your build to hexadecim
 
 ## gradients
 
-Based on our brand guideline, they are normally used in main actions and macrostructures of the platform. 
+Based on our brand guideline, they are normally used in main actions and macrostructures of the platform.
 
-### Usage 
+### Usage
 
 Instead of declaring a gradient code like `linear-gradient(47.32deg, #d991e0 0%, #00c6d4 60.06%, #00ea60 100%)`, you may access all our gradients via variables named in this pattern: `var(--gradient-nebulosa)`. If you need the Andromeda gradient, for example, use `var(--gradient-andromeda)` and so forth.
-
-To be able to access the variables, though, you'll have to import the corresponding file directly on your file: `@import "@magnetis/astro/src/css/gradients.css";`. This is necessary because our bundle converts all variables to hexadecimal code.
 
 If you do that, you should also convert the variables in your build to hexadecimal code, since CSS variables have [limited browser support](https://caniuse.com/#feat=css-variables). We recommend the plugin [PostCSS CSS Variables](https://github.com/MadLittleMods/postcss-css-variables).
 

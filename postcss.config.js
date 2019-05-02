@@ -1,7 +1,9 @@
 module.exports = {
   plugins: [
     require('postcss-import'),
-    require('postcss-css-variables'),
+    require('postcss-css-variables')({
+      preserve: 'computed'
+    }),
     require('autoprefixer'),
     require('cssnano')({
       preset: [
