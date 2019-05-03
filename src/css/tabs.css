@@ -11,7 +11,7 @@
 .a-tabs__border {
   position: absolute;
   z-index: var(--z-index-1);
-  display: none;
+  display: block;
   width: 100%;
   height: 48px;
   border: solid 1px var(--color-moon-300);
@@ -31,25 +31,37 @@
   z-index: var(--z-index-2);
   display: flex;
   width: 100%;
+  min-width: 0;
   min-height: 40px;
   margin: 4px 0;
   padding: 8px 32px;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-align: center;
+  white-space: nowrap;
   text-transform: lowercase;
   color: var(--color-moon-500);
-  border: solid 1px var(--color-moon-300);
+  border: none;
   border-radius: 24px;
   font: var(--font-primary);
   font-size: 12px;
   font-weight: 600;
   align-items: center;
   justify-content: center;
+  flex: 1;
+}
+
+.a-tabs > .a-tabs__label:first-of-type {
+  margin-left: 4px;
+}
+
+.a-tabs > .a-tabs__label:last-of-type {
+  margin-right: 4px;
 }
 
 /* Icon */
 
 .a-tabs__icon {
+  min-width: 16px;
   transition: background-color 0.3s ease;
   background-color: var(--color-moon-500);
 }
@@ -79,7 +91,6 @@
 
 .a-tabs > .a-tabs__item:checked + .a-tabs__label {
   color: var(--color-space-100);
-  border-color: var(--color-uranus-500);
   background-color: var(--color-uranus-500);
 }
 
@@ -94,29 +105,29 @@
   background-color: var(--color-moon-200);
 }
 
-@media only screen and (min-width: 48em) {
-  /* Larger screens */
+@media only screen and (max-width: 47em) {
+  /* Small screens or not horizontal tabs */
 
-  .a-tabs__border {
-    display: block;
+  .a-tabs:not(.a-tabs--horizontal) .a-tabs__border {
+    display: none;
   }
 
-  .a-tabs > .a-tabs__label {
-    border: none;
-    flex: 1;
+  .a-tabs:not(.a-tabs--horizontal) > .a-tabs__label {
+    border: solid 1px var(--color-moon-300);
+    flex: auto;
   }
 
-  .a-tabs > .a-tabs__label:first-of-type {
-    margin-left: 4px;
+  .a-tabs:not(.a-tabs--horizontal) > .a-tabs__label:first-of-type {
+    margin-left: 0;
   }
 
-  .a-tabs > .a-tabs__label:last-of-type {
-    margin-right: 4px;
+  .a-tabs:not(.a-tabs--horizontal) > .a-tabs__label:last-of-type {
+    margin-right: 0;
   }
 
   /* Hover state */
 
-  .a-tabs > .a-tabs__item:checked + .a-tabs__label {
-    border: none;
+  .a-tabs:not(.a-tabs--horizontal) > .a-tabs__item:checked + .a-tabs__label {
+    border-color: var(--color-uranus-500);
   }
 }

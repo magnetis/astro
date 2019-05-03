@@ -29,7 +29,7 @@ To create the disabled state, add the `a-radio--disabled` modifier class on elem
   <div className='a-radio'>
     <label htmlFor='radio2'>Selected</label>
     <input type='radio' id='radio2' name='radiogroup1' defaultChecked />
-    <span className='a-radio__shape' />    
+    <span className='a-radio__shape' />
   </div>
   <div className='a-radio a-radio--disabled'>
     <label htmlFor='radio3'>Disabled</label>
@@ -164,11 +164,11 @@ Mouseover to view `:hover` state, and click on a tab to see its content.
     <input
       className='a-tabs__item'
       type='radio'
-      id='tab1'
+      id='tab11'
       name='tabs1'
       defaultChecked
     />
-    <label className='a-tabs__label' htmlFor='tab1'>
+    <label className='a-tabs__label' htmlFor='tab11'>
       <i className='a-icon a-icon__calendar a-icon--size-small a-icon--space-right a-tabs__icon' />
       <span className='a-tabs__text'>Tab 1</span>
     </label>
@@ -183,8 +183,8 @@ Mouseover to view `:hover` state, and click on a tab to see its content.
         nisl eu efficitur suscipit. Nulla dapibus cursus diam in convallis.
       </p>
     </div>
-    <input className='a-tabs__item' type='radio' id='tab2' name='tabs1' />
-    <label className='a-tabs__label' htmlFor='tab2'>
+    <input className='a-tabs__item' type='radio' id='tab12' name='tabs1' />
+    <label className='a-tabs__label' htmlFor='tab12'>
       <i className='a-icon a-icon__mail a-icon--size-small a-icon--space-right a-tabs__icon' />
       <span className='a-tabs__text'>Tab 2</span>
     </label>
@@ -197,8 +197,8 @@ Mouseover to view `:hover` state, and click on a tab to see its content.
         orci lobortis.
       </p>
     </div>
-    <input className='a-tabs__item' type='radio' id='tab3' name='tabs1' />
-    <label className='a-tabs__label' htmlFor='tab3'>
+    <input className='a-tabs__item' type='radio' id='tab13' name='tabs1' />
+    <label className='a-tabs__label' htmlFor='tab13'>
       <i className='a-icon a-icon__profile a-icon--size-small a-icon--space-right a-tabs__icon' />
       <span className='a-tabs__text'>Tab 3</span>
     </label>
@@ -209,14 +209,54 @@ Mouseover to view `:hover` state, and click on a tab to see its content.
         id vestibulum turpis.
       </p>
     </div>
-    <input className='a-tabs__item' type='radio' id='tab4' name='tabs1' />
-    <label className='a-tabs__label' htmlFor='tab4'>
+    <input className='a-tabs__item' type='radio' id='tab14' name='tabs1' />
+    <label className='a-tabs__label' htmlFor='tab14'>
       <span className='a-tabs__text'>Tab 4</span>
     </label>
     <div className='a-tabs__content'>
       <h2 className='a-title--large'>tab 4</h2>
       <p className='a-text--secondary-medium'>
         Nam consequat nisl eu efficitur suscipit vestibulum turpis.
+      </p>
+    </div>
+    <div className='a-tabs__border' />
+  </div>
+</Playground>
+
+To ensure a horizontal tabs alignment in all screens (including mobile), you can apply the `.a-tabs--horizontal` modifier.
+
+<Playground>
+  <div className='a-tabs a-tabs--horizontal'>
+    <input
+      className='a-tabs__item'
+      type='radio'
+      id='tab21'
+      name='tabs2'
+      defaultChecked
+    />
+    <label className='a-tabs__label' htmlFor='tab21'>
+      <i className='a-icon a-icon__cup a-icon--size-small a-icon--space-right a-tabs__icon' />
+      <span className='a-tabs__text'>Tab 1</span>
+    </label>
+    <div className='a-tabs__content'>
+      <h2 className='a-title--large'>tab 1</h2>
+      <p className='a-text--secondary-medium'>
+        Mauris sit amet egestas velit. Maecenas pulvinar sed nibh vel tincidunt.
+        In vitae vestibulum ante. Morbi bibendum mi vitae purus vehicula, id
+        bibendum arcu cursus.
+      </p>
+    </div>
+    <input className='a-tabs__item' type='radio' id='tab22' name='tabs2' />
+    <label className='a-tabs__label' htmlFor='tab22'>
+      <i className='a-icon a-icon__cake a-icon--size-small a-icon--space-right a-tabs__icon' />
+      <span className='a-tabs__text'>Tab 2</span>
+    </label>
+    <div className='a-tabs__content'>
+      <h2 className='a-title--large'>tab 2</h2>
+      <p className='a-text--secondary-medium'>
+        Nunc dolor justo, congue id malesuada ac, bibendum id odio. Integer
+        dictum, lacus vitae rutrum faucibus, dolor diam lacinia erat, maximus
+        mattis ligula libero at risus.
       </p>
     </div>
     <div className='a-tabs__border' />
