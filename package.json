@@ -36,6 +36,7 @@
     "docz-plugin-css": "^0.11.0",
     "docz-theme-default": "^0.13.7",
     "gh-pages": "^2.0.1",
+    "inputmask": "^4.0.8",
     "postcss-cli": "^6.0.0",
     "postcss-css-variables": "^0.11.0",
     "postcss-import": "^12.0.0",

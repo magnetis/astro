@@ -1,3 +1,5 @@
+import Inputmask from 'inputmask';
+
 // Handle floating label
 
 export const initFloatingLabel = () => {
@@ -135,10 +137,19 @@ export const initControlInputsEvents = () => {
   });
 };
 
+// Handle masked inputs
+
+export const initMaskedInputs = () => {
+  window.requestAnimationFrame(() => {
+    Inputmask().mask(document.querySelectorAll('.masked-inputs input'));
+  });
+};
+
 const HandleInputEvents = () => {
   initFloatingLabel();
   initMessagingInputEvent();
   initControlInputsEvents();
+  initMaskedInputs();
   return null;
 };
 
