@@ -2,6 +2,14 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [0.9.0] - 2019-05-06
+- Add optional always-horizontal behavior to tabs component.
+- Fix label leaking on tabs component (issue #82).
+- Add control input type to Inputs page.
+- Make color variables accessible in the final bundle.
+- Add ghost icon buttons to Buttons page.
+- Add ghost input type to Inputs page.
+
 ### [0.8.0] - 2019-04-26
 - Remove Flexbox Grid system from the project as it caused CSS class conflicts.
 - Fix color inconsistencies in floating labels of several inputs.
