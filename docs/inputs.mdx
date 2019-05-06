@@ -184,13 +184,32 @@ These inputs are commonly used for money input data, in contexts that require in
 
 They carry outline [icon buttons](/docs-buttons#icon-buttons) and these will always add or subtract R$ 100 or R$ 1.000.
 
-The buttons will need JS to work on your project. You may find the code for this working example in our GitHub repository.
+The buttons will need JS to work on your project. You may find the code for this working example in our GitHub repository. We also used a plugin for the currency mask, as explained in the Masked Inputs section above.
 
 To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
-<Playground className='two-columns'>
+<Playground className='two-columns masked-inputs'>
   <div className='a-input a-input--control'>
-    <input id='control1' type='number' data-step='100' defaultValue='0' />
+    <input
+      id='control1'
+      type='text'
+      data-step='100'
+      defaultValue='0'
+      placeholder='0,00'
+      aria-labelledby='controllabel1'
+      data-inputmask-alias='decimal'
+      data-inputmask-showmaskonhover='false'
+      data-inputmask-groupseparator='.'
+      data-inputmask-autogroup='true'
+      data-inputmask-digits='2'
+      data-inputmask-radixpoint=','
+      data-inputmask-allowminus='false'
+      data-inputmask-prefix=''
+      data-inputmask-placeholder=''
+      data-inputmask-digitsoptional='false'
+      data-inputmask-jitmasking='true'
+      data-inputmask-rightalign='false'
+    />
     <label id='controllabel1' htmlFor='control1'>
       Control input (R$)
     </label>
@@ -202,7 +221,27 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
     </button>
   </div>
   <div className='a-input a-input--control a-input--disabled'>
-    <input id='control2' type='number' data-step='100' disabled />
+    <input
+      id='control2'
+      type='text'
+      data-step='100'
+      defaultValue='0'
+      placeholder='0,00'
+      aria-labelledby='controllabel2'
+      data-inputmask-alias='decimal'
+      data-inputmask-showmaskonhover='false'
+      data-inputmask-groupseparator='.'
+      data-inputmask-autogroup='true'
+      data-inputmask-digits='2'
+      data-inputmask-radixpoint=','
+      data-inputmask-allowminus='false'
+      data-inputmask-prefix=''
+      data-inputmask-placeholder=''
+      data-inputmask-digitsoptional='false'
+      data-inputmask-jitmasking='true'
+      data-inputmask-rightalign='false'
+      disabled
+    />
     <label id='controllabel2' htmlFor='control2'>
       Control input (R$)
     </label>
