@@ -72,21 +72,21 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
 
 ## masked inputs
 
-Inputs that have specific structure for certain kinds of data.
+Inputs that have a specific value structure for certain kinds of data.
 
-The masked inputs need a [mask plugin](https://github.com/RobinHerbots/Inputmask) and custom JS to work on your project. You may find the code for this working example in our GitHub repository.
+Masked inputs don't need specific CSS classes other than the main one shown below. However, they do need a [mask plugin](https://github.com/RobinHerbots/Inputmask) and custom JS to work on your project. You may find the code for this working example in our GitHub repository. If you decide to use Inputmask like we did, please follow the example to get the same results.
 
 <Playground className='two-columns masked-inputs'>
   <div className='a-input'>
     <input
       id='inputdate'
       type='text'
+      placeholder='DD/MM/YYYY'
       aria-labelledby='labeldate'
       data-inputmask-showmaskonhover='false'
       data-inputmask-mask='99/99/9999'
       data-inputmask-placeholder=''
       data-inputmask-jitmasking='true'
-      placeholder='DD/MM/YYYY'
     />
     <label id='labeldate' htmlFor='inputdate'>
       Date
@@ -96,6 +96,7 @@ The masked inputs need a [mask plugin](https://github.com/RobinHerbots/Inputmask
     <input
       id='inputmoney'
       type='text'
+      placeholder='0,00'
       aria-labelledby='labelmoney'
       data-inputmask-alias='decimal'
       data-inputmask-showmaskonhover='false'
@@ -108,7 +109,7 @@ The masked inputs need a [mask plugin](https://github.com/RobinHerbots/Inputmask
       data-inputmask-placeholder=''
       data-inputmask-digitsoptional='false'
       data-inputmask-jitmasking='true'
-      placeholder='0,00'
+      data-inputmask-rightalign='false'
     />
     <label id='labelmoney' htmlFor='inputmoney'>
       Money (R$)
@@ -118,12 +119,12 @@ The masked inputs need a [mask plugin](https://github.com/RobinHerbots/Inputmask
     <input
       id='inputcpf'
       type='text'
+      placeholder='000.000.000-00'
       aria-labelledby='labelcpf'
       data-inputmask-showmaskonhover='false'
       data-inputmask-mask='999.999.999-99'
       data-inputmask-placeholder=''
       data-inputmask-jitmasking='true'
-      placeholder='000.000.000-00'
     />
     <label id='labelcpf' htmlFor='inputcpf'>
       CPF
