@@ -84,7 +84,9 @@ The masked inputs need a [mask plugin](https://github.com/RobinHerbots/Inputmask
       aria-labelledby='labeldate'
       data-inputmask-showmaskonhover='false'
       data-inputmask-mask='99/99/9999'
-      data-inputmask-placeholder='DD/MM/YYYY'
+      data-inputmask-placeholder=''
+      data-inputmask-jitmasking='true'
+      placeholder='DD/MM/YYYY'
     />
     <label id='labeldate' htmlFor='inputdate'>
       Date
@@ -104,7 +106,9 @@ The masked inputs need a [mask plugin](https://github.com/RobinHerbots/Inputmask
       data-inputmask-allowminus='false'
       data-inputmask-prefix=''
       data-inputmask-placeholder=''
-      data-inputmask-digitsoptional='true'
+      data-inputmask-digitsoptional='false'
+      data-inputmask-jitmasking='true'
+      placeholder='0,00'
     />
     <label id='labelmoney' htmlFor='inputmoney'>
       Money (R$)
@@ -117,7 +121,9 @@ The masked inputs need a [mask plugin](https://github.com/RobinHerbots/Inputmask
       aria-labelledby='labelcpf'
       data-inputmask-showmaskonhover='false'
       data-inputmask-mask='999.999.999-99'
-      data-inputmask-placeholder='000.000.000-00'
+      data-inputmask-placeholder=''
+      data-inputmask-jitmasking='true'
+      placeholder='000.000.000-00'
     />
     <label id='labelcpf' htmlFor='inputcpf'>
       CPF

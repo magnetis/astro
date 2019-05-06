@@ -9,7 +9,7 @@ export const initFloatingLabel = () => {
     const verifyValue = (input, label) => {
       if (!label) return;
 
-      if (input.value) {
+      if (input.value || input.placeholder) {
         label.classList.add('a-input--floating-label');
       } else {
         label.classList.remove('a-input--floating-label');

@@ -11,7 +11,7 @@
 .a-input > input,
 .a-input > textarea {
   width: 100%;
-  padding: 25px 44px 5px 16px;
+  padding: 25px 16px 5px;
   border: 1px solid var(--color-moon-500);
   border-radius: 8px;
   background-color: var(--color-space-100);
@@ -124,6 +124,13 @@
   top: 8px;
   font-size: 12px;
   font-weight: 700;
+}
+
+/* Validated and invalid states */
+
+.a-input--validated > input,
+.a-input--invalid > input {
+  padding-right: 56px;
 }
 
 /* Validated state */
