@@ -109,7 +109,9 @@ export const initControlInputsEvents = () => {
 
       const updateControlInputValue = operation => {
         const currentControlInputValue = currentControlInput.value
-          ? parseFloat(currentControlInput.value)
+          ? parseFloat(
+              currentControlInput.value.replace(/\./g, '').replace(/\,/g, '.')
+            )
           : 0;
         let step = dataStep;
 
