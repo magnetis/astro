@@ -21,12 +21,14 @@
 
 .a-input > label {
   position: absolute;
-  top: 16px;
+  top: 8px;
   left: 16px;
   transition: 0.2s ease all;
   pointer-events: none;
   color: var(--color-moon-400);
   font: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .a-input > input::placeholder {
@@ -118,14 +120,6 @@
   font-weight: 700;
 }
 
-/* Floating label state */
-
-.a-input > .a-input--floating-label {
-  top: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
 /* Validated state */
 
 .a-input--validated > input,
@@ -209,5 +203,4 @@
 .a-input--disabled > textarea:disabled + label {
   cursor: not-allowed;
   color: var(--color-moon-300);
-  font: var(--font-secondary);
 }

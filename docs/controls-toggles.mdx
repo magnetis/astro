@@ -4,7 +4,6 @@ name: controls & toggles
 
 import '../src/index.css';
 import { Playground } from 'docz';
-import HandleSliderValue from './js/slider';
 
 # controls & toggles
 
@@ -126,8 +125,6 @@ Adjust `min` and `max` attributes to set the value range. If you need to manipul
 
 We recommend you set the slider width in the `a-slider` class.
 
-The colored percentage fill and counter label will need JS to work on your project. You may find the code for this working example in our GitHub repository. You can also wrap the slider with a React component or apply other frameworks.
-
 Mouseover and click to view `:hover` and `:active` state.
 
 To create the disabled state, add the `a-slider--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
@@ -148,8 +145,6 @@ To create the disabled state, add the `a-slider--disabled` modifier class on ele
     <input type='range' min='1' max='100' id='slider1' disabled />
   </div>
 </Playground>
-
-<HandleSliderValue />
 
 ## tabs
 

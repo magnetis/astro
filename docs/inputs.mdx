@@ -5,7 +5,6 @@ name: inputs
 import { Fragment } from 'react';
 import '../src/index.css';
 import { Playground } from 'docz';
-import HandleInputEvents from './js/inputs';
 
 # inputs
 
@@ -16,8 +15,6 @@ import HandleInputEvents from './js/inputs';
 The regular input. Labels appear on the default state and slightly move upwards when the user starts interacting and typing on the component.
 
 Please follow the markup structure below in the same order to get all correct CSS styles.
-
-The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
 
 To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
@@ -74,8 +71,6 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
 
 Text areas are used in contexts that demand long and descriptive texts.
 
-The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
-
 <Playground className='two-columns'>
   <div className='a-input'>
     <textarea name='random' id='textarea1' rows='10' cols='20'></textarea>
@@ -91,8 +86,6 @@ The floating label will need JS to work on your project. You may find the code f
 ## ghost inputs
 
 Ghost inputs are used in the foreground of colorful backgrounds or images, always displayed in white color in order to preserve good usability and legibility. Depending on the context, when the user starts typing, a white icon might appear on the right side of the component, fading in.
-
-The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
 
 This input style does not have a disabled state.
 
@@ -122,8 +115,6 @@ These inputs are commonly used for money input data, in contexts that require in
 
 They carry outline [icon buttons](/docs-buttons#icon-buttons) and these will always add or subtract R$ 100 or R$ 1.000.
 
-The buttons will need JS to work on your project. You may find the code for this working example in our GitHub repository.
-
 To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
 <Playground className='two-columns'>
@@ -140,14 +131,26 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
     </button>
   </div>
   <div className='a-input a-input--control a-input--disabled'>
-    <input id='control2' type='number' data-step='100' disabled />
+    <input
+      id='control2'
+      type='number'
+      data-step='100'
+      defaultValue='0'
+      disabled
+    />
     <label id='controllabel2' htmlFor='control2'>
       Control input (R$)
     </label>
-    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__decrement' disabled >
+    <button
+      className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__decrement'
+      disabled
+    >
       <i className='a-icon a-icon__input-dash a-icon--size-small' />
     </button>
-    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__increment' disabled >
+    <button
+      className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__increment'
+      disabled
+    >
       <i className='a-icon a-icon__input-plus a-icon--size-small' />
     </button>
   </div>
@@ -160,14 +163,12 @@ and their color can be changed as explained in the [Buttons](/docs-buttons) page
 
 Click inside to view `:focus` state.
 
-The button color/state logic will need JS to work on your project. You may find the code for this working example in our GitHub repository.
-
 To create the disabled state, add the `a-input--disabled` modifier class on element root and`disabled` attribute on the `<input>` and `<button>` tags.
 
 <Playground className='two-columns'>
   <div className='a-input a-input--messaging'>
     <input id='input6' type='text' placeholder='Standard' />
-    <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon' disabled>
+    <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon'>
       <i className='a-icon a-icon__arrow-right a-icon--size-medium' />
     </button>
   </div>
@@ -184,5 +185,3 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
     </button>
   </div>
 </Playground>
-
-<HandleInputEvents />
