@@ -1,4 +1,15 @@
-import Inputmask from 'inputmask';
+import maskInput from 'vanilla-text-mask/dist/vanillaTextMask';
+import createNumberMask from 'text-mask-addons/dist/createNumberMask';
+
+// Currency mask
+
+const currencyMask = createNumberMask({
+  prefix: '',
+  suffix: '',
+  thousandsSeparatorSymbol: '.',
+  allowDecimal: true,
+  decimalSymbol: ','
+});
 
 // Handle floating label
 
@@ -117,14 +128,23 @@ export const initControlInputsEvents = () => {
 
         if (operation === 'decrement') {
           if (currentControlInputValue < dataStep) {
-            currentControlInput.value = 0;
+            currentControlInput.value = '0,00';
             return;
           }
 
           step = dataStep * -1;
         }
 
-        currentControlInput.value = currentControlInputValue + step;
+        currentControlInput.value = parseFloat(currentControlInputValue + step)
+          .toFixed(2)
+          .replace(/\./g, ',');
+
+        maskInput({
+          inputElement: currentControlInput,
+          mask: currencyMask,
+          guide: false
+        });
+
         currentControlInput.dispatchEvent(new Event('change'));
       };
 
@@ -143,7 +163,41 @@ export const initControlInputsEvents = () => {
 
 export const initMaskedInputs = () => {
   window.requestAnimationFrame(() => {
-    Inputmask().mask(document.querySelectorAll('.masked-inputs input'));
+    // Date masked input
+    maskInput({
+      inputElement: document.querySelector('#inputdate'),
+      mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
+      guide: false
+    });
+
+    // CPF masked input
+    maskInput({
+      inputElement: document.querySelector('#inputcpf'),
+      mask: [
+        /\d/,
+        /\d/,
+        /\d/,
+        '.',
+        /\d/,
+        /\d/,
+        /\d/,
+        '.',
+        /\d/,
+        /\d/,
+        /\d/,
+        '-',
+        /\d/,
+        /\d/
+      ],
+      guide: false
+    });
+
+    // Currency masked inputs
+    maskInput({
+      inputElement: document.querySelector('#inputmoney'),
+      mask: currencyMask,
+      guide: false
+    });
   });
 };
 

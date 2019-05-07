@@ -74,7 +74,7 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
 
 Inputs that have a specific value structure for certain kinds of data.
 
-Masked inputs don't need specific CSS classes other than the main one shown below. However, they do need a [mask plugin](https://github.com/RobinHerbots/Inputmask) and custom JS to work on your project. You may find the code for this working example in our GitHub repository. If you decide to use Inputmask like we did, please follow the example to get the same results.
+Masked inputs don't need specific CSS classes other than the main one shown below. However, they do need a [mask plugin](https://github.com/text-mask/text-mask) and custom JS to work on your project. You may find the code for this working example in our GitHub repository. If you decide to use Inputmask like we did, please follow the example to get the same results.
 
 <Playground className='two-columns masked-inputs'>
   <div className='a-input'>
@@ -83,10 +83,6 @@ Masked inputs don't need specific CSS classes other than the main one shown belo
       type='text'
       placeholder='DD/MM/YYYY'
       aria-labelledby='labeldate'
-      data-inputmask-showmaskonhover='false'
-      data-inputmask-mask='99/99/9999'
-      data-inputmask-placeholder=''
-      data-inputmask-jitmasking='true'
     />
     <label id='labeldate' htmlFor='inputdate'>
       Date
@@ -98,18 +94,6 @@ Masked inputs don't need specific CSS classes other than the main one shown belo
       type='text'
       placeholder='0,00'
       aria-labelledby='labelmoney'
-      data-inputmask-alias='decimal'
-      data-inputmask-showmaskonhover='false'
-      data-inputmask-groupseparator='.'
-      data-inputmask-autogroup='true'
-      data-inputmask-digits='2'
-      data-inputmask-radixpoint=','
-      data-inputmask-allowminus='false'
-      data-inputmask-prefix=''
-      data-inputmask-placeholder=''
-      data-inputmask-digitsoptional='false'
-      data-inputmask-jitmasking='true'
-      data-inputmask-rightalign='false'
     />
     <label id='labelmoney' htmlFor='inputmoney'>
       Money (R$)
@@ -121,10 +105,6 @@ Masked inputs don't need specific CSS classes other than the main one shown belo
       type='text'
       placeholder='000.000.000-00'
       aria-labelledby='labelcpf'
-      data-inputmask-showmaskonhover='false'
-      data-inputmask-mask='999.999.999-99'
-      data-inputmask-placeholder=''
-      data-inputmask-jitmasking='true'
     />
     <label id='labelcpf' htmlFor='inputcpf'>
       CPF
@@ -194,21 +174,9 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
       id='control1'
       type='text'
       data-step='100'
-      defaultValue='0'
+      defaultValue='0,00'
       placeholder='0,00'
       aria-labelledby='controllabel1'
-      data-inputmask-alias='decimal'
-      data-inputmask-showmaskonhover='false'
-      data-inputmask-groupseparator='.'
-      data-inputmask-autogroup='true'
-      data-inputmask-digits='2'
-      data-inputmask-radixpoint=','
-      data-inputmask-allowminus='false'
-      data-inputmask-prefix=''
-      data-inputmask-placeholder=''
-      data-inputmask-digitsoptional='false'
-      data-inputmask-jitmasking='true'
-      data-inputmask-rightalign='false'
     />
     <label id='controllabel1' htmlFor='control1'>
       Control input (R$)
@@ -225,21 +193,7 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
       id='control2'
       type='text'
       data-step='100'
-      defaultValue='0'
-      placeholder='0,00'
       aria-labelledby='controllabel2'
-      data-inputmask-alias='decimal'
-      data-inputmask-showmaskonhover='false'
-      data-inputmask-groupseparator='.'
-      data-inputmask-autogroup='true'
-      data-inputmask-digits='2'
-      data-inputmask-radixpoint=','
-      data-inputmask-allowminus='false'
-      data-inputmask-prefix=''
-      data-inputmask-placeholder=''
-      data-inputmask-digitsoptional='false'
-      data-inputmask-jitmasking='true'
-      data-inputmask-rightalign='false'
       disabled
     />
     <label id='controllabel2' htmlFor='control2'>
