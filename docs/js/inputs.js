@@ -163,40 +163,55 @@ export const initControlInputsEvents = () => {
 
 export const initMaskedInputs = () => {
   window.requestAnimationFrame(() => {
-    // Date masked input
-    maskInput({
-      inputElement: document.querySelector('#inputdate'),
-      mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
-      guide: false
+    // Date masked inputs
+    const dateMaskInputs = document.querySelectorAll(
+      '[placeholder="DD/MM/YYYY"]'
+    );
+    dateMaskInputs.forEach(input => {
+      maskInput({
+        inputElement: input,
+        mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
+        guide: false
+      });
     });
 
     // CPF masked input
-    maskInput({
-      inputElement: document.querySelector('#inputcpf'),
-      mask: [
-        /\d/,
-        /\d/,
-        /\d/,
-        '.',
-        /\d/,
-        /\d/,
-        /\d/,
-        '.',
-        /\d/,
-        /\d/,
-        /\d/,
-        '-',
-        /\d/,
-        /\d/
-      ],
-      guide: false
+    const cpfMaskInputs = document.querySelectorAll(
+      '[placeholder="000.000.000-00"]'
+    );
+    cpfMaskInputs.forEach(input => {
+      maskInput({
+        inputElement: input,
+        mask: [
+          /\d/,
+          /\d/,
+          /\d/,
+          '.',
+          /\d/,
+          /\d/,
+          /\d/,
+          '.',
+          /\d/,
+          /\d/,
+          /\d/,
+          '-',
+          /\d/,
+          /\d/
+        ],
+        guide: false
+      });
     });
 
     // Currency masked inputs
-    maskInput({
-      inputElement: document.querySelector('#inputmoney'),
-      mask: currencyMask,
-      guide: false
+    const currencyMaskInputs = document.querySelectorAll(
+      '[placeholder="0,00"]'
+    );
+    currencyMaskInputs.forEach(input => {
+      maskInput({
+        inputElement: input,
+        mask: currencyMask,
+        guide: false
+      });
     });
   });
 };
