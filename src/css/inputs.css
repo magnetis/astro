@@ -274,7 +274,7 @@
 .a-input--large.a-input--messaging .a-btn {
   width: 54px;
   height: 54px;
-  border-radius: 54px;
+  border-radius: 50%;
 }
 
 .a-input--large.a-input--messaging .a-icon {
