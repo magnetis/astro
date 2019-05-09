@@ -218,3 +218,65 @@
   color: var(--color-moon-300);
   font: var(--font-secondary);
 }
+
+/* Large size */
+
+/* Large: fonts */
+
+.a-input--large > label,
+.a-input--large > input {
+  font-size: 24px;
+}
+
+/* Large: inputs */
+
+.a-input--large > input {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+/* Large: labels */
+
+.a-input--large > label {
+  left: 24px;
+}
+
+.a-input--large .a-input--floating-label,
+.a-input--large > input:focus + label {
+  top: 6px;
+  font-size: 16px;
+}
+
+/* Large: validation inputs */
+
+.a-input--large.a-input--validated > input,
+.a-input--large.a-input--invalid > input {
+  padding-right: 56px;
+}
+
+.a-input--large.a-input--validated::after,
+.a-input--large.a-input--invalid::after {
+  top: 18px;
+}
+
+/* Large: control inputs */
+
+.a-input--large.a-input--control > input {
+  padding-right: 96px;
+}
+
+.a-input--large.a-input--control .a-btn {
+  top: 18px;
+}
+
+/* Large: message inputs */
+
+.a-input--large.a-input--messaging .a-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 54px;
+}
+
+.a-input--large.a-input--messaging .a-icon {
+  font-size: 34px;
+}

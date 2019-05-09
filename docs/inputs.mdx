@@ -247,3 +247,104 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
 </Playground>
 
 <HandleInputEvents />
+
+## sizes
+
+Inputs can be used in different sizes depending on the context.
+
+To create the large size variation, add the `a-input--large` modifier class on element root.
+
+<Playground className='two-columns'>
+  {/* Standard inputs */}
+  <div className='a-input'>
+    <input id='inputmedium' type='text' aria-labelledby='labelmedium' />
+    <label id='labelmedium' htmlFor='inputmedium'>
+      Standard medium
+    </label>
+  </div>
+  <div className='a-input a-input--large'>
+    <input id='inputlarge' type='text' aria-labelledby='labellarge' />
+    <label id='labellarge' htmlFor='inputlarge'>
+      Standard large
+    </label>
+  </div>
+  {/* Mask inputs */}
+  <div className='a-input'>
+    <input
+      id='inputdatemedium'
+      type='text'
+      placeholder='DD/MM/YYYY'
+      aria-labelledby='labeldatemedium'
+    />
+    <label id='labeldatemedium' htmlFor='inputdatemedium'>
+      Date medium
+    </label>
+  </div>
+  <div className='a-input a-input--large'>
+    <input
+      id='inputdatelarge'
+      type='text'
+      placeholder='DD/MM/YYYY'
+      aria-labelledby='labeldatelarge'
+    />
+    <label id='labeldatelarge' htmlFor='inputdatelarge'>
+      Date large
+    </label>
+  </div>
+  {/* Control inputs */}
+  <div className='a-input a-input--control'>
+    <input
+      id='inputcontrolmedium'
+      type='text'
+      data-step='100'
+      defaultValue='0,00'
+      placeholder='0,00'
+      aria-labelledby='labelcontrolmedium'
+    />
+    <label id='labelcontrolmedium' htmlFor='inputcontrolmedium'>
+      Control input medium (R$)
+    </label>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__decrement'>
+      <i className='a-icon a-icon__input-dash a-icon--size-small' />
+    </button>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__increment'>
+      <i className='a-icon a-icon__input-plus a-icon--size-small' />
+    </button>
+  </div>
+  <div className='a-input a-input--control a-input--large'>
+    <input
+      id='inputcontrollarge'
+      type='text'
+      data-step='100'
+      defaultValue='0,00'
+      placeholder='0,00'
+      aria-labelledby='labelcontrollarge'
+    />
+    <label id='labelcontrollarge' htmlFor='inputcontrollarge'>
+      Control input large (R$)
+    </label>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__decrement'>
+      <i className='a-icon a-icon__input-dash a-icon--size-small' />
+    </button>
+    <button className='a-btn a-btn--ghost-uranus a-btn--small a-btn--icon a-input--control__increment'>
+      <i className='a-icon a-icon__input-plus a-icon--size-small' />
+    </button>
+  </div>
+  {/* Messaging inputs */}
+  <div className='a-input a-input--messaging'>
+    <input
+      id='inputmessagingmedium'
+      type='text'
+      placeholder='Messaging medium'
+    />
+    <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon' disabled>
+      <i className='a-icon a-icon__arrow-right a-icon--size-medium' />
+    </button>
+  </div>
+  <div className='a-input a-input--messaging a-input--large'>
+    <input id='inputmessaginglarge' type='text' placeholder='Messaging large' />
+    <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon' disabled>
+      <i className='a-icon a-icon__arrow-right a-icon--size-medium' />
+    </button>
+  </div>
+</Playground>
