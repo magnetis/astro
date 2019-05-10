@@ -2,6 +2,11 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.0.0] - 2019-05-10
+- Production ready!
+- Add masked input type to Inputs page.
+- Add input sizes variations to Inputs page.
+
 ### [0.9.0] - 2019-05-06
 - Add optional always-horizontal behavior to tabs component.
 - Fix label leaking on tabs component (issue #82).
