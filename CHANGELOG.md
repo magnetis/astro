@@ -2,6 +2,9 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.0.1] - 2019-05-15
+- Change (fix) ghost and outline buttons backgrounds from white to transparent.
+
 ### [1.0.0] - 2019-05-10
 - Production ready!
 - Add masked input type to Inputs page.
