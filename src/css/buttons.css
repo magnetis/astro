@@ -97,7 +97,7 @@
 /* Outline button */
 
 .a-btn--outline-uranus {
-  background-color: var(--color-space-100);
+  background-color: transparent;
   border: 2px solid var(--color-uranus-500);
   color: var(--color-uranus-500);
 }
@@ -116,7 +116,7 @@
 }
 
 .a-btn--outline-venus {
-  background-color: var(--color-space-100);
+  background-color: transparent;
   border: 2px solid var(--color-venus-400);
   color: var(--color-venus-400);
 }
@@ -135,7 +135,7 @@
 }
 
 .a-btn--outline-earth {
-  background-color: var(--color-space-100);
+  background-color: transparent;
   border: 2px solid var(--color-earth-600);
   color: var(--color-earth-600);
 }
@@ -154,7 +154,7 @@
 }
 
 .a-btn--outline-mars {
-  background-color: var(--color-space-100);
+  background-color: transparent;
   border: 2px solid var(--color-mars-500);
   color: var(--color-mars-500);
 }
