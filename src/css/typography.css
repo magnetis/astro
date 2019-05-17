@@ -10,6 +10,7 @@
   font: var(--font-primary);
   color: var(--font-color);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .a-text--secondary-large,
@@ -18,6 +19,7 @@
   font: var(--font-secondary);
   color: var(--font-color);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Display */
