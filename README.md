@@ -40,6 +40,12 @@ For now, Astro only supports React as its official library.
 Install Astro via terminal:
 Run `yarn add @magnetis/astro` or `npm install @magnetis/astro`.
 
+### Using via CDN
+
+```html
+  <link rel='stylesheet' href='https://unpkg.com/@magnetis/astro/dist/astro.css'
+```
+
 ### Adding Astro fonts (important!)
 
 After you've imported Astro, you still need to add our fonts to your project manually.
