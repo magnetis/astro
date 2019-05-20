@@ -21,40 +21,40 @@
 /* Display */
 
 .a-text--display {
-  font-size: 64px;
+  font-size: var(--font-size-8base);
   font-weight: 700;
 }
 
 /* Title */
 
 .a-title--large {
-  font-size: 48px;
+  font-size: var(--font-size-6base);
 }
 
 .a-title--medium {
-  font-size: 40px;
+  font-size: var(--font-size-5base);
 }
 
 .a-title--small {
-  font-size: 32px;
+  font-size: var(--font-size-4base);
 }
 
 /* Paragraph */
 
 .a-text--large {
-  font-size: 24px;
+  font-size: var(--font-size-3base);
 }
 
 .a-text--small {
-  font-size: 12px;
+  font-size: var(--font-size-1-5base);
 }
 
 /* Secondary font */
 
 .a-text--secondary-large {
-  font-size: 24px;
+  font-size: var(--font-size-3base);
 }
 
 .a-text--secondary-small {
-  font-size: 12px;
+  font-size: var(--font-size-1-5base);
 }

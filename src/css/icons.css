@@ -6,7 +6,7 @@
   height: 1em;
   vertical-align: middle;
   background-color: var(--color-moon-900);
-  font-size: 32px;
+  font-size: var(--font-size-4base);
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
@@ -15,15 +15,15 @@
 /* Sizes */
 
 .a-icon--size-small {
-  font-size: 24px;
+  font-size: var(--font-size-3base);
 }
 
 .a-icon--size-medium {
-  font-size: 32px;
+  font-size: var(--font-size-4base);
 }
 
 .a-icon--size-large {
-  font-size: 40px;
+  font-size: var(--font-size-5base);
 }
 
 /* Spaces */

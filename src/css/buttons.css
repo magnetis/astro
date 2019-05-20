@@ -427,21 +427,21 @@
 .a-btn--small {
   padding: 5px 28px;
   border-radius: 16px;
-  font-size: 12px;
+  font-size: var(--font-size-1-5base);
   line-height: 18px;
 }
 
 .a-btn--medium {
   padding: 8px 38px;
   border-radius: 24px;
-  font-size: 16px;
+  font-size: var(--font-size-2base);
   line-height: 28px;
 }
 
 .a-btn--large {
   padding: 12px 46px;
   border-radius: 31px;
-  font-size: 24px;
+  font-size: var(--font-size-3base);
   line-height: 35px;
 }
 
@@ -461,7 +461,7 @@
 
 .a-link {
   font: var(--font-primary);
-  font-size: 18px;
+  font-size: var(--font-size-2base);
   font-weight: 500;
   color: var(--color-uranus-700);
   text-decoration: underline;

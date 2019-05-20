@@ -43,7 +43,7 @@
   border: none;
   border-radius: 24px;
   font: var(--font-primary);
-  font-size: 12px;
+  font-size: var(--font-size-1-5base);
   font-weight: 600;
   align-items: center;
   justify-content: center;

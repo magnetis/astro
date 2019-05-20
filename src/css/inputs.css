@@ -114,7 +114,7 @@
 .a-input > textarea:focus + label {
   top: 8px;
   color: var(--color-uranus-500);
-  font-size: 12px;
+  font-size: var(--font-size-1-5base);
   font-weight: 700;
 }
 
@@ -122,7 +122,7 @@
 
 .a-input > .a-input--floating-label {
   top: 8px;
-  font-size: 12px;
+  font-size: var(--font-size-1-5base);
   font-weight: 700;
 }
 
@@ -190,7 +190,7 @@
   margin: 4px 16px;
   color: var(--color-mars-500);
   font: var(--font-secondary);
-  font-size: 12px;
+  font-size: var(--font-size-1-5base);
 }
 
 /* Disabled state */
@@ -225,7 +225,7 @@
 
 .a-input--large > label,
 .a-input--large > input {
-  font-size: 24px;
+  font-size: var(--font-size-3base);
 }
 
 /* Large: inputs */
@@ -244,7 +244,7 @@
 .a-input--large .a-input--floating-label,
 .a-input--large > input:focus + label {
   top: 6px;
-  font-size: 16px;
+  font-size: var(--font-size-2base);
 }
 
 /* Large: validation inputs */
@@ -266,7 +266,7 @@
 }
 
 .a-input--large.a-input--control .a-btn {
-  top: 18px;
+  top: var(--font-size-2base);
 }
 
 /* Large: message inputs */
@@ -278,5 +278,5 @@
 }
 
 .a-input--large.a-input--messaging .a-icon {
-  font-size: 34px;
+  font-size: var(--font-size-4base);
 }
