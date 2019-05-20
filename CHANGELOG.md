@@ -2,6 +2,9 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.0.2] - 2019-05-20
+- Add font smoothing on Chrome and Firefox to improve Typography rendering.
+
 ### [1.0.1] - 2019-05-15
 - Change (fix) ghost and outline buttons backgrounds from white to transparent.
 
