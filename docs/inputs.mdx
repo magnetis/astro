@@ -21,7 +21,7 @@ The floating label will need JS to work on your project. You may find the code f
 
 To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
-<Playground className='two-columns'>
+<Playground className='md:two-columns'>
   <div className='a-input'>
     <input id='input1' type='text' aria-labelledby='label1' />
     <label id='label1' htmlFor='input1'>
@@ -76,7 +76,7 @@ Inputs that have a specific value structure for certain kinds of data.
 
 Masked inputs don't need specific CSS classes other than the main one shown below. However, they do need a [mask plugin](https://github.com/text-mask/text-mask) and custom JS to work on your project. You may find the code for this working example in our GitHub repository. If you decide to use Text Mask like we did, please follow the example to get the same results.
 
-<Playground className='two-columns'>
+<Playground className='md:two-columns'>
   <div className='a-input'>
     <input
       id='inputdate'
@@ -118,7 +118,7 @@ Text areas are used in contexts that demand long and descriptive texts.
 
 The floating label will need JS to work on your project. You may find the code for this working example in our GitHub repository.
 
-<Playground className='two-columns'>
+<Playground className='md:two-columns'>
   <div className='a-input'>
     <textarea name='random' id='textarea1' rows='10' cols='20'></textarea>
     <label id='label6' htmlFor='textarea1'>Write your book here</label>
@@ -138,7 +138,7 @@ The floating label will need JS to work on your project. You may find the code f
 
 This input style does not have a disabled state.
 
-<Playground className='two-columns gradient-bg'>
+<Playground className='md:two-columns gradient-bg'>
   <div className='a-input a-input--ghost'>
     <input id='ghost1' type='text' aria-labelledby='ghostlabel1' />
     <label id='ghostlabel1' htmlFor='ghost1'>
@@ -168,7 +168,7 @@ The buttons will need JS to work on your project. You may find the code for this
 
 To create the disabled state, add the `a-input--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
 
-<Playground className='two-columns'>
+<Playground className='md:two-columns'>
   <div className='a-input a-input--control'>
     <input
       id='control1'
@@ -225,7 +225,7 @@ The button color/state logic will need JS to work on your project. You may find 
 
 To create the disabled state, add the `a-input--disabled` modifier class on element root and`disabled` attribute on the `<input>` and `<button>` tags.
 
-<Playground className='two-columns'>
+<Playground className='md:two-columns'>
   <div className='a-input a-input--messaging'>
     <input id='input6' type='text' placeholder='Standard' />
     <button className='a-btn a-btn--uranus a-btn--medium a-btn--icon' disabled>
@@ -254,7 +254,7 @@ Inputs can be used in different sizes depending on the context.
 
 To create the large size variation, add the `a-input--large` modifier class on element root.
 
-<Playground className='two-columns'>
+<Playground className='md:two-columns'>
   {/* Standard inputs */}
   <div className='a-input'>
     <input id='inputmedium' type='text' aria-labelledby='labelmedium' />
