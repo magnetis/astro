@@ -79,6 +79,24 @@ Here's a quick example. If you'd like to create a Display text styled in Astro t
 
 6. If your styles aren't rendered correctly, make sure Astro has been successfully installed into your project tree and `astro.css` is correctly imported.
 
+Although our CSS variables _are_ available in the bundle, it's important to emphasize that you should use Astro classes whenever possible, instead of using the variables directly. Always look for the element you're creating in the docs before you start to build it from scratch.
+
+In other words, avoid this:
+
+```css
+.paragraph {
+  font-family: var(--font-primary); 
+  font-weight: 600; 
+  font-size: 24px; 
+  line-height: 1.5; 
+  color: var(--color-moon-900); 
+}
+```
+
+In the example above, all these properties could be replaced with using the `a-text--large` class in the `paragraph` element. 
+
+In case you absolutely have to customize one or more properties in an Astro component, you should still use the corresponding Astro class that's closer to your goal and override it with your custom properties.
+
 ## Contributing
 
 It's awesome that you want to contribute to Astro! Please see [CONTRIBUTING.md](CONTRIBUTING.md) to learn how it works.
