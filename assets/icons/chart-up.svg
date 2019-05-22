@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icons/support/chart up</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.0232697,20.9875654 C17.7205691,21.032905 17.4009292,20.9547994 17.1431831,20.7443071 L12.2231521,16.7262889 L5.11104445,26.5139265 C4.71636052,27.057088 3.97800389,27.1606926 3.46187875,26.7453338 C2.94575361,26.3299749 2.84730606,25.5529407 3.24198999,25.0097792 L10.8889556,14.4860735 C11.1553453,14.1194697 11.5782951,13.953106 11.983806,14.0113977 C12.2844062,13.9683197 12.6010782,14.04684 12.8568169,14.2556929 L17.856422,18.3386965 L26.8294627,6.47526274 C27.2192631,5.95989995 27.9697528,5.84595883 28.5057284,6.22076814 C29.0417039,6.59557744 29.1602023,7.31720452 28.7704019,7.83256732 L19.1705373,20.5247373 C18.898574,20.8843053 18.451033,21.0484678 18.0232697,20.9875654 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/support/chart-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/secondary/arrow-down-copy-4">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#C5C5C5" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="color/moon-900" mask="url(#mask-2)" fill="#32383C">
+                <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
