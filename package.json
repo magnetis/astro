@@ -40,7 +40,7 @@
     "postcss-css-variables": "^0.12.0",
     "postcss-import": "^12.0.0",
     "postcss-url": "^8.0.0",
-    "stylelint": "^9.6.0",
+    "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.2.0",
     "svgo": "^1.1.1",
     "text-mask-addons": "^3.8.0",
