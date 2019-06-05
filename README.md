@@ -85,17 +85,35 @@ In other words, avoid this:
 
 ```css
 .paragraph {
-  font-family: var(--font-primary); 
-  font-weight: 600; 
-  font-size: 24px; 
-  line-height: 1.5; 
-  color: var(--color-moon-900); 
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--color-moon-900);
 }
 ```
+```html
+<p class="paragraph">Don't do this</p>
+```
 
-In the example above, all these properties could be replaced with using the `a-text--large` class in the `paragraph` element. 
+In the example above, all these properties could be replaced with using the `a-text--large` class in the `paragraph` element. Like so:
 
-In case you absolutely have to customize one or more properties in an Astro component, you should still use the corresponding Astro class that's closer to your goal and override it with your custom properties.
+```html
+<p class="a-text--large">Do this!</p>
+```
+
+### Customizing styles
+
+In case you absolutely have to customize one or more properties in an Astro component, you should still use the corresponding Astro class that's closer to your goal and override it with your custom properties. You can do this:
+
+```css
+.my-paragraph {
+  color: var(--color-moon-700); /* override default Astro color */
+}
+```
+```html
+<p class="a-text--large my-paragraph">Customize like this</p>
+```
 
 ## Contributing
 
