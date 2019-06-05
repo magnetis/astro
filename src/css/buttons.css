@@ -460,9 +460,6 @@
 /* Inline link */
 
 .a-link {
-  font: var(--font-primary);
-  font-size: var(--font-size-2base);
-  font-weight: 500;
   color: var(--color-uranus-700);
   text-decoration: underline;
   cursor: pointer;

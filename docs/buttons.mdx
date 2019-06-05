@@ -356,13 +356,18 @@ When creating small or big iconlabel or icon buttons, remember to change the siz
 
 For inline links in paragraphs and informative texts. Regular links navigate to other pages or external content.
 
+To create a link, combine the `a-link` class with an Astro typography class in your markup to apply our link properties over your desired font settings. See example below and the [Typography](/docs-typography) page for detailed usage of typography classes.
+
 If you're looking for buttons in `<a>` tags, see "buttons in `<a>` elements" below.
 
 Mouseover and click to view `:hover` and `:active` states.
 
 <Playground>
-  <a className='a-link' tabIndex='0'>
-    inline link
+  <a className='a-link a-text--medium' tabIndex='0'>
+    primary font - medium size
+  </a>
+  <a className='a-link a-text--secondary-small' tabIndex='0'>
+    secondary font - small size
   </a>
 </Playground>
 
