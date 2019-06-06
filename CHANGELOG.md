@@ -2,6 +2,9 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.1.1] - 2019-06-06
+- Fix Control Input missing button icon.
+
 ### [1.1.0] - 2019-06-05
 - Add new icons to Iconography.
 - Update several dependencies.
