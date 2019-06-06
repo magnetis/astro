@@ -275,3 +275,23 @@
 .a-icon__flag {
   mask-image: url(../../assets/icons/flag.svg);
 }
+
+.a-icon__dollars {
+  mask-image: url(../../assets/icons/dollars.svg);
+}
+
+.a-icon__circle-less {
+  mask-image: url(../../assets/icons/circle-less.svg);
+}
+
+.a-icon__circle-more {
+  mask-image: url(../../assets/icons/circle-more.svg);
+}
+
+.a-icon__money-bag {
+  mask-image: url(../../assets/icons/money-bag.svg);
+}
+
+.a-icon__floater {
+  mask-image: url(../../assets/icons/floater.svg);
+}
