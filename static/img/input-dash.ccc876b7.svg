@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon_input_dash</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="components/inputs/control/medium/standard" transform="translate(-270.000000, -16.000000)" fill="#597183" fill-rule="nonzero">
+            <g id="icon_dash" transform="translate(270.000000, 16.000000)">
+                <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M12,23.04 C18.0972236,23.04 23.04,18.0972236 23.04,12 C23.04,5.90277636 18.0972236,0.96 12,0.96 C5.90277636,0.96 0.96,5.90277636 0.96,12 C0.96,18.0972236 5.90277636,23.04 12,23.04 Z M6.24,11.52 L17.76,11.52 C18.0250967,11.52 18.24,11.7349033 18.24,12 C18.24,12.2650967 18.0250967,12.48 17.76,12.48 L6.24,12.48 C5.97490332,12.48 5.76,12.2650967 5.76,12 C5.76,11.7349033 5.97490332,11.52 6.24,11.52 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
