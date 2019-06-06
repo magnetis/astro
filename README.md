@@ -10,6 +10,7 @@
 - [Adding Astro to your project](#adding-astro-to-your-project)
 - [Using Astro](#using-astro)
 - [Contributing](#contributing)
+- [Troubleshooting](#troubleshooting)
 - [Contact us](#contact-us)
 
 ## Introduction
@@ -79,9 +80,49 @@ Here's a quick example. If you'd like to create a Display text styled in Astro t
 
 6. If your styles aren't rendered correctly, make sure Astro has been successfully installed into your project tree and `astro.css` is correctly imported.
 
+Although our CSS variables _are_ available in the bundle, it's important to emphasize that you should use Astro classes whenever possible, instead of using the variables directly. Always look for the element you're creating in the docs before you start to build it from scratch.
+
+In other words, avoid this:
+
+```css
+.paragraph {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--color-moon-900);
+}
+```
+```html
+<p class="paragraph">Don't do this</p>
+```
+
+In the example above, all these properties could be replaced with using the `a-text--large` class in the `paragraph` element. Like so:
+
+```html
+<p class="a-text--large">Do this!</p>
+```
+
+### Customizing styles
+
+In case you absolutely have to customize one or more properties in an Astro component, you should still use the corresponding Astro class that's closer to your goal and override it with your custom properties. You can do this:
+
+```css
+.my-paragraph {
+  color: var(--color-moon-700); /* override default Astro color */
+}
+```
+```html
+<p class="a-text--large my-paragraph">Customize like this</p>
+```
+
 ## Contributing
 
 It's awesome that you want to contribute to Astro! Please see [CONTRIBUTING.md](CONTRIBUTING.md) to learn how it works.
+
+## Troubleshooting
+
+- If you copy the markup from an example in our documentation, don't forget to change "className" to "class" if you're not in a React environment like our docs are ;)
 
 ## Contact us
 

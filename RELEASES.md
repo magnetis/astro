@@ -11,6 +11,6 @@ If you're a Magnetis employee who's about to launch a new release, please follow
 5. Push the branch to GitHub and open a PR (no need to ask for reviewers).
 6. Merge with master.
 7. Create a new release on GitHub: https://github.com/magnetis/astro/releases.
-8. Send the release to NPM registry: `git checkout master` && `git pull` &&  `yarn publish`. 
+8. Send the release to NPM registry: `git checkout master` && `git pull` &&  `yarn publish` (you will be prompted about the version, just type in the same version you manually bumped).
 9. Deploy to the production documentation: `yarn docs:publish`.
-10. Notify about the release on #astro-news channel on Slack.
+10. Notify about the release on #astro and #codehood channels on Slack.

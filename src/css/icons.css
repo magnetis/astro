@@ -256,10 +256,22 @@
   mask-image: url(../../assets/icons/light.svg);
 }
 
+.a-icon__input-dash {
+  mask-image: url(../../assets/icons/input-dash.svg);
+}
+
 .a-icon__input-plus {
   mask-image: url(../../assets/icons/input-plus.svg);
 }
 
-.a-icon__input-dash {
-  mask-image: url(../../assets/icons/input-dash.svg);
+.a-icon__chart-up {
+  mask-image: url(../../assets/icons/chart-up.svg);
+}
+
+.a-icon__comparison {
+  mask-image: url(../../assets/icons/comparison.svg);
+}
+
+.a-icon__flag {
+  mask-image: url(../../assets/icons/flag.svg);
 }

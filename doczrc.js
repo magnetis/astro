@@ -251,9 +251,11 @@ export default {
         '& > .a-slider': {
           marginBottom: 22
         },
-        '&.two-columns': {
-          display: 'inline-grid',
-          gridTemplateColumns: 'auto auto'
+        '@media (min-width: 780px)': {
+          '&.md\\:two-columns': {
+            display: 'grid',
+            gridTemplateColumns: 'auto auto'
+          }
         },
         '&.gradient-bg': {
           backgroundImage: 'var(--gradient-andromeda)'
