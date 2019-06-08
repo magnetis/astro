@@ -1,7 +1,4 @@
 :root {
-  --font-primary: normal normal 600 normal var(--font-size-2base)/1.5 Poppins, sans-serif;
-  --font-secondary: normal normal 400 normal var(--font-size-2base)/1.5 Lato, sans-serif;
-  --font-color: var(--color-moon-900);
   --font-size-base: 8px;
   --font-size-1-5base: calc(var(--font-size-base) * 1.5);
   --font-size-2base: calc(var(--font-size-base) * 2);
@@ -10,4 +7,7 @@
   --font-size-5base: calc(var(--font-size-base) * 5);
   --font-size-6base: calc(var(--font-size-base) * 6);
   --font-size-8base: calc(var(--font-size-base) * 8);
+  --font-primary: normal normal 600 normal var(--font-size-2base)/1.5 Poppins, sans-serif;
+  --font-secondary: normal normal 400 normal var(--font-size-2base)/1.5 Lato, sans-serif;
+  --font-color: var(--color-moon-900);
 }
