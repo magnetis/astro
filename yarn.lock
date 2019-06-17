@@ -7320,10 +7320,10 @@ postcss-convert-values@^4.0.1:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-css-variables@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/postcss-css-variables/-/postcss-css-variables-0.12.0.tgz#0137b6ff15fb051bd29b36eabfea03472ccdd14c"
-  integrity sha512-fSgIfR+g/kZ2GeV3GH7wyNslDi7KH/Z+zwtHdEcmHv86mu+o71va9r9rqFLPR0VKi2BzoQZbCyw89oXK/XevIQ==
+postcss-css-variables@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/postcss-css-variables/-/postcss-css-variables-0.13.0.tgz#42adcec7e963020801b106b6452d6a3e9c24bc87"
+  integrity sha512-gji53rkQx8UcNHpAPgn+kdRs3ZQuPk2Ebo+HDVMIaU4lo9xt7i46X7rvGJDSwR259V1RlPc6vMQdybgsgKtqKA==
   dependencies:
     escape-string-regexp "^1.0.3"
     extend "^3.0.1"
