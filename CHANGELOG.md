@@ -2,6 +2,11 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.2.0] - 2019-06-18
+- Refactor links usage to allow combining link styles with typography classes (should not break anything since now links are styled from context, but we advise you to check your `a-link` elements anyway).
+- Tech debt: extract font size values into variables.
+- Tech debt: bump stylelint and postcss-css-variables versions.
+
 ### [1.1.1] - 2019-06-06
 - Fix Control Input missing button icon.
 
