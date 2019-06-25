@@ -44,7 +44,7 @@ Run `yarn add @magnetis/astro` or `npm install @magnetis/astro`.
 ### Using via CDN
 
 ```html
-  <link rel='stylesheet' href='https://unpkg.com/@magnetis/astro/dist/astro.css'
+  <link href='https://unpkg.com/@magnetis/astro/dist/astro.css' rel='stylesheet' type="text/css" />
 ```
 
 ### Adding Astro fonts (important!)
