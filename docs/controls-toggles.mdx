@@ -128,6 +128,8 @@ We recommend you set the slider width in the `a-slider` class.
 
 The colored percentage fill and counter label will need JS to work on your project. You may find the code for this working example in our GitHub repository. You can also wrap the slider with a React component or apply other frameworks.
 
+The gradient full fill does not require JS to work, as there is no calculation for what percentage of the slider should be filled. Add the `a-slider--full` class to get that effect.
+
 Mouseover and click to view `:hover` and `:active` state.
 
 To create the disabled state, add the `a-slider--disabled` modifier class on element root and `disabled` attribute on the `<input>` tag.
@@ -140,12 +142,19 @@ To create the disabled state, add the `a-slider--disabled` modifier class on ele
     </label>
     <input type='range' min='1' max='100' id='slider1' />
   </div>
+  <div className='a-slider a-slider--full'>
+    <label htmlFor='slider2'>
+      Full fill
+      <span className='a-slider--value'>50 coins</span>
+    </label>
+    <input type='range' min='1' max='100' id='slider2' />
+  </div>
   <div className='a-slider a-slider--disabled'>
-    <label htmlFor='slider1'>
+    <label htmlFor='slider3'>
       Disabled
       <span className='a-slider--value'>0 coins</span>
     </label>
-    <input type='range' min='1' max='100' id='slider1' disabled />
+    <input type='range' min='1' max='100' id='slider3' disabled />
   </div>
 </Playground>
 
