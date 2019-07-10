@@ -9558,15 +9558,14 @@ react-hot-loader@4.3.6:
     shallowequal "^1.0.2"
 
 react-hot-loader@^4.12.1, react-hot-loader@^4.8.4:
-  version "4.12.1"
-  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.1.tgz#d9e9834fd7ba05424ebaa12bce4ad5082fee29eb"
-  integrity sha512-/DxbaR1/PYaCu8HHjD2U8Wxvy//MeHMppsa63UPFzkSoUSuDJ/SfZdff2IMz0JbIhkKFvalA98nPiBppNLIP8g==
+  version "4.12.6"
+  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.6.tgz#bd7a41501b02576638031482474a72bac453587d"
+  integrity sha512-tRXWgF5MhQSEXX3EHIplCOWCzSg+ye7ddHeQLt7Z+CaZMeEfeCL2/uSGITIzWXOQYhefnLX8IZtr2cff4xIrww==
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
     hoist-non-react-statics "^3.3.0"
     loader-utils "^1.1.0"
-    lodash "^4.17.11"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.0.2"
