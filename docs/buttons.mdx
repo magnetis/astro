@@ -55,30 +55,6 @@ Mouseover and click to view `:hover` and `:active` states.
   </button>
 </Playground>
 
-## ghost buttons
-
-Ghost buttons are visually similar to inline links, but with the size and behavior of regular buttons. They can be used for secondary actions or microinteractions.
-
-Aside from using the ghost button CSS class, you also need to specify size and color.
-
-Mouseover and click to view `:hover` and `:active` states.
-
-<Playground>
-  <button className='a-btn a-btn--ghost-uranus a-btn--medium'>
-    ghost uranus
-  </button>
-  <button className='a-btn a-btn--ghost-earth a-btn--medium'>
-    ghost earth
-  </button>
-  <button className='a-btn a-btn--ghost-venus a-btn--medium'>
-    ghost venus
-  </button>
-  <button className='a-btn a-btn--ghost-mars a-btn--medium'>ghost mars</button>
-  <button className='a-btn a-btn--ghost-venus a-btn--medium' disabled>
-    ghost disabled
-  </button>
-</Playground>
-
 ## iconlabel buttons
 
 Buttons with icons help identify the action or context within the interface.
@@ -210,7 +186,7 @@ See our [Iconography](https://astro.magnetis.com.br/#/docs-iconography) to learn
 
 Ghost icon buttons can be used for simple microinteractions and commands.
 
-To create a ghost icon button, first create a regular ghost button with all size and color modifier classes, plus the `a-btn--icon` class. Then add a `<i>` tag inside the button with no inner text.
+To create a ghost icon button, replicate the classes used in the examples below; then add an `<i>` tag inside the button with no inner text.
 
 See our [Iconography](https://astro.magnetis.com.br/#/docs-iconography) to learn how to use Astro icons.
 
@@ -256,18 +232,6 @@ When creating small or big iconlabel or icon buttons, remember to change the siz
   </button>
   <button className='a-btn a-btn--outline-uranus a-btn--large'>
     outline large
-  </button>
-</Playground>
-
-<Playground>
-  <button className='a-btn a-btn--ghost-uranus a-btn--small'>
-    ghost small
-  </button>
-  <button className='a-btn a-btn--ghost-uranus a-btn--medium'>
-    ghost medium
-  </button>
-  <button className='a-btn a-btn--ghost-uranus a-btn--large'>
-    ghost large
   </button>
 </Playground>
 
