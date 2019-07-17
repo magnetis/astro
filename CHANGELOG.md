@@ -2,6 +2,11 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.4.0] - 2019-07-17
+- Change slider thumb (circle) sizes to improve touchscreen usability.
+- Create full fill (gradient) slider.
+- Bump several dependencies.
+
 ### [1.3.0] - 2019-06-24
 - Add new icons to Iconography.
 
