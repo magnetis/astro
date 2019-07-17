@@ -141,14 +141,14 @@
 }
 
 .a-input--validated > label {
-  color: var(--color-moon-300);
+  color: var(--color-moon-400);
 }
 
 .a-input--validated > input:focus + label {
   color: var(--color-earth-400);
 }
 
-.a-input--validated::after {
+.a-input--validated:not(.a-input--control)::after {
   position: absolute;
   top: 12px;
   right: 16px;
@@ -166,12 +166,11 @@
   border: 1px solid var(--color-mars-500);
 }
 
-.a-input--invalid > label,
 .a-input--invalid > input:focus + label {
   color: var(--color-mars-500);
 }
 
-.a-input--invalid::after {
+.a-input--invalid:not(.a-input--control)::after {
   position: absolute;
   top: 12px;
   right: 16px;
