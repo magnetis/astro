@@ -17,14 +17,19 @@ export default () => (
 
         <li>
           <p>
-            Get our font links in the <a href='https://astro.magnetis.com.br/#/docs-typography'>
+            Get our font links in the{' '}
+            <a href='https://astro.magnetis.com.br/typography'>
               Typography page
-            </a> and load them in your project.
+            </a>{' '}
+            and load them in your project.
           </p>
         </li>
       </ul>
 
-      <a className='a-btn a-btn--earth a-btn--medium' href='https://github.com/magnetis/astro/blob/master/README.md#adding-astro-to-your-project'>
+      <a
+        className='a-btn a-btn--earth a-btn--medium'
+        href='https://github.com/magnetis/astro/blob/master/README.md#adding-astro-to-your-project'
+      >
         read install docs
       </a>
     </div>
@@ -36,13 +41,14 @@ export default () => (
           <p>Astro components are atomic and can be used in isolation.</p>
         </li>
         <li className='code-snippet'>
-          <pre>
-            {codesnippet}
-          </pre>
+          <pre>{codesnippet}</pre>
         </li>
       </ul>
 
-      <a className='a-btn a-btn--earth a-btn--medium' href='https://github.com/magnetis/astro/blob/master/README.md#using-astro'>
+      <a
+        className='a-btn a-btn--earth a-btn--medium'
+        href='https://github.com/magnetis/astro/blob/master/README.md#using-astro'
+      >
         view usage docs
       </a>
     </div>
@@ -65,12 +71,16 @@ export default () => (
 
         <li>
           <p>
-            Run <code>yarn docz:dev</code> and visit <a href='http://localhost:3000/'>localhost:3000</a>
+            Run <code>yarn docz:dev</code> and visit{' '}
+            <a href='http://localhost:3000/'>localhost:3000</a>
           </p>
         </li>
       </ul>
 
-      <a className='a-btn a-btn--earth a-btn--medium' href='https://github.com/magnetis/astro/blob/master/CONTRIBUTING.md'>
+      <a
+        className='a-btn a-btn--earth a-btn--medium'
+        href='https://github.com/magnetis/astro/blob/master/CONTRIBUTING.md'
+      >
         see contributing guide
       </a>
     </div>
