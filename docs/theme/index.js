@@ -33,6 +33,7 @@ export default {
   styles: {
     body: `
       overflow: auto;
+      line-height: 1.5;
 
       ${selectors.editPageBtn} {
         display: none;
@@ -108,10 +109,10 @@ export default {
       ${selectors.menuArea} {
         background-color: var(--color-space-100);
         border-right: 1px solid var(--color-space-300);
-        width: 320px;
+        width: 280px;
 
         ${selectors.innerMenuArea} {
-          width: 320px;
+          width: 280px;
         }
       }
 
