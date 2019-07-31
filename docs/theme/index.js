@@ -15,6 +15,7 @@ const selectors = {
   mobileMenu: '& .Sidebar__Wrapper-dMteFe',
   playgroundWrapper: playgroundSelector,
   playgroundChildrens: `${playgroundSelector} > div`,
+  headerTitle: '& .H1-ecIwba',
 
   /* Docz default elements (hidden) */
 
@@ -25,12 +26,14 @@ const selectors = {
   menuBlueTop: '& .Logo__Wrapper-bzwKYh:before',
   menuItemsBorder: '& .MenuLink__Wrapper-bIIltX:after',
   menuSubitemsBorder: '& .MenuLink__Wrapper-bIIltX.gUhHxl:after',
-  headingIcon: '& .heading--Icon'
+  headingIcon: '& .heading--Icon',
 };
 
 export default {
   styles: {
     body: `
+      overflow: auto;
+
       ${selectors.editPageBtn} {
         display: none;
       }
@@ -200,7 +203,7 @@ export default {
       }
 
       @media (max-width: 560px) {
-        & h1.-bdhje3 {
+        ${selectors.headerTitle} {
           font-size: 48px;
         }
       }

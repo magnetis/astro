@@ -3,6 +3,7 @@
 
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 .a-checkbox > label {
@@ -39,7 +40,7 @@
 
 .a-checkbox__shape::after {
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 3px;
   width: 10px;
   height: 6px;
@@ -51,7 +52,7 @@
 }
 
 .a-checkbox--indeterminate > .a-checkbox__shape::after {
-  top: 11px;
+  top: 9px;
   left: 4px;
   width: 8px;
   transform: rotate(-180deg);
