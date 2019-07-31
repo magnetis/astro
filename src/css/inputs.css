@@ -69,8 +69,8 @@
   color: var(--color-space-100);
 }
 
-.a-input--ghost.a-input--validated::after,
-.a-input--ghost.a-input--invalid::after {
+.a-input--ghost.a-input--validated:not(.a-input--control)::after,
+.a-input--ghost.a-input--invalid:not(.a-input--control)::after {
   background-color: var(--color-space-100);
 }
 
@@ -98,8 +98,20 @@
   top: 13px;
 }
 
-.a-input--control > input:not(:focus) ~ button i {
+.a-input--control > input:not(:focus) ~ button .a-icon {
   background-color: var(--color-moon-500);
+}
+
+.a-input--control.a-input--validated > input ~ .a-btn .a-icon,
+.a-input--control.a-input--validated > input ~ .a-btn:hover .a-icon,
+.a-input--control.a-input--validated > input ~ .a-btn:focus .a-icon {
+  background-color: var(--color-earth-400);
+}
+
+.a-input--control.a-input--invalid > input ~ .a-btn .a-icon,
+.a-input--control.a-input--invalid > input ~ .a-btn:hover .a-icon,
+.a-input--control.a-input--invalid > input ~ .a-btn:focus .a-icon {
+  background-color: var(--color-mars-400);
 }
 
 /* Focus state */
@@ -166,7 +178,8 @@
   border: 1px solid var(--color-mars-500);
 }
 
-.a-input--invalid > input:focus + label {
+.a-input--invalid > input:focus + label,
+.a-input--invalid > .a-label--invalid {
   color: var(--color-mars-500);
 }
 

@@ -11,6 +11,25 @@ const currencyMask = createNumberMask({
   decimalSymbol: ','
 });
 
+const pinLabelColors = (inputWrapper, value) => {
+  
+  const input = inputWrapper.querySelector('input');
+  const label = inputWrapper.querySelector('label');
+  value = value || ( input && input.value );
+
+  if(
+    inputWrapper.classList.contains('a-input--invalid') && 
+    value && 
+    !label.classList.contains('a-input--invalid')
+  ) {
+    label.classList.add('a-label--invalid');
+  }
+  
+  if(label && label.classList.contains('a-label--invalid') && !value ) {
+    label.classList.remove("a-label--invalid");
+  }
+}
+
 // Handle floating label
 
 export const initFloatingLabel = () => {
@@ -44,6 +63,12 @@ export const initFloatingLabel = () => {
       currentInput.addEventListener('change', () => {
         verifyValue(currentInput, currentLabel);
       });
+
+      currentInput.addEventListener('input', event => {
+        pinLabelColors(input, event.target.value);
+      });
+
+      pinLabelColors(input);
     });
   });
 };
@@ -150,10 +175,12 @@ export const initControlInputsEvents = () => {
 
       decrementButton.addEventListener('click', () => {
         updateControlInputValue('decrement');
+        pinLabelColors(input);
       });
 
       incrementButton.addEventListener('click', () => {
         updateControlInputValue('increment');
+        pinLabelColors(input);
       });
     });
   });
