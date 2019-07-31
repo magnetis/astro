@@ -1,5 +1,4 @@
 # Astro
-
 ### A design system by Magnetis 👩‍🚀
 
 [![Build Status](https://travis-ci.org/magnetis/astro.svg?branch=master)](https://travis-ci.org/magnetis/astro)
@@ -22,15 +21,12 @@ We believe that a good user experience is built with **consistent design**, well
 Therefore, Astro is essentially:
 
 ### Atomic
-
 Astro is built based on **Atomic Design**, so our designers and developers can use its style set and components to enhance our product interface, as a **modular system** that can be easily **managed and updated**.
 
 ### Open
-
 Magnetis believes that good design and experiences can **impact the product market and society itself**. Our **design and code assets are open** so we can contribute to the community and help new product teams.
 
 ### Accessible
-
 Design is meant to be **for all**. Astro style and components follow basic recommendations from the **WCAG guidelines** for accessibility, with tested contrast ratios and good practices in legibility and screen reading solutions.
 [See WCAG >>](https://www.w3.org/TR/WCAG21/)
 
@@ -48,17 +44,13 @@ Run `yarn add @magnetis/astro` or `npm install @magnetis/astro`.
 ### Using via CDN
 
 ```html
-<link
-  href="https://unpkg.com/@magnetis/astro/dist/astro.css"
-  rel="stylesheet"
-  type="text/css"
-/>
+  <link href='https://unpkg.com/@magnetis/astro/dist/astro.css' rel='stylesheet' type="text/css" />
 ```
 
 ### Adding Astro fonts (important!)
 
 After you've imported Astro, you still need to add our fonts to your project manually.
-You can get the updated font links either in the [Typography page](https://astro.magnetis.com.br/typography) or inside the project folder in `public/docz.html`.
+You can get the updated font links either in the [Typography page](https://astro.magnetis.com.br/#/docs-typography) or inside the project folder in `public/docz.html`.
 
 ## Using Astro
 
@@ -70,21 +62,17 @@ Here's a quick example. If you'd like to create a Display text styled in Astro t
 
 2. Import Astro in your file through one of the following methods:
 
-   - Inside the `<head>` tag:
-     ```html
-     <head>
-       <link
-         href="/node_modules/@magnetis/astro/dist/astro.css"
-         rel="stylesheet"
-         type="text/css"
-       />
-     </head>
-     ```
-   - With ES6 modules: `import "@magnetis/astro";`
+    - Inside the `<head>` tag:
+      ```html
+      <head>
+        <link href="/node_modules/@magnetis/astro/dist/astro.css" rel="stylesheet" type="text/css" /> 
+      </head>
+      ```
+    - With ES6 modules: `import "@magnetis/astro";`
 
-   - With commonjs: `require("@magnetis/astro");`
+    - With commonjs: `require("@magnetis/astro");`
 
-3. Go to Astro's [Typography page](https://astro.magnetis.com.br/typography);
+3. Go to Astro's [Typography page](https://astro.magnetis.com.br/#/docs-typography);
 
 4. See that the "Display" section guides you to create a `<p>` element with a specific text display class;
 
@@ -105,7 +93,6 @@ In other words, avoid this:
   color: var(--color-moon-900);
 }
 ```
-
 ```html
 <p class="paragraph">Don't do this</p>
 ```
@@ -125,7 +112,6 @@ In case you absolutely have to customize one or more properties in an Astro comp
   color: var(--color-moon-700); /* override default Astro color */
 }
 ```
-
 ```html
 <p class="a-text--large my-paragraph">Customize like this</p>
 ```
