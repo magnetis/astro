@@ -14,7 +14,7 @@ const selectors = {
   mobileLogoArea: '& .Logo__Wrapper-bzwKYh.kYsbLl',
   mobileMenu: '& .Sidebar__Wrapper-dMteFe',
   playgroundWrapper: playgroundSelector,
-  playgroundChildrens: `${playgroundSelector} > div`,
+  playgroundChildren: `${playgroundSelector} > div`,
   headerTitle: '& .H1-ecIwba',
 
   /* Docz default elements (hidden) */
@@ -26,7 +26,7 @@ const selectors = {
   menuBlueTop: '& .Logo__Wrapper-bzwKYh:before',
   menuItemsBorder: '& .MenuLink__Wrapper-bIIltX:after',
   menuSubitemsBorder: '& .MenuLink__Wrapper-bIIltX.gUhHxl:after',
-  headingIcon: '& .heading--Icon',
+  headingIcon: '& .heading--Icon'
 };
 
 export default {
@@ -109,10 +109,15 @@ export default {
       ${selectors.menuArea} {
         background-color: var(--color-space-100);
         border-right: 1px solid var(--color-space-300);
-        width: 280px;
+
+        @media (min-width: 1120px) {
+          width: 320px;
+        }
 
         ${selectors.innerMenuArea} {
-          width: 280px;
+          @media (min-width: 1120px) {
+            width: 320px;
+          }
         }
       }
 
@@ -214,7 +219,7 @@ export default {
         overflow-x: scroll;
       }
 
-      ${selectors.playgroundChildrens} {
+      ${selectors.playgroundChildren} {
         & > * {
           box-sizing: border-box;
           margin: 12px;
@@ -232,6 +237,8 @@ export default {
         }
 
         &.gradient-bg {
+          padding: 16px;
+          margin: -16px;
           background-image: var(--gradient-andromeda);
         }
       }
