@@ -42,32 +42,28 @@
   mask-image: url(../../assets/icons/additional.svg);
 }
 
-.a-icon--wallet {
-  mask-image: url(../../assets/icons/wallet.svg);
+.a-icon--chart {
+  mask-image: url(../../assets/icons/chart.svg);
 }
 
-.a-icon--referral {
-  mask-image: url(../../assets/icons/referral.svg);
+.a-icon--invite {
+  mask-image: url(../../assets/icons/invite.svg);
 }
 
-.a-icon--trades {
-  mask-image: url(../../assets/icons/trades.svg);
+.a-icon--time {
+  mask-image: url(../../assets/icons/time.svg);
 }
 
-.a-icon--redemption {
-  mask-image: url(../../assets/icons/redemption.svg);
-}
-
-.a-icon--document {
-  mask-image: url(../../assets/icons/document.svg);
-}
-
-.a-icon--chat {
-  mask-image: url(../../assets/icons/chat.svg);
+.a-icon--down {
+  mask-image: url(../../assets/icons/down.svg);
 }
 
 .a-icon--sheet {
   mask-image: url(../../assets/icons/sheet.svg);
+}
+
+.a-icon--chat {
+  mask-image: url(../../assets/icons/chat.svg);
 }
 
 /* Support icons */
@@ -228,8 +224,8 @@
   mask-image: url(../../assets/icons/photo.svg);
 }
 
-.a-icon--page {
-  mask-image: url(../../assets/icons/page.svg);
+.a-icon--document {
+  mask-image: url(../../assets/icons/document.svg);
 }
 
 .a-icon--trash {
