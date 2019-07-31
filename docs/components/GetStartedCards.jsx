@@ -15,22 +15,12 @@ export default () => (
           </p>
         </li>
         <li>
-<<<<<<< HEAD
-          <p>
-            Get our font links in the{' '}
-            <a href='https://astro.magnetis.com.br/typography'>
-              Typography page
-            </a>{' '}
-            and load them in your project.
-          </p>
-=======
           <p>Or via CDN:</p>
         </li>
         <li className='code-snippet'>
           <pre>
           {'<'}link rel='stylesheet' href='https://unpkg.com/@magnetis/astro/dist/astro.css' />
           </pre>
->>>>>>> fd19b39... Update docs removing mentions to downloading fonts
         </li>
       </ul>
 
