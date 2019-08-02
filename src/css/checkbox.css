@@ -1,6 +1,8 @@
-.a-checkbox {
+:root {
   --checkbox-square-size: 16px;
+}
 
+.a-checkbox {
   display: flex;
   position: relative;
   align-items: center;

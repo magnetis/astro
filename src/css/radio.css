@@ -1,8 +1,10 @@
 /* Base component */
 
-.a-radio {
+:root {
   --radio-circle-size: 18px;
+}
 
+.a-radio {
   display: flex;
 }
 

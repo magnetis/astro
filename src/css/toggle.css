@@ -1,10 +1,14 @@
 /* Variables */
 
-.a-toggle {
+:root {
   --toggle-base-width: 50px;
   --toggle-base-height: 30px;
   --toggle-circle-size: 28px;
+}
 
+/* Base */
+
+.a-toggle {
   display: inline-block;
   position: relative;
 }
