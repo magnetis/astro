@@ -2,6 +2,10 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.4.2] - 2019-08-08
+- Remove unnecessary files from bundle, making Astro lighter.
+- Fix bug that compiled variables into `astro.css` files as `undefined` - it affected checkboxes, toggles and radio buttons.
+
 ### [1.4.1] - 2019-08-02
 - Improve and fix invalid and validated states for all input types.
 - Remove primary Ghost Buttons support, leaving only Ghost Iconlabel Buttons and Ghost Icon Buttons in our documentation. These are not breaking changes; if you use Ghost Buttons, they'll still work. Learn more on PR #133
