@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icons/support/diagonal-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.554412,12 L14.3210066,12 C13.7687218,12 13.3210066,11.5522847 13.3210066,11 C13.3210066,10.4477153 13.7687218,10 14.3210066,10 L20.9499105,10 C21.2260529,10 21.4760529,10.1119288 21.6570173,10.2928932 C21.8379817,10.4738576 21.9499105,10.7238576 21.9499105,11 L21.9499105,17.6050618 C21.9499105,18.1573466 21.5021952,18.6050618 20.9499105,18.6050618 C20.3976257,18.6050618 19.9499105,18.1573466 19.9499105,17.6050618 L19.9499105,13.4329287 L11.7071068,21.6757324 C11.3165825,22.0662567 10.6834175,22.0662567 10.2928932,21.6757324 C9.90236893,21.2852081 9.90236893,20.6520431 10.2928932,20.2615188 L18.554412,12 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/support/diagonal-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#979797" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="colors/moon/900" mask="url(#mask-2)" fill="#32383C" fill-rule="nonzero">
+            <rect id="Rectangle-2-Copy-6" x="0" y="0" width="32" height="32"></rect>
+        </g>
+    </g>
+</svg>

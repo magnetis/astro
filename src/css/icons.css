@@ -66,6 +66,10 @@
   mask-image: url(../../assets/icons/chat.svg);
 }
 
+.a-icon__sheet {
+  mask-image: url(../../assets/icons/sheet.svg);
+}
+
 /* Support icons */
 
 .a-icon__alert {
@@ -276,6 +280,10 @@
   mask-image: url(../../assets/icons/flag.svg);
 }
 
+.a-icon__money-bag {
+  mask-image: url(../../assets/icons/money-bag.svg);
+}
+
 .a-icon__dollars {
   mask-image: url(../../assets/icons/dollars.svg);
 }
@@ -290,4 +298,36 @@
 
 .a-icon__floater {
   mask-image: url(../../assets/icons/floater.svg);
+}
+
+.a-icon__bank {
+  mask-image: url(../../assets/icons/bank.svg);
+}
+
+.a-icon__tax {
+  mask-image: url(../../assets/icons/tax.svg);
+}
+
+.a-icon__calendar-check {
+  mask-image: url(../../assets/icons/calendar-check.svg);
+}
+
+.a-icon__upload {
+  mask-image: url(../../assets/icons/upload.svg);
+}
+
+.a-icon__update {
+  mask-image: url(../../assets/icons/update.svg);
+}
+
+.a-icon__return {
+  mask-image: url(../../assets/icons/return.svg);
+}
+
+.a-icon__diagonal-left {
+  mask-image: url(../../assets/icons/diagonal-left.svg);
+}
+
+.a-icon__diagonal-right {
+  mask-image: url(../../assets/icons/diagonal-right.svg);
 }
