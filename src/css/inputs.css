@@ -228,7 +228,6 @@
 .a-input--disabled > textarea:disabled + label {
   cursor: not-allowed;
   color: var(--color-moon-300);
-  font: var(--font-secondary);
 }
 
 /* Large size */
