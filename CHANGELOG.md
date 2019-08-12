@@ -2,6 +2,9 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.4.3] - 2019-08-12
+- Remove font declaration from disabled input label, fixing possible conflicts with floating label styles.
+
 ### [1.4.2] - 2019-08-08
 - Remove unnecessary files from bundle, making Astro lighter.
 - Fix bug that compiled variables into `astro.css` files as `undefined` - it affected checkboxes, toggles and radio buttons.
