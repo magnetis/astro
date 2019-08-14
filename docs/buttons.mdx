@@ -71,14 +71,14 @@ See our [Iconography](https://astro.magnetis.com.br/iconography) to learn how to
     iconlabel
   </button>
   <button className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'>
-    iconlabel
+    iconlabel right
     <i className='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button
     className='a-btn a-btn--uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'
     disabled
   >
-    iconlabel
+    iconlabel disabled
     <i className='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
@@ -93,14 +93,14 @@ Outline iconlabel buttons are commonly used in microinteractions and secondary c
     iconlabel
   </button>
   <button className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'>
-    iconlabel
+    iconlabel right
     <i className='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button
     className='a-btn a-btn--outline-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'
     disabled
   >
-    iconlabel
+    iconlabel disabled
     <i className='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
@@ -115,14 +115,14 @@ Ghost iconlabel buttons are also used in microinteractions and smaller commands.
     iconlabel
   </button>
   <button className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'>
-    iconlabel
+    iconlabel right
     <i className='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
   <button
     className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--iconlabel a-btn--iconlabel-right'
     disabled
   >
-    iconlabel
+    iconlabel disabled
     <i className='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
@@ -207,6 +207,40 @@ See our [Iconography](https://astro.magnetis.com.br/iconography) to learn how to
     className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'
     disabled
   >
+    <i className='a-icon a-icon__calendar a-icon--size-medium' />
+  </button>
+</Playground>
+
+## icon link buttons
+
+Icon link buttons can be used for menu items and simple interactions or commands.
+
+To create an icon link button, follow the class structure below. This button does not share base styles with other buttons, so you will not use the generic `a-btn` class; just add the `a-btn--iconlink` class, plus a size modifier. 
+
+Then, if you want the icon to the left of the label, add a `<i>` tag inside the button and before its inner text.
+
+If you want the icon to the right of the label, add the `a-btn--iconlink-right` in addition to the previous settings and place the `<i>` tag inside the button and after its inner text, instead.
+
+See our [Iconography](https://astro.magnetis.com.br/iconography) to learn how to use Astro icons.
+
+<Playground className='gradient-bg'>
+  <button className='a-btn--iconlink a-btn--medium'>
+    <i className='a-icon a-icon__calendar a-icon--size-medium' />
+    icon link
+  </button>
+  <button className='a-btn--iconlink a-btn--medium a-btn--iconlink-bold'>
+    <i className='a-icon a-icon__calendar a-icon--size-medium' />
+    icon link bold
+  </button>
+  <button className='a-btn--iconlink a-btn--medium a-btn--iconlink-right'>
+    icon link right
+    <i className='a-icon a-icon__calendar a-icon--size-medium' />
+  </button>
+  <button
+    className='a-btn--iconlink a-btn--medium a-btn--iconlink-right'
+    disabled
+  >
+    icon link disabled
     <i className='a-icon a-icon__calendar a-icon--size-medium' />
   </button>
 </Playground>
