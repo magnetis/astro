@@ -239,7 +239,7 @@ export default {
         &.gradient-bg {
           padding: 16px;
           margin: -16px;
-          background-image: var(--gradient-andromeda);
+          background-image: var(--gradient-black-hole);
         }
       }
     `,
