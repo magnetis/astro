@@ -2,6 +2,11 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [1.5.0] - 2019-08-15
+- Takes off the need to manually import Astro fonts.
+- Fix astro documentation minor bug that redirects to a 404 page when accessing sub pages directly from the URL.
+- Create icon link buttons and add them to the documentation.
+
 ### [1.4.3] - 2019-08-12
 - Remove font declaration from disabled input label, fixing possible conflicts with floating label styles.
 
