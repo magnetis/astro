@@ -32,7 +32,7 @@ Please follow these steps to run the project and start coding:
 
    - Design system base CSS files: `src/css` folder - if you create a new file here, please add the import to `src/index.css`.
 
-   - Import fonts to Docz: `public/docz.html`. If you make any changes to this file, you'll only be able to view them if you stop your local server (hit "control + C" on your terminal) and run it again (step 4).
+   - Import fonts to Docz: `src/css/web-fonts.css`. These `@font-face` rules are from Google Fonts css import url, like [this one](https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:500,600,700&display=swap).
 
    - Docz documentation pages including components: `docs` folder.
 
