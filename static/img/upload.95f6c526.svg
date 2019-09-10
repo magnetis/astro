@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+    <!-- Generator: Sketch 56.1 (81669) - https://sketch.com -->
+    <title>icons/support/upload</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17,9.46446609 L17,22 C17,22.5522847 16.5522847,23 16,23 C15.4477153,23 15,22.5522847 15,22 L15,9.36396103 L11.7071068,12.6568542 C11.3165825,13.0473785 10.6834175,13.0473785 10.2928932,12.6568542 C9.90236893,12.26633 9.90236893,11.633165 10.2928932,11.2426407 L15.2426407,6.29289322 C15.633165,5.90236893 16.26633,5.90236893 16.6568542,6.29289322 L21.6066017,11.2426407 C21.997126,11.633165 21.997126,12.26633 21.6066017,12.6568542 C21.2160774,13.0473785 20.5829124,13.0473785 20.1923882,12.6568542 L17,9.46446609 Z M26,26 L26,20 C26,19.4477153 26.4477153,19 27,19 C27.5522847,19 28,19.4477153 28,20 L28,27 C28,27.5522847 27.5522847,28 27,28 L5,28 C4.72385763,28 4.47385763,27.8880712 4.29289322,27.7071068 C4.11192881,27.5261424 4,27.2761424 4,27 L4,20 C4,19.4477153 4.44771525,19 5,19 C5.55228475,19 6,19.4477153 6,20 L6,26 L26,26 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/support/upload" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FF0000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#C5C5C5" xlink:href="#path-1"></use>
+        <g id="colors/moon/900" mask="url(#mask-2)" fill="#32383C" fill-rule="nonzero">
+            <rect id="Rectangle-2-Copy-6" x="0" y="0" width="32" height="32"></rect>
+        </g>
+    </g>
+</svg>
