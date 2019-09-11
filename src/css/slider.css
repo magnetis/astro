@@ -29,7 +29,7 @@
   color: var(--font-color);
 }
 
-.a-slider--value {
+.a-slider__value {
   margin-left: auto;
   font-weight: 600;
 }

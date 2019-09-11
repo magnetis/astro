@@ -40,9 +40,9 @@ export const initFloatingLabel = () => {
       if (!label) return;
 
       if (input.value || input.placeholder) {
-        label.classList.add('a-input--floating-label');
+        label.classList.add('a-input__label--floating');
       } else {
-        label.classList.remove('a-input--floating-label');
+        label.classList.remove('a-input__label--floating');
       }
     };
 
@@ -130,64 +130,64 @@ const handleButtonDisable = buttonInputs => {
 export const initControlInputsEvents = () => {
   window.requestAnimationFrame(() => {
     const controlInputs = document.querySelectorAll('.a-input--control');
-
+    
     controlInputs.forEach(input => {
       const currentControlInput = input.firstChild;
       const dataStep = parseFloat(
         currentControlInput.getAttribute('data-step')
-      );
-      const decrementButton = input.querySelector(
-        '.a-input--control__decrement'
-      );
-      const incrementButton = input.querySelector(
-        '.a-input--control__increment'
-      );
-
-      const updateControlInputValue = operation => {
-        const currentControlInputValue = currentControlInput.value
-          ? parseFloat(
-              currentControlInput.value.replace(/\./g, '').replace(/\,/g, '.')
-            )
-          : 0;
-        let step = dataStep;
-
-        if (operation === 'decrement') {
-          if (currentControlInputValue < dataStep) {
-            currentControlInput.value = '0,00';
-            return;
-          }
-
-          step = dataStep * -1;
-        }
-
-        currentControlInput.value = parseFloat(currentControlInputValue + step)
-          .toFixed(2)
+        );
+        const decrementButton = input.querySelector(
+          '.a-input__btn-control:nth-of-type(1)'
+          );
+          const incrementButton = input.querySelector(
+            '.a-input__btn-control:nth-of-type(2)'
+            );
+            
+            const updateControlInputValue = operation => {
+              const currentControlInputValue = currentControlInput.value
+              ? parseFloat(
+                currentControlInput.value.replace(/\./g, '').replace(/\,/g, '.')
+                )
+                : 0;
+                let step = dataStep;
+                
+                if (operation === 'decrement') {
+                  if (currentControlInputValue < dataStep) {
+                    currentControlInput.value = '0,00';
+                    return;
+                  }
+                  
+                  step = dataStep * -1;
+                }
+                
+                currentControlInput.value = parseFloat(currentControlInputValue + step)
+                .toFixed(2)
           .replace(/\./g, ',');
-
-        maskInput({
-          inputElement: currentControlInput,
-          mask: currencyMask,
-          guide: false
+          
+          maskInput({
+            inputElement: currentControlInput,
+            mask: currencyMask,
+            guide: false
+          });
+          
+          currentControlInput.dispatchEvent(new Event('change'));
+        };
+        
+        decrementButton.addEventListener('click', () => {
+          updateControlInputValue('decrement');
+          pinLabelColors(input);
         });
-
-        currentControlInput.dispatchEvent(new Event('change'));
-      };
-
-      decrementButton.addEventListener('click', () => {
-        updateControlInputValue('decrement');
-        pinLabelColors(input);
-      });
-
-      incrementButton.addEventListener('click', () => {
-        updateControlInputValue('increment');
-        pinLabelColors(input);
+        
+        incrementButton.addEventListener('click', () => {
+          updateControlInputValue('increment');
+          pinLabelColors(input);
+        });
       });
     });
-  });
-};
-
-// Handle masked inputs
-
+  };
+  
+  // Handle masked inputs
+  
 export const initMaskedInputs = () => {
   window.requestAnimationFrame(() => {
     // Date masked inputs

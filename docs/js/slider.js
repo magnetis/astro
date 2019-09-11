@@ -1,7 +1,7 @@
 export const changeSliderValue = () => {
   window.requestAnimationFrame(() => {
     const slider = document.querySelector("#slider1");
-    const counter = document.querySelector(".a-slider--value");
+    const counter = document.querySelector(".a-slider__value");
 
     slider.addEventListener("input", function() {
       const sliderValue = slider.value;

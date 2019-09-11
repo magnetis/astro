@@ -86,31 +86,83 @@
   appearance: none;
 }
 
-.a-input--control__decrement {
+/* Control input buttons */
+
+.a-input__btn-control {
+  display: inline-block;
   position: absolute;
+  top: 16px;
   right: 54px;
-  top: 13px;
+  margin: -4px 0 -3px;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  text-align: center;
+  font: var(--font-primary);
+  font-size: var(--font-size-1-5base);
+  line-height: 18px;
+  color: var(--color-uranus-500);
+  background-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.a-input--control__increment {
-  position: absolute;
+.a-input__btn-control:focus {
+  outline: none;
+}
+
+.a-input__btn-control + .a-input__btn-control { /* The first button with this class will be the decrement button. This selects the second button, that will be the increment button */
   right: 15px;
-  top: 13px;
 }
 
-.a-input--control > input:not(:focus) ~ button .a-icon {
+.a-input__btn-control:hover:not(:disabled),
+.a-input__btn-control:focus:not(:disabled) {
+  background-color: var(--color-moon-100);
+  border-color: var(--color-moon-100);
+  color: var(--color-uranus-400);
+}
+
+.a-input__btn-control:active:not(:disabled) {
+  background-color: var(--color-moon-200);
+  border-color: var(--color-moon-200);
+  color: var(--color-uranus-600);
+}
+
+.a-input__btn-control:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-space-100);
+}
+
+.a-input__btn-control .a-icon {
   background-color: var(--color-moon-500);
 }
 
-.a-input--control.a-input--validated > input ~ .a-btn .a-icon,
-.a-input--control.a-input--validated > input ~ .a-btn:hover .a-icon,
-.a-input--control.a-input--validated > input ~ .a-btn:focus .a-icon {
+.a-input--control > input:focus ~ .a-input__btn-control .a-icon {
+  background-color: var(--color-uranus-500);
+}
+
+.a-input__btn-control:hover:not(:disabled) .a-icon,
+.a-input__btn-control:focus:not(:disabled) .a-icon {
+  background-color: var(--color-uranus-400);
+}
+
+.a-input__btn-control:active:not(:disabled) .a-icon {
+  background-color: var(--color-uranus-600);
+}
+
+.a-input--control.a-input--validated > input ~ .a-input__btn-control .a-icon,
+.a-input--control.a-input--validated > input ~ .a-input__btn-control:hover .a-icon,
+.a-input--control.a-input--validated > input ~ .a-input__btn-control:focus .a-icon {
   background-color: var(--color-earth-400);
 }
 
-.a-input--control.a-input--invalid > input ~ .a-btn .a-icon,
-.a-input--control.a-input--invalid > input ~ .a-btn:hover .a-icon,
-.a-input--control.a-input--invalid > input ~ .a-btn:focus .a-icon {
+.a-input--control.a-input--invalid > input ~ .a-input__btn-control .a-icon,
+.a-input--control.a-input--invalid > input ~ .a-input__btn-control:hover .a-icon,
+.a-input--control.a-input--invalid > input ~ .a-input__btn-control:focus .a-icon {
   background-color: var(--color-mars-400);
 }
 
@@ -132,7 +184,7 @@
 
 /* Floating label state */
 
-.a-input > .a-input--floating-label {
+.a-input > .a-input__label--floating {
   top: 8px;
   font-size: var(--font-size-1-5base);
   font-weight: 700;
@@ -252,7 +304,7 @@
   left: 24px;
 }
 
-.a-input--large .a-input--floating-label,
+.a-input--large .a-input__label--floating,
 .a-input--large > input:focus + label {
   top: 6px;
   font-size: var(--font-size-2base);

@@ -38,297 +38,297 @@
 
 /* Dashboard icons */
 
-.a-icon__additional {
+.a-icon--additional {
   mask-image: url(../../assets/icons/additional.svg);
 }
 
-.a-icon__wallet {
+.a-icon--wallet {
   mask-image: url(../../assets/icons/wallet.svg);
 }
 
-.a-icon__referral {
+.a-icon--referral {
   mask-image: url(../../assets/icons/referral.svg);
 }
 
-.a-icon__trades {
+.a-icon--trades {
   mask-image: url(../../assets/icons/trades.svg);
 }
 
-.a-icon__redemption {
+.a-icon--redemption {
   mask-image: url(../../assets/icons/redemption.svg);
 }
 
-.a-icon__document {
+.a-icon--document {
   mask-image: url(../../assets/icons/document.svg);
 }
 
-.a-icon__chat {
+.a-icon--chat {
   mask-image: url(../../assets/icons/chat.svg);
 }
 
-.a-icon__sheet {
+.a-icon--sheet {
   mask-image: url(../../assets/icons/sheet.svg);
 }
 
 /* Support icons */
 
-.a-icon__alert {
+.a-icon--alert {
   mask-image: url(../../assets/icons/alert.svg);
 }
 
-.a-icon__circle-check {
+.a-icon--circle-check {
   mask-image: url(../../assets/icons/circle-check.svg);
 }
 
-.a-icon__circle-down {
+.a-icon--circle-down {
   mask-image: url(../../assets/icons/circle-down.svg);
 }
 
-.a-icon__circle-up {
+.a-icon--circle-up {
   mask-image: url(../../assets/icons/circle-up.svg);
 }
 
-.a-icon__circle-left {
+.a-icon--circle-left {
   mask-image: url(../../assets/icons/circle-left.svg);
 }
 
-.a-icon__circle-right {
+.a-icon--circle-right {
   mask-image: url(../../assets/icons/circle-right.svg);
 }
 
-.a-icon__x-men {
+.a-icon--x-men {
   mask-image: url(../../assets/icons/x-men.svg);
 }
 
-.a-icon__copy {
+.a-icon--copy {
   mask-image: url(../../assets/icons/copy.svg);
 }
 
-.a-icon__info {
+.a-icon--info {
   mask-image: url(../../assets/icons/info.svg);
 }
 
-.a-icon__key {
+.a-icon--key {
   mask-image: url(../../assets/icons/key.svg);
 }
 
-.a-icon__logout {
+.a-icon--logout {
   mask-image: url(../../assets/icons/logout.svg);
 }
 
-.a-icon__mail {
+.a-icon--mail {
   mask-image: url(../../assets/icons/mail.svg);
 }
 
-.a-icon__menu {
+.a-icon--menu {
   mask-image: url(../../assets/icons/menu.svg);
 }
 
-.a-icon__phone {
+.a-icon--phone {
   mask-image: url(../../assets/icons/phone.svg);
 }
 
-.a-icon__profile {
+.a-icon--profile {
   mask-image: url(../../assets/icons/profile.svg);
 }
 
-.a-icon__clock {
+.a-icon--clock {
   mask-image: url(../../assets/icons/clock.svg);
 }
 
-.a-icon__arrow-down {
+.a-icon--arrow-down {
   mask-image: url(../../assets/icons/arrow-down.svg);
 }
 
-.a-icon__arrow-up {
+.a-icon--arrow-up {
   mask-image: url(../../assets/icons/arrow-up.svg);
 }
 
-.a-icon__arrow-left {
+.a-icon--arrow-left {
   mask-image: url(../../assets/icons/arrow-left.svg);
 }
 
-.a-icon__arrow-right {
+.a-icon--arrow-right {
   mask-image: url(../../assets/icons/arrow-right.svg);
 }
 
-.a-icon__download {
+.a-icon--download {
   mask-image: url(../../assets/icons/download.svg);
 }
 
-.a-icon__play {
+.a-icon--play {
   mask-image: url(../../assets/icons/play.svg);
 }
 
-.a-icon__locker {
+.a-icon--locker {
   mask-image: url(../../assets/icons/locker.svg);
 }
 
-.a-icon__magnifier {
+.a-icon--magnifier {
   mask-image: url(../../assets/icons/magnifier.svg);
 }
 
-.a-icon__sliders {
+.a-icon--sliders {
   mask-image: url(../../assets/icons/sliders.svg);
 }
 
-.a-icon__eye-open {
+.a-icon--eye-open {
   mask-image: url(../../assets/icons/eye-open.svg);
 }
 
-.a-icon__eye-closed {
+.a-icon--eye-closed {
   mask-image: url(../../assets/icons/eye-closed.svg);
 }
 
-.a-icon__pencil {
+.a-icon--pencil {
   mask-image: url(../../assets/icons/pencil.svg);
 }
 
-.a-icon__drop-down {
+.a-icon--drop-down {
   mask-image: url(../../assets/icons/drop-down.svg);
 }
 
-.a-icon__drop-up {
+.a-icon--drop-up {
   mask-image: url(../../assets/icons/drop-up.svg);
 }
 
-.a-icon__drop-left {
+.a-icon--drop-left {
   mask-image: url(../../assets/icons/drop-left.svg);
 }
 
-.a-icon__drop-right {
+.a-icon--drop-right {
   mask-image: url(../../assets/icons/drop-right.svg);
 }
 
-.a-icon__calendar {
+.a-icon--calendar {
   mask-image: url(../../assets/icons/calendar.svg);
 }
 
-.a-icon__pizza {
+.a-icon--pizza {
   mask-image: url(../../assets/icons/pizza.svg);
 }
 
-.a-icon__circle-mail {
+.a-icon--circle-mail {
   mask-image: url(../../assets/icons/circle-mail.svg);
 }
 
-.a-icon__configuration {
+.a-icon--configuration {
   mask-image: url(../../assets/icons/configuration.svg);
 }
 
-.a-icon__balloon {
+.a-icon--balloon {
   mask-image: url(../../assets/icons/balloon.svg);
 }
 
-.a-icon__warning {
+.a-icon--warning {
   mask-image: url(../../assets/icons/warning.svg);
 }
 
-.a-icon__photo {
+.a-icon--photo {
   mask-image: url(../../assets/icons/photo.svg);
 }
 
-.a-icon__page {
+.a-icon--page {
   mask-image: url(../../assets/icons/page.svg);
 }
 
-.a-icon__trash {
+.a-icon--trash {
   mask-image: url(../../assets/icons/trash.svg);
 }
 
-.a-icon__cake {
+.a-icon--cake {
   mask-image: url(../../assets/icons/cake.svg);
 }
 
-.a-icon__laptop {
+.a-icon--laptop {
   mask-image: url(../../assets/icons/laptop.svg);
 }
 
-.a-icon__coin {
+.a-icon--coin {
   mask-image: url(../../assets/icons/coin.svg);
 }
 
-.a-icon__cup {
+.a-icon--cup {
   mask-image: url(../../assets/icons/cup.svg);
 }
 
-.a-icon__house {
+.a-icon--house {
   mask-image: url(../../assets/icons/house.svg);
 }
 
-.a-icon__light {
+.a-icon--light {
   mask-image: url(../../assets/icons/light.svg);
 }
 
-.a-icon__input-dash {
+.a-icon--input-dash {
   mask-image: url(../../assets/icons/input-dash.svg);
 }
 
-.a-icon__input-plus {
+.a-icon--input-plus {
   mask-image: url(../../assets/icons/input-plus.svg);
 }
 
-.a-icon__chart-up {
+.a-icon--chart-up {
   mask-image: url(../../assets/icons/chart-up.svg);
 }
 
-.a-icon__comparison {
+.a-icon--comparison {
   mask-image: url(../../assets/icons/comparison.svg);
 }
 
-.a-icon__flag {
+.a-icon--flag {
   mask-image: url(../../assets/icons/flag.svg);
 }
 
-.a-icon__money-bag {
+.a-icon--money-bag {
   mask-image: url(../../assets/icons/money-bag.svg);
 }
 
-.a-icon__dollars {
+.a-icon--dollars {
   mask-image: url(../../assets/icons/dollars.svg);
 }
 
-.a-icon__circle-less {
+.a-icon--circle-less {
   mask-image: url(../../assets/icons/circle-less.svg);
 }
 
-.a-icon__circle-more {
+.a-icon--circle-more {
   mask-image: url(../../assets/icons/circle-more.svg);
 }
 
-.a-icon__floater {
+.a-icon--floater {
   mask-image: url(../../assets/icons/floater.svg);
 }
 
-.a-icon__bank {
+.a-icon--bank {
   mask-image: url(../../assets/icons/bank.svg);
 }
 
-.a-icon__tax {
+.a-icon--tax {
   mask-image: url(../../assets/icons/tax.svg);
 }
 
-.a-icon__calendar-check {
+.a-icon--calendar-check {
   mask-image: url(../../assets/icons/calendar-check.svg);
 }
 
-.a-icon__upload {
+.a-icon--upload {
   mask-image: url(../../assets/icons/upload.svg);
 }
 
-.a-icon__update {
+.a-icon--update {
   mask-image: url(../../assets/icons/update.svg);
 }
 
-.a-icon__return {
+.a-icon--return {
   mask-image: url(../../assets/icons/return.svg);
 }
 
-.a-icon__diagonal-left {
+.a-icon--diagonal-left {
   mask-image: url(../../assets/icons/diagonal-left.svg);
 }
 
-.a-icon__diagonal-right {
+.a-icon--diagonal-right {
   mask-image: url(../../assets/icons/diagonal-right.svg);
 }
 
