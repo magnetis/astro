@@ -9,4 +9,5 @@
   --gradient-black-hole: linear-gradient(225deg, #3f4c55 0%, #1c2124 100%);
   --gradient-mayall: linear-gradient(225deg, #ea9297 0%, #dd676b 100%);
   --gradient-hoag: linear-gradient(223.9deg, #fbee88 0%, #f1c500 100%);
+  --gradient-pinwheel: linear-gradient(45deg, #8296a4 0%, #bac8d1 100%);
 }
