@@ -6,6 +6,7 @@ import { Fragment } from 'react';
 import '../src/index.css';
 import { Playground } from 'docz';
 import HandleInputEvents from './js/inputs';
+import MagnetisIcon from './img/magnetis-icon.png';
 
 # inputs
 
@@ -155,6 +156,30 @@ This input style does not have a disabled state.
     <label id='ghostlabel2' htmlFor='ghost2'>
       Validated
     </label>
+  </div>
+</Playground>
+
+## uploaded files preview
+
+Used to display a preview for uploaded files.
+
+If you need to truncate the displayed text, you may use the
+`a-file-preview__item--text-truncate` class in your `<p>` element.
+
+<Playground>
+  <div className='a-file-preview'>
+    <div className='a-file-preview__item'>
+      <button aria-label='Remove'>
+        <i className='a-icon a-icon__x-men' />
+      </button>
+      <p class='a-text--secondary-small'>financialreport.csv</p>
+    </div>
+    <div className='a-file-preview__item'>
+      <button aria-label='Remove'>
+        <i className='a-icon a-icon__x-men' />
+      </button>
+      <img src={MagnetisIcon} />
+    </div>
   </div>
 </Playground>
 
