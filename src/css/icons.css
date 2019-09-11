@@ -331,3 +331,7 @@
 .a-icon__diagonal-right {
   mask-image: url(../../assets/icons/diagonal-right.svg);
 }
+
+.a-icon__gift {
+  mask-image: url(../../assets/icons/gift.svg);
+}
