@@ -11,12 +11,15 @@ If you want to upgrade Astro from version 1.6.0 or earlier to 2.0.0 or later, th
 This is not a BEM fix, but some of our icon names were too specific of the Magnetis context for an open source project, so we decided to rename them.
 
 **Replace list:**
-wallet -> chart
-referral -> invite
-trades -> time
-redemption -> down
-document -> sheet
-page -> document
+
+*Before* | *After*
+-|-
+wallet | chart
+referral | invite
+trades | time
+redemption | down
+document | sheet
+page | document
 
 Rename all references to these icons. If it helps, search them with the class structure `a-icon__name` or `a-icon--name`. Also rename possible file path references. You don't need to rename your SVG files since the Astro import will do that for you.
 
