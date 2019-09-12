@@ -2,6 +2,13 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [2.0.0] - 2019-09-12
+- Breaking changes; please follow the [update guide](https://github.com/magnetis/astro/blob/master/UPDATE_GUIDE_2_0_0.MD) as you update.
+- Add new icon to Iconography.
+- Add new gradient to Colors.
+- Rename some icons to more generic names.
+- Rename some classes to follow BEM standards.
+
 ### [1.6.0] - 2019-09-10
 - Add new icons to Iconography.
 
