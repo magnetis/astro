@@ -328,8 +328,8 @@
   padding-right: 96px;
 }
 
-.a-input--large.a-input--control .a-btn {
-  top: var(--font-size-2base);
+.a-input--large.a-input--control .a-input__btn-control {
+  top: 22px;
 }
 
 /* Large: message inputs */

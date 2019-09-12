@@ -12,23 +12,22 @@ const currencyMask = createNumberMask({
 });
 
 const pinLabelColors = (inputWrapper, value) => {
-  
   const input = inputWrapper.querySelector('input');
   const label = inputWrapper.querySelector('label');
-  value = value || ( input && input.value );
+  value = value || (input && input.value);
 
-  if(
-    inputWrapper.classList.contains('a-input--invalid') && 
-    value && 
+  if (
+    inputWrapper.classList.contains('a-input--invalid') &&
+    value &&
     !label.classList.contains('a-input--invalid')
   ) {
     label.classList.add('a-label--invalid');
   }
-  
-  if(label && label.classList.contains('a-label--invalid') && !value ) {
-    label.classList.remove("a-label--invalid");
+
+  if (label && label.classList.contains('a-label--invalid') && !value) {
+    label.classList.remove('a-label--invalid');
   }
-}
+};
 
 // Handle floating label
 
@@ -130,64 +129,64 @@ const handleButtonDisable = buttonInputs => {
 export const initControlInputsEvents = () => {
   window.requestAnimationFrame(() => {
     const controlInputs = document.querySelectorAll('.a-input--control');
-    
+
     controlInputs.forEach(input => {
       const currentControlInput = input.firstChild;
       const dataStep = parseFloat(
         currentControlInput.getAttribute('data-step')
-        );
-        const decrementButton = input.querySelector(
-          '.a-input__btn-control:nth-of-type(1)'
-          );
-          const incrementButton = input.querySelector(
-            '.a-input__btn-control:nth-of-type(2)'
-            );
-            
-            const updateControlInputValue = operation => {
-              const currentControlInputValue = currentControlInput.value
-              ? parseFloat(
-                currentControlInput.value.replace(/\./g, '').replace(/\,/g, '.')
-                )
-                : 0;
-                let step = dataStep;
-                
-                if (operation === 'decrement') {
-                  if (currentControlInputValue < dataStep) {
-                    currentControlInput.value = '0,00';
-                    return;
-                  }
-                  
-                  step = dataStep * -1;
-                }
-                
-                currentControlInput.value = parseFloat(currentControlInputValue + step)
-                .toFixed(2)
+      );
+      const decrementButton = input.querySelector(
+        '.a-input__btn-control:nth-of-type(1)'
+      );
+      const incrementButton = input.querySelector(
+        '.a-input__btn-control:nth-of-type(2)'
+      );
+
+      const updateControlInputValue = operation => {
+        const currentControlInputValue = currentControlInput.value
+          ? parseFloat(
+              currentControlInput.value.replace(/\./g, '').replace(/\,/g, '.')
+            )
+          : 0;
+        let step = dataStep;
+
+        if (operation === 'decrement') {
+          if (currentControlInputValue < dataStep) {
+            currentControlInput.value = '0,00';
+            return;
+          }
+
+          step = dataStep * -1;
+        }
+
+        currentControlInput.value = parseFloat(currentControlInputValue + step)
+          .toFixed(2)
           .replace(/\./g, ',');
-          
-          maskInput({
-            inputElement: currentControlInput,
-            mask: currencyMask,
-            guide: false
-          });
-          
-          currentControlInput.dispatchEvent(new Event('change'));
-        };
-        
-        decrementButton.addEventListener('click', () => {
-          updateControlInputValue('decrement');
-          pinLabelColors(input);
+
+        maskInput({
+          inputElement: currentControlInput,
+          mask: currencyMask,
+          guide: false
         });
-        
-        incrementButton.addEventListener('click', () => {
-          updateControlInputValue('increment');
-          pinLabelColors(input);
-        });
+
+        currentControlInput.dispatchEvent(new Event('change'));
+      };
+
+      decrementButton.addEventListener('click', () => {
+        updateControlInputValue('decrement');
+        pinLabelColors(input);
+      });
+
+      incrementButton.addEventListener('click', () => {
+        updateControlInputValue('increment');
+        pinLabelColors(input);
       });
     });
-  };
-  
-  // Handle masked inputs
-  
+  });
+};
+
+// Handle masked inputs
+
 export const initMaskedInputs = () => {
   window.requestAnimationFrame(() => {
     // Date masked inputs
