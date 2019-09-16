@@ -2,6 +2,10 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [2.0.1] - 2019-09-16
+- Fix font display bug in Edge browser, by removing font-stretch declaration from the font shorthand.
+- Update dependencies.
+
 ### [2.0.0] - 2019-09-12
 - Breaking changes; please follow the [update guide](https://github.com/magnetis/astro/blob/master/UPDATE_GUIDE_2_0_0.MD) as you update.
 - Add new icon to Iconography.
