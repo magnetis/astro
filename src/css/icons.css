@@ -331,3 +331,11 @@
 .a-icon--gift {
   mask-image: url(../../assets/icons/gift.svg);
 }
+
+.a-icon--transactions {
+  mask-image: url(../../assets/icons/transactions.svg);
+}
+
+.a-icon--heart {
+  mask-image: url(../../assets/icons/heart.svg);
+}
