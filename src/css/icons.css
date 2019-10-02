@@ -339,3 +339,11 @@
 .a-icon--heart {
   mask-image: url(../../assets/icons/heart.svg);
 }
+
+.a-icon--close {
+  mask-image: url(../../assets/icons/close.svg);
+}
+
+.a-icon--mountain {
+  mask-image: url(../../assets/icons/mountain.svg);
+}
