@@ -14,24 +14,24 @@
 /* Reset standard input styles */
 
 .a-slider > input[type='range'] {
-  appearance: none;
-  outline: none;
   width: 100%;
+  outline: none;
+  appearance: none;
 }
 
 /* Labels */
 
 .a-slider > label {
-  color: var(--font-color);
   display: flex;
-  font: var(--font-secondary);
   margin-bottom: 20px;
+  font: var(--font-secondary);
+  color: var(--font-color);
   order: 1;
 }
 
 .a-slider__value {
-  font-weight: 600;
   margin-left: auto;
+  font-weight: 600;
 }
 
 .a-slider > input[type='range']:disabled ~ label {
@@ -41,7 +41,8 @@
 /* Chrome - always replicate styles for each browser, it's the only way :( */
 
 .a-slider > input[type='range']::-webkit-slider-runnable-track {
-  align-items: center;
+  display: flex;
+  height: 5px;
   background-color: var(--color-moon-300);
   background-image:
     linear-gradient(
@@ -50,8 +51,7 @@
       transparent var(--slider-percentage)
     );
   border-radius: 4px;
-  display: flex;
-  height: 5px;
+  align-items: center;
 }
 
 .a-slider.a-slider--full > input[type='range']::-webkit-slider-runnable-track {
@@ -59,31 +59,31 @@
 }
 
 .a-slider > input[type='range']::-webkit-slider-thumb {
-  appearance: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
   background-color: var(--color-space-100);
   border-radius: 100%;
   box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
-  cursor: pointer;
-  height: 28px;
   transition: all 0.3s ease;
-  width: 28px;
+  appearance: none;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-webkit-slider-thumb:hover,
 .a-slider > input[type='range']:focus::-webkit-slider-thumb {
-  height: 36px;
   width: 36px;
+  height: 36px;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-webkit-slider-thumb:active {
-  height: 40px;
   width: 40px;
+  height: 40px;
 }
 
 .a-slider > input[type='range']:disabled::-webkit-slider-runnable-track {
+  cursor: not-allowed;
   background-color: var(--color-moon-200);
   background-image: none;
-  cursor: not-allowed;
 }
 
 .a-slider > input[type='range']:disabled::-webkit-slider-thumb {
@@ -94,7 +94,8 @@
   Some styles below are slightly different from Chrome */
 
 .a-slider > input[type='range']::-moz-range-track {
-  align-items: center;
+  display: flex;
+  height: 5px;
   background-color: var(--color-moon-300);
   background-image:
     linear-gradient(
@@ -103,8 +104,7 @@
       transparent var(--slider-percentage)
     );
   border-radius: 4px;
-  display: flex;
-  height: 5px;
+  align-items: center;
 }
 
 .a-slider.a-slider--full > input[type='range']::-moz-range-track {
@@ -112,36 +112,36 @@
 }
 
 .a-slider > input[type='range']::-moz-range-thumb {
-  appearance: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
   background-color: var(--color-space-100);
   border: none;
   border-radius: 100%;
   box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
-  cursor: pointer;
-  height: 28px;
   transition: all 0.3s ease;
-  width: 28px;
+  appearance: none;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-moz-range-thumb:hover {
-  height: 36px;
   width: 36px;
+  height: 36px;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-moz-range-thumb:active {
-  height: 40px;
   width: 40px;
+  height: 40px;
 }
 
 .a-slider > input[type='range']:disabled {
-  background-color: transparent;
   cursor: not-allowed;
+  background-color: transparent;
 }
 
 .a-slider > input[type='range']:disabled::-moz-range-track {
+  cursor: not-allowed;
   background-color: var(--color-moon-200);
   background-image: none;
-  cursor: not-allowed;
 }
 
 .a-slider > input[type='range']:disabled::-moz-range-thumb {
@@ -151,7 +151,8 @@
 /* IE - always replicate styles for each browser, it's the only way :( */
 
 .a-slider > input[type='range']::-ms-track {
-  align-items: center;
+  display: flex;
+  height: 5px;
   background-color: var(--color-moon-300);
   background-image:
     linear-gradient(
@@ -160,8 +161,7 @@
       transparent var(--slider-percentage)
     );
   border-radius: 4px;
-  display: flex;
-  height: 5px;
+  align-items: center;
 }
 
 .a-slider.a-slider--full > input[type='range']::-ms-track {
@@ -169,30 +169,30 @@
 }
 
 .a-slider > input[type='range']::-ms-thumb {
-  appearance: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
   background-color: var(--color-space-100);
   border-radius: 100%;
   box-shadow: 0 1px 4px 0 rgba(135, 135, 135, 0.5);
-  cursor: pointer;
-  height: 28px;
   transition: all 0.3s ease;
-  width: 28px;
+  appearance: none;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-ms-thumb:hover {
-  height: 36px;
   width: 36px;
+  height: 36px;
 }
 
 .a-slider > input[type='range']:not(:disabled)::-ms-thumb:active {
-  height: 40px;
   width: 40px;
+  height: 40px;
 }
 
 .a-slider > input[type='range']:disabled::-ms-track {
+  cursor: not-allowed;
   background-color: var(--color-moon-200);
   background-image: none;
-  cursor: not-allowed;
 }
 
 .a-slider > input[type='range']:disabled::-ms-thumb {

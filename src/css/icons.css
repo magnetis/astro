@@ -1,15 +1,15 @@
 /* Base */
 
 .a-icon {
-  background-color: var(--color-moon-900);
   display: inline-block;
-  font-size: var(--font-size-4base);
+  width: 1em;
   height: 1em;
+  font-size: var(--font-size-4base);
+  vertical-align: middle;
+  background-color: var(--color-moon-900);
   mask-position: center center;
   mask-repeat: no-repeat;
   mask-size: contain;
-  vertical-align: middle;
-  width: 1em;
 }
 
 /* Sizes */

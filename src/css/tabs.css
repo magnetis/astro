@@ -1,53 +1,53 @@
 /* Base */
 
 .a-tabs {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 
 /* Border */
 
 .a-tabs__border {
+  position: absolute;
+  z-index: var(--z-index-1);
+  display: block;
+  width: 100%;
+  height: 48px;
   border: solid 1px var(--color-moon-300);
   border-radius: 24px;
-  display: block;
-  height: 48px;
-  position: absolute;
-  width: 100%;
-  z-index: var(--z-index-1);
 }
 
 /* Default component */
 
 .a-tabs > .a-tabs__item {
-  opacity: 0;
   position: absolute;
+  opacity: 0;
 }
 
 /* Tab */
 
 .a-tabs > .a-tabs__label {
-  align-items: center;
-  border: none;
-  border-radius: 24px;
-  color: var(--color-moon-500);
+  z-index: var(--z-index-2);
   display: flex;
-  flex: 1;
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 32px;
+  margin: 4px 0;
   font: var(--font-primary);
   font-size: var(--font-size-1-5base);
   font-weight: 600;
-  justify-content: center;
-  margin: 4px 0;
-  min-height: 40px;
-  min-width: 0;
-  padding: 8px 32px;
+  color: var(--color-moon-500);
   text-align: center;
   text-transform: lowercase;
-  transition: background-color 0.3s ease, color 0.3s ease;
   white-space: nowrap;
-  width: 100%;
-  z-index: var(--z-index-2);
+  border: none;
+  border-radius: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
 }
 
 .a-tabs > .a-tabs__label:first-of-type {
@@ -61,8 +61,8 @@
 /* Icon */
 
 .a-tabs__icon {
-  background-color: var(--color-moon-500);
   min-width: 16px;
+  background-color: var(--color-moon-500);
   transition: background-color 0.3s ease;
 }
 
@@ -70,9 +70,9 @@
 
 .a-tabs > .a-tabs__content {
   display: none;
-  order: 99;
-  padding: 16px;
   width: 100%;
+  padding: 16px;
+  order: 99;
 }
 
 /* Current content */
@@ -90,8 +90,8 @@
 /* Active state */
 
 .a-tabs > .a-tabs__item:checked + .a-tabs__label {
-  background-color: var(--color-uranus-500);
   color: var(--color-space-100);
+  background-color: var(--color-uranus-500);
 }
 
 .a-tabs > .a-tabs__item:checked + .a-tabs__label .a-tabs__icon {
@@ -101,8 +101,8 @@
 /* Hover state */
 
 .a-tabs > .a-tabs__item:not(:checked):hover + .a-tabs__label {
-  background-color: var(--color-moon-200);
   cursor: pointer;
+  background-color: var(--color-moon-200);
 }
 
 @media only screen and (max-width: 47em) {

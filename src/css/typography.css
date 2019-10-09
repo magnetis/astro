@@ -7,8 +7,8 @@
 .a-text--large,
 .a-text--medium,
 .a-text--small {
-  color: var(--font-color);
   font: var(--font-primary);
+  color: var(--font-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,8 +16,8 @@
 .a-text--secondary-large,
 .a-text--secondary-medium,
 .a-text--secondary-small {
-  color: var(--font-color);
   font: var(--font-secondary);
+  color: var(--font-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

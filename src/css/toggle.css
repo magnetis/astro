@@ -9,64 +9,64 @@
 /* Base */
 
 .a-toggle {
-  display: inline-block;
   position: relative;
+  display: inline-block;
 }
 
 /* Hide standard input */
 
 .a-toggle > input[type='checkbox'] {
-  cursor: pointer;
-  height: var(--toggle-base-height);
-  left: 0;
-  opacity: 0;
   position: absolute;
   top: 0;
-  vertical-align: middle;
-  width: 100%;
+  left: 0;
   z-index: var(--z-index-1);
+  width: 100%;
+  height: var(--toggle-base-height);
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 0;
 }
 
 /* Label */
 
 .a-toggle > label {
-  font: var(--font-secondary);
   padding-right: 8px;
+  font: var(--font-secondary);
 }
 
 /* Base */
 
 .a-toggle__shape {
-  cursor: pointer;
-  display: inline-block;
   position: relative;
+  display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .a-toggle__shape::before {
+  display: block;
+  width: var(--toggle-base-width);
+  height: var(--toggle-base-height);
+  content: '';
   background-color: var(--color-moon-400);
   border-radius: var(--toggle-circle-size);
-  content: '';
-  display: block;
-  height: var(--toggle-base-height);
   transition: background-color 0.3s ease;
-  width: var(--toggle-base-width);
 }
 
 /* Circle */
 
 .a-toggle__shape::after {
-  background-color: var(--color-space-100);
-  border-radius: var(--toggle-circle-size);
-  content: '';
-  display: block;
-  height: var(--toggle-circle-size);
-  left: 1px;
   position: absolute;
   top: 1px;
-  transition: left 0.3s ease;
-  visibility: visible;
+  left: 1px;
+  display: block;
   width: var(--toggle-circle-size);
+  height: var(--toggle-circle-size);
+  visibility: visible;
+  content: '';
+  background-color: var(--color-space-100);
+  border-radius: var(--toggle-circle-size);
+  transition: left 0.3s ease;
 }
 
 /* On state */
@@ -76,8 +76,8 @@
 }
 
 .a-toggle > input[type='checkbox']:checked ~ .a-toggle__shape::after {
-  left: 21px;
   top: 1px;
+  left: 21px;
 }
 
 /* Disabled state */
