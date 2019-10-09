@@ -3,62 +3,62 @@
 }
 
 .a-checkbox {
+  align-items: center;
   display: flex;
   position: relative;
-  align-items: center;
 }
 
 .a-checkbox > label {
-  padding-left: 8px;
   cursor: pointer;
   font: var(--font-secondary);
   order: 2;
+  padding-left: 8px;
 }
 
 .a-checkbox--disabled > label {
-  cursor: not-allowed;
   color: var(--color-moon-200);
+  cursor: not-allowed;
 }
 
 .a-checkbox > input[type='checkbox'] {
-  position: absolute;
-  width: var(--checkbox-square-size);
+  cursor: pointer;
   height: var(--checkbox-square-size);
   margin: 4px 0;
   opacity: 0;
   order: 1;
-  cursor: pointer;
+  position: absolute;
+  width: var(--checkbox-square-size);
   z-index: var(--z-index-1);
 }
 
 .a-checkbox__shape::before {
-  display: inline-block;
-  width: var(--checkbox-square-size);
-  height: var(--checkbox-square-size);
-  content: '';
   border: 2px solid var(--color-moon-500);
   border-radius: 2px;
+  content: '';
+  display: inline-block;
+  height: var(--checkbox-square-size);
+  width: var(--checkbox-square-size);
 }
 
 .a-checkbox__shape::after {
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  width: 10px;
-  height: 6px;
-  content: '';
-  transform: rotate(-45deg);
-  color: var(--color-space-100);
   border-bottom: 2px solid;
   border-left: 2px solid;
+  color: var(--color-space-100);
+  content: '';
+  height: 6px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
+  transform: rotate(-45deg);
+  width: 10px;
 }
 
 .a-checkbox--indeterminate > .a-checkbox__shape::after {
-  top: 9px;
-  left: 4px;
-  width: 8px;
-  transform: rotate(-180deg);
   border-left: 0;
+  left: 4px;
+  top: 9px;
+  transform: rotate(-180deg);
+  width: 8px;
 }
 
 .a-checkbox--indeterminate > input[type='checkbox']:disabled ~ .a-checkbox__shape::before {
@@ -70,8 +70,8 @@
 }
 
 .a-checkbox > input[type='checkbox']:checked ~ .a-checkbox__shape::before {
-  border-color: var(--color-uranus-500);
   background-color: var(--color-uranus-500);
+  border-color: var(--color-uranus-500);
 }
 
 .a-checkbox > input[type='checkbox']:disabled ~ .a-checkbox__shape::before {

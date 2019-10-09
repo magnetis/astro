@@ -11,35 +11,35 @@
 /* Standard input */
 
 .a-radio > input[type='radio'] {
-  position: absolute;
-  width: var(--radio-circle-size);
+  cursor: pointer;
   height: var(--radio-circle-size);
   margin-top: 4px;
   opacity: 0;
   order: 1;
-  cursor: pointer;
+  position: absolute;
+  width: var(--radio-circle-size);
 }
 
 /* Label design */
 
 .a-radio > label {
-  padding-left: 8px;
   cursor: pointer;
   font: var(--font-secondary);
   order: 2;
+  padding-left: 8px;
 }
 
 /* Radio button design */
 
 .a-radio__shape::before {
-  display: inline-block;
-  width: var(--radio-circle-size);
-  height: var(--radio-circle-size);
-  margin-top: 4px;
-  content: '';
+  background-color: var(--color-space-100);
   border: 2px solid var(--color-moon-500);
   border-radius: 100%;
-  background-color: var(--color-space-100);
+  content: '';
+  display: inline-block;
+  height: var(--radio-circle-size);
+  margin-top: 4px;
+  width: var(--radio-circle-size);
 }
 
 /* Middle alignment modifier */
@@ -61,15 +61,15 @@
 /* Disabled state */
 
 .a-radio > input[type='radio']:disabled ~ .a-radio__shape::before {
-  cursor: not-allowed;
   border-color: var(--color-moon-200);
+  cursor: not-allowed;
 }
 
 .a-radio--disabled > label,
 .a-radio--disabled > input[type='radio']:disabled,
 .a-radio--disabled > input[type='radio']:disabled ~ .a-radio__shape::before {
-  cursor: not-allowed;
   color: var(--color-moon-200);
+  cursor: not-allowed;
 }
 
 .a-radio--disabled > input[type='radio']:disabled ~ .a-radio__shape::before {

@@ -3,30 +3,30 @@
 /* General input styles */
 
 .a-input {
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .a-input > input,
 .a-input > textarea {
-  width: 100%;
-  padding: 25px 16px 5px;
+  background-color: var(--color-space-100);
   border: 1px solid var(--color-moon-500);
   border-radius: 8px;
-  background-color: var(--color-space-100);
-  font: var(--font-secondary);
   color: var(--font-color);
+  font: var(--font-secondary);
+  padding: 25px 16px 5px;
+  width: 100%;
 }
 
 .a-input > label {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  transition: 0.2s ease all;
-  pointer-events: none;
   color: var(--color-moon-400);
   font: var(--font-secondary);
+  left: 16px;
+  pointer-events: none;
+  position: absolute;
+  top: 16px;
+  transition: 0.2s ease all;
 }
 
 .a-input > input::placeholder {
@@ -36,15 +36,15 @@
 /* Messaging inputs */
 
 .a-input--messaging {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .a-input--messaging > input {
-  padding: 15px 16px;
-  margin-right: 24px;
   flex: 1;
+  margin-right: 24px;
+  padding: 15px 16px;
 }
 
 /* Ghost inputs */
@@ -54,8 +54,8 @@
 .a-input--ghost.a-input--validated > input,
 .a-input--ghost.a-input--validated > input:focus,
 .a-input--ghost.a-input--invalid > input {
-  border: 1px solid var(--color-space-100);
   background-color: transparent;
+  border: 1px solid var(--color-space-100);
   color: var(--color-space-100);
 }
 
@@ -89,24 +89,24 @@
 /* Control input buttons */
 
 .a-input__btn-control {
-  display: inline-block;
-  position: absolute;
-  top: 16px;
-  right: 54px;
-  margin: -4px 0 -3px;
-  padding: 2px;
+  background-color: transparent;
   border: 2px solid transparent;
   border-radius: 16px;
-  text-align: center;
+  color: var(--color-uranus-500);
+  cursor: pointer;
+  display: inline-block;
   font: var(--font-primary);
   font-size: var(--font-size-1-5base);
   line-height: 18px;
-  color: var(--color-uranus-500);
-  background-color: transparent;
+  margin: -4px 0 -3px;
   overflow: hidden;
-  white-space: nowrap;
+  padding: 2px;
+  position: absolute;
+  right: 54px;
+  text-align: center;
+  top: 16px;
   transition: all 0.3s ease;
-  cursor: pointer;
+  white-space: nowrap;
 }
 
 .a-input__btn-control:focus {
@@ -131,10 +131,10 @@
 }
 
 .a-input__btn-control:disabled {
-  cursor: not-allowed;
   background-color: transparent;
   border-color: transparent;
   color: var(--color-space-100);
+  cursor: not-allowed;
 }
 
 .a-input__btn-control .a-icon {
@@ -232,24 +232,24 @@
 
 .a-input > input:focus,
 .a-input > textarea:focus {
-  outline: none;
   border: 1px solid var(--color-uranus-500);
+  outline: none;
 }
 
 .a-input > input:focus + label,
 .a-input > textarea:focus + label {
-  top: 8px;
   color: var(--color-uranus-500);
   font-size: var(--font-size-1-5base);
   font-weight: 700;
+  top: 8px;
 }
 
 /* Floating label state */
 
 .a-input > .a-input__label--floating {
-  top: 8px;
   font-size: var(--font-size-1-5base);
   font-weight: 700;
+  top: 8px;
 }
 
 /* Validated and invalid states */
@@ -275,14 +275,14 @@
 }
 
 .a-input--validated:not(.a-input--control)::after {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  width: 32px;
-  height: 32px;
-  content: '';
-  mask-image: url('../../assets/icons/circle-check.svg');
   background-color: var(--color-earth-400);
+  content: '';
+  height: 32px;
+  mask-image: url('../../assets/icons/circle-check.svg');
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  width: 32px;
 }
 
 /* Invalid state */
@@ -298,35 +298,35 @@
 }
 
 .a-input--invalid:not(.a-input--control)::after {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  width: 32px;
-  height: 32px;
-  content: '';
   background-color: var(--color-mars-500);
+  content: '';
+  height: 32px;
   mask-image: url('../../assets/icons/alert.svg');
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  width: 32px;
 }
 
 /* Error state */
 
 .a-input > .a-input__error {
-  position: relative;
-  display: block;
-  margin: 4px 16px;
   color: var(--color-mars-500);
+  display: block;
   font: var(--font-secondary);
   font-size: var(--font-size-1-5base);
+  margin: 4px 16px;
+  position: relative;
 }
 
 /* Disabled state */
 
 .a-input--disabled > input:disabled,
 .a-input--disabled > textarea:disabled {
-  cursor: not-allowed;
-  border: 1px solid var(--color-moon-200);
   background-color: var(--color-moon-100);
+  border: 1px solid var(--color-moon-200);
   color: var(--color-moon-300);
+  cursor: not-allowed;
 }
 
 .a-input--disabled.a-input--validated::after,
@@ -340,8 +340,8 @@
 
 .a-input--disabled > input:disabled + label,
 .a-input--disabled > textarea:disabled + label {
-  cursor: not-allowed;
   color: var(--color-moon-300);
+  cursor: not-allowed;
 }
 
 /* Large size */
@@ -356,8 +356,8 @@
 /* Large: inputs */
 
 .a-input--large > input {
-  padding-right: 24px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* Large: labels */
@@ -368,8 +368,8 @@
 
 .a-input--large .a-input__label--floating,
 .a-input--large > input:focus + label {
-  top: 6px;
   font-size: var(--font-size-2base);
+  top: 6px;
 }
 
 /* Large: validation inputs */
@@ -397,9 +397,9 @@
 /* Large: message inputs */
 
 .a-input--large.a-input--messaging .a-btn {
-  width: 54px;
-  height: 54px;
   border-radius: 50%;
+  height: 54px;
+  width: 54px;
 }
 
 .a-input--large.a-input--messaging .a-icon {

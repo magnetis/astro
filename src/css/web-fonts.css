@@ -1,9 +1,9 @@
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
   src:
     local('Lato Regular'),
     local('Lato-Regular'),
@@ -15,10 +15,10 @@
 
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
   src:
     local('Lato Regular'),
     local('Lato-Regular'),
@@ -30,10 +30,10 @@
 
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
   src:
     local('Lato Bold'),
     local('Lato-Bold'),
@@ -45,10 +45,10 @@
 
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
   src:
     local('Lato Bold'),
     local('Lato-Bold'),
@@ -60,10 +60,10 @@
 
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
   src:
     local('Poppins Medium'),
     local('Poppins-Medium'),
@@ -75,10 +75,10 @@
 
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
   src:
     local('Poppins Medium'),
     local('Poppins-Medium'),
@@ -90,10 +90,10 @@
 
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
   src:
     local('Poppins SemiBold'),
     local('Poppins-SemiBold'),
@@ -105,10 +105,10 @@
 
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
   src:
     local('Poppins SemiBold'),
     local('Poppins-SemiBold'),
@@ -120,10 +120,10 @@
 
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
   src:
     local('Poppins Bold'),
     local('Poppins-Bold'),
@@ -135,10 +135,10 @@
 
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
   src:
     local('Poppins Bold'),
     local('Poppins-Bold'),

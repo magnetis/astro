@@ -1,7 +1,8 @@
 .a-body {
+  color: var(--font-color);
+
   /* styles replicated in typography to allow isolation */
   font: var(--font-primary);
-  color: var(--font-color);
   text-rendering: optimizeLegibility;
 }
 
@@ -12,13 +13,13 @@
 }
 
 figure {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 li,
