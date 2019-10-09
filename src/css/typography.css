@@ -6,7 +6,8 @@
 .a-title--small,
 .a-text--large,
 .a-text--medium,
-.a-text--small {
+.a-text--small,
+.a-text--very-small {
   font: var(--font-primary);
   color: var(--font-color);
   -webkit-font-smoothing: antialiased;
@@ -15,7 +16,8 @@
 
 .a-text--secondary-large,
 .a-text--secondary-medium,
-.a-text--secondary-small {
+.a-text--secondary-small,
+.a-text--secondary-very-small {
   font: var(--font-secondary);
   color: var(--font-color);
   -webkit-font-smoothing: antialiased;
@@ -50,6 +52,10 @@
 }
 
 .a-text--small {
+  font-size: var(--font-size-1-75base);
+}
+
+.a-text--very-small {
   font-size: var(--font-size-1-5base);
 }
 
@@ -60,5 +66,9 @@
 }
 
 .a-text--secondary-small {
+  font-size: var(--font-size-1-75base);
+}
+
+.a-text--secondary-very-small {
   font-size: var(--font-size-1-5base);
 }
