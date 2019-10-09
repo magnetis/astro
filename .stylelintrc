@@ -6,6 +6,6 @@
       "string-quotes": "single",
       "rule-empty-line-before": "always",
       "order/properties-order": [],
-		  "order/properties-alphabetical-order": true
+      "order/properties-alphabetical-order": true
   }
 }
