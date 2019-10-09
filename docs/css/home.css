@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 121px;
 }
 
 .cards-box > div {
@@ -14,6 +15,12 @@
   margin-bottom: 20px;
   padding-right: 5%;
   width: 100%;
+}
+
+.cards-box > div > .cards-box__image {
+  display: flex;
+  align-items: center;
+  height: 154px;
 }
 
 @media (min-width: 768px) {
@@ -32,6 +39,18 @@
 
 .cards-box .a-btn {
   align-self: flex-start;
+}
+
+.atomic-illustration {
+  width: 153px;
+}
+
+.open-illustration {
+  width: 172px;
+}
+
+.accessible-illustration {
+  width: 168px;
 }
 
 .flex-1 {

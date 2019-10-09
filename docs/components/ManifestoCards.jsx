@@ -1,8 +1,14 @@
 import React from 'react';
+import atomic from '../img/atomic.png';
+import open from '../img/open.png';
+import accessible from '../img/accessible.png';
 
 export default () => (
   <div className='cards-box'>
     <div>
+      <div className="cards-box__image">
+        <img src={atomic} className="atomic-illustration" alt="" />
+      </div>
       <h3>atomic</h3>
 
       <p className='flex-1'>
@@ -14,6 +20,9 @@ export default () => (
     </div>
 
     <div>
+      <div className="cards-box__image">
+        <img src={open} className="open-illustration" alt="" />
+      </div>
       <h3>open</h3>
 
       <p className='flex-1'>
@@ -24,6 +33,9 @@ export default () => (
     </div>
 
     <div>
+      <div className="cards-box__image">
+        <img src={accessible} className="accessible-illustration" alt="" />
+      </div>
       <h3>accessible</h3>
 
       <p className='flex-1'>
