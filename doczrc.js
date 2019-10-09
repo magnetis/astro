@@ -27,5 +27,6 @@ export default {
     'iconography',
     'inputs',
     'typography'
-  ]
+  ],
+  codeSandbox: false
 };
