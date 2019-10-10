@@ -23,21 +23,26 @@
   "scripts": {
     "docz:dev": "docz dev",
     "docs:build": "docz build",
-    "docs:publish": "yarn run docs:build && node deploy",
+    "docs:publish": "yarn docs:build && node deploy",
     "build": "postcss src/index.css -o dist/astro.css && svgo assets/icons/*.svg -o dist/assets/icons",
+    "lint": "yarn lint:css && yarn lint:js",
+    "lint:js": "eslint docs/**/*.js*",
     "lint:css": "stylelint src/css/**/*.css",
-    "ci:build": "yarn run build && yarn run lint:css"
+    "ci:build": "yarn lint && yarn build"
   },
   "dependencies": {
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
+    "babel-eslint": "^10.0.3",
     "babel-plugin-inline-import": "^3.0.0",
     "cssnano": "^4.1.0",
     "docz": "^1.2.0",
     "docz-plugin-css": "^0.11.0",
     "docz-theme-default": "^1.2.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "gh-pages": "^2.0.1",
     "postcss-cli": "^6.0.0",
     "postcss-css-variables": "^0.13.0",

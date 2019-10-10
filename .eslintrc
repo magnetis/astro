@@ -1,0 +1,11 @@
+{
+  "plugins": ["jsx-a11y"],
+  "extends": ["plugin:jsx-a11y/strict"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  }
+}
