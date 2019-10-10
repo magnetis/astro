@@ -19,7 +19,8 @@ export default () => (
         </li>
         <li className='code-snippet'>
           <pre>
-          {'<'}link rel='stylesheet' href='https://unpkg.com/@magnetis/astro/dist/astro.css' />
+            {'<'}link rel='stylesheet'
+            href='https://unpkg.com/@magnetis/astro/dist/astro.css' />
           </pre>
         </li>
       </ul>
@@ -60,6 +61,7 @@ export default () => (
         </li>
 
         <iframe
+          title='fork astro on github'
           src='https://ghbtns.com/github-btn.html?user=magnetis&repo=astro&type=fork&count=true&size=large'
           frameBorder='0'
           scrolling='0'
