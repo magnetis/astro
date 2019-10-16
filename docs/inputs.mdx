@@ -7,10 +7,13 @@ import '../src/index.css';
 import { Playground } from 'docz';
 import HandleInputEvents from './js/inputs';
 import MagnetisIcon from './img/magnetis-icon.png';
+import SketchLink from './components/SketchLink';
 
 # inputs
 
 #### Inputs appear when the user needs to input data. They are mostly used in forms and in contexts that require data such as money, text and numbers.
+
+<SketchLink file='Inputs' />
 
 ## standard text inputs
 
@@ -224,16 +227,10 @@ To create the disabled state, add the `a-input--disabled` modifier class on elem
     <label id='controllabel2' htmlFor='control2'>
       Control input (R$)
     </label>
-    <button
-      className='a-input__btn-control'
-      disabled
-    >
+    <button className='a-input__btn-control' disabled>
       <i className='a-icon a-icon--input-dash a-icon--size-small' />
     </button>
-    <button
-      className='a-input__btn-control'
-      disabled
-    >
+    <button className='a-input__btn-control' disabled>
       <i className='a-icon a-icon--input-plus a-icon--size-small' />
     </button>
   </div>
