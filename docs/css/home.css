@@ -4,6 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.cards-box--spaced {
   margin-top: 121px;
 }
 

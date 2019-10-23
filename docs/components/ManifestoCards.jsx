@@ -4,7 +4,7 @@ import open from '../img/open.png';
 import accessible from '../img/accessible.png';
 
 export default () => (
-  <div className='cards-box'>
+  <div className='cards-box cards-box--spaced'>
     <div>
       <div className="cards-box__image">
         <img src={atomic} className="atomic-illustration" alt="" />
