@@ -1,0 +1,106 @@
+---
+name: tables
+---
+
+import '../src/index.css';
+import { Playground } from 'docz';
+
+# tables
+
+### standard table styles
+
+To apply the standard styles to a `table` element, add the `a-table` class. No
+modifiers are available or required.
+
+Be aware that typgraphy styles are not applied by default and you should style
+the `th` and `td` elements as necessary for your table.
+
+Buttons using the `a-btn` (and related modifiers) that are placed inside the last
+`td` of each row will be properly aligned together as the set of actions available
+for that row.
+
+<Playground>
+  <table className='a-table'>
+    <thead>
+      <tr>
+        <th className='a-text--medium' scope='col'>rank</th>
+        <th className='a-text--medium' scope='col'>title</th>
+        <th className='a-text--medium' scope='col'>distributor</th>
+        <th className='a-text--medium' scope='col' colspan='2'>worldwide gross</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className='a-text--secondary-medium'><strong>1</strong></td>
+        <td className='a-text--secondary-medium'>Avengers: Infinity War</td>
+        <td className='a-text--secondary-medium'>Disney</td>
+        <td className='a-text--secondary-medium'>$2,048,359,754</td>
+        <td>
+          <button title='delete' aria-label='delete' className='a-btn a-btn--ghost-mars a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--trash a-icon--size-medium' />
+          </button>
+          <a  title='edit' aria-label='edit' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--pencil a-icon--size-medium' />
+          </a>
+          <a  title='view' aria-label='view' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--circle-right a-icon--size-medium' />
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td className='a-text--secondary-medium'><strong>2</strong></td>
+        <td className='a-text--secondary-medium'>Black Panther</td>
+        <td className='a-text--secondary-medium'>Disney</td>
+        <td className='a-text--secondary-medium'>$1,346,913,161</td>
+        <td>
+          <button title='delete' aria-label='delete' className='a-btn a-btn--ghost-mars a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--trash a-icon--size-medium' />
+          </button>
+          <a  title='edit' aria-label='edit' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--pencil a-icon--size-medium' />
+          </a>
+          <a  title='view' aria-label='view' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--circle-right a-icon--size-medium' />
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td className='a-text--secondary-medium'><strong>3</strong></td>
+        <td className='a-text--secondary-medium'>Jurassic World: Fallen Kingdom</td>
+        <td className='a-text--secondary-medium'>Universal</td>
+        <td className='a-text--secondary-medium'>$1,309,484,461</td>
+        <td>
+          <button title='delete' aria-label='delete' className='a-btn a-btn--ghost-mars a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--trash a-icon--size-medium' />
+          </button>
+          <a  title='edit' aria-label='edit' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--pencil a-icon--size-medium' />
+          </a>
+          <a  title='view' aria-label='view' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--circle-right a-icon--size-medium' />
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td className='a-text--secondary-medium'><strong>4</strong></td>
+        <td className='a-text--secondary-medium'>Incredibles 2</td>
+        <td className='a-text--secondary-medium'>Disney</td>
+        <td className='a-text--secondary-medium'>$1,242,805,359</td>
+        <td>
+          <button title='delete' aria-label='delete' className='a-btn a-btn--ghost-mars a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--trash a-icon--size-medium' />
+          </button>
+          <a  title='edit' aria-label='edit' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--pencil a-icon--size-medium' />
+          </a>
+          <a  title='view' aria-label='view' className='a-btn a-btn--ghost-uranus a-btn--medium a-btn--icon'>
+            <i className='a-icon a-icon--circle-right a-icon--size-medium' />
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</Playground>

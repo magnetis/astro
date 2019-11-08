@@ -1,0 +1,53 @@
+:root {
+  --table-odd-row-color: var(--color-moon-100);
+  --table-header-color: var(--color-moon-500);
+  --table-row-border-radius: 4px;
+}
+
+.a-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.a-table th {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--table-header-color);
+  text-align: left;
+}
+
+.a-table td {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.a-table td:first-child {
+  border-top-left-radius: var(--table-row-border-radius);
+  border-bottom-left-radius: var(--table-row-border-radius);
+}
+
+.a-table td:last-child {
+  /*
+  Styles for aligning action links/buttons on the last cell of each row,
+  can be replaced by implemeting a `button-group` wrapper por multiple buttons.
+  */
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  border-top-right-radius: var(--table-row-border-radius);
+  border-bottom-right-radius: var(--table-row-border-radius);
+}
+
+.a-table td:first-child,
+.a-table th:first-child {
+  padding-left: 32px;
+}
+
+.a-table td:last-child,
+.a-table th:last-child {
+  padding-right: 32px;
+}
+
+.a-table tr:nth-child(odd) td {
+  background-color: var(--table-odd-row-color);
+}
