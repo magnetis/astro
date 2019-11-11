@@ -131,7 +131,7 @@ It's awesome that you want to contribute to Astro! Please see [CONTRIBUTING.md](
 
 ## Troubleshooting
 
-- If you copy the markup from an example in our documentation, don't forget to change "className" to "class" if you're not in a React environment like our docs are ;)
+- If you copy the markup from an example in our documentation, don't forget to change the attributes "className" to "class" and "htmlFor" to "for" if you're not in a React environment like our docs are.
 
 ## Contact us
 
