@@ -2,6 +2,12 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [3.1.0] - 2019-11-14
+- Create new "Tables" page with table styles.
+- Add download link for Sketch files.
+- Add support for reduced motion preferences.
+- Update dependencies. 
+
 ### [3.0.0] - 2019-10-18
 - Breaking changes; please follow the quick [update guide](https://github.com/magnetis/astro/blob/master/UPDATE_GUIDE_3_0_0.MD) as you update.
 - Change "small" text font size to 14px (1.75base) and create "very small" text font size for 12px (1.5base). This does not affect title classes, just text.
