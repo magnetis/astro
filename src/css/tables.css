@@ -1,6 +1,7 @@
 :root {
   --table-odd-row-color: var(--color-moon-100);
   --table-header-color: var(--color-moon-500);
+  --table-row-inactive-color: var(--color-moon-300);
   --table-row-border-radius: 4px;
 }
 
@@ -50,4 +51,8 @@
 
 .a-table tr:nth-child(odd) td {
   background-color: var(--table-odd-row-color);
+}
+
+.a-table tr.a-table__row--inactive td {
+  color: var(--table-row-inactive-color);
 }

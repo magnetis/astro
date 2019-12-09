@@ -15,6 +15,9 @@ modifiers are available or required.
 Be aware that typography styles are not applied by default and you should style
 the `th` and `td` elements as necessary for your table.
 
+To represent an inactive entry in the table add the `a-table__row--inactive` class
+to the corresponding table row.
+
 Buttons using the `a-btn` (and related modifiers) that are placed inside the last
 `td` of each row will be properly aligned together as the set of actions available
 for that row.
@@ -84,9 +87,9 @@ for that row.
         </td>
       </tr>
 
-      <tr>
+      <tr className='a-table__row--inactive'>
         <td className='a-text--secondary-medium'><strong>4</strong></td>
-        <td className='a-text--secondary-medium'>Incredibles 2</td>
+        <td className='a-text--secondary-medium'>Incredibles 2 (inactive)</td>
         <td className='a-text--secondary-medium'>Disney</td>
         <td className='a-text--secondary-medium'>$1,242,805,359</td>
         <td>
