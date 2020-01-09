@@ -2,6 +2,10 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [3.2.1] - 2020-01-09
+- Fix checkbox positioning.
+- Update dependencies.
+
 ### [3.2.0] - 2019-12-27
 - Add inactive table row style.
 - Update dependencies.
