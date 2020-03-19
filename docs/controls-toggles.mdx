@@ -5,6 +5,7 @@ name: controls & toggles
 import '../src/index.css';
 import { Playground } from 'docz';
 import HandleSliderValue from './js/slider';
+import HandleTabs from './js/tabs';
 import SketchLink from './components/SketchLink';
 
 # controls & toggles
@@ -172,6 +173,50 @@ Each tab can be created both with or without Astro icons. To add an icon, follow
 Mouseover to view `:hover` state, and click on a tab to see its content.
 
 <Playground>
+  <div className='a-tabbed'>
+    <ul className='a-tabbed__list'>
+      <li>
+        <a href='#section1'>
+          <i className='a-icon a-icon--cup a-icon--size-small a-icon--space-right a-tabbed__icon' aria-hidden='true' />
+          <span>section 1</span>
+        </a>
+      </li>
+      <li>
+        <a href='#section2'>
+          <i className='a-icon a-icon--calendar a-icon--size-small a-icon--space-right a-tabbed__icon' aria-hidden='true' />
+          <span>section 2</span>
+        </a>
+      </li>
+      <li>
+        <a href='#section3'>
+          <i className='a-icon a-icon--clock a-icon--size-small a-icon--space-right a-tabbed__icon' aria-hidden='true' />
+          <span>section 3</span></a>
+      </li>
+    </ul>
+    <section id='section1'>
+      <p className='a-text--secondary-medium'>
+        Nullam imperdiet dolor a erat commodo laoreet a ut felis. Nam consequat
+        nisl eu efficitur suscipit. Nulla dapibus cursus diam in convallis.
+      </p>
+    </section>
+    <section id='section2'>
+      <p className='a-text--secondary-medium'>
+        Mauris sit amet egestas velit. Maecenas pulvinar sed nibh vel tincidunt.
+        In vitae vestibulum ante. Morbi bibendum mi vitae purus vehicula, id
+        bibendum arcu cursus.
+      </p>
+    </section>
+    <section id='section3'>
+      <p className='a-text--secondary-medium'>
+        Nunc dolor justo, congue id malesuada ac, bibendum id odio. Integer
+        dictum, lacus vitae rutrum faucibus, dolor diam lacinia erat, maximus
+        mattis ligula libero at risus.
+      </p>
+    </section>
+  </div>
+</Playground>
+
+<Playground>
   <div className='a-tabs'>
     <input
       className='a-tabs__item'
@@ -274,3 +319,5 @@ To ensure a horizontal tabs alignment in all screens (including mobile), you can
     <div className='a-tabs__border' />
   </div>
 </Playground>
+
+<HandleTabs />

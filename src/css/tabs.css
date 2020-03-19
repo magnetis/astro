@@ -131,3 +131,52 @@
     border-color: var(--color-uranus-500);
   }
 }
+
+/* 2020 tabs component */
+
+.a-tabbed__list {
+  padding: 0;
+}
+
+.a-tabbed__list li,
+.a-tabbed__list a {
+  display: inline-block;
+}
+
+.a-tabbed__list a {
+  padding: 10px 20px 8px;
+  font: var(--font-primary);
+  font-size: var(--font-size-1-5base);
+  line-height: 26px;
+  color: var(--color-moon-500);
+  text-decoration: none;
+}
+
+.a-tabbed__list li a {
+  vertical-align: middle;
+  border-bottom: 2px solid var(--color-moon-300);
+}
+
+.a-tabbed__list a:hover {
+  color: var(--color-moon-300);
+  border-bottom: 2px solid var(--color-moon-200);
+}
+
+.a-tabbed__list [aria-selected='true'] {
+  color: var(--color-uranus-500);
+  border-bottom: 2px solid var(--color-uranus-500);
+}
+
+.a-tabbed__list .a-tabbed__icon {
+  position: relative;
+  top: -2px;
+  background-color: var(--color-moon-900);
+}
+
+.a-tabbed__list [aria-selected='true'] .a-tabbed__icon {
+  background-color: var(--color-uranus-500);
+}
+
+.a-tabbed__list a:hover .a-tabbed__icon {
+  background-color: var(--color-space-400);
+}
