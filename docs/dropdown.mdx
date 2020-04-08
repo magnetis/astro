@@ -1,0 +1,134 @@
+---
+name: dropdown
+---
+
+import { Playground } from 'docz';
+import HandleDropdown from './js/dropdown';
+import '../src/index.css';
+
+# dropdown
+
+#### Dropdown is used when the user has options to choose from. You can enter chars to filter the options list and make it easier to find a specific option.
+
+## dropdown
+
+The regular dropdown. User starts interacting and typing on the component and the list of options will be displayed and filtered.
+
+Please follow the markup structure below in the same order to get all correct CSS styles.
+
+The dropdown will need JS to work on your project. You may find the code for this working example in our GitHub repository.
+
+<Playground style={{ height: '210px' }}>
+  <div id='dropdownStandard' className='a-dropdown'>
+    <input
+      id='dropdownInputStandard'
+      type='text'
+      aria-labelledby='dropdownLabelStandard'
+      placeholder='Select'
+    />
+    <i />
+    <label id='dropdownLabelStandard' htmlFor='dropdownInputStandard'>
+      State
+    </label>
+    <nav aria-label='State list'>
+      <a role='option'>Acre</a>
+      <a role='option'>Ceará</a>
+      <a role='option'>Rio de Janeiro</a>
+      <a role='option'>São Paulo</a>
+    </nav>
+  </div>
+</Playground>
+
+### Disabled and validation states
+
+To create the validated state, add the `a-dropdown--validated` modifier class on element root.
+
+The invalid state is created adding the `a-dropdown--invalid` modifier class on element root.
+
+For disabled state, add the `a-dropdown--disabled` modifier class on element root and disabled attribute on the `<input>` tag.
+
+<Playground style={{ height: '210px' }}>
+  <div id='dropdownValidated' className='a-dropdown a-dropdown--validated'>
+    <input
+      id='dropdownInputValidated'
+      type='text'
+      aria-labelledby='dropdownLabelValidated'
+      placeholder='Dropdown'
+    />
+    <i />
+    <label id='dropdownLabelValidated' htmlFor='dropdownInputValidated'>
+      Validated
+    </label>
+    <nav aria-label='State list'>
+      <a role='option'>First option</a>
+      <a role='option'>Second option</a>
+    </nav>
+  </div>
+  <div id='dropdownInvalid' className='a-dropdown a-dropdown--invalid'>
+    <input
+      id='dropdownInputInvalid'
+      type='text'
+      aria-labelledby='dropdownLabelInvalid'
+      placeholder='Dropdown'
+    />
+    <i />
+    <label id='dropdownLabelInvalid' htmlFor='dropdownInputInvalid'>
+      Invalid
+    </label>
+    <nav aria-label='State list'>
+      <a role='option'>First option</a>
+      <a role='option'>Second option</a>
+    </nav>
+  </div>
+  <div id='dropdownDisabled' className='a-dropdown a-dropdown--disabled'>
+    <input
+      id='dropdownInputDisabled'
+      type='text'
+      aria-labelledby='dropdownLabelDisabled'
+      placeholder='Dropdown'
+      disabled
+    />
+    <i />
+    <label id='dropdownLabelDisabled' htmlFor='dropdownInputDisabled'>
+      Disabled
+    </label>
+    <nav aria-label='State list'>
+      <a role='option'>First option</a>
+      <a role='option'>Second option</a>
+    </nav>
+  </div>
+</Playground>
+
+## search
+
+The search variant hides the label and the icon button work as submitter.
+
+To use this variant, add the `a-dropdown--search` modifier class on element root.
+
+The dropdown will need JS to work on your project. You may find the code for this working example in our GitHub repository.
+
+<Playground style={{ height: '210px' }}>
+  <div id='dropdownSearch' className='a-dropdown a-dropdown--search'>
+    <input
+      id='dropdownInputSearch'
+      type='text'
+      aria-labelledby='dropdownLabelSearch'
+      placeholder='Search'
+    />
+    <i aria-label='Search button' role='button' />
+    <label id='dropdownLabelSearch' htmlFor='dropdownInputSearch'>
+      State
+    </label>
+    <nav aria-label='Search list'>
+      <a role='option'>FIC Magnetis Multimarket</a>
+      <a role='option'>Magnetis Private Black</a>
+      <a role='option'>Magnetis Retirement Plan</a>
+      <a role='option'>Magnetis Stock Market</a>
+    </nav>
+  </div>
+</Playground>
+
+<HandleDropdown selector='#dropdownStandard' openedClass="a-dropdown--opened" />
+<HandleDropdown selector='#dropdownValidated' openedClass="a-dropdown--opened" />
+<HandleDropdown selector='#dropdownInvalid' openedClass="a-dropdown--opened" />
+<HandleDropdown selector='#dropdownSearch' openedClass="a-dropdown--opened" searchURL="https://google.com/search?q=" />
