@@ -5,36 +5,36 @@
 }
 
 .a-dropdown label {
-  color: var(--color-moon-400);
+  position: absolute;
+  top: 8px;
+  left: 16px;
   font: var(--font-secondary);
   font-size: var(--font-size-1-5base);
   font-weight: 700;
-  left: 16px;
+  color: var(--color-moon-400);
   pointer-events: none;
-  position: absolute;
-  top: 8px;
 }
 
 .a-dropdown input {
+  width: 100%;
+  padding: 24px 56px 4px 16px;
   appearance: none;
+  font: var(--font-secondary);
+  color: var(--font-color);
   background-color: var(--color-space-100);
   border: 1px solid var(--color-moon-500);
   border-radius: 8px;
-  color: var(--font-color);
-  font: var(--font-secondary);
-  padding: 24px 56px 4px 16px;
-  width: 100%;
 }
 
 .a-dropdown span {
-  background-color: var(--color-moon-300);
-  display: block;
-  height: 32px;
-  mask-image: url('../../assets/icons/drop-down.svg');
   position: absolute;
   top: 12px;
   right: 16px;
+  display: block;
   width: 32px;
+  height: 32px;
+  background-color: var(--color-moon-300);
+  mask-image: url('../../assets/icons/drop-down.svg');
 }
 
 .a-dropdown input::placeholder {
@@ -44,36 +44,36 @@
 /* Options list */
 
 .a-dropdown input ~ ul {
-  background-color: var(--color-space-100);
-  border-color: var(--color-uranus-500);
-  border-radius: 0 0 8px 8px;
-  border-style: solid;
-  border-width: 0 1px 1px 1px;
+  position: absolute;
+  z-index: var(--z-index-1);
   display: none;
-  margin: 0;
+  width: 100%;
   min-height: 2em;
   padding-bottom: 16px;
-  position: absolute;
-  width: 100%;
-  z-index: var(--z-index-1);
+  margin: 0;
+  background-color: var(--color-space-100);
+  border-color: var(--color-uranus-500);
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  border-radius: 0 0 8px 8px;
 }
 
 .a-dropdown input ~ ul a {
-  color: var(--color-moon-300);
   display: block;
-  font: var(--font-secondary);
   padding: 4px 16px;
+  font: var(--font-secondary);
+  color: var(--color-moon-300);
 }
 
 .a-dropdown input ~ ul a:hover {
-  background-color: #f1f8fe;
   color: var(--color-moon-400);
   cursor: pointer;
+  background-color: #f1f8fe;
 }
 
 .a-dropdown input ~ ul a em {
-  color: var(--color-uranus-500);
   font-style: normal;
+  color: var(--color-uranus-500);
 }
 
 /* Opened state */
@@ -106,9 +106,9 @@
 /* Search variant */
 
 .a-dropdown.a-dropdown--search i {
+  top: 8px;
   background-color: var(--color-moon-600);
   mask-image: url('../../assets/icons/magnifier.svg');
-  top: 8px;
 }
 
 .a-dropdown.a-dropdown--search.a-dropdown--opened input ~ span {
@@ -134,10 +134,10 @@
 
 .a-dropdown.a-dropdown--disabled input,
 .a-dropdown.a-dropdown--disabled span {
-  background-color: var(--color-moon-100);
-  border: 1px solid var(--color-moon-200);
   color: var(--color-moon-300);
   cursor: not-allowed;
+  background-color: var(--color-moon-100);
+  border: 1px solid var(--color-moon-200);
 }
 
 /* Validated state */
