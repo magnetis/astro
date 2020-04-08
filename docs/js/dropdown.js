@@ -2,8 +2,8 @@ export const filterDropdown = ({ selector, openedClass, searchURL }) => {
   window.requestAnimationFrame(() => {
     const component = document.querySelector(selector);
     const input = document.querySelector(`${selector} input`);
-    const options = document.querySelectorAll(`${selector} nav a`);
-    const icon = document.querySelector(`${selector} i`);
+    const options = document.querySelectorAll(`${selector} ul li a`);
+    const icon = document.querySelector(`${selector} span`);
 
     icon.addEventListener('click', () => {
       if (searchURL) {

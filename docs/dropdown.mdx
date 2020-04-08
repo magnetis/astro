@@ -26,16 +26,24 @@ The dropdown will need JS to work on your project. You may find the code for thi
       aria-labelledby='dropdownLabelStandard'
       placeholder='Select'
     />
-    <i />
+    <span></span>
     <label id='dropdownLabelStandard' htmlFor='dropdownInputStandard'>
       State
     </label>
-    <nav aria-label='State list'>
-      <a role='option'>Acre</a>
-      <a role='option'>Ceará</a>
-      <a role='option'>Rio de Janeiro</a>
-      <a role='option'>São Paulo</a>
-    </nav>
+    <ul aria-label='State list'>
+      <li>
+        <a role='option'>Acre</a>
+      </li>
+      <li>
+        <a role='option'>Ceará</a>
+      </li>
+      <li>
+        <a role='option'>Rio de Janeiro</a>
+      </li>
+      <li>
+        <a role='option'>São Paulo</a>
+      </li>
+    </ul>
   </div>
 </Playground>
 
@@ -55,14 +63,18 @@ For disabled state, add the `a-dropdown--disabled` modifier class on element roo
       aria-labelledby='dropdownLabelValidated'
       placeholder='Dropdown'
     />
-    <i />
+    <span></span>
     <label id='dropdownLabelValidated' htmlFor='dropdownInputValidated'>
       Validated
     </label>
-    <nav aria-label='State list'>
-      <a role='option'>First option</a>
-      <a role='option'>Second option</a>
-    </nav>
+    <ul aria-label='State list'>
+      <li>
+        <a role='option'>First option</a>
+      </li>
+      <li>
+        <a role='option'>Second option</a>
+      </li>
+    </ul>
   </div>
   <div id='dropdownInvalid' className='a-dropdown a-dropdown--invalid'>
     <input
@@ -71,14 +83,18 @@ For disabled state, add the `a-dropdown--disabled` modifier class on element roo
       aria-labelledby='dropdownLabelInvalid'
       placeholder='Dropdown'
     />
-    <i />
+    <span></span>
     <label id='dropdownLabelInvalid' htmlFor='dropdownInputInvalid'>
       Invalid
     </label>
-    <nav aria-label='State list'>
-      <a role='option'>First option</a>
-      <a role='option'>Second option</a>
-    </nav>
+    <ul aria-label='State list'>
+      <li>
+        <a role='option'>First option</a>
+      </li>
+      <li>
+        <a role='option'>Second option</a>
+      </li>
+    </ul>
   </div>
   <div id='dropdownDisabled' className='a-dropdown a-dropdown--disabled'>
     <input
@@ -88,14 +104,18 @@ For disabled state, add the `a-dropdown--disabled` modifier class on element roo
       placeholder='Dropdown'
       disabled
     />
-    <i />
+    <span></span>
     <label id='dropdownLabelDisabled' htmlFor='dropdownInputDisabled'>
       Disabled
     </label>
-    <nav aria-label='State list'>
-      <a role='option'>First option</a>
-      <a role='option'>Second option</a>
-    </nav>
+    <ul aria-label='State list'>
+      <li>
+        <a role='option'>First option</a>
+      </li>
+      <li>
+        <a role='option'>Second option</a>
+      </li>
+    </ul>
   </div>
 </Playground>
 
@@ -115,16 +135,24 @@ The dropdown will need JS to work on your project. You may find the code for thi
       aria-labelledby='dropdownLabelSearch'
       placeholder='Search'
     />
-    <i aria-label='Search button' role='button' />
+    <span aria-label='Search button' role='button'></span>
     <label id='dropdownLabelSearch' htmlFor='dropdownInputSearch'>
       State
     </label>
-    <nav aria-label='Search list'>
-      <a role='option'>FIC Magnetis Multimarket</a>
-      <a role='option'>Magnetis Private Black</a>
-      <a role='option'>Magnetis Retirement Plan</a>
-      <a role='option'>Magnetis Stock Market</a>
-    </nav>
+    <ul aria-label='Search list'>
+      <li>
+        <a role='option'>FIC Magnetis Multimarket</a>
+      </li>
+      <li>
+        <a role='option'>Magnetis Private Black</a>
+      </li>
+      <li>
+        <a role='option'>Magnetis Retirement Plan</a>
+      </li>
+      <li>
+        <a role='option'>Magnetis Stock Market</a>
+      </li>
+    </ul>
   </div>
 </Playground>
 

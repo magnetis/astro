@@ -26,6 +26,7 @@ export default {
     'controls & toggles',
     'iconography',
     'inputs',
+    'dropdown',
     'typography'
   ],
   codeSandbox: false
