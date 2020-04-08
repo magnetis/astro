@@ -105,7 +105,7 @@
 
 /* Search variant */
 
-.a-dropdown.a-dropdown--search i {
+.a-dropdown.a-dropdown--search span {
   top: 8px;
   background-color: var(--color-moon-600);
   mask-image: url('../../assets/icons/magnifier.svg');
@@ -116,8 +116,8 @@
   mask-image: url('../../assets/icons/magnifier.svg');
 }
 
-.a-dropdown i:hover,
-.a-dropdown.a-dropdown--search i:hover {
+.a-dropdown span:hover,
+.a-dropdown.a-dropdown--search span:hover {
   cursor: pointer;
   background-color: var(--color-uranus-500);
 }
@@ -156,11 +156,11 @@
   color: var(--color-earth-600);
 }
 
-.a-dropdown.a-dropdown--validated i {
+.a-dropdown.a-dropdown--validated span {
   mask-image: url('../../assets/icons/circle-check.svg');
 }
 
-.a-dropdown.a-dropdown--validated i,
+.a-dropdown.a-dropdown--validated span,
 .a-dropdown.a-dropdown--validated.a-dropdown--opened input ~ span {
   background-color: var(--color-earth-400);
 }
@@ -181,7 +181,7 @@
   color: var(--color-mars-500);
 }
 
-.a-dropdown.a-dropdown--invalid i {
+.a-dropdown.a-dropdown--invalid span {
   mask-image: url('../../assets/icons/alert.svg');
 }
 
