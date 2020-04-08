@@ -7,6 +7,7 @@ module.exports = {
     'font-family-name-quotes': 'always-unless-keyword',
     'string-quotes': 'single',
     'rule-empty-line-before': 'always',
-    'order/properties-order': propertyOrder
+    'order/properties-order': propertyOrder,
+    'no-descending-specificity': null
   }
 };
