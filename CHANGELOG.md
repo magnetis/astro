@@ -2,6 +2,11 @@
 
 This page documents interesting or noteworthy changes to the project, based on [Semantic Versioning](http://semver.org/).
 
+### [3.3.0] - 2020-04-13
+- Add dropdown component.
+- Add new tabs component.
+- Update dependencies.
+
 ### [3.2.1] - 2020-01-09
 - Fix checkbox positioning.
 - Update dependencies.
