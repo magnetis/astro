@@ -347,3 +347,15 @@
 .a-icon--mountain {
   mask-image: url(../../assets/icons/mountain.svg);
 }
+
+.a-icon--airplane {
+  mask-image: url(../../assets/icons/airplane.svg);
+}
+
+.a-icon--education {
+  mask-image: url(../../assets/icons/education.svg);
+}
+
+.a-icon--car {
+  mask-image: url(../../assets/icons/car.svg);
+}
