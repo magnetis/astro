@@ -6,8 +6,8 @@ update_configs:
     update_schedule: "daily"
 
     default_reviewers:
-      - "AgtLucas"
-      - "elmarques"
+      - "brunobc182"
+      - "victorheringer"
     default_assignees:
-      - "AgtLucas"
-      - "elmarques"
+      - "brunobc182"
+      - "victorheringer"
