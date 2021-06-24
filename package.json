@@ -41,7 +41,7 @@
     "docz": "^1.2.0",
     "docz-plugin-css": "^0.11.0",
     "docz-theme-default": "^1.2.0",
-    "eslint": "^6.5.1",
+    "eslint": "^7.24.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "gh-pages": "^2.0.1",
     "postcss-cli": "^6.0.0",
