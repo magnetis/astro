@@ -45,7 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "gh-pages": "^2.0.1",
     "postcss-cli": "^6.0.0",
-    "postcss-css-variables": "^0.14.0",
+    "postcss-css-variables": "^0.17.0",
     "postcss-import": "^12.0.0",
     "postcss-url": "^8.0.0",
     "react-hot-loader": "^4.12.1",
