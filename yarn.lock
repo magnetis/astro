@@ -9196,10 +9196,10 @@ postcss-convert-values@^4.0.1:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-css-variables@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/postcss-css-variables/-/postcss-css-variables-0.14.0.tgz#9e69630216f0e9ae13a0e2ff46bf0136ba1c7b5b"
-  integrity sha512-fEdksFdcvn/vvTddy4KoPDojZt9hQZx3oXHAIgoYJHsnk97ZTP08unM2UAqksiqdytv93415kBwP+c3/jcopyg==
+postcss-css-variables@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/postcss-css-variables/-/postcss-css-variables-0.17.0.tgz#56cba1d9f0360609136cfbfda8bbd2c1ed2e4082"
+  integrity sha512-/ZpFnJgksNOrQA72b3DKhExYh+0e2P5nEc3aPZ62G7JLmdDjWRFv3k/q4LxV7uzXFnmvkhXRbdVIiH5tKgfFNA==
   dependencies:
     balanced-match "^1.0.0"
     escape-string-regexp "^1.0.3"
